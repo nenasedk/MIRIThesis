@@ -1,40 +1,55 @@
-\documentclass[]{article}
-\usepackage{amsmath}
+
+\documentclass[a4paper,twoside,openright,titlepage,
+headinclude,,footinclude,BCOR5mm,
+numbers=noenddot,cleardoublepage=empty,
+tablecaptionabove]{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+%\usepackage[style=philosophy-modern,hyperref]{biblatex}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lipsum}
+\usepackage{shapepar}
+\usepackage{pifont}
+\usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,listings]{classicthesis}
+\usepackage{arsclassica}
+\usepackage[style=ieee,hyperref]{biblatex}
+\input{arsclassica-settings}
+
 \usepackage{microtype}
 \usepackage{bm}
-\usepackage{dsfont}
 \usepackage{listings}
 \usepackage{url}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
-\usepackage{natbib}
 \usepackage{booktabs}
-\lstset{
-	basicstyle=\ttfamily,
-	mathescape,
-}
-
-\graphicspath{{./}{figures/}}
 %opening
 \title{Simulated instrumental constraints on brown dwarf atmospheric retrievals for JWST's MIRI.}
 \author{Evert Nasedkin}
 
 \begin{document}
-
-\maketitle
-
-\begin{abstract}
-
-\end{abstract}
- 
-\section{Introduction}
-\section{Fringing}
-\section{MIRISIM}
-\section{Spectrum extraction}
-\section{Atmospheric Retrievals}
-\section{Results}
-\section{Conclusions}
-
-\bibliographystyle{ieeetr}
-\bibliography{thesis_bib}
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\input{FrontBackMatter/Titlepage}
+	\input{FrontBackMatter/Titleback}
+	\cleardoublepage
+	\input{FrontBackMatter/Acknowledgements}
+	\pagestyle{scrheadings} 
+	\input{FrontBackMatter/Contents}
+	\cleardoublepage
+	\pagenumbering{arabic}
+	\input{Chapters/Introduction}
+	\input{Chapters/Mirisim}
+	\input{Chapters/SpectralExtraction}
+	\input{Chapters/AtmosphericRetrieval}
+	\input{Chapters/Conclusions}
+	\clearpage
+	\input{FrontBackMatter/Bibliography}
 \end{document}
