@@ -1,0 +1,588 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{ref:Chen2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5e2afaa4949ebeb4930a13e8aa4dc4bc}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+        {{hash=be46f13608831ccd6df7751225bb4ff6}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=192786135dd90c5d6bfaf9f7430a3b0c}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Zhuchang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=19811c44869be59cb072c61246f27650}{%
+           family={Horton},
+           familyi={H\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{1df85731784c0c4e7566c35f1185e2a2}
+      \strng{fullhash}{04b0e2428a6cb3cfb9beccb8cf38eed5}
+      \strng{bibnamehash}{04b0e2428a6cb3cfb9beccb8cf38eed5}
+      \strng{authorbibnamehash}{04b0e2428a6cb3cfb9beccb8cf38eed5}
+      \strng{authornamehash}{1df85731784c0c4e7566c35f1185e2a2}
+      \strng{authorfullhash}{04b0e2428a6cb3cfb9beccb8cf38eed5}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Habitability and Spectroscopic Observability of Warm M-dwarf Exoplanets Evaluated with a 3D Chemistry-Climate Model}}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1907.10048
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/1907.10048.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.10048
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.10048
+      \endverb
+      \keyw{astrobiology,atmospheres,planets and satellites,terrestrial planets}
+    \endentry
+    \entry{ref:Argyriou2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4b44b1484fb0a73db5b84d550eaa2406}{%
+           family={Argyriou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0df25aa9121b0e64fafd6aea16c92bc0}{%
+           family={Azzollini},
+           familyi={A\bibinitperiod},
+           given={Ruym{á}n},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8d1d1f9b6e319b7729552a93ef4da9c5}{%
+           family={Vandenbussche},
+           familyi={V\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \strng{fullhash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \strng{bibnamehash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \strng{authorbibnamehash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \strng{authornamehash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \strng{authorfullhash}{5ef8882b27fb7e0f0f4b5d070c08f792}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{July 2018}
+      \field{title}{{Spectrum extraction from detector plane images for the medium-resolution spectrometer of the mid-Infrared Instrument on-board the James Webb Space Telescope.}}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{124}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/12.2312697
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/106983L.pdf:pdf
+      \endverb
+      \keyw{aperture photom-,jwst,medium-resolution spectroscopy,mid-infrared,miri,spectral extraction}
+    \endentry
+    \entry{ref:fringe1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4b44b1484fb0a73db5b84d550eaa2406}{%
+           family={Argyriou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8d1d1f9b6e319b7729552a93ef4da9c5}{%
+           family={Vandenbussche},
+           familyi={V\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6f63fdb4480432a3a98687934d4c5e5b}{%
+           family={Wells},
+           familyi={W\bibinitperiod},
+           given={Martyn},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{16e10f0552ce0008cf03da3b590d8a29}
+      \strng{fullhash}{16e10f0552ce0008cf03da3b590d8a29}
+      \strng{bibnamehash}{16e10f0552ce0008cf03da3b590d8a29}
+      \strng{authorbibnamehash}{16e10f0552ce0008cf03da3b590d8a29}
+      \strng{authornamehash}{16e10f0552ce0008cf03da3b590d8a29}
+      \strng{authorfullhash}{16e10f0552ce0008cf03da3b590d8a29}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{July 2018}
+      \field{title}{{Fringing solution for the mid-infrared instrument on-board the James Webb Space Telescope}}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{127}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/12.2310268
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/106983O.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ref:handbook}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6318a54c47f19e6bb8193cfa8b798b98}{%
+           family={Beichman},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9f5c29040a58505b87fe903d9c1b5f24}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Thomas\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{69500b614e29c3122ae31416a5feba59}
+      \strng{fullhash}{69500b614e29c3122ae31416a5feba59}
+      \strng{bibnamehash}{69500b614e29c3122ae31416a5feba59}
+      \strng{authorbibnamehash}{69500b614e29c3122ae31416a5feba59}
+      \strng{authornamehash}{69500b614e29c3122ae31416a5feba59}
+      \strng{authorfullhash}{69500b614e29c3122ae31416a5feba59}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Handbook of Exoplanets}
+      \field{number}{2009}
+      \field{title}{{Observing Exoplanets with the James Webb Space Telescope}}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{1283\bibrangedash 1308}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/978-3-319-55333-7_85
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/20180004151.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ref:mirisimdocs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c29f9d9c1895befb18fc31e2b544ee03}{%
+           family={Consortium},
+           familyi={C\bibinitperiod},
+           given={Miri\bibnamedelima European},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \strng{fullhash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \strng{bibnamehash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \strng{authorbibnamehash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \strng{authornamehash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \strng{authorfullhash}{c29f9d9c1895befb18fc31e2b544ee03}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{MIRISim Documentation}}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/MIRISim.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ref:futurereflected}{article}{}
+      \name{author}{8}{}{%
+        {{hash=ca07887485666335cfb21685d02a55fa}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Y.\bibnamedelimi Katherina},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=a9f67930466864c5514c18c92851032c}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Tyler\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=fb5bc82121702b0fabdde38d2aabfd73}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e263278ad896e85856fd1c0e1ee43b50}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={Roxana\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b83db609305b007bb1e802dcf6303ea3}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9472727f12b593af1a457b8e4b4615fa}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Nikole\bibnamedelima K.},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=0061d86b5765444648fdab36f07cd664}{%
+           family={Macintosh},
+           familyi={M\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b5ec6b06d985cc5384744ba40e57805d}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{c346eaa138595a92c7363d15b6c66e77}
+      \strng{fullhash}{7e10e1fff0485db51feb3134d4f36737}
+      \strng{bibnamehash}{7e10e1fff0485db51feb3134d4f36737}
+      \strng{authorbibnamehash}{7e10e1fff0485db51feb3134d4f36737}
+      \strng{authornamehash}{c346eaa138595a92c7363d15b6c66e77}
+      \strng{authorfullhash}{7e10e1fff0485db51feb3134d4f36737}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1538-3881}
+      \field{journaltitle}{The Astronomical Journal}
+      \field{number}{5}
+      \field{title}{{Characterizing Earth Analogs in Reflected Light: Atmospheric Retrieval Studies for Future Space Telescopes}}
+      \field{volume}{155}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{200}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-3881/aab95c
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/FutureReflectedLightSpectroscopy.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3847/1538-3881/aab95c
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3847/1538-3881/aab95c
+      \endverb
+      \keyw{atmospheres,methods,methods: statistical,planets and satellites: atmospheres,planets and satellites: terrestrial planets,planets and satellites,statistical,terrestrial planets}
+    \endentry
+    \entry{ref:mirical}{article}{}
+      \name{author}{19}{}{%
+        {{hash=4258e67ce81ca0d12168fc7eabbfc562}{%
+           family={Labiano-Ortega},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=766da2b243c5a3f98301499b2d7c338f}{%
+           family={Dicken},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8d1d1f9b6e319b7729552a93ef4da9c5}{%
+           family={Vandenbussche},
+           familyi={V\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bbae670d983ef3ad1df290fcd5dfa9cf}{%
+           family={Lahuis},
+           familyi={L\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=576b22cf5c589abd27a827f47e3aca63}{%
+           family={Muller},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d02b598d3f71cacaa01231b01e8aa226}{%
+           family={Beard},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5a047069345ca487f8e5b538a3e1d454}{%
+           family={Justtanont},
+           familyi={J\bibinitperiod},
+           given={Kay},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2f63fbe82981834ada95f523d43c6c82}{%
+           family={Azzollini},
+           familyi={A\bibinitperiod},
+           given={Ruyman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1f7e20a14f0cea8550ee515cc98fe451}{%
+           family={Law},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=826cd3952076c590c95a7d3f36f62bca}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Karl\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=2446a6f1301733f4e12d629f877de1e9}{%
+           family={Glasse},
+           familyi={G\bibinitperiod},
+           given={Alistair\bibnamedelimb C.\bibnamedelimi H.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=5951ece68dd6b7177b35cf8c9542d9fd}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Gillian\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=464de6baef9acd5568c98b8a9aabf016}{%
+           family={Rieke},
+           familyi={R\bibinitperiod},
+           given={George\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e398f5dd882326cb2a82ca5dc1bed799}{%
+           family={Klaassen},
+           familyi={K\bibinitperiod},
+           given={Pamela},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c355e3327b602ac22c1b008e4eff06ce}{%
+           family={Glauser},
+           familyi={G\bibinitperiod},
+           given={Adrian\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1670f17e2a8827edd899ebddb28f5e57}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6f5a5648436537a27d06417943514166}{%
+           family={Geers},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=418566e1791c199d81c5c08160cf4c34}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Jeb\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=1f55daac2e933871f6db5dc27c83721c}{%
+           family={Garcia-Marin},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Macarena},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{49d40aa4c1d808e27bc087e168f23362}
+      \strng{fullhash}{11da55d166b59f528369059db0cc1352}
+      \strng{bibnamehash}{11da55d166b59f528369059db0cc1352}
+      \strng{authorbibnamehash}{11da55d166b59f528369059db0cc1352}
+      \strng{authornamehash}{49d40aa4c1d808e27bc087e168f23362}
+      \strng{authorfullhash}{11da55d166b59f528369059db0cc1352}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{exposure 1}
+      \field{title}{{The MIRI Medium Resolution Spectrometer calibration pipeline}}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{117}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/12.2232554
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/1608.05312.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ref:Lagage}{article}{}
+      \name{author}{5}{}{%
+        {{hash=76fc2ba76c963e940bd8013f1732db05}{%
+           family={Lagage},
+           familyi={L\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bbae670d983ef3ad1df290fcd5dfa9cf}{%
+           family={Lahuis},
+           familyi={L\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fe5b6c99f90fb736763ba9794b844278}{%
+           family={Ronayette},
+           familyi={R\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cb0522ff2ab2fcc7b7a1b32334b28ace}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=04cfbc786511d3fa62980581e44d4659}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={G\bibnamedelima S},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b306f4b8693a685639aaf180ef66a225}
+      \strng{fullhash}{728f7d619eb59a2cc91a21ab9a3eeea9}
+      \strng{bibnamehash}{728f7d619eb59a2cc91a21ab9a3eeea9}
+      \strng{authorbibnamehash}{728f7d619eb59a2cc91a21ab9a3eeea9}
+      \strng{authornamehash}{b306f4b8693a685639aaf180ef66a225}
+      \strng{authorfullhash}{728f7d619eb59a2cc91a21ab9a3eeea9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Mid-Infrared Instrument for the James Webb Space Telescope , IV : The Low Resolution Spectrometer}}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/paper4.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ref:Rieke2015}{article}{}
+      \name{author}{18}{}{%
+        {{hash=7e27e0bd47e24e043af97ead415b7500}{%
+           family={Rieke},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=04cfbc786511d3fa62980581e44d4659}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1b7a4df3728979a36fca43bd33b49b76}{%
+           family={B{ö}ker},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bc12fa640905629837b6c59afa292ab7}{%
+           family={Bouwman},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3f705566a00e24f5871af06d153cd081}{%
+           family={Colina},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e9280bfa000b717f9335fc9411d6b502}{%
+           family={Glasse},
+           familyi={G\bibinitperiod},
+           given={Alistair},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9cda1918c9a6360335cf6886077a7a73}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={K.\bibnamedelimi D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f1d2cd4913756894fcbfc81596233ad3}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={T.\bibnamedelimi P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e6a4e8d3e89db41505f66a3a5b727153}{%
+           family={G{ü}del},
+           familyi={G\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e829027156fa2b25f0cc5dd89b0cf47}{%
+           family={Henning},
+           familyi={H\bibinitperiod},
+           given={Th.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=117836c7b309218af2cfaac0e8aec3cc}{%
+           family={Justtanont},
+           familyi={J\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bfbdb527afaa6d0732859f660edd4a1f}{%
+           family={Lagage},
+           familyi={L\bibinitperiod},
+           given={P.-O.},
+           giveni={P\bibinithyphendelim O\bibinitperiod}}}%
+        {{hash=477a698e918442fcef683babd0f07373}{%
+           family={Meixner},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=41a0b17715fdf700be19d6a505d73713}{%
+           family={N{ø}rgaard-Nielsen},
+           familyi={N\bibinithyphendelim N\bibinitperiod},
+           given={H.-U.},
+           giveni={H\bibinithyphendelim U\bibinitperiod}}}%
+        {{hash=c1ab4949aed569225190c2b4ec1282fd}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={T.\bibnamedelimi P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=25ca34851a575946ba726fc8f86f5f50}{%
+           family={Ressler},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=85d1e2eb6af55e3240c88bed64dd90be}{%
+           family={Dishoeck},
+           familyi={D\bibinitperiod},
+           given={E.\bibnamedelimi F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=32b0476c058b60100c9193b6f3b6f588}{%
+           family={Waelkens},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5d700df5dc696100fcda2a105214b41}
+      \strng{fullhash}{f24f22b20b6ffc416004159e1ffbc6eb}
+      \strng{bibnamehash}{f24f22b20b6ffc416004159e1ffbc6eb}
+      \strng{authorbibnamehash}{f24f22b20b6ffc416004159e1ffbc6eb}
+      \strng{authornamehash}{a5d700df5dc696100fcda2a105214b41}
+      \strng{authorfullhash}{f24f22b20b6ffc416004159e1ffbc6eb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00046280}
+      \field{journaltitle}{Publications of the Astronomical Society of the Pacific}
+      \field{number}{953}
+      \field{title}{{ The Mid-Infrared Instrument for the James Webb Space Telescope , I: Introduction }}
+      \field{volume}{127}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{584\bibrangedash 594}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1086/682252
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/MIRI/682255.pdf:pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

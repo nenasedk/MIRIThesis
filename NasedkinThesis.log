@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.6.20)  15 OCT 2019 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.6.20)  16 OCT 2019 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1812,8 +1812,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./FrontBackMatter/Titleb
 ack.tex
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 19.
 
+LaTeX Font Info:    No file OMSpplj.fd. on input line 19.
+
+
+LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 19.
+
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 35.
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
@@ -1824,13 +1831,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 ) [2]
-(./FrontBackMatter/Acknowledgements.tex) (./FrontBackMatter/Contents.tex
+(./FrontBackMatter/Acknowledgements.tex) (./FrontBackMatter/Abstract.tex
 [3
 
 
 
 
 ] [4
+
+
+]) (./FrontBackMatter/Contents.tex [5] [6
 
 
 ]
@@ -1840,14 +1850,12 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 10
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-)
+ [7])
 \tf@toc=\write6
 \openout6 = `NasedkinThesis.toc'.
 
-) [5] [6
-
-
-] (./Chapters/Introduction.tex
+)
+[8] (./Chapters/Introduction.tex
 Chapter 1.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
@@ -1859,87 +1867,93 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10.95> not available
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-) (./Chapters/Mirisim.tex
+LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/iwona/b/it' tried instead on input line 9.
+) (./Chapters/Miri.tex
 Chapter 2.
 [1
+
+
 
 
 ] [2
 
 
-]
-
-LaTeX Warning: Citation 'ref:Argyriou2018' on page 3 undefined on input line 7.
-
-
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/iwona/b/it' tried instead on input line 8.
-) (./Chapters/SpectralExtraction.tex
+]) (./Chapters/Mirisim.tex
 Chapter 3.
 [3] [4
 
 
-]) (./Chapters/AtmosphericRetrieval.tex
+]) (./Chapters/SpectralExtraction.tex
 Chapter 4.
 [5] [6
 
 
-]) (./Chapters/Conclusions.tex
+]) (./Chapters/AtmosphericRetrieval.tex
 Chapter 5.
 [7] [8
 
 
-]) [9] (./FrontBackMatter/Bibliography.tex)
+]) (./Chapters/Conclusions.tex
+Chapter 6.
+[9] [10
 
-LaTeX Warning: Empty bibliography on input line 11.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
-(./NasedkinThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+]) [11] (./FrontBackMatter/Bibliography.tex) [12
+
+
+
+]
+Overfull \hbox (1.99783pt too wide) in paragraph at lines 56--56
+\T1/pplj/m/n/10.95 S. M. Beard, K. Just-tanont, R. Az-zollini, D. R. Law, K. D.
+ Gor-don, A. C. H.
+ []
+
+[13
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+ (./NasedkinThesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `NasedkinThesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                NasedkinThesis
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package logreq Info: Writing requests to 'NasedkinThesis.run.xml'.
 \openout1 = `NasedkinThesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 45331 strings out of 492615
- 899103 string characters out of 6131390
- 1587847 words of memory out of 5000000
- 48460 multiletter control sequences out of 15000+600000
- 638347 words of font info for 141 fonts, out of 8000000 for 9000
+ 45481 strings out of 492615
+ 902526 string characters out of 6131390
+ 1589147 words of memory out of 5000000
+ 48563 multiletter control sequences out of 15000+600000
+ 641228 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,20n,88p,9093b,1828s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,22n,88p,9093b,2184s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share
-/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/
-fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fpl
-rc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/share/texlive/texmf
--dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
-alatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr
-i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on NasedkinThesis.pdf (15 pages, 160334 bytes).
+/texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/share/texlive/t
+exmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl
+/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding
+/uzdr.pfb>
+Output written on NasedkinThesis.pdf (21 pages, 163028 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
- 23877 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 24525 words of extra memory for PDF output out of 24883 (max. 10000000)
 
