@@ -1,15 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'NasedkinThesis.blg'
-[19] biber:315> INFO - === Mi Okt 16, 2019, 11:23:08
-[33] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
-[73] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[81] Biber.pm:4093> INFO - Processing section 0
-[90] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
-[90] bibtex.pm:1512> INFO - LaTeX decoding ...
-[99] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
-[176] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[176] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[177] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[177] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[184] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
-[188] bbl.pm:739> INFO - Output to NasedkinThesis.bbl
+[20] biber:315> INFO - === Tue Oct 22, 2019, 11:41:58
+[37] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
+[83] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[94] Biber.pm:4093> INFO - Processing section 0
+[103] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
+[112] bibtex.pm:1512> INFO - LaTeX decoding ...
+[252] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
+[291] Utils.pm:193> WARN - ISBN '8610828378018' in entry 'Vicum2005' is invalid - run biber with '--validate_datamodel' for details.
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[770] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[770] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[770] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[808] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
+[852] bbl.pm:739> INFO - Output to NasedkinThesis.bbl
+[852] Biber.pm:110> INFO - WARNINGS: 1

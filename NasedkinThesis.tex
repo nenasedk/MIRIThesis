@@ -30,6 +30,7 @@ tablecaptionabove]{scrreprt}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
 \usepackage{booktabs}
+\usepackage{pdfpages} 
 %opening
 \title{Simulated instrumental constraints on brown dwarf atmospheric retrievals for JWST's MIRI.}
 \author{Evert Nasedkin}
@@ -39,6 +40,7 @@ tablecaptionabove]{scrreprt}
 	\pagestyle{plain}
 	\input{FrontBackMatter/Titlepage}
 	\input{FrontBackMatter/Titleback}
+	\includepdf{declaration-originality}
 	\cleardoublepage
 	\input{FrontBackMatter/Acknowledgements}
 	\pagestyle{scrheadings} 
@@ -52,6 +54,7 @@ tablecaptionabove]{scrreprt}
 	\input{Chapters/SpectralExtraction}
 	\input{Chapters/AtmosphericRetrieval}
 	\input{Chapters/Conclusions}
+	\cite{Argyriou2018}
 	\clearpage
 	\input{FrontBackMatter/Bibliography}
 \end{document}

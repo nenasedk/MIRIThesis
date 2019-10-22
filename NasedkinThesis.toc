@@ -109,6 +109,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}{petitRadTrans}}{9}{subsection.5.2.1}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{{Radiative Transfer}}{9}{subsubsection*.15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{{Line-by-line}}{9}{subsubsection*.16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{{Correlated K}}{9}{subsubsection*.17}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{{Clouds}}{9}{subsubsection*.18}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}{Bayesian methods}}{9}{section.5.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}{MCMC}}{9}{subsection.5.3.1}% 
@@ -116,6 +124,8 @@
 \contentsline {subsection}{\numberline {5.3.2}{Nested Sampling}}{9}{subsection.5.3.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}{multinest}}{9}{subsection.5.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{{Hyperparameters}}{9}{subsubsection*.19}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}{Targets}}{9}{section.5.4}% 
 \defcounter {refsection}{0}\relax 
@@ -129,4 +139,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}{Conclusions}}{11}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Bibliography}}{13}{section*.15}% 
+\contentsline {chapter}{\numberline {}{Bibliography}}{13}{section*.20}% 
