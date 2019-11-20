@@ -1,3 +1,19 @@
-\pdfbookmark{Abstrac}{Abstract}
+\pdfbookmark{Abstract}{Abstract}
 
 \chapter*{Abstract}
+Following its launch in 2021, the James Webb Telescope will provide the best infrared observations of exoplanets and brown dwarfs to date.
+In particular, the Mid-Infrared Instrument (MIRI), will allow for medium resolution spectroscopy across a wide wavelength band, from 4.9-28.8$\mu$m.
+This will allow us to derive atmospheric properties of objects at lower temperatures than currently possible. 
+MIRI's medium resolution spectrometer (MRS) is an integrated field unit that will perform these observations, providing both spatial and spectral information about targets.
+Understanding the instrumental effects is critical to analyzing data from MIRI.
+With that in mind, the MIRISIM instrumental simulator was developed to provide observational simulations of the various sub instruments of MIRI.
+
+This thesis improves the implementation of a thin-film fringing model for point sources to MIRISIM, considering how the fringing effect from the detector layers varies with position. 
+Fringing is a periodic, wavelength dependent effect, and thus has a strong impact on any spectroscopic observations.
+A comparison to the existing model was made, demonstrating the necessity of considering this effect when analyzing data. 
+We will improve the fringing removal by identifying the point source location from the constructed data cube, and select the correct fringe flat for removal.
+
+Understanding the instrumental effects is key to quantifying the ability of MIRI to derive atmospheric properties.
+Existing literature has considered the NIRCAM instrument and the MIRI Low-Resolution Spectrometer, but to date no retrieval studies have been performed using MIRISIM, or for the MIRI MRS, though it is critical to extend wavelength coverage to improve the results of an atmospheric retrieval.
+Model atmospheres will be generated using PetitRadTrans, and processed using MIRISIM and the JWST pipeline to produce a mock observation.
+An atmospheric retrieval will be performed, demonstrating to what extent MIRI will be able to retrieve atmospheric parameters such as temperature, pressure and composition. The posterior distributions of these parameters are compared with and without the fringing removal, again demonstrating the importance of correcting for this effect.
