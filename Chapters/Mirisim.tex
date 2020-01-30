@@ -1,4 +1,5 @@
 \chapter{Fringing Effects in MIRISIM}
+\section{Fringing}
  - FRINGING REQUIREMENTS FOR MIRI - context
  - sub percent residuals - is this true and if so how much does it impact real spectral features?
  - What has been done so far - fitting, optical modelling
@@ -7,7 +8,10 @@
  - need to reproduce plots from fringing white paper
  - explain why point sources are harder (angle => optical thickness => large phase shift)
  - 
+ \cite{Lahuis2018} %MIRI MRS FM Fringing Analysis
 \section{MIRISIM}
+\cite{Consortium2018} %Mirisim documentation
+\cite{Cossou2019} %MIRISIM in python
 The MIRI instrument has been modeled in python as a program known as MIRISM. 
 This program takes in an astronomical 'scene' along with some configuration parameters to output a detector data product, similar to what will be produced by the actual instrument.
 This is relatively full-featured simulator, modelling the instrumental PSF, various noise sources and distortion maps, among other effects.
@@ -20,6 +24,8 @@ PYSPECSIM
 \subsection{Data Products}
 \subsection{Instrumental effects}
 \subsection{Fringing}
+\cite{Lahuis2003} %Spitzer fringes
+\cite{VanderPlas2018} % Understanding lomb-scargle - identifing periodic signals (fringing)
 A key effect on spectral data is fringing, described in \cite{ref:Argyriou2018}. 
 MIRI uses a total of three Si:As impurity band conduction detector arrays, two of which are used by the MRS. 
 These detectors consist of 7 layers, listed in table \ref{tab:layers} and illustrated in Fig. \ref{fig:layers}.
@@ -72,11 +78,19 @@ We stress that the goal of this testing is to demonstrate the significance of th
 \subsubsection{CV Data}
 \subsection{Implementation}
 \subsection{JWST Pipeline}
+\cite{Bushouse2015} %JWST Pipeline
+\cite{Labiano-Ortega2016} % MIRI MRS Cal pipeline
 \subsubsection{Stage 1 Processing}
 \subsubsection{Stage 2 Processing}
 \subsubsection{Fringing correction}
+\cite{Carnall2017} %Spectres resampling
 \subsubsection{Aperture Photometry}
 \subsection{Cross-Correlation}
+\cite{Snellen2014}% BetaPicFast Rotation - cross correlation
+\cite{Simkin1974} %Cross cor
+\cite{Tonry1979} %Old cross corr
+\cite{Petermann2019} %Robin thesis cross corr
+\cite{Bodis2007} %Alternative to cc - spectral similarity
 To quantify the similarity of the spectrum output by the JWST pipeline to the input into MIRISIM, we rely on the technique of cross correlation \cite{}.
 For two arbitrary, complex-valued functions $f(t)$ and $g(t)$, we can compute the cross correlation as as function of the shift $\tau$ between the functions (typically in time or velocity space):
 \begin{equation}\label{eqn:crosscorr}

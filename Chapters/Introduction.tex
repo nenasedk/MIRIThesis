@@ -1,22 +1,131 @@
 % !TEX TS-program = pdflatex
 % !TEX root = ../ArsClassica.tex
-
+\newcommand{\bpic}{$\beta$ Pic b }
+\newcommand{\mj}{M$_{j}$}
 %************************************************
 \chapter{Introduction}
+%Meyor queloz
+Since the first detection of a planet around a sun-like star \autocite{Mayor1995} the field of exoplanets has evolved rapidly.
+Thousands of companions have been identified using the radial velocity and transit detection methods, and a handful have been imaged directly using both ground and space based observatories.
+In the last decade, many advances have been made that allow us to begin to characterize the properties of a few of these planets using spectroscopy.
+With the launch of the James Webb Space Telescope (JWST) in 2021, and the dawn of the era of extremely large telescopes, we will be able to peer deeper into these planets and further constrain atmospheric or geological properties, allowing us to answer questions about their formation history, climate, and even the prospects for habitability and life.
+
+JWST will operate in near to mid infrared wavelengths, which will provide a new window into studying the atmospheres of exoplanets and brown dwarfs. 
+The Mid Infrared Instrument (MIRI) will provide unprecedented spectral resolution in the mid infrared, allowing for the measurement of composition, pressure and temperature. 
+Novel instrumentation does not come without challenges. 
+Optical and instrumental effects will constrain the ability to which we can measure spectral features, which will ultimately limit the science that can be accomplished.
+
+In this thesis, we will measure the impact of thin-film fringing in the layers of the detectors in the MIRI Medium-Resolution Spectrometer on measurements of atmospheric parameters of brown dwarfs and exoplanets.
+This will provide a baseline for determining the level of correction necessary to minimize the impact of fringing, as well as providing a first look into the ability of the MRS to characterize atmospheres.
+
+\section{Exoplanets}
+The last quarter century of observations has revealed the diversity of exoplanets and extra-solar systems.
+Both the architecture and individual planetary characteristics vary greatly when compared to each other, as well as to our own solar system.
+From the hot Jupiters initially found by Mayor and Queloz \autocite{Mayor1995} to the thousands of planets discovered by the Kepler mission, the variety in exoplanets has raised questions about their formation and development, as well as their present day structure, climate, and even prospects for life.
+Improvements to observational techniques have allowed us to improve our understanding of these planets.
+Secondary eclipse and transmission spectroscopy has opened the door to the study of planets in close orbits to their host stars, while emission spectroscopy of young planet has allowed for constraints on models of planet formation.
+Over the next decades, new instruments will be developed that improve sensitivity, allowing us to study smaller, colder and fainter planets: with the ultimate goal of studying atmospheric and surface features of an earth-like planet.
+
+Of particular interest are observable features that allow us to measure physical properties of exoplanets.
+The radial velocity (RV) method provides a measure of the planet mass, while a transit can constrain the radius.
+Already these properties tell us something about the overall structure of the planet.
+Spectroscopy can provide insight into the composition of the planet's atmosphere, as well as its temperature and pressure.
+These properties are linked to its age and location of formation in the circumstellar disk.
+The atmosphere, combined with the distance between the planet and its star determine the climate of the planet.
+
+%Exoplanet Science Strategy Text: state of field, goals, timelines, summary of methods, biosignatures, formation, tracers, methods, parameters of interest.
+% Kepler, Tess, Cheops, RV
+\subsubsection{Direct Imaging}
+While the majority of exoplanet detections have been made using the radial velocity or transit techniques, direct imaging opens up the possibility of collecting light from the planet itself.
+This provides a window into the planet's atmosphere and surface.
+Most direct imaging to date has used near-to-mid infrared wavelengths, where the contrast between the thermal emission from the planet and the star is at a minimum.
+This has its drawbacks: we are so far only able to image young planets that have retained some of the heat from their formation.
+
+Direct imaging can make use of both ground and space based observatories. 
+However, the high spatial resolution required drives the need for a large primary mirror, limiting the possibilities of space-based telescopes. On the other hand, atmospheric turbulence necessitates the use of an adaptive optics equipped facility to observe from the ground. 
+Atmospheric absorption due to telluric lines (absorption lines of Earth's atmosphere) also restrict infrared observations to narrow bands.
+
+In addition to the requiring high spatial resolution, it is also challenging to separate the light emitted by the planet from that of the star.
+Imaging techniques such as Angular Differential Imaging (ADI) \autocite{Marois2007} and Reference Differential Imaging (RDI) \autocite{Lefreniere2009,Soummer2012} provide methods for reducing the stellar point-spread-function (PSF). 
+Coronagraphs are optical elements which suppress the stellar PSF through self-destructive interference or physical occultation, depending on the position in the optical path.
+The difference in spectra between the planet and the star can also be used to separate the two sources.
+ 
+Presently, 10m class telescopes such as the Very Large Telescope (VLT) in Paranal, Chile or the Gemini Observatory split between Hawaii and Chile provide the best combination of resolution and instrumentation to perform direct imaging of exoplanets.
+The NACO instrument at the VLT provided the first image of an exoplanet in 2004 \autocite{Chauvin2004}.
+These observatories are among those equipped with an adaptive optics system, corongraphic instrumentation and near to mid infrared imaging and spectroscopic capabilities to directly image exoplanets, with several exemplar systems becoming standard objects of interest. 
+The parameters of some directly imaged exoplanets are summarized in table \ref{tab:exoplanetparams}
+\begin{table}[t]
+	\begin{tabular}{l}
+		\toprule
+		%Name, Mass, Luminosity, Age, Separation, Sep AU, Pri Mass
+		Name \\
+		\midrule
+		2M1207b\\
+		\bpic\\
+		HR8799b\\
+		HR8799c\\
+		HR8799d\\
+		HR8799e\\
+		Fomalhaut b\\
+		2M J044144b\\
+		LkCa 15b\\
+		HD 95086b\\
+		Gliese 504b\\
+		51 Eridani b\\
+		PDS 70b\\
+		PDS 70c\\
+		\bottomrule
+	\end{tabular}
+	\caption{Summary of directly imaged planet parameters \cite{Bowler2016} and references therin.}
+	\label{tab:exoplanetparams}
+\end{table}
+
+
+\autocite{Beichman2019} %Not 2019 - summary of JWST science and instruments
+\autocite{Lagage2015} %Exoplanet characterization with JWST MIRI white paper
+\autocite{Macintosh2006} %ADI
+\autocite{Macintosh2015} %51 Eri b GPi
+% Marois ADI, HR8799, beta pic (quanz), space based (Formhault)
+\subsubsection{Beta Pictoris b}
+Discovered in 2008 \autocite{Lagrange2009}, \bpic is one of the most well-studied exoplanet systems \autocite{Quanz2010,Chilcote2015,Chilcote2017,Hoeihmakers2018}. 
+Due to its young age of 23$\pm3$ Myr \autocite{Mamajek2014} and high mass of 12.9 \mj \autocite{Chilcote2015} it remains hot, between 1590K and 1847K \autocite{Nowak2019}. 
+Combined with its typically wide separation on it's 9.2AU orbit \autocite{Chauvin2012}, this allows for relatively easy imaging and spectroscopy in the near infrared. 
+Recent RV observations indicate the possibility of an additional planet at 2.3 AU \autocite{Lagrange2019}.
+
+The quantity and quality of spectral data for \bpic has allowed for the study and characterization of it's atmosphere: measurements of its metallicity and C/O ratio can trace the formation history of the planet \autocite{Chilcote2017,Nowak2019}.
+It also provides insight into its current atmospheric structure and composition, which can in turn inform models of exoplanet atmospheres.
+\subsubsection{HR 8799 System}
+\subsubsection{PDS 70 b,c}
 \section{Brown Dwarfs}
+\autocite{Oliveira} %BDs with JWST
+\autocite{Helling2014}% Brown dwarf atmospheres
+\autocite{Cooper2014} %Brown dwarf clouds/cloud formation
+\autocite{Madhusudhan2018a} %BD observations/atmospheres
+\autocite{Burrows2003} % Brown dwarf models/spectra coolest dwarfs
+\autocite{Marley2014} %Modelling brown dwarf and giant planet atmospheres
+\autocite{Manjavacas2014} %Thesis - physical characterization of brown dwarfs
+\autocite{Biller2017} %Variability in time for BDs
+\autocite{Faherty2018} % Water clouds in cold BDs
+\autocite{Morley2014} %Water clouds in Y dwarfs and exoplanets
 \subsection{Physics}
 \subsection{Observational Properties}
 \subsubsection{T-Type}
 \subsubsection{L-Type}
 \subsubsection{Y-Type}
-\section{Exoplanets}
-\subsection{Direct imaging}
-\subsection{Characteristic Examples}
-\subsubsection{$\beta$ Pictoris b}
-\subsubsection{HR 8799 System}
-\subsubsection{PDS 70 b,c}
-\section{Current Status of Atmospheric Characterization}
-\subsection{Transmission Spectroscopy}
-\subsection{Emission Spectroscopy}
+
+\section{Motivation}
+\subsection{Current Status of Atmospheric Characterization}
+\autocite{Kreidberg2018}%Transmission spectroscopy, facilities, atmosphere, climate, condensates
+\autocite{Biller2018} % Exoplanet atmosphere measurements, hr8799 photometry/spec, prospects for jw
+\autocite{Bozza} %Exoplanet atmospheres textbook: observation, models, spectroscopy, solar system atmospheres
+\autocite{Danielski2018} %Atmospheric char with MIRI (coron,LRS, not MRS I think)
+\autocite{Madhusudhan2016} %Chemistry, Formation, Habitabiltiy
+\subsubsection{Transmission Spectroscopy}
+\autocite{Lee2012} % HD189733b trans spec
+\autocite{MacDonald2017} % Nitrogen chem, HD209458b
+\autocite{Madhusudhan} %Wasp12b need year
+\subsubsection{Emission Spectroscopy}
 \subsection{JWST Studies}
+\autocite{Beichman2019} %JWST whitepaper on imaging/spec
 \subsection{Biosignatures and Future Missions}
+\section{Thesis Overview}

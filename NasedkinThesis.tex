@@ -20,7 +20,7 @@ tablecaptionabove]{scrreprt}
 \usepackage{pifont}
 \usepackage[eulerchapternumbers,subfig,beramono,eulermath,pdfspacing,listings]{classicthesis}
 \usepackage{arsclassica}
-\usepackage[style=ieee,hyperref]{biblatex}
+\usepackage[style=mla,maxnames=3,hyperref]{biblatex}
 \input{arsclassica-settings}
 
 \usepackage{microtype}
@@ -31,6 +31,11 @@ tablecaptionabove]{scrreprt}
 \usetikzlibrary{shapes,arrows}
 \usepackage{booktabs}
 \usepackage{pdfpages} 
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{verbatim}
+
 %opening
 \title{Simulated instrumental constraints on brown dwarf atmospheric retrievals for JWST's MIRI.}
 \author{Evert Nasedkin}
@@ -53,7 +58,7 @@ tablecaptionabove]{scrreprt}
 	\input{Chapters/Mirisim}
 	\input{Chapters/AtmosphericRetrieval}
 	\input{Chapters/Conclusions}
-	\cite{Argyriou2018}
+	\input{Chapters/Appendices}
 	\clearpage
 	\input{FrontBackMatter/Bibliography}
 \end{document}
