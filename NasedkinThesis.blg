@@ -1,17 +1,15 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'NasedkinThesis.blg'
-[17] biber:315> INFO - === Thu Jan 30, 2020, 20:47:12
-[34] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
-[82] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[91] Biber.pm:4093> INFO - Processing section 0
-[98] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
-[116] bibtex.pm:1512> INFO - LaTeX decoding ...
-[388] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
-[394] Utils.pm:193> WARN - Duplicate entry key: 'QiangFu1992a' in file 'thesis_bib.bib', skipping ...
-[2069] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2069] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2069] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[2069] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[2202] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
-[2919] bbl.pm:739> INFO - Output to NasedkinThesis.bbl
-[2919] Biber.pm:110> INFO - WARNINGS: 1
+[20] biber:315> INFO - === Thu Jan 30, 2020, 23:35:19
+[39] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
+[96] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[105] Biber.pm:4093> INFO - Processing section 0
+[114] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
+[132] bibtex.pm:1512> INFO - LaTeX decoding ...
+[396] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
+[1994] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1994] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1994] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1994] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[2124] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
+[2802] bbl.pm:739> INFO - Output to NasedkinThesis.bbl

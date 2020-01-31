@@ -1,13 +1,56 @@
-\chapter{Fringing Effects in MIRISIM}
+\chapter{Fringing Effects in MIRI}
+Understanding optical and instrumental effects is critical for creating accurate simulated observations and for characterizing systematics. 
+These systematics and uncertainties in turn impact the potential science results from any instrument by biasing measurements, reducing the signal to noise ratio of measurements or by injecting non-physical signals and correlations.
+The aim of this chapter is to examine fringing in the MIRI detectors and how this effect is modeled in the instrumental simulator (MIRISIM). 
+
 \section{Fringing}
- - FRINGING REQUIREMENTS FOR MIRI - context
- - sub percent residuals - is this true and if so how much does it impact real spectral features?
- - What has been done so far - fitting, optical modelling
- - only for some channels
- - Might remove actual spectral features as well - justification for this work (especially re posn dependence)
- - need to reproduce plots from fringing white paper
- - explain why point sources are harder (angle => optical thickness => large phase shift)
- - 
+Thin film interference occurs when light is coherently reflected at the boundary between two layers and interferes with the incident light.
+This is the principle on which Fabry-P\'{e}rot interferometers function.
+As we wish to determine the effect of fringing on the amplitude of the signal received by the detector, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
+Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light travels within the cavity, we can compute the transmittance as:
+\begin{equation}\label{eqn:trans}
+T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
+\end{equation}
+Where the phase $\delta$ at half a wavelength ($\phi = \pi$), with wavenumber $\sigma$ is:
+\begin{equation}\label{eqn:phase}
+\delta = 4\pi\sigma D \cos\theta - (\phi - \pi)
+\end{equation}
+Systems with a spacing on the order of millimeters produces significant interference for infrared light \autocite{Lahuis2003}.
+
+The detectors of the MRS consist of several layers, as shown in Fig. \ref{fig:layers}, with a characteristic thickness of ~500$\mu$m, which results in significant (10\%-30\%) `fringing' in a spectrally flat signal - visible in Fig. \ref{fig:flatfield}.
+While this is typical for infrared detectors such as those in the Spitzer Space Telescope \autocite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \autocite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increase the significance of this issue.
+The MIRI consortium has stated that the error budget for all detector effects must be 3.3\% or less. 
+Present fringing corrections result in a 5\% deviation from a photometrically accurate signal, and can introduce correlated noise which will degrade any measured spectrum.
+Therefore it is critical to examine the impact of fringing on a signal, the parameters that influence the fringing strength and phase, and possible solutions for fringe correction. 
+While a more complete treatment of proposed fringe correction can be found in \autocite{Argryiou2020}, this work will examine the implementation of fringing into the MIRI instrumental simulator and address the current state of fringe correction in the JWST Data Calibration Pipeline.
+
+\definecolor{lightgray}{HTML}{E0E0E0}
+\definecolor{darkgray}{HTML}{383838}
+\begin{figure}
+	\centering
+	\begin{scriptsize}
+	\begin{tikzpicture}
+		\filldraw [fill=darkgray, draw=Black](0,0) rectangle (7,0.4) node [pos=0.5] {\textcolor{White}{Aluminum}};
+		\filldraw [fill=lightgray, draw=Black](0,0.4) rectangle (7,0.8) node [pos=0.5] {Transparent Contact};
+		\filldraw [fill=Gray, draw=Black](0,0.8) rectangle (7,1.2) node [pos=0.5] {Blocking Layer (Si)};
+		\filldraw [fill=MidnightBlue, draw=Black](0,1.2) rectangle (7,4.2) node [pos=0.5] {Si:As Active Layer};
+		\filldraw [fill=lightgray, draw=Black](0,4.2) rectangle (7,4.6) node [pos=0.5] {Transparent Contact};
+		\filldraw [fill=OliveGreen, draw=Black](0,4.6) rectangle (7,9.6) node [pos=0.5] {Si Substrate};
+		\filldraw [fill=Fuchsia, draw=Black](0,9.6) rectangle (7,10) node [pos=0.5] {\textcolor{White}{Anti-reflective Coating}};
+	\end{tikzpicture}
+	\end{scriptsize}
+	\caption{Layers of the MIRI MRS detectors. Note that thicknesses are not to scale \autocite{MIRI7}.}
+	\label{fig:layers}
+\end{figure}
+
+% - FRINGING REQUIREMENTS FOR MIRI - context
+% - sub percent residuals - is this true and if so how much does it impact real spectral %features?
+% - What has been done so far - fitting, optical modelling
+% - only for some channels
+% - Might remove actual spectral features as well - justification for this work (especially re posn dependence)
+% - need to reproduce plots from fringing white paper
+% - explain why point sources are harder (angle => optical thickness => large phase shift)
+% - 
  \cite{Lahuis2018} %MIRI MRS FM Fringing Analysis
 \section{MIRISIM}
 \cite{Consortium2018} %Mirisim documentation
@@ -22,6 +65,10 @@ SCENE - SEDs
 SIMULATOR
 PYSPECSIM
 \subsection{Data Products}
+\begin{figure}
+	%\includegraphics[width=\linewidth]{}
+	\caption{\label{fig:fringeflat}}
+\end{figure}
 \subsection{Instrumental effects}
 \subsection{Fringing}
 \cite{Lahuis2003} %Spitzer fringes
@@ -29,28 +76,14 @@ PYSPECSIM
 A key effect on spectral data is fringing, described in \cite{ref:Argyriou2018}. 
 MIRI uses a total of three Si:As impurity band conduction detector arrays, two of which are used by the MRS. 
 These detectors consist of 7 layers, listed in table \ref{tab:layers} and illustrated in Fig. \ref{fig:layers}.
-
-\begin{figure}
-	%\includegraphics[width=\linewidth]{}
-	\caption{\label{fig:layers}}
-\end{figure}
 \begin{table}
 	\begin{tabular}{llll}
 	\end{tabular}
 	\caption{\label{tab:layers}}
 \end{table}
 
-Thin film interference occurs when light is coherently reflected at the boundary between two layers and interferes with the incident light.
-This is the principle on which Fabry-P\'{e}rot interferometers function.
-As we wish to determine the effect of fringing on the amplitude of the signal received by the detector, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
-Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light travels within the cavity, we can compute the transmittance as:
-\begin{equation}\label{eqn:trans}
-T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
-\end{equation}
-Where the phase $\delta$ at half a wavelength ($\phi = \pi$), with wavenumber $\sigma$ is:
-\begin{equation}\label{eqn:phase}
-\delta = 4\pi\sigma D \cos\theta - (\phi - \pi)
-\end{equation}
+
+
 
 If all of the parameters were known, this would be sufficient to numerically solve for the fringing pattern within MIRI. 
 Unfortunately, uncertainties in the thickness in the detector layers, variations in the layer deposition thickness, and the uncertainty of transmittance and reflectance of the materials used at cryogenic temperatures prevents the implementation of such a numerical model.
@@ -66,10 +99,7 @@ Therefore, we use data taken in XXXXXXXXXX at various points across the detector
  - Problems with point vs extended sources
  - multiple collection runs
 
-\begin{figure}
-	%\includegraphics[width=\linewidth]{}
-	\caption{\label{fig:fringeflat}}
-\end{figure}
+
 Ultimately this data collection produced a series of 'fringe-flats' of an almost point like at various position across the detector and in each channel.
 We implemented a new routine into the pySpecSim portion of MIRISIM to read in the location of point sources within a scene, and apply the correct position dependent fringe flat. 
 This implementation comes with several caveats: namely that the fringing model is not yet fully developed, so it can only be considered accurate for point sources located at the same ($\alpha,\beta$) location as the source used to produce the fringe flat. Additionally, the source used to generate the data is not a true point source, nor are there fringe flats produced for the full MRS wavelength range.
