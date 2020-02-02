@@ -150,3 +150,5 @@
 \contentsline {chapter}{\numberline {A}{Appendices}}{25}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.1}{Package Requirements}}{25}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Works Cited}}{27}{section*.35}% 
