@@ -1,4 +1,4 @@
-\chapter{Fringing Effects in MIRI}
+\chapter{Fringing Effects in MIRI}\label{ch:fringe}
 Understanding optical and instrumental effects is critical for creating accurate simulated observations and for characterizing systematics. 
 These systematics and uncertainties in turn impact the potential science results from any instrument by biasing measurements, reducing the signal to noise ratio of measurements or by injecting non-physical signals and correlations.
 The aim of this chapter is to examine fringing in the MIRI detectors and how this effect is modeled in the instrumental simulator (MIRISIM). 
@@ -106,15 +106,43 @@ This implementation comes with several caveats: namely that the fringing model i
 We stress that the goal of this testing is to demonstrate the significance of this effect to justify the need for a more complete model along with additional calibration data to constrain the detector layer parameters.
 \subsubsection{FM Data}
 \subsubsection{CV Data}
-\subsection{Implementation}
-\subsection{JWST Pipeline}
+\subsection{Fringing Implementation}
+\section{JWST Pipeline}
 \cite{Bushouse2015} %JWST Pipeline
 \cite{Labiano-Ortega2016} % MIRI MRS Cal pipeline
-\subsubsection{Stage 1 Processing}
-\subsubsection{Stage 2 Processing}
+\subsection{Stage 1 Processing}
+
+\subsection{Stage 2 Processing}
+\subsubsection{Photometric Calibration}
+Photometric calibration is the process of removing detector and optical biases to ensure that the measured output corresponds to the true flux incident onto the telescope.
+This process occurs in the PHOTOM step of the JWST pipeline, and uses reference files which store per-pixel photon-to-electron conversion efficiencies to transform the count rate data product to a flux measurement.
+This corrects for the wavelength dependent bias shown in Fig. \ref{fig:mirideteff}.
+
+However, this step remains under development, and does not produce absolutely calibrated images. In particular, even using the most up to date reference files (v8D.04.00) there remains discontinuities between channels, and poorly calibrated slopes.
 \subsubsection{Fringing correction}
 \cite{Carnall2017} %Spectres resampling
+\subsubsection{Cube Building}
 \subsubsection{Aperture Photometry}
+Once the data from the pipeline has been transformed into a spectral cube, we can perform aperture photometry using the \verb|photutils| package to extract a 1D spectrum of the source.
+For each frame in each sub-band the coordinates of the spaxel at with the peak flux is detected using \verb|photutils| \verb|find_peaks|, which provides the location for the center of a circular aperture.
+A radius of 5 spaxels is used to encompass the entire PSF for a point source.
+If the files have already been photometrically calibrated, measuring the flux requires just adding the flux from each spaxel within the defined radius for each frame.
+While optimal extraction techniques exist, given our known input signal and background, this procedure is adequate for producing a spectrum in each sub-band, which can then be combined into a single spectrum for all measured sub-band.
+
+Unfortunately, due to the issues described above with the PHOTOM step of the JWST pipeline, the spectrum built using aperture photometry does not accurately reflect the input spectrum in slope or absolute photometry. 
+Therefore, we correct the extracted spectrum channel by channel. 
+We fit a cubic polynomial to a median filtered copy of both the template spectrum and the extracted spectra.
+The cubic fit to the extracted spectra is subtracted from the data, and the fit to the template is added. 
+Thus this procedure corrects the slope and median flux value, but does not affect high frequency noise or signals.
+Fig. \ref{fig:cal} shows an example of the results of this procedure. 
+We believe that this is a justified measure, as the errors with photometric calibration in the pipeline should be resolved before first light of the telescope.
+
+\begin{figure}[h]
+	\includegraphics[width=1.11\linewidth]{cal_spectra_slope.pdf}
+	\caption{Comparison of an input spectrum generated using petitRadTrans and the empirically calibrated output spectrum after extraction from the cube produced by the JWST pipeline.}
+	\label{fig:cal}
+\end{figure}
+
 \subsection{Cross-Correlation}
 \cite{Snellen2014}% BetaPicFast Rotation - cross correlation
 \cite{Simkin1974} %Cross cor

@@ -1,6 +1,15 @@
 \chapter{Atmospheric Retrivals}
+Everything photon of light that we receive from an exoplanet will interact with its atmosphere, and will therefore provide us with a hint of what that atmosphere may look like.
+An atmospheric retrieval is the process of reconstructing the atmosphere of an object based on an observed spectrum.
+This process relies heavily on having accurate models which can be parameterized by the physical quantities we are interested in: generally the temperature, pressure and composition \autocite{Madhusudhan2018}.
+As these models cover a very large parameter space (>10 parameters, each covering several orders of magnitude), it is necessary to have an efficient method for sampling this space, computing a model and comparing this model to the data 
+\autocite{Benneke2012}.
+
+This chapter will outline the process of an atmospheric retrieval from modelling to marginalization of posteriors, and will examine the impact that the instrumental effects described in chapter \ref{ch:fringe} have on the retrieved parameters. 
+Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects.
+
 \cite{Schlawin2018} %MIRI Clear + cloudy lrs
-\cite{Madhusudhan2018} %atmo ret,basically everything nested samp, 
+ %atmo ret,basically everything nested samp, 
 \cite{Fisher2019} %Cross corr machine learning hoeijmakers
 \cite{Oreshenko2019}% Model grid comparison random forest
 \cite{Barman2015} %HR8799b water methan CO 
@@ -8,6 +17,7 @@
 \cite{Benneke2012} %And 2013 - distinguish cloudy mini neptunes and watery earths
 \cite{Blanco-Cuaresma2018} %Stel spec caveats
 \cite{Konopacky2013} %CO and water in hr8799
+
 \cite{Morley2018} %D/H ratios
 \cite{Lupu2018} %Is actually 2016 - reflected light atmo rets (multinest)
 \cite{Gandhi2018} %HyDRA retrieval code
@@ -20,21 +30,55 @@
 \cite{Waldmann2015a} %TauRex emission
 \cite{Line2015,Line2017,Zalesky2019} % Brown dwarf retrieval part 1,2,3
 
-\section{Introduction}
 \cite{Batalha2018}%MIRI LRS - strategies (obs)
 % Gravity Beta Pic - petitRadTrans retrieval how to, CO
 \cite{Feng2018} %Future ref light: basis of mine but emission
 \cite{Molliere2019}% Two papers, isotopologues and petitRadTrans
 \section{Atmospheric Modeling}
-\cite{Behmard2019}%Cool star spectroscopy, hires
-\cite{Guillot2010} %Guillot model, radiative eq irrad planets
-\cite{Chen2019} %3D Chemistry Climate, JWST obs
-\cite{Molliere2015} % Model atmospheres, stellar impact
+Atmospheric modelling is the task of creating an spectra based on the physical properties of the atmosphere.
+This is a broad task that can range from a 3D Global Circulation Model (GCM) which accounts for self-consistent atmospheric chemistry \autocite{Chen2019} to a 1D model based around an empirical temperature-pressure profile \autocite{Molliere2019}.
+The choice of model depends largely on the requirements for accuracy and computational cost. 
+Considering the potentially millions of possible atmospheres that must be examined in a retrieval problem, whatever model is used must be computationally efficient above all else.
 
 \cite{Zhang2019} %PLATON Transmission spectra generation
-\subsection{petitRadTrans}
+\subsection{petitRADTRANS}
+For this work we chose to use the petitRADTRANS package due to its user-friendly python implementation, high speed computation for retrieval use and extensive high resolution, line-by-line spectral library for generating planetary spectra \autocite{Molliere2019}. 
+It is a 1D, radiative transfer package with many parameters options, described in table \ref{tab:petitradparams}
+PetitRADTRANS can compute both emission and transmission spectra, with an output spectral resolution of R=1000 in correlated k mode, or R=1 000 000 in line-by-line mode. 
+
+\begin{table}[t]
+	\centering
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Property} & \textbf{Description}\\
+		\midrule
+		Temperature & Parameterized, e.g. \autocite{Guillot2010}\\
+		Abundances & Parameterized, e.g. vertically constant\\
+		Scattering & Cloud scattering, transmission spectra only\\
+		Clouds & Power law and condensation clouds\\
+		Cloud particle size & $f_{SED}$ and K$_{ZZ}$ or parameterized\\
+		Particle size distribution & log-normal, variable width\\
+		Cloud abundance & Parameterized\\
+		Wavelength spacing & R=1000 (c-k), 10$^{6}$ (lbl)\\
+		Valid emission spectra & Clear, from NIR and longer\\
+		\bottomrule
+	\end{tabular}
+	\caption{Description of the parameters available in petitRADTRANS. For cloud particles, $f_{SED}$ is the mass-averaged ratio of the cloud particle settling speed and mixing velocity. K$_{ZZ}$ is the atmospheric eddy diffusion coefficient \autocite{Ackerman2001}}
+	\label{tab:petitradparams}
+\end{table}
+
+Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \autocite{Goyal2018}, Planetary Spectrum Generator \autocite{Villanueva2018}, HELIOS \autocite{Malik2017,Malik2019} and others.
+Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \autocite{Rothman1973,Rothman2010,Gordon2017}, ExoMol/ExoCross \autocite{Tennyson2016,Tennyson2016a,Yurchenko2018} and others. 
+\cite{Behmard2019}%Cool star spectroscopy, hires
+\cite{Guillot2010} %Guillot model, radiative eq irrad planets
 \cite{Molliere2019} %Not the isotopologue paper
 \subsubsection{Radiative Transfer}
+In order to compute the emission spectrum an initial featureless blackbody spectrum $B(T_{int})$ is passed through multiple discrete layers of the atmosphere, parameterized by their temperature, pressure, and the opacities of each of the species present in a given layer.
+Modelling each layer as plane parallel, the intensity is computed as in \autocite{Irwin2008,Molliere2017,Molliere2019}
+\begin{equation}
+I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(T^{i}) + B(T^{i+1})\right]\left(\mathcal{T}^{i}-\mathcal{T}^{i+1}\right)
+\end{equation}
+$N_{L}$ is the number of layers in the atmosphere, and $\mathcal{T}$ is the transmission from a given layer to the top of the atmosphere. All quantities are averaged per wavelength bin in c-k mode, while they are evaluated at each wavelength point in line-by-line mode.
 \subsubsection{Line-by-line}
 \subsubsection{Correlated K}
 %Fu and Liou 1992

@@ -7,8 +7,16 @@ MIRI is an instrument that will provide unique capabilities for studying exoplan
 JWST is a 6.5m space based observatory built in collaboration between NASA, ESA and CSA that will be located in a halo orbit at the L2 Earth-Sun Lagrange point. 
 As the successor to the Hubble Space Telescope and the Spitzer Space Telescope, it will provide a new perspective for infrared astronomy. 
 It is currently scheduled to launch in March 2021.
-It will operate at a temperature of 6.7K to reduce instrumental backgrounds over its wavelength range of 0.6-28.8 micron.
-A large sun-shield will help maintain the cold operating temperature of the telescope by blocking the solar infrared radiation. 
+
+James Webb is fully optimized for infrared astronomy. 
+To reduce instrumental thermal background, the entire telescope will operate at cryogenic temperatures. 
+A large sun-shield will help block solar infrared radiation.
+The lightweight beryllium mirrors are coated in gold to maximize reflectivity out to the mid infrared.
+
+Of key interest to exoplanet science is the both the sensitivity and spatial resolution of the instrument. 
+With its 6.5m primary, JWST will have a spatial resolution from 0.01" at 0.6 micron to 0.92" at 29 micron.
+The increase in sensitivity is due in part to the larger collecting area, but also to advances in detector technology since the previous generation of infrared observatories.
+For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \autocite{MIRI9}.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{assembled.jpg}
 	\caption{The James Webb Space Telescope during integration of the telescope into the Spacecraft Element \autocite{assembled}. }
@@ -22,12 +30,13 @@ The Fine Guidance Sensor/ Near-Infrared Imager and Slitless Spectrograph (FGS/NI
 The final instrument, MIRI, is the subject of this thesis.
 
 \section{MIRI}
-The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \autocite{Rieke2015}. %MIRI intro
+The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \autocite{Rieke2015}.
+It will operate at a temperature of 6.7K to reduce instrumental backgrounds over its wavelength range of 0.6-28.8 micron. %MIRI intro
 
 \begin{table}[t]
 	\begin{tabular}{l}
 		\toprule
-		Subsystem\\
+		\textbf{Subsystem}\\
 		\midrule
 		Imaging\\
 		4QPM Coronagraphic Imaging\\
@@ -42,11 +51,13 @@ The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated f
 \autocite{Kendrew2015} % MIRI IV - LRS
 \section{The Medium Resolution Spectrograph}\label{sec:mrs}
 The Medium Resolution Spectrograph (MRS) consists of four integrated field spectrographs projected onto two detectors, covering 4.8-28 micron with a spectral resolution varying from R=1700 to R=3500.
+
 \begin{table}[t]
+	\begin{small}
 	\centering
 	\begin{tabular}{l|lc|cccc}
 		\toprule
-		Channel & Sub-band & Band & Detector & Wavelength Range [$\mu$m] & FOV [as] & $\lambda$/$\Delta\lambda$\\
+		\textbf{Channel} & \textbf{Sub-band} & \textbf{Band} & \textbf{Detector} & $\lambda$ \textbf{Range [$\mu$m]} & \textbf{FOV [as]} & $\lambda$/$\Delta\lambda$\\
 		\midrule
 		\multirow{3}{*}{1}  &Short & 1A & \multirow{3}{*}{SW}   & 4.83 - 5.82 & 3.46$\times$3.72 & 3500 \\
 							&Medium & 1B &						& 5.62 - 6.73 & 3.46$\times$3.72 & 3500 \\
@@ -65,9 +76,12 @@ The Medium Resolution Spectrograph (MRS) consists of four integrated field spect
 							& Long & 3C&						& 23.84 - 28.82 & 6.99$\times$7.87 & 1500 \\			
 		\bottomrule
 	\end{tabular}
+	\end{small}
+
 	\caption{Properties of the MIRI MRS channels \autocite{MIRI6}.}
 	\label{tab:mrs}
 \end{table}
+
 \autocite{Wells2015} %MIRI VI MRS
 \subsection{Coordinates}
 There are three primary coordinate systems in use with JWST/MIRI-MRS, of which two will be relevant for this thesis, with the detector and local MRS coordinates described in Fig. \ref{fig:mrscoords} \autocite{Argyriou2020}.
@@ -96,6 +110,11 @@ The third coordinate frame is the global coordinate system of JWST itself, V1,V2
 \subsection{Optical Systems}
 Channels, bands, etc \cite{ref:Chen2019}
 \subsection{Detectors}
+\begin{figure}[t]
+	\includegraphics[width=\linewidth]{MIRI_MRS2.png}
+	\caption{Average photon-to-electron conversion efficiencies for the MIRI MRS detectors}
+	\label{fig:mirideteff}
+\end{figure}
 \subsubsection{Readout Modes}
 \section{Observations}
 \subsection{Dithering}
