@@ -1,5 +1,5 @@
 \chapter{MIRI: The Mid-Infrared Instrument}
-MIRI is an instrument that will provide unique capabilities for studying exoplanets and other cold and distant objects. This chapter will provide a detailed overview of the technical details and capabilities of the instrument. A complete description of MIRI is provided in \autocite{MIRI1,MIRI2,10.1086/6822554, MIRI4,MIRI5,MIRI6,MIRI7,MIRI8,MIRI9}
+MIRI is an instrument that will provide unique capabilities for studying exoplanets and other cold and distant objects. This chapter will provide a detailed overview of the technical details and capabilities of the instrument. A complete description of MIRI is provided in \parencite{MIRI1,MIRI2,10.1086/6822554, MIRI4,MIRI5,MIRI6,MIRI7,MIRI8,MIRI9}
 %MIRI is an imaging and spectroscopic instrument on board the James Webb Space Telescope (JWST). 
 %
 %
@@ -16,10 +16,10 @@ The lightweight beryllium mirrors are coated in gold to maximize reflectivity ou
 Of key interest to exoplanet science is the both the sensitivity and spatial resolution of the instrument. 
 With its 6.5m primary, JWST will have a spatial resolution from 0.01" at 0.6 micron to 0.92" at 29 micron.
 The increase in sensitivity is due in part to the larger collecting area, but also to advances in detector technology since the previous generation of infrared observatories.
-For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \autocite{MIRI9}.
+For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \parencite{MIRI9}.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{assembled.jpg}
-	\caption{The James Webb Space Telescope during integration of the telescope into the Spacecraft Element \autocite{assembled}. }
+	\caption{The James Webb Space Telescope during integration of the telescope into the Spacecraft Element \parencite{assembled}. }
 	\label{fig:jwst}
 \end{figure}
 
@@ -30,7 +30,7 @@ The Fine Guidance Sensor/ Near-Infrared Imager and Slitless Spectrograph (FGS/NI
 The final instrument, MIRI, is the subject of this thesis.
 
 \section{MIRI}
-The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \autocite{Rieke2015}.
+The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \parencite{Rieke2015}.
 It will operate at a temperature of 6.7K to reduce instrumental backgrounds over its wavelength range of 0.6-28.8 micron. %MIRI intro
 
 \begin{table}[t]
@@ -48,7 +48,7 @@ It will operate at a temperature of 6.7K to reduce instrumental backgrounds over
 	\caption{Summary of MIRI observing modes.}
 	\label{tab:mirimodes}
 \end{table}
-\autocite{Kendrew2015} % MIRI IV - LRS
+\parencite{Kendrew2015} % MIRI IV - LRS
 \section{The Medium Resolution Spectrograph}\label{sec:mrs}
 The Medium Resolution Spectrograph (MRS) consists of four integrated field spectrographs projected onto two detectors, covering 4.8-28 micron with a spectral resolution varying from R=1700 to R=3500.
 
@@ -78,25 +78,25 @@ The Medium Resolution Spectrograph (MRS) consists of four integrated field spect
 	\end{tabular}
 	\end{small}
 
-	\caption{Properties of the MIRI MRS channels \autocite{MIRI6}.}
+	\caption{Properties of the MIRI MRS channels \parencite{MIRI6}.}
 	\label{tab:mrs}
 \end{table}
 
-\autocite{Wells2015} %MIRI VI MRS
+\parencite{Wells2015} %MIRI VI MRS
 \subsection{Coordinates}
-There are three primary coordinate systems in use with JWST/MIRI-MRS, of which two will be relevant for this thesis, with the detector and local MRS coordinates described in Fig. \ref{fig:mrscoords} \autocite{Argyriou2020}.
+There are three primary coordinate systems in use with JWST/MIRI-MRS, of which two will be relevant for this thesis, with the detector and local MRS coordinates described in Fig. \ref{fig:mrscoords} \parencite{Argyriou2020}.
 
 The detector coordinate grid is formed by counting x/y pixels, as well as the slice number.
 Each of the two MRS detectors is an array of 1032$\times$1024 pixels, though only 1024 are photosensitive in the horizontal direction.
 Each image slice from the IFU appears as a curved stripe on the detector, though neighboring stripes on the detector do not correspond to neighbouring slices of the image. 
 
-The local MRS coordinate system is described in terms of $\alpha,\beta$ and $\lambda$. The continuous $\alpha$ coordinate is the along slice direction, while $beta$ is perpendicular and discrete, corresponding to the slice number. $\lambda$ is the wavelength. Both $\alpha$ and $\lambda$ are fit by a second order polynomial to account for along and across slice distortion \autocite{MIRI6}. Each detector sub array has its own mapping to $\alpha,\beta,\lambda$ space, due to the differences in FoV, slice count, distortion and spectral resolution.
+The local MRS coordinate system is described in terms of $\alpha,\beta$ and $\lambda$. The continuous $\alpha$ coordinate is the along slice direction, while $beta$ is perpendicular and discrete, corresponding to the slice number. $\lambda$ is the wavelength. Both $\alpha$ and $\lambda$ are fit by a second order polynomial to account for along and across slice distortion \parencite{MIRI6}. Each detector sub array has its own mapping to $\alpha,\beta,\lambda$ space, due to the differences in FoV, slice count, distortion and spectral resolution.
 
 The third coordinate frame is the global coordinate system of JWST itself, V1,V2,V3. The V1 coordinate refers to the symmetry axis of the telescope, V3 points towards the foldable secondary mirror support structure strut. V2 completes the coordinate system, being orthogonal to V1 and V3. This coordinate system will not be used in this thesis.
 
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{coordinates.png}
-	\caption{Description of the MRS detector (x,y,s) coordinate system to the local MRS ($\alpha,\beta,\lambda$) cube coordinates. \textbf{Top}: Detector coordinates. Note that the consecutive stripe numbers s$_{i}$, s$_{i+1}$ correspond to neighbouring image slices. \textbf{Bottom}: Description of the (invertible) detector-to-cube transformation \autocite{Argyriou2020}.}
+	\caption{Description of the MRS detector (x,y,s) coordinate system to the local MRS ($\alpha,\beta,\lambda$) cube coordinates. \textbf{Top}: Detector coordinates. Note that the consecutive stripe numbers s$_{i}$, s$_{i+1}$ correspond to neighbouring image slices. \textbf{Bottom}: Description of the (invertible) detector-to-cube transformation \parencite{Argyriou2020}.}
 	\label{fig:mrscoords}	
 \end{figure}
 

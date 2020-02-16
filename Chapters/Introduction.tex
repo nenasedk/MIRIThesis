@@ -5,7 +5,7 @@
 %************************************************
 \chapter{Introduction}
 %Meyor queloz
-Since the first detection of a planet around a sun-like star \autocite{Mayor1995} the field of exoplanets has evolved rapidly.
+Since the first detection of a planet around a sun-like star \parencite{Mayor1995} the field of exoplanets has evolved rapidly.
 Thousands of companions have been identified using the radial velocity and transit detection methods, and a handful have been imaged directly using both ground and space based observatories.
 In the last decade, many advances have been made that allow us to begin to characterize the properties of a few of these planets using spectroscopy.
 With the launch of the James Webb Space Telescope (JWST) in 2021, and the dawn of the era of extremely large telescopes, we will be able to peer deeper into these planets and further constrain atmospheric or geological properties, allowing us to answer questions about their formation history, climate, and even the prospects for habitability and life.
@@ -21,7 +21,7 @@ This will provide a baseline for determining the level of correction necessary t
 \section{Exoplanets}
 The last quarter century of observations has revealed the diversity of exoplanets and extra-solar systems.
 Both the architecture and individual planetary characteristics vary greatly when compared to each other, as well as to our own solar system.
-From the hot Jupiters initially found by Mayor and Queloz \autocite{Mayor1995} to the thousands of planets discovered by the Kepler mission, the variety in exoplanets has raised questions about their formation and development, as well as their present day structure, climate, and even prospects for life.
+From the hot Jupiters initially found by Mayor and Queloz \parencite{Mayor1995} to the thousands of planets discovered by the Kepler mission, the variety in exoplanets has raised questions about their formation and development, as well as their present day structure, climate, and even prospects for life.
 Improvements to observational techniques have allowed us to improve our understanding of these planets.
 Secondary eclipse and transmission spectroscopy has opened the door to the study of planets in close orbits to their host stars, while emission spectroscopy of young planet has allowed for constraints on models of planet formation.
 Over the next decades, new instruments will be developed that improve sensitivity, allowing us to study smaller, colder and fainter planets: with the ultimate goal of studying atmospheric and surface features of an earth-like planet.
@@ -46,86 +46,92 @@ However, the high spatial resolution required drives the need for a large primar
 Atmospheric absorption due to telluric lines (absorption lines of Earth's atmosphere) also restrict infrared observations to narrow bands.
 
 In addition to the requiring high spatial resolution, it is also challenging to separate the light emitted by the planet from that of the star.
-Imaging techniques such as Angular Differential Imaging (ADI) \autocite{Marois2007} and Reference Differential Imaging (RDI) \autocite{Lefreniere2009,Soummer2012} provide methods for reducing the stellar point-spread-function (PSF). 
+Imaging techniques such as Angular Differential Imaging (ADI) \parencite{Marois2007} and Reference Differential Imaging (RDI) \parencite{Lefreniere2009,Soummer2012} provide methods for reducing the stellar point-spread-function (PSF). %\parencite{Macintosh2006} %ADI
 Coronagraphs are optical elements which suppress the stellar PSF through self-destructive interference or physical occultation, depending on the position in the optical path.
 The difference in spectra between the planet and the star can also be used to separate the two sources.
  
 Presently, 10m class telescopes such as the Very Large Telescope (VLT) in Paranal, Chile or the Gemini Observatory split between Hawaii and Chile provide the best combination of resolution and instrumentation to perform direct imaging of exoplanets.
-The NACO instrument at the VLT provided the first image of an exoplanet in 2004 \autocite{Chauvin2004}.
-These observatories are among those equipped with an adaptive optics system, corongraphic instrumentation and near to mid infrared imaging and spectroscopic capabilities to directly image exoplanets, with several exemplar systems becoming standard objects of interest. 
-The parameters of some directly imaged exoplanets are summarized in table \ref{tab:exoplanetparams}
+The NACO instrument at the VLT provided the first image of an exoplanet in 2004 \parencite{Chauvin2004}.
+These observatories are among those equipped with an adaptive optics system, corongraphic instrumentation and near to mid infrared imaging and spectroscopic capabilities to directly image exoplanets, with several exemplar systems becoming standard objects of interest.
+While it's terribly interesting to explore the details of each of these objects, we will focus our discussion on objects will be used further in this study, due to their scheduled observation as part of the JWST GTO and Early Release Science (ERS) programs \parencite{Beichman2019}. 
+The parameters of these and other directly imaged exoplanets and brown dwarfs are summarized in table \ref{tab:exoplanetparams}. 
+\begin{landscape}
 \begin{table}[t]
-	\begin{tabular}{l}
+	\centering
+	\begin{small}
+	\begin{tabular}{lllllllll}
 		\toprule
 		%Name, Mass, Luminosity, Age, Separation, Sep AU, Pri Mass
-		\textbf{Name} \\
+		\textbf{Name} & \textbf{d [pc]} & \textbf{Mass [M$_{jup}$]} & \textbf{Sep [au]} & \textbf{Sep ["]} & \textbf{Age [Myr]} & \textbf{Lum log(L$_{bol}$/L$_{odot}$)} & \textbf{T$_{eff}$ [K]} & \textbf{References}\\
 		\midrule
-		2M1207b\\
-		\bpic\\
-		HR8799b\\
-		HR8799c\\
-		HR8799d\\
-		HR8799e\\
-		Fomalhaut b\\
-		2M J044144b\\
-		LkCa 15b\\
-		HD 95086b\\
-		Gliese 504b\\
-		51 Eridani b\\
-		PDS 70b\\
-		PDS 70c\\
+		\multicolumn{9}{c}{\textbf{Widely separated companions}}\\
+		\midrule
+		VHS 1256b & $12.7\pm1.0$  & $2\pm1$     & $102$ & $8.1$ & $10^{3}-10^{4}$ & $-5.05\pm0.22$ & $880$ & \parencite{Gauza2015}\\
+		Fomalhaut b & $7.704\pm0.028$ & $\leq 2$ & $119$ & $13$ & $440\pm40$ & \ldots & $1600\pm100$ &\\
+		\midrule
+		\multicolumn{9}{c}{\textbf{Close in companions}}\\
+		\midrule
+		2M1207b   & $152.4\pm1.1$ & $2\pm1$     & $41$ & $0.8$ & $10\pm3$ & $-4.68\pm0.05$ & $1600\pm100$ &\\
+		51 Eridani b & $29.4\pm0.3$ & $2\pm1$   & $13$ & $0.45$ & $23\pm3$ & $-5.06\pm0.2$ & $700$ &  \parencite{Macintosh2015}\\
+		\bpic     & $19.3\pm0.2$  & $2\pm1$     & $9$ & $0.4$ & $23\pm3$ & $-3.78\pm0.03$ & $1600\pm100$ & \parencite{Quanz2010}\\
+		GJ 504b   & $17.56\pm0.08$  & $3-30$    & $44$ & $2.5$ & $100-6500$ & $-6.13\pm0.03$ & $544$ & \parencite{Skemer2016}\\
+		HD 95086b & $90.4\pm3.3$  & $5\pm2$     & $56$ & $0.6$ & $17\pm4$ & $-4.96\pm0.10$ & $1050$  &\parencite{DeRosa2016}\\	
+		HR8799b   & $39.4\pm1.0$  & $5\pm1$     & $68$ & $1.7$ & $40\pm5$ & $-5.1\pm0.1$ & $870^{+30}_{-70}$ & \parencite{Marois2008,Skemer2012}\\
+		HR8799c   & $39.4\pm1.0$  & $7\pm2$     & $38$ & $0.95$ & $40\pm5$ & $-4.7\pm0.1$ & $1090^{+10}_{-90}$ &\parencite{Marois2008,Skemer2012}\\
+		HR8799d   & $39.4\pm1.0$  & $7\pm2$     & $24$ & $0.62$ & $40\pm5$ & $-4.7\pm0.2$ & $1090^{+10}_{-90}$ &\parencite{Marois2008,Skemer2012}\\
+		HR8799e   & $39.4\pm1.0$  & $7\pm2$     & $14$ & $0.38$ & $40\pm5$ & $-4.7\pm0.2$ & $1000$ &\parencite{Marois2008,Skemer2012}\\	
+		LkCa 15b  & $145\pm15$    & $6\pm4$     & $20$ & $0.08$ & $2\pm1$ & \ldots & \ldots &\\
+		PDS 70b   & $113.43\pm0.52$ & $7\pm2$   & $23$ & $0.19$ & $5\pm1$ & \ldots & $900$ &\parencite{Haffert2019}\\
+		PDS 70c   & $113.43\pm0.52$ & $4.4\pm1$ & $30$ & $0.24$ & $5\pm1$ & \ldots &  $10^{4}$ & \parencite{Haffert2019}\\
+		\midrule
+		\multicolumn{9}{c}{\textbf{Nearby Brown Dwarfs}}\\
+		\midrule
+		WISE 0855   & $2.2\pm0.2$ & $3-10$ & \ldots & \ldots & $10^{3}-10^{4}$ & $-10.5$ &  $225-260$ & \parencite{Luhman2014,Tinney2014}\\
+		Luhman 16B   & $1.998\pm0.0004$ & $28.6\pm0.3$ & \ldots & \ldots & $600-800$ & $-4.68$&  $1201$ & \parencite{Sahlmann2015,Garcia2017}\\
 		\bottomrule
 	\end{tabular}
-	\caption{Summary of directly imaged planet parameters \cite{Bowler2016} and references therin.}
+\end{small}
+	\caption{Summary of directly imaged planet and brown dwarf parameters based on \parencite{Bowler2016} and references therein. Luminosity for WISE 0855 is calculated in H band.}
 	\label{tab:exoplanetparams}
 \end{table}
-
-
-\autocite{Beichman2019} %Not 2019 - summary of JWST science and instruments
-\autocite{Lagage2015} %Exoplanet characterization with JWST MIRI white paper
-\autocite{Macintosh2006} %ADI
-\autocite{Macintosh2015} %51 Eri b GPi
-% Marois ADI, HR8799, beta pic (quanz), space based (Formhault)
-\subsubsection{Beta Pictoris b}
-Discovered in 2008 \autocite{Lagrange2009}, \bpic is one of the most well-studied exoplanet systems \autocite{Quanz2010,Chilcote2015,Chilcote2017,Hoeihmakers2018}. 
-Due to its young age of 23$\pm3$ Myr \autocite{Mamajek2014} and high mass of 12.9 \mj \autocite{Chilcote2015} it remains hot, between 1590K and 1847K \autocite{Nowak2019}. 
-Combined with its typically wide separation on it's 9.2AU orbit \autocite{Chauvin2012}, this allows for relatively easy imaging and spectroscopy in the near infrared. 
-Recent RV observations indicate the possibility of an additional planet at 2.3 AU \autocite{Lagrange2019}.
-
-The quantity and quality of spectral data for \bpic has allowed for the study and characterization of it's atmosphere: measurements of its metallicity and C/O ratio can trace the formation history of the planet \autocite{Chilcote2017,Nowak2019}.
-It also provides insight into its current atmospheric structure and composition, which can in turn inform models of exoplanet atmospheres.
-\subsubsection{HR 8799 System}
-\subsubsection{PDS 70 b,c}
+\end{landscape}
+ %Not 2019 - summary of JWST science and instruments
+\parencite{Lagage2015} %Exoplanet characterization with JWST MIRI white paper
+\subsubsection{VHS 1256 b}
+\subsubsection{2M1207b}
 \section{Brown Dwarfs}
-\autocite{Oliveira} %BDs with JWST
-\autocite{Helling2014}% Brown dwarf atmospheres
-\autocite{Cooper2014} %Brown dwarf clouds/cloud formation
-\autocite{Madhusudhan2018a} %BD observations/atmospheres
-\autocite{Burrows2003} % Brown dwarf models/spectra coolest dwarfs
-\autocite{Marley2014} %Modelling brown dwarf and giant planet atmospheres
-\autocite{Manjavacas2014} %Thesis - physical characterization of brown dwarfs
-\autocite{Biller2017} %Variability in time for BDs
-\autocite{Faherty2018} % Water clouds in cold BDs
-\autocite{Morley2014} %Water clouds in Y dwarfs and exoplanets
+\parencite{Oliveira} %BDs with JWST
+\parencite{Helling2014}% Brown dwarf atmospheres
+\parencite{Cooper2014} %Brown dwarf clouds/cloud formation
+\parencite{Madhusudhan2018a} %BD observations/atmospheres
+\parencite{Burrows2003} % Brown dwarf models/spectra coolest dwarfs
+\parencite{Marley2014} %Modelling brown dwarf and giant planet atmospheres
+\parencite{Manjavacas2014} %Thesis - physical characterization of brown dwarfs
+\parencite{Biller2017} %Variability in time for BDs
+\parencite{Faherty2018} % Water clouds in cold BDs
+\parencite{Morley2014} %Water clouds in Y dwarfs and exoplanets
+
 \subsection{Physics}
 \subsection{Observational Properties}
 \subsubsection{T-Type}
 \subsubsection{L-Type}
+\subsubsection{Luhman 16B}
 \subsubsection{Y-Type}
+\subsubsection{WISE 0855-0714}
 
 \section{Motivation}
 \subsection{Current Status of Atmospheric Characterization}
-\autocite{Kreidberg2018}%Transmission spectroscopy, facilities, atmosphere, climate, condensates
-\autocite{Biller2018} % Exoplanet atmosphere measurements, hr8799 photometry/spec, prospects for jw
-\autocite{Bozza} %Exoplanet atmospheres textbook: observation, models, spectroscopy, solar system atmospheres
-\autocite{Danielski2018} %Atmospheric char with MIRI (coron,LRS, not MRS I think)
-\autocite{Madhusudhan2016} %Chemistry, Formation, Habitabiltiy
+\parencite{Kreidberg2018}%Transmission spectroscopy, facilities, atmosphere, climate, condensates
+\parencite{Biller2018} % Exoplanet atmosphere measurements, hr8799 photometry/spec, prospects for jw
+\parencite{Bozza} %Exoplanet atmospheres textbook: observation, models, spectroscopy, solar system atmospheres
+\parencite{Danielski2018} %Atmospheric char with MIRI (coron,LRS, not MRS I think)
+\parencite{Madhusudhan2016} %Chemistry, Formation, Habitabiltiy
 \subsubsection{Transmission Spectroscopy}
-\autocite{Lee2012} % HD189733b trans spec
-\autocite{MacDonald2017} % Nitrogen chem, HD209458b
-\autocite{Madhusudhan} %Wasp12b need year
+\parencite{Lee2012} % HD189733b trans spec
+\parencite{MacDonald2017} % Nitrogen chem, HD209458b
+\parencite{Madhusudhan} %Wasp12b need year
 \subsubsection{Emission Spectroscopy}
 \subsection{JWST Studies}
-\autocite{Beichman2019} %JWST whitepaper on imaging/spec
+\parencite{Beichman2019} %JWST whitepaper on imaging/spec
 \subsection{Biosignatures and Future Missions}
 \section{Thesis Overview}

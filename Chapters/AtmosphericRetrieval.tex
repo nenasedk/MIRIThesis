@@ -1,9 +1,9 @@
 \chapter{Atmospheric Retrivals}
 Everything photon of light that we receive from an exoplanet will interact with its atmosphere, and will therefore provide us with a hint of what that atmosphere may look like.
 An atmospheric retrieval is the process of reconstructing the atmosphere of an object based on an observed spectrum.
-This process relies heavily on having accurate models which can be parameterized by the physical quantities we are interested in: generally the temperature, pressure and composition \autocite{Madhusudhan2018}.
+This process relies heavily on having accurate models which can be parameterized by the physical quantities we are interested in: generally the temperature, pressure and composition \parencite{Madhusudhan2018}.
 As these models cover a very large parameter space (>10 parameters, each covering several orders of magnitude), it is necessary to have an efficient method for sampling this space, computing a model and comparing this model to the data 
-\autocite{Benneke2012}.
+\parencite{Benneke2012}.
 
 This chapter will outline the process of an atmospheric retrieval from modelling to marginalization of posteriors, and will examine the impact that the instrumental effects described in chapter \ref{ch:fringe} have on the retrieved parameters. 
 Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects.
@@ -18,8 +18,8 @@ Additionally, this will provide an example of how the MIRI MRS can be used to ex
 \cite{Blanco-Cuaresma2018} %Stel spec caveats
 \cite{Konopacky2013} %CO and water in hr8799
 
-\cite{Morley2018} %D/H ratios
-\cite{Lupu2018} %Is actually 2016 - reflected light atmo rets (multinest)
+\parencite{Morley2018} %D/H ratios
+\cite{Lupu2016} %Is actually 2016 - reflected light atmo rets (multinest)
 \cite{Gandhi2018} %HyDRA retrieval code
 \cite{Baudino2017} %Troublesome model params
 \cite{Line2013} %Secondary eclipse retrieval technique comparison
@@ -34,15 +34,15 @@ Additionally, this will provide an example of how the MIRI MRS can be used to ex
 % Gravity Beta Pic - petitRadTrans retrieval how to, CO
 \cite{Feng2018} %Future ref light: basis of mine but emission
 \cite{Molliere2019}% Two papers, isotopologues and petitRadTrans
-\section{Atmospheric Modeling}
+\subsubsection{Atmospheric Modeling}
 Atmospheric modelling is the task of creating an spectra based on the physical properties of the atmosphere.
-This is a broad task that can range from a 3D Global Circulation Model (GCM) which accounts for self-consistent atmospheric chemistry \autocite{Chen2019} to a 1D model based around an empirical temperature-pressure profile \autocite{Molliere2019}.
+This is a broad task that can range from a 3D Global Circulation Model (GCM) which accounts for self-consistent atmospheric chemistry \parencite{Chen2019} to a 1D model based around an empirical temperature-pressure profile \parencite{Molliere2019}.
 The choice of model depends largely on the requirements for accuracy and computational cost. 
 Considering the potentially millions of possible atmospheres that must be examined in a retrieval problem, whatever model is used must be computationally efficient above all else.
 
-\cite{Zhang2019} %PLATON Transmission spectra generation
-\subsection{petitRADTRANS}
-For this work we chose to use the petitRADTRANS package due to its user-friendly python implementation, high speed computation for retrieval use and extensive high resolution, line-by-line spectral library for generating planetary spectra \autocite{Molliere2019}. 
+%\cite{Zhang2019} %PLATON Transmission spectra generation
+\section{petitRADTRANS}
+For this work we chose to use the petitRADTRANS package due to its user-friendly python implementation, high speed computation for retrieval use and extensive high resolution, line-by-line spectral library for generating planetary spectra \parencite{Molliere2019}. 
 It is a 1D, radiative transfer package with many parameters options, described in table \ref{tab:petitradparams}
 PetitRADTRANS can compute both emission and transmission spectra, with an output spectral resolution of R=1000 in correlated k mode, or R=1 000 000 in line-by-line mode. 
 
@@ -52,7 +52,7 @@ PetitRADTRANS can compute both emission and transmission spectra, with an output
 		\toprule
 		\textbf{Property} & \textbf{Description}\\
 		\midrule
-		Temperature & Parameterized, e.g. \autocite{Guillot2010}\\
+		Temperature & Parameterized, e.g. \parencite{Guillot2010}\\
 		Abundances & Parameterized, e.g. vertically constant\\
 		Scattering & Cloud scattering, transmission spectra only\\
 		Clouds & Power law and condensation clouds\\
@@ -63,49 +63,147 @@ PetitRADTRANS can compute both emission and transmission spectra, with an output
 		Valid emission spectra & Clear, from NIR and longer\\
 		\bottomrule
 	\end{tabular}
-	\caption{Description of the parameters available in petitRADTRANS. For cloud particles, $f_{SED}$ is the mass-averaged ratio of the cloud particle settling speed and mixing velocity. K$_{ZZ}$ is the atmospheric eddy diffusion coefficient \autocite{Ackerman2001}}
+	\caption{Description of the parameters available in petitRADTRANS. For cloud particles, $f_{SED}$ is the mass-averaged ratio of the cloud particle settling speed and mixing velocity. K$_{ZZ}$ is the atmospheric eddy diffusion coefficient \parencite{Ackerman2001}}
 	\label{tab:petitradparams}
 \end{table}
 
-Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \autocite{Goyal2018}, Planetary Spectrum Generator \autocite{Villanueva2018}, HELIOS \autocite{Malik2017,Malik2019} and others.
-Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \autocite{Rothman1973,Rothman2010,Gordon2017}, ExoMol/ExoCross \autocite{Tennyson2016,Tennyson2016a,Yurchenko2018} and others. 
-\cite{Behmard2019}%Cool star spectroscopy, hires
-\cite{Guillot2010} %Guillot model, radiative eq irrad planets
-\cite{Molliere2019} %Not the isotopologue paper
-\subsubsection{Radiative Transfer}
+Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \parencite{Goyal2018}, Planetary Spectrum Generator \parencite{Villanueva2018}, HELIOS \parencite{Malik2017,Malik2019} and others.
+Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \parencite{Rothman1973,Rothman2010,Gordon2017}, ExoMol/ExoCross \parencite{Tennyson2016,Tennyson2016a,Yurchenko2018} and others. 
+%\cite{Behmard2019}%Cool star spectroscopy, hires
+
+\subsection{Radiative Transfer}
 In order to compute the emission spectrum an initial featureless blackbody spectrum $B(T_{int})$ is passed through multiple discrete layers of the atmosphere, parameterized by their temperature, pressure, and the opacities of each of the species present in a given layer.
-Modelling each layer as plane parallel, the intensity is computed as in \autocite{Irwin2008,Molliere2017,Molliere2019}
+Modeling each layer as plane parallel, the intensity is computed as in \parencite{Irwin2008,Molliere2017,Molliere2019}
 \begin{equation}
 I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(T^{i}) + B(T^{i+1})\right]\left(\mathcal{T}^{i}-\mathcal{T}^{i+1}\right)
 \end{equation}
 $N_{L}$ is the number of layers in the atmosphere, and $\mathcal{T}$ is the transmission from a given layer to the top of the atmosphere. All quantities are averaged per wavelength bin in c-k mode, while they are evaluated at each wavelength point in line-by-line mode.
+
+\parencite{Guillot2010} %Guillot model, radiative eq irrad planets
+\subsection{Opacity Sources}
+To compute the emission spectra of an atmosphere, petitRADTRANS accounts for various opacity contributions including absorption and emission lines, collisionally induced absorption, cloud opacity and scattering and Rayleigh scattering cross sections. These sources are described in detail in \parencite{Molliere2019}, summarized in tables 2 and 3. For this work we consider only the case of a cloud-free atmosphere due to the complexity of realistic cloud modeling.
 \subsubsection{Line-by-line}
+In its high resolution line-by-line mode, petitRADTRANS computes emission spectra with R=10$^{6}$. 
+These spectra are computed using opacity sources for molecular and atomic lines from ExoMol/ExoCross library \parencite{Yurchenko2018}. Pressure broadening is taken into account using the coefficients from HITRAN/HITEMP \parencite{Rothman2010,Rothman2013} or from \parencite{Sharp2007} (Eqn. 15). The line opacities are computed from 80-3000K, and from 0.3-28$\mu$m in high resolution mode.
 \subsubsection{Correlated K}
-%Fu and Liou 1992
-\cite{Goody1989} %Corr K
-\cite{Lacis1991} % More c-k
+The low resolution mode of petitRADTRANS uses the correlated-k (c-k) method of computing line opacities \parencite{Goody1989,Lacis1991,Fu1992}. 
+This method for calculating emission and absorption features assumes that the opacity distribution functions between differing species are uncorrelated, which permits simple computation of overlapping features. 
+While petitRADTRANS implements a c-k method with a spectral resolution of 1000, in principle it is accurate to much higher resolutions.
+However, the principle utility of the c-k method is in the dramatic reduction in computational cost for computing a spectra such that petitRADTRANS can be used as the foundation for an atmospheric retrieval code requiring hundreds of thousands or millions of models to be generated. 
+\parencite{Molliere2019} discusses the variations between the results of the line-by-line method and the c-k method, finding discrepancy of at most 6\%.
+Typical variation is much lower, as seen in Fig. 2 of \parencite{Molliere2019}.
 \subsubsection{Clouds}
 \cite{Line2016} %Clouds in transits
 \cite{Faherty2018} % Water clouds in cold BDs
 \cite{Morley2014} %Water clouds in Y dwarfs and exoplanets
-\section{Bayesian methods}
 \cite{Lavie2017} %Helios
+\section{Bayesian Inference}
+An atmospheric retrieval is the process of extracting information about physical parameters from a measured spectrum. 
+In general this procedure involves comparing the data to a series of template spectra with known parameters and identifying the best fit model.
+Unfortunately for astronomers, atmospheres are complicated: typical one 1D models still require many (>15) parameters to generate a somewhat realistic model. 
+This results in a very large parameter space in which to search for the correct set of properties that describe our measurement.
+
+Monte Carlo methods, including Nested Sampling, are used to effectively search this large space using the Baysian evidence as a goodness-of-fit metric.
+Here we will follow \parencite{Speagle2019} to provide a brief overview of Bayesian inference.
+
+To measure the likelihood of a given model, we turn to Bayes' Theorem:
+\begin{equation}\label{eqn:bayes}
+P(\mathbf{\Theta}_{M}|\mathbf{D},M) = \frac{P(\mathbf{D}|\mathbf{\Theta},M)P(\mathbf{\Theta}|M)}{P(\mathbf{D}|M)}
+\end{equation}
+In our notation, $\mathbf{\Theta}$ is the set of parameters that describe a model $M$, that is fit to the data $\mathbf{D}$. 
+Bayes' theorem asks what is the probability that the parameters $\mathbf{\Theta}$ are true given the data and model. 
+The distributions for each parameter are the \textbf{posterior} distributions.
+
+This is then related to the \textbf{likelihood} $P(\mathbf{D}|\mathbf{\Theta},M)$ of measuring the data given the model, the \textbf{prior} probability $P(\mathbf{\Theta}|M)$ which describes our degree of belief in our model and the \textbf{evidence} $P(\mathbf{D}|M)$, which is marginalized over all possible $\mathbf{\Theta}$ and quantifies how well the model describes the data.
+To simplify notation, we adopt the following convention for Bayes' theorem:
+\begin{equation}
+\mathcal{P}(\mathbf{\Theta}) = \frac{\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})}{\mathcal{Z}}
+\end{equation}
+
+In general, the goal of an atmospheric retrieval is to find the best fit model by maximizing the evidence $\mathcal{Z}$, and as a by product finding the marginalized posterior distributions for each parameter.
+This comes with many challenges, especially when dealing with large numbers of parameters.
+Selection of the priors and model will determine the extent to which a result can be interpreted, while sampling large parameter spaces and computing likelihoods introduces substantial numerical challenges. 
+The Markov Chain Monte Carlo method and the Nested Sampling method described below attempt to solve the challenges of exploring a large parameter space.
 \subsection{MCMC}
 \cite{Foreman-Mackey2013} %emcee
-\cite{Speagle2019} %Intro to MCMC
 \cite{MacKay2003} %MCMC
 \subsection{Nested Sampling}
-\cite{Skilling2004} %Foundations
-\cite{Feroz2007} %Nested sampling for astro
-\cite{Feroz2008} %Multinest (might be 2009)
-\cite{Feroz2014} %Importance nested sampling
-\cite{Feroz2019} %Importance nested sampling, pymultinest
-\subsection{multinest}
-\subsubsection{Hyperparameters}
+Nested sampling attempts to address several of the shortcomings of MCMC methods while simultaneously improving computational efficiency \parencite{Skilling2004}.
+MCMC methods generate samples `proportional to' the true posterior distributions, which lead to difficulties in computing the evidence $\mathcal{Z}$ \parencite{Speagle2020}. 
+In contrast, nested sampling puts the evidence first and provides estimates of the posterior distributions from the importance weights of the final set of samples. First described in \parencite{Skilling2004}, nested sampling has been adopted as the sampling algorithm of choice within the astrophysics community \parencite{Feroz2009,Buchner2014,Feroz2019,Speagle2020}.
+
+With the goal of parameter estimation, nested sampling attempts to estimate the evidence $\mathcal{Z}$ rather than directly sampling the posteriors \parencite{Skilling2004}. 
+This is done by integrating over the entire parameter space of $\mathbf{\Theta}$
+\begin{equation}
+\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta}
+\end{equation}
+This is difficult.
+
+Rather than attempting to directly solve the entire multidimensional integral, nested sampling transforms this into an integration over the \textit{prior} volume X:
+\begin{equation}
+\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta} = \int_{0}^{1}\mathcal{L}(X)dX
+\end{equation}
+This is now a contour integral over isocontours $\mathcal{L}(X)$ which bound the prior volume
+\begin{equation}
+X(\lambda) = \int_{\Omega_{\mathbf{\Theta}}:\mathcal{L}(\mathbf{\Theta})\geq\lambda}\pi(\mathbf{\Theta})d\mathbf{\Theta}
+\end{equation} 
+which is the fraction of the prior where the likelihood of the data given the model is above some threshold $\lambda$.
+The integration is now simplified into a 1D integration over X, given proper prior selection.
+
+
+\subsubsection{Method}
+Consider a parameter space with $D$ dimensions.
+We will describe this space as a unit hypercube, where each parameter runs from 0 to 1.
+Priors are thus transformations from this space to a physical parameter space.
+Often the prior is a uniform distribution, which simply scales the space, but it may also be an informative prior such as a normal distribution centered at an expected physical value.
+In order to sample this space, $N_{L}$ `live points' are generated, each of which provides a set of parameters $\mathbf{\Theta}$. 
+$N_{L}$ must be greater than $D+1$, and typically values on the order of $50\times D$ are used \parencite{Feroz2009}.
+Using a likelihood function $\mathcal{L}(\mathbf{\Theta})$, the evidence $\mathcal{Z}$ can be computed by comparing the model to the data.
+Having computed the evidence at each point, the live points are then sorted and the point with the lowest evidence is discarded.
+A set of ellipsoids is drawn around the remaining points. 
+The procedure for computing these ellipsoids is given in \parencite{Feroz2008,Feroz2009}.
+By using a set of ellipsoids, multiple modes in the parameter space can be encompassed.
+Once the ellipsoids bounding the remaining points are drawn, a new sample is drawn from within the restricted sample space.
+The evidence for the new point is computed, and it is accepted if the evidence is greater than the minimum evidence of the previous remaining set of points.
+The entire procedure is repeated until some convergence criteria is satisfied, with each iteration resulting in a smaller volume being encompassed by the ellipsoids, nested within the previous volume.
+
+This procedure can be improved in many ways, including importance nested sampling \parencite{Feroz2019} and dyamic nested sampling \parencite{Speagle2020}. 
+
+\subsection{Multinest}
+For our implementation of an atmospheric retrieval code, we chose to use the Multinest algorithm \parencite{Feroz2009} using the pyMultinest wrapper \parencite{Buchner2014} and using importance nested sampling to improve the accuracy of the Bayesian evidence calculation \parencite{Feroz2019}.
+This particular implementation of nested sampling is commonly used in atmospheric retrieval codes due to its fast Fortran implementation, though it was initially developed for cosmological problems.
+
+Using the pyMultinest package, we implemented the required log-prior function which transforms the unit hypercube to physical parameter space and the log-likelihood function used to compare the model to the data. The full code is available at \url{https://github.com/nenasedk/petitRetrieval}, and is based of the emission spectrum retrieval described in \parencite{Molliere2019}. 
+Retrievals were typically performed using 500 or 1000 live points, with the convergence criteria 
+\begin{equation}
+\Delta\ln\mathcal{Z} = \ln{Z_{i} - Z_{i+1}}
+\end{equation}
+set to 0.3 for parameter estimation and 0.8 for model comparison, as suggested in the pyMultinest documentation.
+
 \subsection{Prior choice}
 % Uniform in log space
 % Gaussian/normal for some
 % based on petitRadTrans paper
+\begin{table}[t]
+	\centering
+	\begin{tabular}{lll}
+		\toprule
+		\textbf{Parameter} & \textbf{Prior} & \textbf{Constraints}\\
+		\midrule
+		$\log\delta$ & $\mathcal{N}(-5.5,2.5)$&\\
+		$\log\gamma$ & $\mathcal{N}(0,2)$&\\
+		T$_{int}$ & $\mathcal{U}(0,3500)$&\\
+		T$_{equ}$ & $\mathcal{U}(0,30)$&\\
+		$\log P_{Trans}$ & $\mathcal{N}(-3,3)$&\\
+		$\alpha$ & $\mathcal{N}(0.25,0.4)$&$\alpha < 1$\\
+		$\log g$ & $\mathcal{U}(2.0,4.5)$&\\
+		$\log P_{0}$ & $\mathcal{U}(-5,2)$&\\
+		$\ln(X_{i})$ & $\mathcal{U}(-18,0)$ & $\sum X_{i} < 1$\\
+		\bottomrule		
+	\end{tabular}
+	\caption{Prior choices for atmospheric retrievals. $\mathcal{U}(a,b)$ is a uniform distribution from $a$ to $b$. $\mathcal{N}(\mu,\sigma)$ is a normal distribution. $T_{int}$ corresponds to the effective temperature of an object, while $T_{equ}$ is the equilibrium temperature between an object and a host star. For free floating objects, $T_{equ}$ is set to 3.4K, justifying the small range of the prior. $\delta$ is in units of bar$^{-1}$, temperatures are in K, and pressures in bar.}
+	\label{tab:priors}
+\end{table}
 \subsection{Bayesian Model Selection}
 % Number of parameters
 % Bayesian evidence

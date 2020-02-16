@@ -66,7 +66,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldateparts</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
@@ -91,15 +91,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>4</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>4</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -127,7 +127,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>singletitle</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortalphaothers</bcf:key>
@@ -151,7 +151,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -171,7 +171,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -387,11 +387,6 @@
     <bcf:option datatype="boolean">noremoteinfo</bcf:option>
     <bcf:option datatype="boolean">showmedium</bcf:option>
     <bcf:option datatype="boolean">guessmedium</bcf:option>
-    <bcf:option datatype="boolean">firstlonghand</bcf:option>
-    <bcf:option datatype="boolean">nofullfootnote</bcf:option>
-    <bcf:option datatype="boolean">mancitepar</bcf:option>
-    <bcf:option datatype="boolean">footnoterulestrict</bcf:option>
-    <bcf:option datatype="boolean">mladraft</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -2014,155 +2009,177 @@
     <bcf:citekey order="4">Lefreniere2009</bcf:citekey>
     <bcf:citekey order="4">Soummer2012</bcf:citekey>
     <bcf:citekey order="5">Chauvin2004</bcf:citekey>
-    <bcf:citekey order="6">Bowler2016</bcf:citekey>
-    <bcf:citekey order="7">Bowler2016</bcf:citekey>
-    <bcf:citekey order="8">Beichman2019</bcf:citekey>
-    <bcf:citekey order="9">Lagage2015</bcf:citekey>
-    <bcf:citekey order="10">Macintosh2006</bcf:citekey>
-    <bcf:citekey order="11">Macintosh2015</bcf:citekey>
-    <bcf:citekey order="12">Lagrange2009</bcf:citekey>
-    <bcf:citekey order="13">Quanz2010</bcf:citekey>
-    <bcf:citekey order="13">Chilcote2015</bcf:citekey>
-    <bcf:citekey order="13">Chilcote2017</bcf:citekey>
-    <bcf:citekey order="13">Hoeihmakers2018</bcf:citekey>
-    <bcf:citekey order="14">Mamajek2014</bcf:citekey>
-    <bcf:citekey order="15">Chilcote2015</bcf:citekey>
-    <bcf:citekey order="16">Nowak2019</bcf:citekey>
-    <bcf:citekey order="17">Chauvin2012</bcf:citekey>
-    <bcf:citekey order="18">Lagrange2019</bcf:citekey>
-    <bcf:citekey order="19">Chilcote2017</bcf:citekey>
-    <bcf:citekey order="19">Nowak2019</bcf:citekey>
-    <bcf:citekey order="20">Oliveira</bcf:citekey>
-    <bcf:citekey order="21">Helling2014</bcf:citekey>
-    <bcf:citekey order="22">Cooper2014</bcf:citekey>
-    <bcf:citekey order="23">Madhusudhan2018a</bcf:citekey>
-    <bcf:citekey order="24">Burrows2003</bcf:citekey>
-    <bcf:citekey order="25">Marley2014</bcf:citekey>
-    <bcf:citekey order="26">Manjavacas2014</bcf:citekey>
-    <bcf:citekey order="27">Biller2017</bcf:citekey>
-    <bcf:citekey order="28">Faherty2018</bcf:citekey>
-    <bcf:citekey order="29">Morley2014</bcf:citekey>
-    <bcf:citekey order="30">Kreidberg2018</bcf:citekey>
-    <bcf:citekey order="31">Biller2018</bcf:citekey>
-    <bcf:citekey order="32">Bozza</bcf:citekey>
-    <bcf:citekey order="33">Danielski2018</bcf:citekey>
-    <bcf:citekey order="34">Madhusudhan2016</bcf:citekey>
-    <bcf:citekey order="35">Lee2012</bcf:citekey>
-    <bcf:citekey order="36">MacDonald2017</bcf:citekey>
-    <bcf:citekey order="37">Madhusudhan</bcf:citekey>
-    <bcf:citekey order="38">Beichman2019</bcf:citekey>
-    <bcf:citekey order="39">MIRI1</bcf:citekey>
-    <bcf:citekey order="39">MIRI2</bcf:citekey>
-    <bcf:citekey order="39">10.1086/6822554</bcf:citekey>
-    <bcf:citekey order="39">MIRI4</bcf:citekey>
-    <bcf:citekey order="39">MIRI5</bcf:citekey>
-    <bcf:citekey order="39">MIRI6</bcf:citekey>
-    <bcf:citekey order="39">MIRI7</bcf:citekey>
-    <bcf:citekey order="39">MIRI8</bcf:citekey>
-    <bcf:citekey order="39">MIRI9</bcf:citekey>
-    <bcf:citekey order="40">MIRI9</bcf:citekey>
-    <bcf:citekey order="41">assembled</bcf:citekey>
-    <bcf:citekey order="42">assembled</bcf:citekey>
-    <bcf:citekey order="43">Rieke2015</bcf:citekey>
-    <bcf:citekey order="44">Kendrew2015</bcf:citekey>
-    <bcf:citekey order="45">MIRI6</bcf:citekey>
-    <bcf:citekey order="46">MIRI6</bcf:citekey>
-    <bcf:citekey order="47">Wells2015</bcf:citekey>
-    <bcf:citekey order="48">Argyriou2020</bcf:citekey>
+    <bcf:citekey order="6">Beichman2019</bcf:citekey>
+    <bcf:citekey order="7">Gauza2015</bcf:citekey>
+    <bcf:citekey order="8">Macintosh2015</bcf:citekey>
+    <bcf:citekey order="9">Quanz2010</bcf:citekey>
+    <bcf:citekey order="10">Skemer2016</bcf:citekey>
+    <bcf:citekey order="11">DeRosa2016</bcf:citekey>
+    <bcf:citekey order="12">Marois2008</bcf:citekey>
+    <bcf:citekey order="12">Skemer2012</bcf:citekey>
+    <bcf:citekey order="13">Marois2008</bcf:citekey>
+    <bcf:citekey order="13">Skemer2012</bcf:citekey>
+    <bcf:citekey order="14">Marois2008</bcf:citekey>
+    <bcf:citekey order="14">Skemer2012</bcf:citekey>
+    <bcf:citekey order="15">Marois2008</bcf:citekey>
+    <bcf:citekey order="15">Skemer2012</bcf:citekey>
+    <bcf:citekey order="16">Haffert2019</bcf:citekey>
+    <bcf:citekey order="17">Haffert2019</bcf:citekey>
+    <bcf:citekey order="18">Luhman2014</bcf:citekey>
+    <bcf:citekey order="18">Tinney2014</bcf:citekey>
+    <bcf:citekey order="19">Sahlmann2015</bcf:citekey>
+    <bcf:citekey order="19">Garcia2017</bcf:citekey>
+    <bcf:citekey order="20">Bowler2016</bcf:citekey>
+    <bcf:citekey order="21">Bowler2016</bcf:citekey>
+    <bcf:citekey order="22">Lagage2015</bcf:citekey>
+    <bcf:citekey order="23">Oliveira</bcf:citekey>
+    <bcf:citekey order="24">Helling2014</bcf:citekey>
+    <bcf:citekey order="25">Cooper2014</bcf:citekey>
+    <bcf:citekey order="26">Madhusudhan2018a</bcf:citekey>
+    <bcf:citekey order="27">Burrows2003</bcf:citekey>
+    <bcf:citekey order="28">Marley2014</bcf:citekey>
+    <bcf:citekey order="29">Manjavacas2014</bcf:citekey>
+    <bcf:citekey order="30">Biller2017</bcf:citekey>
+    <bcf:citekey order="31">Faherty2018</bcf:citekey>
+    <bcf:citekey order="32">Morley2014</bcf:citekey>
+    <bcf:citekey order="33">Kreidberg2018</bcf:citekey>
+    <bcf:citekey order="34">Biller2018</bcf:citekey>
+    <bcf:citekey order="35">Bozza</bcf:citekey>
+    <bcf:citekey order="36">Danielski2018</bcf:citekey>
+    <bcf:citekey order="37">Madhusudhan2016</bcf:citekey>
+    <bcf:citekey order="38">Lee2012</bcf:citekey>
+    <bcf:citekey order="39">MacDonald2017</bcf:citekey>
+    <bcf:citekey order="40">Madhusudhan</bcf:citekey>
+    <bcf:citekey order="41">Beichman2019</bcf:citekey>
+    <bcf:citekey order="42">MIRI1</bcf:citekey>
+    <bcf:citekey order="42">MIRI2</bcf:citekey>
+    <bcf:citekey order="42">10.1086/6822554</bcf:citekey>
+    <bcf:citekey order="42">MIRI4</bcf:citekey>
+    <bcf:citekey order="42">MIRI5</bcf:citekey>
+    <bcf:citekey order="42">MIRI6</bcf:citekey>
+    <bcf:citekey order="42">MIRI7</bcf:citekey>
+    <bcf:citekey order="42">MIRI8</bcf:citekey>
+    <bcf:citekey order="42">MIRI9</bcf:citekey>
+    <bcf:citekey order="43">MIRI9</bcf:citekey>
+    <bcf:citekey order="44">assembled</bcf:citekey>
+    <bcf:citekey order="45">assembled</bcf:citekey>
+    <bcf:citekey order="46">Rieke2015</bcf:citekey>
+    <bcf:citekey order="47">Kendrew2015</bcf:citekey>
+    <bcf:citekey order="48">MIRI6</bcf:citekey>
     <bcf:citekey order="49">MIRI6</bcf:citekey>
-    <bcf:citekey order="50">Argyriou2020</bcf:citekey>
+    <bcf:citekey order="50">Wells2015</bcf:citekey>
     <bcf:citekey order="51">Argyriou2020</bcf:citekey>
-    <bcf:citekey order="52">ref:Chen2019</bcf:citekey>
-    <bcf:citekey order="53">Lahuis2003</bcf:citekey>
-    <bcf:citekey order="54">Lahuis2003</bcf:citekey>
-    <bcf:citekey order="55">Malumuth2003</bcf:citekey>
-    <bcf:citekey order="56">Argryiou2020</bcf:citekey>
-    <bcf:citekey order="57">MIRI7</bcf:citekey>
-    <bcf:citekey order="58">MIRI7</bcf:citekey>
-    <bcf:citekey order="59">Lahuis2018</bcf:citekey>
-    <bcf:citekey order="60">Consortium2018</bcf:citekey>
-    <bcf:citekey order="61">Cossou2019</bcf:citekey>
-    <bcf:citekey order="62">Lahuis2003</bcf:citekey>
-    <bcf:citekey order="63">VanderPlas2018</bcf:citekey>
-    <bcf:citekey order="64">ref:Argyriou2018</bcf:citekey>
-    <bcf:citekey order="65">Bushouse2015</bcf:citekey>
-    <bcf:citekey order="66">Labiano-Ortega2016</bcf:citekey>
-    <bcf:citekey order="67">Carnall2017</bcf:citekey>
-    <bcf:citekey order="68">Snellen2014</bcf:citekey>
-    <bcf:citekey order="69">Simkin1974</bcf:citekey>
-    <bcf:citekey order="70">Tonry1979</bcf:citekey>
-    <bcf:citekey order="71">Petermann2019</bcf:citekey>
-    <bcf:citekey order="72">Bodis2007</bcf:citekey>
-    <bcf:citekey order="74">Molliere2019</bcf:citekey>
-    <bcf:citekey order="76">Madhusudhan2018</bcf:citekey>
-    <bcf:citekey order="77">Benneke2012</bcf:citekey>
-    <bcf:citekey order="78">Schlawin2018</bcf:citekey>
-    <bcf:citekey order="79">Fisher2019</bcf:citekey>
-    <bcf:citekey order="80">Oreshenko2019</bcf:citekey>
-    <bcf:citekey order="81">Barman2015</bcf:citekey>
-    <bcf:citekey order="82">Benneke2013</bcf:citekey>
-    <bcf:citekey order="83">Benneke2012</bcf:citekey>
-    <bcf:citekey order="84">Blanco-Cuaresma2018</bcf:citekey>
-    <bcf:citekey order="85">Konopacky2013</bcf:citekey>
-    <bcf:citekey order="86">Morley2018</bcf:citekey>
-    <bcf:citekey order="87">Lupu2018</bcf:citekey>
-    <bcf:citekey order="88">Gandhi2018</bcf:citekey>
-    <bcf:citekey order="89">Baudino2017</bcf:citekey>
-    <bcf:citekey order="90">Line2013</bcf:citekey>
-    <bcf:citekey order="91">Madhusudhan2018b</bcf:citekey>
-    <bcf:citekey order="92">Irwin2008</bcf:citekey>
-    <bcf:citekey order="93">Robinson2016</bcf:citekey>
-    <bcf:citekey order="94">Waldmann2015</bcf:citekey>
-    <bcf:citekey order="95">Waldmann2015a</bcf:citekey>
-    <bcf:citekey order="96">Line2015</bcf:citekey>
-    <bcf:citekey order="96">Line2017</bcf:citekey>
-    <bcf:citekey order="96">Zalesky2019</bcf:citekey>
-    <bcf:citekey order="97">Batalha2018</bcf:citekey>
-    <bcf:citekey order="98">Feng2018</bcf:citekey>
-    <bcf:citekey order="99">Molliere2019</bcf:citekey>
-    <bcf:citekey order="100">Chen2019</bcf:citekey>
-    <bcf:citekey order="101">Molliere2019</bcf:citekey>
-    <bcf:citekey order="102">Zhang2019</bcf:citekey>
-    <bcf:citekey order="103">Molliere2019</bcf:citekey>
-    <bcf:citekey order="104">Guillot2010</bcf:citekey>
-    <bcf:citekey order="105">Ackerman2001</bcf:citekey>
-    <bcf:citekey order="106">Ackerman2001</bcf:citekey>
-    <bcf:citekey order="107">Goyal2018</bcf:citekey>
-    <bcf:citekey order="108">Villanueva2018</bcf:citekey>
-    <bcf:citekey order="109">Malik2017</bcf:citekey>
-    <bcf:citekey order="109">Malik2019</bcf:citekey>
-    <bcf:citekey order="110">Rothman1973</bcf:citekey>
-    <bcf:citekey order="110">Rothman2010</bcf:citekey>
-    <bcf:citekey order="110">Gordon2017</bcf:citekey>
-    <bcf:citekey order="111">Tennyson2016</bcf:citekey>
-    <bcf:citekey order="111">Tennyson2016a</bcf:citekey>
-    <bcf:citekey order="111">Yurchenko2018</bcf:citekey>
-    <bcf:citekey order="112">Behmard2019</bcf:citekey>
-    <bcf:citekey order="113">Guillot2010</bcf:citekey>
+    <bcf:citekey order="52">MIRI6</bcf:citekey>
+    <bcf:citekey order="53">Argyriou2020</bcf:citekey>
+    <bcf:citekey order="54">Argyriou2020</bcf:citekey>
+    <bcf:citekey order="55">ref:Chen2019</bcf:citekey>
+    <bcf:citekey order="56">Lahuis2003</bcf:citekey>
+    <bcf:citekey order="57">Lahuis2003</bcf:citekey>
+    <bcf:citekey order="58">Malumuth2003</bcf:citekey>
+    <bcf:citekey order="59">Argryiou2020</bcf:citekey>
+    <bcf:citekey order="60">MIRI7</bcf:citekey>
+    <bcf:citekey order="61">MIRI7</bcf:citekey>
+    <bcf:citekey order="62">Lahuis2018</bcf:citekey>
+    <bcf:citekey order="63">Consortium2018</bcf:citekey>
+    <bcf:citekey order="64">Cossou2019</bcf:citekey>
+    <bcf:citekey order="65">Lahuis2003</bcf:citekey>
+    <bcf:citekey order="66">VanderPlas2018</bcf:citekey>
+    <bcf:citekey order="67">ref:Argyriou2018</bcf:citekey>
+    <bcf:citekey order="68">Bushouse2015</bcf:citekey>
+    <bcf:citekey order="69">Labiano-Ortega2016</bcf:citekey>
+    <bcf:citekey order="70">Carnall2017</bcf:citekey>
+    <bcf:citekey order="71">Snellen2014</bcf:citekey>
+    <bcf:citekey order="72">Simkin1974</bcf:citekey>
+    <bcf:citekey order="73">Tonry1979</bcf:citekey>
+    <bcf:citekey order="74">Petermann2019</bcf:citekey>
+    <bcf:citekey order="75">Bodis2007</bcf:citekey>
+    <bcf:citekey order="77">Molliere2019</bcf:citekey>
+    <bcf:citekey order="79">Madhusudhan2018</bcf:citekey>
+    <bcf:citekey order="80">Benneke2012</bcf:citekey>
+    <bcf:citekey order="81">Schlawin2018</bcf:citekey>
+    <bcf:citekey order="82">Fisher2019</bcf:citekey>
+    <bcf:citekey order="83">Oreshenko2019</bcf:citekey>
+    <bcf:citekey order="84">Barman2015</bcf:citekey>
+    <bcf:citekey order="85">Benneke2013</bcf:citekey>
+    <bcf:citekey order="86">Benneke2012</bcf:citekey>
+    <bcf:citekey order="87">Blanco-Cuaresma2018</bcf:citekey>
+    <bcf:citekey order="88">Konopacky2013</bcf:citekey>
+    <bcf:citekey order="89">Morley2018</bcf:citekey>
+    <bcf:citekey order="90">Lupu2016</bcf:citekey>
+    <bcf:citekey order="91">Gandhi2018</bcf:citekey>
+    <bcf:citekey order="92">Baudino2017</bcf:citekey>
+    <bcf:citekey order="93">Line2013</bcf:citekey>
+    <bcf:citekey order="94">Madhusudhan2018b</bcf:citekey>
+    <bcf:citekey order="95">Irwin2008</bcf:citekey>
+    <bcf:citekey order="96">Robinson2016</bcf:citekey>
+    <bcf:citekey order="97">Waldmann2015</bcf:citekey>
+    <bcf:citekey order="98">Waldmann2015a</bcf:citekey>
+    <bcf:citekey order="99">Line2015</bcf:citekey>
+    <bcf:citekey order="99">Line2017</bcf:citekey>
+    <bcf:citekey order="99">Zalesky2019</bcf:citekey>
+    <bcf:citekey order="100">Batalha2018</bcf:citekey>
+    <bcf:citekey order="101">Feng2018</bcf:citekey>
+    <bcf:citekey order="102">Molliere2019</bcf:citekey>
+    <bcf:citekey order="103">Chen2019</bcf:citekey>
+    <bcf:citekey order="104">Molliere2019</bcf:citekey>
+    <bcf:citekey order="105">Molliere2019</bcf:citekey>
+    <bcf:citekey order="106">Guillot2010</bcf:citekey>
+    <bcf:citekey order="107">Ackerman2001</bcf:citekey>
+    <bcf:citekey order="108">Ackerman2001</bcf:citekey>
+    <bcf:citekey order="109">Goyal2018</bcf:citekey>
+    <bcf:citekey order="110">Villanueva2018</bcf:citekey>
+    <bcf:citekey order="111">Malik2017</bcf:citekey>
+    <bcf:citekey order="111">Malik2019</bcf:citekey>
+    <bcf:citekey order="112">Rothman1973</bcf:citekey>
+    <bcf:citekey order="112">Rothman2010</bcf:citekey>
+    <bcf:citekey order="112">Gordon2017</bcf:citekey>
+    <bcf:citekey order="113">Tennyson2016</bcf:citekey>
+    <bcf:citekey order="113">Tennyson2016a</bcf:citekey>
+    <bcf:citekey order="113">Yurchenko2018</bcf:citekey>
+    <bcf:citekey order="114">Irwin2008</bcf:citekey>
+    <bcf:citekey order="114">Molliere2017</bcf:citekey>
     <bcf:citekey order="114">Molliere2019</bcf:citekey>
-    <bcf:citekey order="115">Irwin2008</bcf:citekey>
-    <bcf:citekey order="115">Molliere2017</bcf:citekey>
-    <bcf:citekey order="115">Molliere2019</bcf:citekey>
-    <bcf:citekey order="116">Goody1989</bcf:citekey>
-    <bcf:citekey order="117">Lacis1991</bcf:citekey>
-    <bcf:citekey order="118">Line2016</bcf:citekey>
-    <bcf:citekey order="119">Faherty2018</bcf:citekey>
-    <bcf:citekey order="120">Morley2014</bcf:citekey>
-    <bcf:citekey order="121">Lavie2017</bcf:citekey>
-    <bcf:citekey order="122">Foreman-Mackey2013</bcf:citekey>
-    <bcf:citekey order="123">Speagle2019</bcf:citekey>
-    <bcf:citekey order="124">MacKay2003</bcf:citekey>
-    <bcf:citekey order="125">Skilling2004</bcf:citekey>
-    <bcf:citekey order="126">Feroz2007</bcf:citekey>
-    <bcf:citekey order="127">Feroz2008</bcf:citekey>
-    <bcf:citekey order="128">Feroz2014</bcf:citekey>
-    <bcf:citekey order="129">Feroz2019</bcf:citekey>
-    <bcf:citekey order="130">Madhusudhan2012</bcf:citekey>
-    <bcf:citekey order="131">Moses2012</bcf:citekey>
-    <bcf:citekey order="132">Garland2019</bcf:citekey>
-    <bcf:citekey order="133">Bowler2016</bcf:citekey>
-    <bcf:citekey order="134">Fegley1994</bcf:citekey>
-    <bcf:citekey order="135">Tokunaga1983</bcf:citekey>
+    <bcf:citekey order="115">Guillot2010</bcf:citekey>
+    <bcf:citekey order="116">Molliere2019</bcf:citekey>
+    <bcf:citekey order="117">Yurchenko2018</bcf:citekey>
+    <bcf:citekey order="118">Rothman2010</bcf:citekey>
+    <bcf:citekey order="118">Rothman2013</bcf:citekey>
+    <bcf:citekey order="119">Sharp2007</bcf:citekey>
+    <bcf:citekey order="120">Goody1989</bcf:citekey>
+    <bcf:citekey order="120">Lacis1991</bcf:citekey>
+    <bcf:citekey order="120">Fu1992</bcf:citekey>
+    <bcf:citekey order="121">Molliere2019</bcf:citekey>
+    <bcf:citekey order="122">Molliere2019</bcf:citekey>
+    <bcf:citekey order="123">Line2016</bcf:citekey>
+    <bcf:citekey order="124">Faherty2018</bcf:citekey>
+    <bcf:citekey order="125">Morley2014</bcf:citekey>
+    <bcf:citekey order="126">Lavie2017</bcf:citekey>
+    <bcf:citekey order="127">Speagle2019</bcf:citekey>
+    <bcf:citekey order="128">Foreman-Mackey2013</bcf:citekey>
+    <bcf:citekey order="129">MacKay2003</bcf:citekey>
+    <bcf:citekey order="130">Skilling2004</bcf:citekey>
+    <bcf:citekey order="131">Speagle2020</bcf:citekey>
+    <bcf:citekey order="132">Skilling2004</bcf:citekey>
+    <bcf:citekey order="133">Feroz2009</bcf:citekey>
+    <bcf:citekey order="133">Buchner2014</bcf:citekey>
+    <bcf:citekey order="133">Feroz2019</bcf:citekey>
+    <bcf:citekey order="133">Speagle2020</bcf:citekey>
+    <bcf:citekey order="134">Skilling2004</bcf:citekey>
+    <bcf:citekey order="135">Feroz2009</bcf:citekey>
+    <bcf:citekey order="136">Feroz2008</bcf:citekey>
+    <bcf:citekey order="136">Feroz2009</bcf:citekey>
+    <bcf:citekey order="137">Feroz2019</bcf:citekey>
+    <bcf:citekey order="138">Speagle2020</bcf:citekey>
+    <bcf:citekey order="139">Feroz2009</bcf:citekey>
+    <bcf:citekey order="140">Buchner2014</bcf:citekey>
+    <bcf:citekey order="141">Feroz2019</bcf:citekey>
+    <bcf:citekey order="142">Molliere2019</bcf:citekey>
+    <bcf:citekey order="143">Madhusudhan2012</bcf:citekey>
+    <bcf:citekey order="144">Moses2012</bcf:citekey>
+    <bcf:citekey order="145">Garland2019</bcf:citekey>
+    <bcf:citekey order="146">Bowler2016</bcf:citekey>
+    <bcf:citekey order="147">Fegley1994</bcf:citekey>
+    <bcf:citekey order="148">Tokunaga1983</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

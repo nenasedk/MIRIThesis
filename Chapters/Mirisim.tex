@@ -6,7 +6,7 @@ The aim of this chapter is to examine fringing in the MIRI detectors and how thi
 \section{Fringing}
 Thin film interference occurs when light is coherently reflected at the boundary between two layers and interferes with the incident light.
 This is the principle on which Fabry-P\'{e}rot interferometers function.
-As we wish to determine the effect of fringing on the amplitude of the signal received by the detector, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
+As we wish to determine the effect of fringing on the=-0 amplitude of the signal received by the detector, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
 Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light travels within the cavity, we can compute the transmittance as:
 \begin{equation}\label{eqn:trans}
 T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
@@ -15,14 +15,14 @@ Where the phase $\delta$ at half a wavelength ($\phi = \pi$), with wavenumber $\
 \begin{equation}\label{eqn:phase}
 \delta = 4\pi\sigma D \cos\theta - (\phi - \pi)
 \end{equation}
-Systems with a spacing on the order of millimeters produces significant interference for infrared light \autocite{Lahuis2003}.
+Systems with a spacing on the order of millimeters produces significant interference for infrared light \parencite{Lahuis2003}.
 
 The detectors of the MRS consist of several layers, as shown in Fig. \ref{fig:layers}, with a characteristic thickness of ~500$\mu$m, which results in significant (10\%-30\%) `fringing' in a spectrally flat signal - visible in Fig. \ref{fig:flatfield}.
-While this is typical for infrared detectors such as those in the Spitzer Space Telescope \autocite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \autocite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increase the significance of this issue.
+While this is typical for infrared detectors such as those in the Spitzer Space Telescope \parencite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \parencite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increase the significance of this issue.
 The MIRI consortium has stated that the error budget for all detector effects must be 3.3\% or less. 
 Present fringing corrections result in a 5\% deviation from a photometrically accurate signal, and can introduce correlated noise which will degrade any measured spectrum.
 Therefore it is critical to examine the impact of fringing on a signal, the parameters that influence the fringing strength and phase, and possible solutions for fringe correction. 
-While a more complete treatment of proposed fringe correction can be found in \autocite{Argryiou2020}, this work will examine the implementation of fringing into the MIRI instrumental simulator and address the current state of fringe correction in the JWST Data Calibration Pipeline.
+While a more complete treatment of proposed fringe correction can be found in \parencite{Argryiou2020}, this work will examine the implementation of fringing into the MIRI instrumental simulator and address the current state of fringe correction in the JWST Data Calibration Pipeline.
 
 \definecolor{lightgray}{HTML}{E0E0E0}
 \definecolor{darkgray}{HTML}{383838}
@@ -39,7 +39,7 @@ While a more complete treatment of proposed fringe correction can be found in \a
 		\filldraw [fill=Fuchsia, draw=Black](0,9.6) rectangle (7,10) node [pos=0.5] {\textcolor{White}{Anti-reflective Coating}};
 	\end{tikzpicture}
 	\end{scriptsize}
-	\caption{Layers of the MIRI MRS detectors. Note that thicknesses are not to scale \autocite{MIRI7}.}
+	\caption{Layers of the MIRI MRS detectors. Note that thicknesses are not to scale \parencite{MIRI7}.}
 	\label{fig:layers}
 \end{figure}
 
