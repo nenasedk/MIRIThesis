@@ -1502,7 +1502,7 @@
       \verb https://doi.org/10.3929/ethz-a-005479205
       \endverb
     \endentry
-    \entry{10.1086/682254}{article}{}
+    \entry{MIRI3}{article}{}
       \name{author}{37}{}{%
         {{uniquename=0,uniquepart=base,hash=2e4b17c84514efc9cda34c02102da505}{%
            family={Bouchet},
@@ -9474,6 +9474,42 @@
       \verb :home/evert/Documents/Papers/Thesis/UniformRetrievalUltracoolDwarfs2016.pdf:pdf
       \endverb
     \endentry
+    \entry{Luhman2014}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=32b1e33b313f007439f14b9a42342278}{%
+           family={Luhman},
+           familyi={L\bibinitperiod},
+           given={K\bibnamedelima L},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{32b1e33b313f007439f14b9a42342278}
+      \strng{fullhash}{32b1e33b313f007439f14b9a42342278}
+      \strng{bibnamehash}{32b1e33b313f007439f14b9a42342278}
+      \strng{authorbibnamehash}{32b1e33b313f007439f14b9a42342278}
+      \strng{authornamehash}{32b1e33b313f007439f14b9a42342278}
+      \strng{authorfullhash}{32b1e33b313f007439f14b9a42342278}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Letters}
+      \field{title}{{Discovery of a {\~{}}250K Brown Dwarf at 2pc from the Sun}}
+      \field{volume}{18}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{2\bibrangedash 7}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1088/2041-8205/786/2/L18
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Luhman{\_}2014{\_}ApJL{\_}786{\_}L18.pdf:pdf
+      \endverb
+      \keyw{brown dwarfs,infrared,low-mass,proper motions,solar neighborhood,stars}
+    \endentry
     \entry{Lupu2016}{article}{}
       \name{author}{6}{}{%
         {{uniquename=0,uniquepart=base,hash=e263278ad896e85856fd1c0e1ee43b50}{%
@@ -15298,6 +15334,73 @@
       \endverb
       \keyw{Cooling functions,Cross sections,Einstein A coefficients,Infrared,Land{é} g-factors,Lifetimes,Partition functions,Transition frequencies,Visible,k coefficients}
     \endentry
+    \entry{Tinney2014}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6d6717411c86ed3b013ff1118064441}{%
+           family={Tinney},
+           familyi={T\bibinitperiod},
+           given={C\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f97580f3f5344c9462d75ab253b80b82}{%
+           family={Faherty},
+           familyi={F\bibinitperiod},
+           given={Jacqueline\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89ee83b0a9124e9e7c1551b05a1f9f96}{%
+           family={Kirkpatrick},
+           familyi={K\bibinitperiod},
+           given={J\bibnamedelima Davy},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a14189060998c88aff327ffdeacb599}{%
+           family={Cushing},
+           familyi={C\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a635c27bd2601f3d98f61bb745a0c48}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline\bibnamedelima V},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cc5ae1bc959eadbd4acd96c72d97469e}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Edward\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54bc197722d9610c4f42a3b5f3b0160a}
+      \strng{fullhash}{1edb5ad07437c417d67b313a2e04b3c7}
+      \strng{bibnamehash}{54bc197722d9610c4f42a3b5f3b0160a}
+      \strng{authorbibnamehash}{54bc197722d9610c4f42a3b5f3b0160a}
+      \strng{authornamehash}{54bc197722d9610c4f42a3b5f3b0160a}
+      \strng{authorfullhash}{1edb5ad07437c417d67b313a2e04b3c7}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{Luhman}
+      \field{title}{{The Luminosities of the Coldest Brown Dwarfs}}
+      \field{volume}{39}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1088/0004-637X/796/1/39
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Tinney{\_}2014{\_}ApJ{\_}796{\_}39.pdf:pdf
+      \endverb
+      \keyw{brown dwarfs,color figures,distances,online-only material,parallaxes,planetary systems,stars}
+    \endentry
     \entry{Tokunaga1983}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=298d5818fa170ddfd50c9bd69fa535b8}{%
@@ -15902,13 +16005,25 @@
       \strng{authorfullhash}{c7e7fd0765ff32e98356f685498f29bc}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Publications of the Astronomical Society of the Pacific}
+      \field{number}{953}
       \field{title}{{The Mid-Infrared Instrument for JWST , II : Design and Build}}
+      \field{volume}{127}
+      \field{year}{2015}
       \true{nocite}
-      \field{pages}{1\bibrangedash 44}
-      \range{pages}{44}
+      \field{pages}{595}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/682253
+      \endverb
+      \verb{eprint}
+      \verb 1508.02333
+      \endverb
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/paper2.pdf:pdf
       \endverb
