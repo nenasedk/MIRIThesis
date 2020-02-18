@@ -150,7 +150,6 @@ X(\lambda) = \int_{\Omega_{\mathbf{\Theta}}:\mathcal{L}(\mathbf{\Theta})\geq\lam
 which is the fraction of the prior where the likelihood of the data given the model is above some threshold $\lambda$.
 The integration is now simplified into a 1D integration over X, given proper prior selection.
 
-
 \subsubsection{Method}
 Consider a parameter space with $D$ dimensions.
 We will describe this space as a unit hypercube, where each parameter runs from 0 to 1.
@@ -180,7 +179,106 @@ Retrievals were typically performed using 500 or 1000 live points, with the conv
 \end{equation}
 set to 0.3 for parameter estimation and 0.8 for model comparison, as suggested in the pyMultinest documentation.
 
-\subsection{Prior choice}
+\section{Observations}
+The targets used in our retrieval study ar guided by the JWST ERS and GTO programs. This allows us to use well-defined observing strategies for each object, and present a clear case for the science that can be accomplished with these observations.
+While all three were discussed in Chapter 1, we will now outline the proposed observing strategies and science cases for each target.
+\subsubsection{VHS-1256B}
+VHS-1256b is a young (0.2Gyr), high mass (11.2M$_{Jup}$) planet at a distance of 12.7pc \parencite{Bowler2016}. 
+The wide separation of 8" makes it an easy target for observation with the MRS, as its host star will fall outside of the FoV.
+It has a J-band magnitude of 16.662, and a late L spectral type \parencite{Miles2018}.
+As an object of interest for the JWST ERS program 1386, it will be observed with the NIRCam imager, along with both the NIRSpec and MRS spectrometers \parencite{Hinkley2019}.
+Using the MRS, VHS-1256b will be observed using a SLOW readout pattern, using 30 groups per integration, with one integration per exposure using a 2 point dither pattern.
+This results in a total exposure time of 1433.395s in each of the MRS sub-bands, and will cover the full wavelength range of the MRS.
+It will be simultaneously imaged using the MIRIM instrument.
+An additional background only exposure will be taken using the same exposure parameters, but without dithering, for a total of half of the science exposure time.
+
+Methane spectral features have been detected in the L-band spectrum of VHS-1256b \parencite{Miles2018}, but mid infrared spectroscopy will allow the use of methane and other molecules to characterize atmospheric properties such as dis-equilibrium chemistry and vertical mixing \parencite{Beichman2019}. 
+\subsubsection{2M1207b}
+2M1207b is a 1600K, 10 M$_{Jup}$ object at wide separation from its brown dwarf primary (TWA 27) and a distance of 52.4pc \parencite{Bowler2016}.
+In comparison to VHS-1256b, 2M1207b has a relatively small separation of 0.77", which is more characteristic of currently known objects.
+As one of the first directly imaged exoplanets, it provides a template for characterizing young, hot objects, and will be observed in the JWST GTO program 1270 \parencite{Birkmann2019}.
+This observation will use the NIRSpec IFU, MIRIM and the MIRI MRS.
+
+Using the MRS, 2M1207b will be observed using a FAST readout to prevent detector saturation, using 76 groups per integration, and one integration per exposure. 
+It will use a 4 exposure dither pattern, for a total integration time of 843.612s per sub-band, covering the full wavelength range of the MRS. 
+Combined with the NIRSpec observation, this will provide a continuous spectrum over the entire JWST wavelength range.
+The host star of 2M1207b is faint, allowing for good enough contrast for a straightforward observation \parencite{Beichman2019}.
+\subsubsection{WISE 0855-0714}
+Although it is a Y-type brown dwarf, WISE 0855 is the most similar known object to Jupiter outside our solar system that has been directly observed \parencite{Luhman2014}. 
+At 250K, WISE 0855 is very faint, with an H-band magnitude of 25, but its proximity at 2pc makes it an ideal target for characterization.
+The JWST GTO Program 1230 will observe WISE 0855 using NIRCam, NIRSpec and the MIRI MRS \parencite{Oliveira2019}.
+It will use a FAST readout, with 180 groups per integration, and one integration per exposure for a total of 999s of integration time for each sub-band. No dithering will be used.
+
+As a cold object, WISE 0855 provides the best known extra-solar template for older planetary mass objects.
+With the improved sensitivity and long wavelength coverage of JWST, it is hoped that more low mass and colder exoplanets may be directly imaged.
+Understanding the atmosphere of WISE 0855 will provide a great deal of insight for the challenges of such exoplanetary atmospheres. 
+Clouds are suspected to be present \parencite{Faherty2018}, a feature which will be better understood using mid infrared observations.
+\subsubsection{Science Goals}
+Atmospheric retrievals are currently the best tools for characterizing the composition and structure of exoplanet atmospheres. 
+Parameters such as the C/O ratio may trace the formation history of planets, and may be able to settle the debate between gravitational instability and core accretion formation models \parencite{Madhusudhan2012,Moses2013}.
+From solar system observations, along with our own experience on Earth, we know atmospheres are constantly changing, and time series observations will open the door to investigation of dynamics and variability.
+Understanding the composition and chemistry of these atmospheres will also provide insight into the diversity - and similarity - between these systems.
+Clouds are poorly understood within our own solar system, and are certain to be present in the atmospheres of other worlds.
+Perhaps the most interesting prospect is uncovering novel features that have not yet been predicted, and will open the door to new avenues of exploration.
+
+For this work, we are primarily concerned with constraining the ability of the MRS to retrieve known input parameters. 
+With simulated spectra from petitRADTRANS providing a ground truth, we can compare the results of retrievals over a range of fringing cases.
+%\subsection{Atmospheric Parameters}
+%% CO ratio for characterization
+%\cite{Garland2019} %BD absorption
+%\cite{Fegley1994} %Jupiter/Saturn atmospheres
+%\cite{Tokunaga1983} %MIR atmosphere spectra
+\section{Methods}
+Here we will outline how we generated our input spectra, and the procedure we used to perform our atmospheric retrieval.
+\subsection{Spectra Generation}
+We used petitRADTRANS in high resolution, line-by-line mode in order to calculate a spectrum that can be passed as input to MIRISIM.
+The parameters chosen for each target are given in table \ref{tab:inputparams}. 
+All spectra cover a range of 4.8-18.5 micron in order to fully cover channels 1 through 3 of the MRS. 
+Channel 4 is ignored due to photometric calibration issues.
+
+The spectra generated by petitRADTRANS are in terms of the emitted flux and are in units of erg cm$^{-2}$ m$^{-2}$ s$^{-1}$ $Hz^{-1}$. 
+MIRISIM requires the flux incident on the detector in units of $\mu$Jy, so we convert the as 
+\begin{equation}
+F_{inc} [\mu\textrm{Jy}] = 10^{29}\times F_{em} \times \left(\frac{R_{pl}}{d_{pl}}\right)^{2}
+\end{equation}
+The wavelength grid produced by petitRADTRANS is logspaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=30000 at 4.8$\mu$m. 
+This ensures the input spectrum will greatly oversample the instrumental spectral resolution.
+
+While it is possible to add a background term to a spectrum using MIRISIM, we chose not to use any background in order to improve our spectral extraction after processing with the JWST pipeline, with the understanding that errors from background subtraction will be negligible in actual data.
+\begin{table}[t]
+	\centering
+	\begin{tabular}{l|ccc}
+		\toprule
+		\textbf{Parameter} & \textbf{VHS-1256b} & \textbf{2M1207b} & \textbf{WISE 0855}\\
+		\midrule
+		Radius [R$_Jup$] & 1.29 & 1.5 & 1\\
+		Distance [pc] & 12.7 & 52.4 & 2.23\\
+		$\log g$ & 4.25 & 3.2 & 4\\
+		$T_{int}$ [K]& 900 & 1600 & 250\\
+		$T_{equ}$ [K]& 3.4 & 10 & 3.4\\
+		$\kappa_{IR}$ & 0.01 & 0.01 & 0.01\\
+		$\gamma$ & 0.3 & 0.4 & 0.3\\
+		\midrule
+		\multicolumn{4}{c}{Abundances}\\
+		\midrule
+		 H$_{2}$ & 0.898 & 0.74 & 0.73\\
+		 He & 0.102 & 0.24 & 0.25\\
+		 H$_{2}$O & 1$\times10^{-3}$ & 5$\times10^{-3}$ & 5$\times10^{-4}$\\
+		 CO & 1$\times10^{-7}$& 1$\times10^{-2}$ & 1$\times10^{-15}$\\
+		 CO$_{2}$ & 1$\times10^{-5}$& 1$\times10^{-3}$ & 1$\times10^{-14}$\\
+		 CH$_{4}$ & 3$\times10^{-3}$& 1$\times10^{-6}$ & 3$\times10^{-4}$\\
+		 NH$_{3}$ & 1$\times10^{-5}$& 1$\times10^{-7}$ & 3$\times10^{-3}$\\
+		 C$_{2}$H$_{2}$ & 1$\times10^{-8}$& 1$\times10^{-9}$& \ldots \\
+		 HCN & 1$\times10^{-10}$ & 1$\times10^{-9}$ & 1$\times10^{-9}$ \\
+		 TiO & \ldots & 5$\times10^{-7}$ & \ldots \\
+		 SiO & 1$\times10^{-6}$ &  \ldots & \ldots \\
+		\bottomrule
+	\end{tabular}
+	\caption[petitRADTRANS inputs.]{Input parameters to generate spectra using petitRADTRANS. High resolution line-by-line mode was used. $\kappa_{IR}$ and $\gamma$ are the infrared opacity and ratio of visible to IR opacities respectively. The values chosen for these parameters are based on \parencite{Molliere2019}. The abundances chosen are arbitrary values chosen to encompass a wide range of compositions and to test the ability of the retrieval code to recover small abundances. Where possible, values were chosen to qualitatively reflect known species present \parencite{Miles2018}. }
+	\label{tab:inputparams}
+\end{table}
+\subsection{Atmospheric Retrieval Setup}
+\subsubsection{Prior choice}
 % Uniform in log space
 % Gaussian/normal for some
 % based on petitRadTrans paper
@@ -204,24 +302,72 @@ set to 0.3 for parameter estimation and 0.8 for model comparison, as suggested i
 	\caption{Prior choices for atmospheric retrievals. $\mathcal{U}(a,b)$ is a uniform distribution from $a$ to $b$. $\mathcal{N}(\mu,\sigma)$ is a normal distribution. $T_{int}$ corresponds to the effective temperature of an object, while $T_{equ}$ is the equilibrium temperature between an object and a host star. For free floating objects, $T_{equ}$ is set to 3.4K, justifying the small range of the prior. $\delta$ is in units of bar$^{-1}$, temperatures are in K, and pressures in bar.}
 	\label{tab:priors}
 \end{table}
-\subsection{Bayesian Model Selection}
+
+\section{Results}
+\subsection{Model Selection}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Bayesian evidence for models of differing dimensionality.}
+	\label{fig:bicdim}
+\end{figure}
 % Number of parameters
 % Bayesian evidence
-\section{Targets}
-The targets used in our retrieval study ar guided by the JWST ERS and GTO programs. This allows us to use well-defined observing strategies for each object, and present a clear case for the science that can be accomplished with these observations.
-\subsubsection{VHS-1256B}
-\parencite{Hinkley2019}
-\subsubsection{WISE 0855-0714}
-\parencite{Oliveira2019}
-\subsubsection{2M1207b}
-2M1207b provides a template for a young, hot object at wide separation from its brown dwarf primary (TWA 27) \parencite{Birkmann2019}. At 1600K, 10 M$_{jup}$ and a distance of 52.4pc make it an excellent candidate.
-\subsection{Atmospheric Parameters}
-\cite{Madhusudhan2012}% CO ratio for characterization
-\cite{Moses2012}% CO ratio consequences
-\cite{Garland2019} %BD absorption
-\cite{Bowler2016} % Target selection and parameters
-\cite{Fegley1994} %Jupiter/Saturn atmospheres
-\cite{Tokunaga1983} %MIR atmosphere spectra
-\subsection{petitRadTrans}
-\section{Results}
-\subsection{Posterior Distributions}
+\subsection{Fringing Comparison}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Posterior Distributions for XX for different fringe cases}
+	\label{fig:postfringe}
+\end{figure}
+% Bias of different parameters
+% Different widths
+% Detection of non-existant species
+\subsection{VHS-1256b}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Posterior Distributions for}
+	\label{fig:postVHS}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Pressure Temperature profile for}
+	\label{fig:presVHS}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Best fit model for}
+	\label{fig:bestfitVHS}
+\end{figure}
+
+\subsection{2M1207b}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Posterior Distributions for}
+	\label{fig:post2M}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Pressure Temperature profile for}
+	\label{fig:pres2M}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Best fit model for}
+	\label{fig:bestfit2M}
+\end{figure}
+
+\subsection{WISE 0855}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Posterior Distributions for}
+	\label{fig:postWISE}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Pressure Temperature profile for}
+	\label{fig:presWISE}
+\end{figure}
+\begin{figure}[h]
+	%\includegraphics[content...]{imagefile}
+	\caption{Best fit model for}
+	\label{fig:bestfitWISE}
+\end{figure}

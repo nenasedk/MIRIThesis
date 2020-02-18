@@ -2,11 +2,16 @@
 Understanding optical and instrumental effects is critical for creating accurate simulated observations and for characterizing systematics. 
 These systematics and uncertainties in turn impact the potential science results from any instrument by biasing measurements, reducing the signal to noise ratio of measurements or by injecting non-physical signals and correlations.
 The aim of this chapter is to examine fringing in the MIRI detectors and how this effect is modeled in the instrumental simulator (MIRISIM). 
+We will examine the current status of fringe modeling and correction before discussing the modifications made to the MIRI instrumental simulator in order to model point-source fringing effects.
+
+In order to quantify the effect of fringing on a spectrum, we examine the effect of fringing on a cross correlation between the extracted spectrum from the instrument and a known template. 
+This provides a measure of the extent to which the signal has been degraded.
+In addition we examine the impact of this on the science case of molecular mapping, where cross correlations between a cube of IFU data and a molecular spectral template are used to identify the presence of a given species in an observed object. 
 
 \section{Fringing}
 Thin film interference occurs when light is coherently reflected at the boundary between two layers and interferes with the incident light.
 This is the principle on which Fabry-P\'{e}rot interferometers function.
-As we wish to determine the effect of fringing on the=-0 amplitude of the signal received by the detector, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
+As we wish to determine the effect of fringing on the amplitude of the signal received by the detector as a function of wavelength, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
 Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light travels within the cavity, we can compute the transmittance as:
 \begin{equation}\label{eqn:trans}
 T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
@@ -15,21 +20,28 @@ Where the phase $\delta$ at half a wavelength ($\phi = \pi$), with wavenumber $\
 \begin{equation}\label{eqn:phase}
 \delta = 4\pi\sigma D \cos\theta - (\phi - \pi)
 \end{equation}
-Systems with a spacing on the order of millimeters produces significant interference for infrared light \parencite{Lahuis2003}.
+Systems with a spacing on the order of micrometers to millimeters produces significant interference for infrared light \parencite{Lahuis2003}.
 
-The detectors of the MRS consist of several layers, as shown in Fig. \ref{fig:layers}, with a characteristic thickness of ~500$\mu$m, which results in significant (10\%-30\%) `fringing' in a spectrally flat signal - visible in Fig. \ref{fig:flatfield}.
+The detectors of the MRS consist of several layers, as shown in Fig. \ref{fig:layers}, with a characteristic thickness of tens of micron, which results in significant (10\%-30\%) `fringing' in a spectrally flat signal - visible in Fig. \ref{fig:flatfield}.
+The geometric thicknesses of the detector layers are given in table \ref{tab:layers}.
+
 While this is typical for infrared detectors such as those in the Spitzer Space Telescope \parencite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \parencite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increase the significance of this issue.
 The MIRI consortium has stated that the error budget for all detector effects must be 3.3\% or less. 
 Present fringing corrections result in a 5\% deviation from a photometrically accurate signal, and can introduce correlated noise which will degrade any measured spectrum.
 Therefore it is critical to examine the impact of fringing on a signal, the parameters that influence the fringing strength and phase, and possible solutions for fringe correction. 
-While a more complete treatment of proposed fringe correction can be found in \parencite{Argryiou2020}, this work will examine the implementation of fringing into the MIRI instrumental simulator and address the current state of fringe correction in the JWST Data Calibration Pipeline.
+If all of the geometric and optical parameters were known, this would be sufficient to numerically solve for the fringing pattern within MIRI using eqn \ref{eqn:trans}. 
+Unfortunately, uncertainties in the thickness in the detector layers, variations in the layer deposition thickness, and the uncertainty of transmittance and reflectance of the materials used at cryogenic temperatures prevents the implementation of such a numerical model.
+Instead, we will turn to calibration data taken to empirically characterize the fringing pattern.
+
+While a more complete treatment of proposed fringe correction can be found in \parencite{Argryiou2020} and \parencite{Lahuis2018}, this work will examine the implementation of fringing into the MIRI instrumental simulator and address the current state of fringe correction in the JWST Data Calibration Pipeline.
+We will discuss the architecture and usage of MIRISIM, along with the modifications we have made in order to model point-source fringing.
 
 \definecolor{lightgray}{HTML}{E0E0E0}
 \definecolor{darkgray}{HTML}{383838}
 \begin{figure}
 	\centering
 	\begin{scriptsize}
-	\begin{tikzpicture}
+		\begin{tikzpicture}
 		\filldraw [fill=darkgray, draw=Black](0,0) rectangle (7,0.4) node [pos=0.5] {\textcolor{White}{Aluminum}};
 		\filldraw [fill=lightgray, draw=Black](0,0.4) rectangle (7,0.8) node [pos=0.5] {Transparent Contact};
 		\filldraw [fill=Gray, draw=Black](0,0.8) rectangle (7,1.2) node [pos=0.5] {Blocking Layer (Si)};
@@ -37,11 +49,46 @@ While a more complete treatment of proposed fringe correction can be found in \p
 		\filldraw [fill=lightgray, draw=Black](0,4.2) rectangle (7,4.6) node [pos=0.5] {Transparent Contact};
 		\filldraw [fill=OliveGreen, draw=Black](0,4.6) rectangle (7,9.6) node [pos=0.5] {Si Substrate};
 		\filldraw [fill=Fuchsia, draw=Black](0,9.6) rectangle (7,10) node [pos=0.5] {\textcolor{White}{Anti-reflective Coating}};
-	\end{tikzpicture}
+		\end{tikzpicture}
 	\end{scriptsize}
 	\caption{Layers of the MIRI MRS detectors. Note that thicknesses are not to scale \parencite{MIRI7}.}
 	\label{fig:layers}
 \end{figure}
+\begin{table}[h]
+	\centering
+	\begin{footnotesize}
+	\begin{tabular}{llll}
+		\toprule
+		\textbf{Layer} & \textbf{Material} & \textbf{Depth [$\mu$m]} & \textbf{Comments}\\
+		\midrule 
+		Anti-Reflection Coating & ZnS & 0.66 & Optimized for $\lambda$ = 6$\mu$m.\\
+		Substrate (raw wafer) & Si & 460 & Inactive layer.\\
+		\multirow{2}{*}{Bottom Transparent contact} & \multirow{2}{*}{?} & \multirow{2}{*}{?} & Not transparent,\\&&& negative applied bias voltage.\\
+		Active layer & Si:As & 35 & Photoelectric absorption layer.\\
+		Blocking layer & Si & 4 & Inactive layer.\\
+		\multirow{2}{*}{Top transparent contact} & \multirow{2}{*}{?} & \multirow{2}{*}{?} & Not transparent.\\&&& Positive applied bias voltage.\\
+		\multirow{2}{*}{Pixel metalization} & \multirow{2}{*}{Al} & \multirow{2}{*}{semi-infinite} & Forms metallized electrical contact\\ &&&with top transparent layer.\\
+		\bottomrule
+	\end{tabular}
+	\end{footnotesize}
+	\caption{Detector layer compositions and geometric thicknesses.}
+	\label{tab:layers}
+\end{table}
+
+\subsection{Current Status of Fringing Correction}
+Three test campaigns have been run in order to characterize MIRI: the Flight Model (FM) in 2008-09, the Cryogenic Vacuum (CV) in 2015-16, and the Optical Telescope element/ Integrated Science (OTIS) tests in 2017. 
+Fringing was a major subject of both the FM and CV campaigns
+The first fringe model is fit to a spectrally flat, spatially extended source based on the FM test data.
+This is used to derive a `fringe flat', and example of which is presented in \ref{fig:fringeflat}.
+
+
+However, due to the dependance of fringing on the incident angle of the light, a single model of fringing is insufficient to describe the full effect. 
+Therefore, we use data taken in XXXXXXXXXX at various points across the detector and quantify how this changes the extracted spectra after processing in the JWST pipeline.
+
+***DESCRIBE HOW THE DATA WAS TAKEN HERE***.
+- Problems with point vs extended sources
+- multiple collection runs
+\parencite{VanderPlas2018}
 
 % - FRINGING REQUIREMENTS FOR MIRI - context
 % - sub percent residuals - is this true and if so how much does it impact real spectral %features?
@@ -57,9 +104,9 @@ While a more complete treatment of proposed fringe correction can be found in \p
 \cite{Cossou2019} %MIRISIM in python
 The MIRI instrument has been modeled in python as a program known as MIRISM. 
 This program takes in an astronomical 'scene' along with some configuration parameters to output a detector data product, similar to what will be produced by the actual instrument.
-This is relatively full-featured simulator, modelling the instrumental PSF, various noise sources and distortion maps, among other effects.
+MIRISIM is relatively full-featured simulator, modeling the instrumental PSF, various noise sources and distortion maps, among other effects.
 While MIRISIM is functional for all of the MIRI sub-instruments, this report will only deal with the Medium-Resolution Spectrometer (MRS) sub instrument, described in section \ref{sec:mrs}.
-The goal of this section is to describe the implementation and testing of an updated optical model of the `fringing' effect - an optical effect caused by thin film interference from the multiple layers of the detector.
+The objective of this section is to describe the implementation and testing of an updated optical model of the `fringing' effect - an optical effect caused by thin film interference from the multiple layers of the detector.
 \subsection{Architecture}
 SCENE - SEDs
 SIMULATOR
@@ -69,50 +116,34 @@ PYSPECSIM
 	%\includegraphics[width=\linewidth]{}
 	\caption{\label{fig:fringeflat}}
 \end{figure}
-\subsection{Instrumental effects}
-\subsection{Fringing}
-\cite{Lahuis2003} %Spitzer fringes
-\cite{VanderPlas2018} % Understanding lomb-scargle - identifing periodic signals (fringing)
-A key effect on spectral data is fringing, described in \cite{ref:Argyriou2018}. 
-MIRI uses a total of three Si:As impurity band conduction detector arrays, two of which are used by the MRS. 
-These detectors consist of 7 layers, listed in table \ref{tab:layers} and illustrated in Fig. \ref{fig:layers}.
-\begin{table}
-	\begin{tabular}{llll}
-	\end{tabular}
-	\caption{\label{tab:layers}}
-\end{table}
-
-
-
-
-If all of the parameters were known, this would be sufficient to numerically solve for the fringing pattern within MIRI. 
-Unfortunately, uncertainties in the thickness in the detector layers, variations in the layer deposition thickness, and the uncertainty of transmittance and reflectance of the materials used at cryogenic temperatures prevents the implementation of such a numerical model.
-
-Instead, we turn to calibration data taken to characterize the fringing pattern.
-
- ***DESCRIBE CURRENT MODEL - GENERIC FRINGING***
- 
-However, due to the dependance of fringing on the incident angle of the light, a single model of fringing is insufficient to describe the full effect. 
-Therefore, we use data taken in XXXXXXXXXX at various points across the detector and quantify how this changes the extracted spectra after processing in the JWST pipeline.
-
- ***DESCRIBE HOW THE DATA WAS TAKEN HERE***.
- - Problems with point vs extended sources
- - multiple collection runs
-
-
+\subsection{Fringing Model Implementation}
 Ultimately this data collection produced a series of 'fringe-flats' of an almost point like at various position across the detector and in each channel.
 We implemented a new routine into the pySpecSim portion of MIRISIM to read in the location of point sources within a scene, and apply the correct position dependent fringe flat. 
 This implementation comes with several caveats: namely that the fringing model is not yet fully developed, so it can only be considered accurate for point sources located at the same ($\alpha,\beta$) location as the source used to produce the fringe flat. Additionally, the source used to generate the data is not a true point source, nor are there fringe flats produced for the full MRS wavelength range.
 We stress that the goal of this testing is to demonstrate the significance of this effect to justify the need for a more complete model along with additional calibration data to constrain the detector layer parameters.
-\subsubsection{FM Data}
-\subsubsection{CV Data}
-\subsection{Fringing Implementation}
+
 \section{JWST Pipeline}
 \cite{Bushouse2015} %JWST Pipeline
 \cite{Labiano-Ortega2016} % MIRI MRS Cal pipeline
 \subsection{Stage 1 Processing}
-
+The raw data files read from MIRISIM (or eventually the MIRI instrument itself) are a series of \textit{exposures}, each made up of set of \textit{integrations} containing a some number of \textit{groups} or frames.
+Each group is a non-destructive readout of the detector arrays, providing a series of increasing counts known as ramps in DN/s (digital number per second). 
+The first stage of the JWST pipeline takes these raw files, applies a series of steps and outputs a single file for each input exposure in units of countrate.
+This procedure is applied to any MIRI data.
+We used default pipeline settings to apply this procedure, and applied all steps applicable to the MIRI instrument.
 \subsection{Stage 2 Processing}
+For the second stage of processing we use the Stage 2 Spectroscopic Processing pipeline, and apply the steps individually to maintain control over parameters.
+The second stage pipeline applies instrument specific corrections that result in a photometrically calibrated exposure. For the MRS, this involves the following series of steps, some of which will be described in further detail below.
+\begin{enumerate}
+	\item \verb|assign_wcs| Assign a World Coordinate System (WCS) to each exposure.
+	%\item \verb|background| Perform image-from-image background subtraction.
+	\item \verb|flat_field| Flatten photometric variation from differences in gain and dark current.
+	\item \verb|srctype| Assign whether the target is a point or extended source based on input from the raw data files or observation parameters.
+	\item \verb|straylight| Remove known stray light component.
+	\item \verb|fringe| Divide by an extended source fringe flat.
+	\item \verb|photom| Photometrically calibrate the exposure based on known pixel sensitivities and areas.
+	\item \verb|cube_build| Transform from a (set of) 2D detector images to a 3D IFU cube in ($\alpha,\beta,\lambda$).
+\end{enumerate} 
 \subsubsection{Photometric Calibration}
 Photometric calibration is the process of removing detector and optical biases to ensure that the measured output corresponds to the true flux incident onto the telescope.
 This process occurs in the PHOTOM step of the JWST pipeline, and uses reference files which store per-pixel photon-to-electron conversion efficiencies to transform the count rate data product to a flux measurement.
@@ -142,7 +173,6 @@ We believe that this is a justified measure, as the errors with photometric cali
 	\caption{Comparison of an input spectrum generated using petitRadTrans and the empirically calibrated output spectrum after extraction from the cube produced by the JWST pipeline.}
 	\label{fig:cal}
 \end{figure}
-
 \subsection{Cross-Correlation}
 \cite{Snellen2014}% BetaPicFast Rotation - cross correlation
 \cite{Simkin1974} %Cross cor
@@ -172,13 +202,29 @@ We then renormalize the spectrum by dividing by the maximum absolute value such 
 The cross correlation between the forward model and itself is computed, excluding the region of interest around 0 offset. 
 This `autocorrelation' is subtracted from the cross correlation between the forward model and the data spectrum in order to remove secondary peaks.
 Finally, we normalize the cross correlation by the standard deviation of the cross correlation (excluding the central peak), giving an output measured as a signal to noise ratio.
-
+\section{Results}
+\begin{table}[h]
+	\begin{tabular}{cr|c|c|c|c|}
+		\toprule
+		&& \multicolumn{4}{c}{MIRISIM Fringing Model}\\
+		&& None & FM Extended & FM Point On Axis & FM Point Off Axis\\
+		\midrule
+		\parbox[t]{2mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{Correction}}}  & None & & & &\\[50pt]
+		& Ext. Flat  & & & &\\[50pt]
+		\bottomrule
+	\end{tabular}
+\end{table}
+\begin{figure}[h]
+	%\includegraphics[keyvals]{imagefile}
+	\caption{Normalised Input/Output Spectrum for VHS-1256b, Residuals, Hists, Cross Corr}
+	\label{fig:CrossCor1D}
+\end{figure}
 \subsection{Residual Statistics}
 In addition to computing the cross correlation between the forward model and the data spectrum, we also examine the residuals between the two spectra.
 Here we can see any unexpected variations between the two (periodic signals, offsets or other features).
 We can also examine a histogram of the residuals, normalized by the standard deviation of the data spectrum.
 This provides us with a  distribution which should have a mean of 0 and unit width if the data are unbiased and share a distribution with the true input spectrum.
-\section{Fringing Results}
+\subsection{Fringing Results}
 1. A stronger input signal results in a stronger correlation.
 2. Fringing does NOT necessarily degrade the cross correlation SNR, but rather increases it. The scale of this increase seems to depend on the absolute magnitude of the correlation (ie, a larger increase at higher SNR)
 3. The residuals from subtracting the template from the data has structure.
@@ -186,4 +232,4 @@ This provides us with a  distribution which should have a mean of 0 and unit wid
 5. Only when strongly increasing the fringing effect does the SNR decrease.
 6. Correcting for fringing using the standard JWST fringe map decreases the SNR when compared to the case of fringing with no correction, but is typically still above the no-fringing case.
 7. The JWST correction performs worse in the off axis case, as the fringe pattern begins to vary more when compared to the CV fringing model.
-\subsection{Effects of fringing on spectral extraction}
+\subsection{Molecular Mapping}
