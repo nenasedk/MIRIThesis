@@ -262,6 +262,65 @@
       \endverb
       \keyw{astronomical instrumentation,data analysis,detectors,general,infrared,instrumentation,methods,methods and techniques,spectrographs}
     \endentry
+    \entry{Astrophysical2011}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=9ac79a901376255036b704f4b0155113}{%
+           family={Astrophysical},
+           familyi={A\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dcfd59755129955408542165a16e3cc5}{%
+           family={Letters},
+           familyi={L\bibinitperiod},
+           given={Journal},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=af4432a2fe2a61a80f00ceb2989781e8}{%
+           family={Canada},
+           familyi={C\bibinitperiod},
+           given={Council},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=26ea45fafaadbab291c7a85a05d49ef5}{%
+           family={Livermore},
+           familyi={L\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=49d3e762c8fca3303eb96a40bd3857f5}{%
+           family={Observatory},
+           familyi={O\bibinitperiod},
+           given={Lowell},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ff5d9368c1bafb50b647dad0a215d60}
+      \strng{fullhash}{141db1ab4cdf0fdf55095aae2485076d}
+      \strng{bibnamehash}{1ff5d9368c1bafb50b647dad0a215d60}
+      \strng{authorbibnamehash}{1ff5d9368c1bafb50b647dad0a215d60}
+      \strng{authornamehash}{1ff5d9368c1bafb50b647dad0a215d60}
+      \strng{authorfullhash}{141db1ab4cdf0fdf55095aae2485076d}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{-band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction technique}
+      \field{volume}{41}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 7}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1088/2041-8205/739/2/L41
+      \endverb
+      \verb{file}
+      \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Astrophysical et al. - 2011 - -band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction techni.pdf:pdf
+      \endverb
+      \keyw{atmospheres,color figures,data analysis,high angular resolution,image processing,instrumentation,methods,observational,online-only material,planetary,planets and satellites,systems,techniques}
+    \endentry
     \entry{Bailey2014}{article}{}
       \name{author}{17}{}{%
         {{uniquename=0,uniquepart=base,hash=d2d158a080e36669b292a204ea500779}{%
@@ -12529,6 +12588,62 @@
       \endverb
       \keyw{125723,22,5338,8603,92,9b,and satellites,atmospheres,brown dwarfs,brown dwarfs,stars: individual (VHS J125601.92–125,data behind fi gure,gaseous planets,individual,planets,planets and satellites,pso j318,stars,supporting material,vhs j125601}
     \endentry
+    \entry{Mohanty2007}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=ce65f3b4ff48ef2a9aa3235f04763003}{%
+           family={Mohanty},
+           familyi={M\bibinitperiod},
+           given={Subhanjoy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d8bb2188708525d94bef4663d5eeabbd}{%
+           family={Jayawardhana},
+           familyi={J\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1539765159248336b46f660c8321e3bd}{%
+           family={Huelamo},
+           familyi={H\bibinitperiod},
+           given={Nuria},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f05afc3ba73ff1bfff812c2b3f4191f2}{%
+           family={Mamajek},
+           familyi={M\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{44e0779e37444be247f2c329ea2495a0}
+      \strng{fullhash}{e9d8f1bf8d4eea0477fe396e58542c3b}
+      \strng{bibnamehash}{e9d8f1bf8d4eea0477fe396e58542c3b}
+      \strng{authorbibnamehash}{e9d8f1bf8d4eea0477fe396e58542c3b}
+      \strng{authornamehash}{44e0779e37444be247f2c329ea2495a0}
+      \strng{authorfullhash}{e9d8f1bf8d4eea0477fe396e58542c3b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present J-band imaging and H+K-band low-resolution spectroscopy of 2MASS 1207-3932AB, obtained with VLT NACO. For the putative planetary mass secondary, we find J = 20.0 ± 0.2 mag. The HK spectra of both components imply low gravity and a dusty atmosphere for the secondary. Comparisons to synthetic spectra yield Teff,A ≈ 2550 ± 150 K and Teff,B ≈ 1600 ± 100 K, consistent with their late-M and mid- to late-L types. For these Teff and an age of 5-10 Myr, evolutionary models imply MA ≈ 24 ± 6 MJup and MB ≈ 8 ± 2 MJup. Independent comparisons of these models to the observed colors, spanning {\~{}}I to L', also yield the same masses and temperatures. Our primary mass agrees with other recent analyses; however, our secondary mass, while still in the planetary regime, is 2-3 times larger than claimed previously. This discrepancy can be traced to the luminosities: while the absolute photometry and Mbol of the primary agree with theoretical predictions, the secondary is {\~{}}2.5 ± 0.5 mag fainter than expected in all bands from I to L' and in Mbol. This accounts for the much lower secondary mass (and temperature) derived earlier. We argue that this effect is highly unlikely to result from a variety of model-related problems and is instead real. This conclusion is bolstered by the absence of any luminosity problems in either the primary or AB Pic B, which we also analyze. We therefore suggest gray extinction in 2M1207B, due to occlusion by an edge-on circumsecondary disk. This is consistent with the observed properties of edge-on disks around T Tauri stars and with the known presence of a high-inclination evolved disk around the primary. Finally, the system's implied mass ratio of {\~{}}0.3 suggests a binary-like formation scenario.}
+      \field{issn}{0004-637X}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{2}
+      \field{title}{{The Planetary Mass Companion 2MASS 1207−3932B: Temperature, Mass, and Evidence for an Edge‐on Disk}}
+      \field{volume}{657}
+      \field{year}{2007}
+      \true{nocite}
+      \field{pages}{1064\bibrangedash 1091}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1086/510877
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Mohanty{\_}2007{\_}ApJ{\_}657{\_}1064.pdf:pdf
+      \endverb
+    \endentry
     \entry{Molliere2019a}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=aa62d9308c729176350991f0900ef2f9}{%
@@ -17967,6 +18082,136 @@
       \verb :home/evert/Documents/Papers/Thesis/Platon.pdf:pdf
       \endverb
       \keyw{Methods: data analysis,Planets and satellites: atmospheres,Planets and satellites: composition,Planets and satellites: general,Techniques: spectroscopic}
+    \endentry
+    \entry{Zhou2019}{article}{}
+      \name{author}{14}{}{%
+        {{uniquename=0,uniquepart=base,hash=b0419548a59924dfc1f89b9eaced8908}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3d918774848530ff5d0174b492e9cbc}{%
+           family={Apai},
+           familyi={A\bibinitperiod},
+           given={D{á}niel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=af3260b13c042970ee384dbd3d47f423}{%
+           family={Lew},
+           familyi={L\bibinitperiod},
+           given={Ben\bibnamedelimb W.\bibnamedelimi P.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85f18081b3b53645c0d111defcac609a}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=641268e7ec32f86d580be57c50f7d621}{%
+           family={Manjavacas},
+           familyi={M\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=59359b0959f93b4a2998ca9d15a061cb}{%
+           family={Bedin},
+           familyi={B\bibinitperiod},
+           given={Luigi\bibnamedelima R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=50b40a2cf8f8aae276ce7d8defaf38c5}{%
+           family={Cowan},
+           familyi={C\bibinitperiod},
+           given={Nicolas\bibnamedelima B.},
+           giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b83db609305b007bb1e802dcf6303ea3}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0d8f411b0984e46334d6c929014605c}{%
+           family={Radigan},
+           familyi={R\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82185c7c690998afbec325bda07de112}{%
+           family={Karalidi},
+           familyi={K\bibinitperiod},
+           given={Theodora},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ace0119b49687b1f4e3a2eaf97617687}{%
+           family={Lowrance},
+           familyi={L\bibinitperiod},
+           given={Patrick\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a9342cee9604fe5f5b3dd8a46e02ffbf}{%
+           family={Miles-P{á}ez},
+           familyi={M\bibinithyphendelim P\bibinitperiod},
+           given={Paulo\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=58f3c15caf2f6470a068a3d6c29c3689}{%
+           family={Metchev},
+           familyi={M\bibinitperiod},
+           given={Stanimir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6c364521b33b52ce7b42bb0ba090aeca}{%
+           family={Burgasser},
+           familyi={B\bibinitperiod},
+           given={Adam\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{79a2173a6f011f76299acd41913e0480}
+      \strng{fullhash}{668e851c8741caee98476246881e45ad}
+      \strng{bibnamehash}{79a2173a6f011f76299acd41913e0480}
+      \strng{authorbibnamehash}{79a2173a6f011f76299acd41913e0480}
+      \strng{authornamehash}{79a2173a6f011f76299acd41913e0480}
+      \strng{authorfullhash}{668e851c8741caee98476246881e45ad}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Directly-imaged planetary-mass companions offer unique opportunities in atmospheric studies of exoplanets. They share characteristics of both brown dwarfs and transiting exoplanets, therefore, are critical for connecting atmospheric characterizations for these objects. Rotational phase mapping is a powerful technique to constrain the condensate cloud properties in ultra-cool atmospheres. Applying this technique to directly-imaged planetary-mass companions will be extremely valuable for constraining cloud models in low mass and surface gravity atmospheres and for determining the rotation rate and angular momentum of substellar companions. Here, we present Hubble Space Telescope Wide Field Camera 3 near-infrared time-resolved photometry for three planetary-mass companions, AB Pic B, 2M0122B, and 2M1207b. Using two-roll differential imaging and hybrid point spread function modeling, we achieve sub-percent photometric precision for all three observations. We find tentative modulations ({\$}{<}\backslash!\backslash!2\backslashsigma{\$}) for AB Pic B and 2M0122B but cannot reach conclusive results on 2M1207b due to strong systematics. The relatively low significance of the modulation measurements cannot rule out the hypothesis that these planetary-mass companions have the same vertical cloud structures as brown dwarfs. Our rotation rate measurements, combined with archival period measurements of planetary-mass companions and brown dwarfs do not support a universal mass-rotation relation. The high precision of our observations and the high occurrence rates of variable low-surface gravity objects encourage high-contrast time-resolved observations with the James Webb Space Telescope.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0004-6256}
+      \field{journaltitle}{The Astronomical Journal}
+      \field{number}{3}
+      \field{title}{{Cloud Atlas: High-contrast Time-resolved Observations of Planetary-mass Companions}}
+      \field{volume}{157}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{128}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-3881/ab037f
+      \endverb
+      \verb{eprint}
+      \verb 1902.00085
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Zhou{\_}2019{\_}AJ{\_}157{\_}128.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3847/1538-3881/ab037f
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3847/1538-3881/ab037f
+      \endverb
+      \keyw{atmospheres,methods,methods: observational,planetary systems,planets and satellites: atmospheres,observational,planetary systems,planets and satellites}
     \endentry
     \entry{Zucker2003}{article}{}
       \name{author}{1}{}{%
