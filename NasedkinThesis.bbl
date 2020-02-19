@@ -262,65 +262,6 @@
       \endverb
       \keyw{astronomical instrumentation,data analysis,detectors,general,infrared,instrumentation,methods,methods and techniques,spectrographs}
     \endentry
-    \entry{Astrophysical2011}{article}{}
-      \name{author}{5}{}{%
-        {{uniquename=0,uniquepart=base,hash=9ac79a901376255036b704f4b0155113}{%
-           family={Astrophysical},
-           familyi={A\bibinitperiod},
-           given={The},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=dcfd59755129955408542165a16e3cc5}{%
-           family={Letters},
-           familyi={L\bibinitperiod},
-           given={Journal},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=af4432a2fe2a61a80f00ceb2989781e8}{%
-           family={Canada},
-           familyi={C\bibinitperiod},
-           given={Council},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=26ea45fafaadbab291c7a85a05d49ef5}{%
-           family={Livermore},
-           familyi={L\bibinitperiod},
-           given={Lawrence},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=49d3e762c8fca3303eb96a40bd3857f5}{%
-           family={Observatory},
-           familyi={O\bibinitperiod},
-           given={Lowell},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1ff5d9368c1bafb50b647dad0a215d60}
-      \strng{fullhash}{141db1ab4cdf0fdf55095aae2485076d}
-      \strng{bibnamehash}{1ff5d9368c1bafb50b647dad0a215d60}
-      \strng{authorbibnamehash}{1ff5d9368c1bafb50b647dad0a215d60}
-      \strng{authornamehash}{1ff5d9368c1bafb50b647dad0a215d60}
-      \strng{authorfullhash}{141db1ab4cdf0fdf55095aae2485076d}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{-band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction technique}
-      \field{volume}{41}
-      \field{year}{2011}
-      \true{nocite}
-      \field{pages}{3\bibrangedash 7}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1088/2041-8205/739/2/L41
-      \endverb
-      \verb{file}
-      \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Astrophysical et al. - 2011 - -band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction techni.pdf:pdf
-      \endverb
-      \keyw{atmospheres,color figures,data analysis,high angular resolution,image processing,instrumentation,methods,observational,online-only material,planetary,planets and satellites,systems,techniques}
-    \endentry
     \entry{Bailey2014}{article}{}
       \name{author}{17}{}{%
         {{uniquename=0,uniquepart=base,hash=d2d158a080e36669b292a204ea500779}{%
@@ -2209,7 +2150,7 @@
       \field{issn}{15384357}
       \field{journaltitle}{Astrophysical Journal}
       \field{number}{2}
-      \field{title}{{Cloud Structure of the Nearest Brown Dwarfs II: High Amplitude Variability for Luhman 16 A and B In and Out of the 0.99{\$}\backslashmu{\$}m FeH Feature}}
+      \field{title}{{Cloud Structure of the Nearest Brown Dwarfs II: High Amplitude Variability for Luhman 16 A and B In and Out of the 0.99 $\mu$m FeH Feature}}
       \field{volume}{812}
       \field{year}{2015}
       \true{nocite}
@@ -4731,6 +4672,66 @@
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/FuCorr-k.pdf:pdf
       \endverb
+    \endentry
+    \entry{Galicher2011}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=c8274c42bea7ee03aaf609667171731f}{%
+           family={Galicher},
+           familyi={G\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4fb87cfa3a5e949ef0a5d2af9762dbac}{%
+           family={Marois},
+           familyi={M\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0061d86b5765444648fdab36f07cd664}{%
+           family={Macintosh},
+           familyi={M\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a59897de1b874cea0c3a76b54217db70}{%
+           family={Barman},
+           familyi={B\bibinitperiod},
+           given={Travis},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7c5f72bb6ddede71207c033eff7fecb2}{%
+           family={Konopacky},
+           familyi={K\bibinitperiod},
+           given={Quinn\bibnamedelima M.},
+           giveni={Q\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c50fc4b9a1987f43342eb5038988e01b}
+      \strng{fullhash}{f321b4bcbfa830426bfce28ba0a4bbb1}
+      \strng{bibnamehash}{c50fc4b9a1987f43342eb5038988e01b}
+      \strng{authorbibnamehash}{c50fc4b9a1987f43342eb5038988e01b}
+      \strng{authornamehash}{c50fc4b9a1987f43342eb5038988e01b}
+      \strng{authorfullhash}{f321b4bcbfa830426bfce28ba0a4bbb1}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal Letters}
+      \field{title}{{M-band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction technique}}
+      \field{volume}{41}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 7}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1088/2041-8205/739/2/L41
+      \endverb
+      \verb{file}
+      \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Astrophysical et al. - 2011 - -band imaging of the hr 8799 planetary system using an innovative loci-based background subtraction techni.pdf:pdf
+      \endverb
+      \keyw{atmospheres,color figures,data analysis,high angular resolution,image processing,instrumentation,methods,observational,online-only material,planetary,planets and satellites,systems,techniques}
     \endentry
     \entry{Gandhi2018}{article}{}
       \name{author}{2}{}{%
@@ -12631,7 +12632,7 @@
       \field{issn}{0004-637X}
       \field{journaltitle}{The Astrophysical Journal}
       \field{number}{2}
-      \field{title}{{The Planetary Mass Companion 2MASS 1207−3932B: Temperature, Mass, and Evidence for an Edge‐on Disk}}
+      \field{title}{{The Planetary Mass Companion 2MASS 1207-3932B: Temperature, Mass, and Evidence for an Edge‐on Disk}}
       \field{volume}{657}
       \field{year}{2007}
       \true{nocite}
@@ -16864,10 +16865,10 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Directly imaged planets and substellar companions are key targets for the characterization of self-luminous atmospheres. Their photometric appearance at 4-5 {\$}\backslashmu{\$}m is sensitive to the chemical composition and cloud content of their atmosphere. We aim at systematically characterizing the atmospheres of directly imaged low-mass companions at 4-5 {\$}\backslashmu{\$}m. We want to homogeneously process the data and compile a photometric library at thermal wavelengths of these mostly young, low-gravity objects. In this way, we want to find trends related to their spectral type and surface gravity by comparing with isolated brown dwarfs and predictions from atmospheric models. We have used the high-resolution, high-contrast capabilities of NACO at the VLT to directly image the companions of HIP 65426, PZ Tel, and HD 206893 in the NB4.05 and/or {\$}M'{\$} filters. For the same targets, and additionally {\$}\backslashbeta{\$} Pic, we have also analyzed six archival VLT/NACO datasets which were taken with the NB3.74, {\$}L'{\$}, NB4.05, and {\$}M'{\$} filters. The {\$}L'{\$}-NB4.05 and {\$}L'{\$}-{\$}M'{\$} colors of the studied sample are all red while the NB4.05-{\$}M'{\$} color is blue for {\$}\backslashbeta{\$} Pic b, gray for PZ Tel B, and red for HIP 65426 b and HD 206893 B (although typically with low significance). The absolute NB4.05 and {\$}M'{\$} fluxes of our sample are all larger than those of field dwarfs with similar spectral types. Finally, the surface gravity of {\$}\backslashbeta{\$} Pic b has been constrained to {\$}\backslashlog{\{}g{\}} = 4.17{\_}{\{}-0.13{\}}{\^{}}{\{}+0.10{\}}{\$} dex from its photometry and dynamical mass. A red color at 3-4 {\$}\backslashmu{\$}m and a blue color at 4-5 {\$}\backslashmu{\$}m might be (partially) caused by H{\$}{\_}2{\$}O and CO absorption, respectively. The red characteristics of {\$}\backslashbeta{\$} Pic b, HIP 65426 b, and HD 206893 B at 3-5{\$}\backslashmu{\$}m, as well as their higher fluxes in NB4.05 and {\$}M'{\$} compared to field dwarfs, indicate that cloud densities are enhanced close to the photosphere as a result of their low surface gravity.}
+      \field{abstract}{Directly imaged planets and substellar companions are key targets for the characterization of self-luminous atmospheres. Their photometric appearance at 4-5 $\mu$m is sensitive to the chemical composition and cloud content of their atmosphere. We aim at systematically characterizing the atmospheres of directly imaged low-mass companions at 4-5 $\mu$m. We want to homogeneously process the data and compile a photometric library at thermal wavelengths of these mostly young, low-gravity objects. In this way, we want to find trends related to their spectral type and surface gravity by comparing with isolated brown dwarfs and predictions from atmospheric models. We have used the high-resolution, high-contrast capabilities of NACO at the VLT to directly image the companions of HIP 65426, PZ Tel, and HD 206893 in the NB4.05 and/or {\$}M'{\$} filters. For the same targets, and additionally $\beta$ Pic, we have also analyzed six archival VLT/NACO datasets which were taken with the NB3.74, L', NB4.05, and M' filters. The L'-NB4.05 and L'-M' colors of the studied sample are all red while the NB4.05-M' color is blue for $\beta$ Pic b, gray for PZ Tel B, and red for HIP 65426 b and HD 206893 B (although typically with low significance). The absolute NB4.05 and M' fluxes of our sample are all larger than those of field dwarfs with similar spectral types. Finally, the surface gravity of $\beta$ Pic b has been constrained to {\$}\backslashlog{\{}g{\}} = 4.17{\_}{\{}-0.13{\}}{\^{}}{\{}+0.10{\}}{\$} dex from its photometry and dynamical mass. A red color at 3-4 $\mu$m and a blue color at 4-5 $\mu$m might be (partially) caused by H{\$}{\_}2{\$}O and CO absorption, respectively. The red characteristics of $\beta$ Pic b, HIP 65426 b, and HD 206893 B at 3-5 $\mu$m, as well as their higher fluxes in NB4.05 and M' compared to field dwarfs, indicate that cloud densities are enhanced close to the photosphere as a result of their low surface gravity.}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{arXiv ePrint in Press}
-      \field{title}{{MIRACLES: atmospheric characterization of directly imaged planets and substellar companions at 4-5 micron. I. Photometric analysis of {\$}\backslashbeta{\$} Pic b, HIP 65426 b, PZ Tel B and HD 206893 B}}
+      \field{title}{{MIRACLES: atmospheric characterization of directly imaged planets and substellar companions at 4-5 micron. I. Photometric analysis of $\beta$ Pic b, HIP 65426 b, PZ Tel B and HD 206893 B}}
       \field{year}{2020}
       \true{nocite}
       \field{pages}{1\bibrangedash 25}

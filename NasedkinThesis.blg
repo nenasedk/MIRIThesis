@@ -1,15 +1,15 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'NasedkinThesis.blg'
-[17] biber:315> INFO - === Wed Feb 19, 2020, 09:54:18
-[34] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
-[93] Biber.pm:886> INFO - Using all citekeys in bib section 0
-[101] Biber.pm:4093> INFO - Processing section 0
-[109] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
-[134] bibtex.pm:1512> INFO - LaTeX decoding ...
-[512] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
-[3183] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3183] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3183] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[3183] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[3393] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
-[4342] bbl.pm:739> INFO - Output to NasedkinThesis.bbl
+[18] biber:315> INFO - === Wed Feb 19, 2020, 10:39:49
+[33] Biber.pm:371> INFO - Reading 'NasedkinThesis.bcf'
+[94] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[103] Biber.pm:4093> INFO - Processing section 0
+[110] Biber.pm:4254> INFO - Looking for bibtex format file 'thesis_bib.bib' for section 0
+[135] bibtex.pm:1512> INFO - LaTeX decoding ...
+[523] bibtex.pm:1329> INFO - Found BibTeX data source 'thesis_bib.bib'
+[2831] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2831] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2831] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[2831] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[3017] bbl.pm:636> INFO - Writing 'NasedkinThesis.bbl' with encoding 'UTF-8'
+[3880] bbl.pm:739> INFO - Output to NasedkinThesis.bbl
