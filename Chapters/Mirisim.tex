@@ -71,7 +71,7 @@ We will discuss the architecture and usage of MIRISIM, along with the modificati
 		\bottomrule
 	\end{tabular}
 	\end{footnotesize}
-	\caption{Detector layer compositions and geometric thicknesses.}
+	\caption{Detector layer compositions and mean geometric thicknesses.}
 	\label{tab:layers}
 \end{table}
 
@@ -100,37 +100,97 @@ Therefore, we use data taken in XXXXXXXXXX at various points across the detector
 % - 
  \cite{Lahuis2018} %MIRI MRS FM Fringing Analysis
 \section{MIRISIM}
-\cite{Consortium2018} %Mirisim documentation
-\cite{Cossou2019} %MIRISIM in python
-The MIRI instrument has been modeled in python as a program known as MIRISM. 
-This program takes in an astronomical 'scene' along with some configuration parameters to output a detector data product, similar to what will be produced by the actual instrument.
+
+%MIRISIM in python
+The MIRI instrument has been modeled in python as a program known unsurprisingly as MIRISIM \parencite{ref:mirisimdocs}. 
+This program takes in an astronomical `scene' along with some configuration parameters to output a detector data product, similar to what will be produced by the actual instrument.
 MIRISIM is relatively full-featured simulator, modeling the instrumental PSF, various noise sources and distortion maps, among other effects.
 While MIRISIM is functional for all of the MIRI sub-instruments, this report will only deal with the Medium-Resolution Spectrometer (MRS) sub instrument, described in section \ref{sec:mrs}.
 The objective of this section is to describe the implementation and testing of an updated optical model of the `fringing' effect - an optical effect caused by thin film interference from the multiple layers of the detector.
 \subsection{Architecture}
-SCENE - SEDs
-SIMULATOR
-PYSPECSIM
-\subsection{Data Products}
-\begin{figure}
-	%\includegraphics[width=\linewidth]{}
-	\caption{\label{fig:fringeflat}}
+While the full documentation for MIRISIM is available in \parencite{ref:mirisimdocs} and with python documentation in \parencite{Cossou2018}, in this section we will outline the procedure for generating a simulated detector image.
+In particular, we will emphasize the parameter choices made in the setup for our simulations.
+
+A MIRISIM simulation begins by setting up a \textbf{scene} using the \verb|skysim|. 
+This represents the view that the telescope will have of some astrophysical system.
+In general, a scene can be built from nearly anything: a fits file of an actual observation, models of galaxies and more. 
+Built in are tools for producing simple point source and extended source objects.
+An SED of arbitrary spectral resolution is then attached to the object from an external file, with units of micron for the wavelength and $\mu$Jy for the incident flux on the detector.
+There are also built in tools for blackbody SEDs, and individual lines of arbitrary position and depth.
+All of our SEDs are generated using petitRADTRANS, and attached as an external spectrum.
+A background can be applied, representing both astrophysical emission sources as well as thermal emission from the telescope itself.
+We chose not to include a background term, as background subtraction is using a simple model and image-from-image subtraction will result in an ideal correction.
+
+For our observations, we only consider a single point source within the field of view.
+While this is an oversimplification, particularly in the case of close in planets, it is not the purpose of this thesis to explore the procedures for extracting a companion spectrum in a contrast limited regime.
+Instead, we assume that the spectral extraction will be adequate, though our simplification provides somewhat of a best case scenario.
+
+The scene is then processed using a set of instrument and detector simulators \verb|obssim|, \verb|scasim| and \verb|specsim|.
+These make use of the calibration data products (CDPs) in order to model optical distortions and detector effects.
+The output of this simulation is a set of uncalibrated data files, similar to what will be produced with on-sky observations.
+From the scene, an illumination model is produced. This transforms the on sky image using telescope and instrument optics in order to produce the intensity pattern incident on the detector itself.
+As our observations make use only of the MRS, they are then processed using \verb|specsim|, which makes use of the \verb|pySpecSim| module.
+This module is where most instrumental effects are applied, including detector sensitivities and fringing.
+These are applied by multiplying the illumination model by the CDPs. 
+The set of fringe CDPs covers each of the MRS sub-bands, and contains a fringe flat.
+This is a 2D array of multiplicative factors used to apply the fringe pattern to the illumination model, an example of which is given in Fig \ref{fig:fringeflat}. 
+Presently, these are derived from extended source CV data, CDP version 07.02.05.
+Once detector effects are applied, and the incident flux is converted into DN counts, a detector image is produced and stored in a fits file.
+A raw detector image for WISE 0855 is shown in Fig. \ref{fig:0855raw}
+
+When running a simulation, the user must set the observation parameters.
+This includes setting the instrument used (MRS), dither pattern, readout mode, and further MRS parameters.
+Our parameter selections  are based on the parameters used in the JWST ERS and GTO proposals for our target objects, described in more detail in \ref{sec:obs} and summarized in table \ref{tab:obsparams}.
+\begin{figure}[t]
+	\includegraphics[width=\linewidth]{WISE0855_1234SHORT_RAW.jpg}
+	\caption{\textbf{Right Panel:} Channel 1 (left) and Channel 2 (right). \textbf{Left Panel:} Channels 3 (right) and 4 (left). Observation of WISE 0855 using the SHORT disperser. Fringing has been disabled for this particular observation. The color scale is in sqrt(DN) to highlight faint features.}
+	\label{fig:0855raw}
 \end{figure}
+
+\subsection{Data Products}
+\begin{wrapfigure}{r}{5.5cm}
+	\includegraphics[width=5.5cm]{12SHORT_FRINGE_070200.png}
+	\caption{Fringe flat derived from FM data for the SW detector, in the SHORT sub-band v07.02.00. Color scale is linear.}
+	\label{fig:fringeflat}
+\end{wrapfigure}
+All of the CDP files are derived from test campaign data, and represent the best empirical knowledge of the instrument.
+The primary CDPs of interest for this project are the photometric calibration data products and the fringe flats.
+The PHOTOM files map the sensitivity of each detector pixel in order to represent the varying sensitivity of the detectors with wavelength. 
+They convert from an incident flux to detector counts based on measured efficiencies.
+Recently the PHOTOM files were modified from being divided into the illumination model to being multiplied in. 
+This, along with other issues, has led to inconsistencies between the input flux and output of the JWST pipeline.
+To best correct for this, we ensure that we are using the most up-to-date PHOTOM files (v8B.04.00) in both MIRISIM and the JWST pipeline.
+
+The FRINGE CDP files contain fringe flats which are multiplied into the illumination model. 
+Presently, these are based off extended source CV data (v07.02.05).
+However, for point source observations this produces results very different than is measured \parencite{Argyriou2018a}.
+Thus we attempt to improve the fringing model by using a set of fringe flats derived from point source FM data. 
+In principle, a complete set of fringe flats that cover point sources located at each position in the detector plane would reproduce an extended source fringe flat.
+Indeed, at the center of the PSF, the extended source fringe flat models the point source fairly well, with discrepancies increasing towards the PSF wings \parencite{Argyriou2020}.
+In order to fairly compare our improvements, we will also compare to an older version of the fringe CDPs (v07.02.00) which is based of FM extended source data.
+
+
 \subsection{Fringing Model Implementation}
-Ultimately this data collection produced a series of 'fringe-flats' of an almost point like at various position across the detector and in each channel.
-We implemented a new routine into the pySpecSim portion of MIRISIM to read in the location of point sources within a scene, and apply the correct position dependent fringe flat. 
+\begin{wrapfigure}{r}{5.5cm}
+	\includegraphics[width=5.5cm]{FM_ptsource_flat.png}
+	\caption{Point source fringe flat derived from FM data for channel 1A at $\alpha=1.001$, $\beta=0.602$. Color scale is linear.}
+	\label{fig:ptsrcfringeflat}
+\end{wrapfigure}
+Ultimately this data collection produced a series of fringe flats of an almost point like at various position across the detector and in each channel.
+We implemented a new routine into the \verb|pySpecSim| module of MIRISIM to read in the location of point sources within a scene, and apply the correct position dependent fringe flat. 
 This implementation comes with several caveats: namely that the fringing model is not yet fully developed, so it can only be considered accurate for point sources located at the same ($\alpha,\beta$) location as the source used to produce the fringe flat. Additionally, the source used to generate the data is not a true point source, nor are there fringe flats produced for the full MRS wavelength range.
 We stress that the goal of this testing is to demonstrate the significance of this effect to justify the need for a more complete model along with additional calibration data to constrain the detector layer parameters.
 
 \section{JWST Pipeline}
-\cite{Bushouse2015} %JWST Pipeline
-\cite{Labiano-Ortega2016} % MIRI MRS Cal pipeline
+\parencite{Bushouse2015} %JWST Pipeline
+ % MIRI MRS Cal pipeline
 \subsection{Stage 1 Processing}
 The raw data files read from MIRISIM (or eventually the MIRI instrument itself) are a series of \textit{exposures}, each made up of set of \textit{integrations} containing a some number of \textit{groups} or frames.
 Each group is a non-destructive readout of the detector arrays, providing a series of increasing counts known as ramps in DN/s (digital number per second). 
 The first stage of the JWST pipeline takes these raw files, applies a series of steps and outputs a single file for each input exposure in units of countrate.
 This procedure is applied to any MIRI data.
 We used default pipeline settings to apply this procedure, and applied all steps applicable to the MIRI instrument.
+The particular calibration procedures for MIRI MRS data is described in \parencite{ref:mirical}.
 \subsection{Stage 2 Processing}
 For the second stage of processing we use the Stage 2 Spectroscopic Processing pipeline, and apply the steps individually to maintain control over parameters.
 The second stage pipeline applies instrument specific corrections that result in a photometrically calibrated exposure. For the MRS, this involves the following series of steps, some of which will be described in further detail below.

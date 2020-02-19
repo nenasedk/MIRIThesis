@@ -179,7 +179,7 @@ Retrievals were typically performed using 500 or 1000 live points, with the conv
 \end{equation}
 set to 0.3 for parameter estimation and 0.8 for model comparison, as suggested in the pyMultinest documentation.
 
-\section{Observations}
+\section{Observations}\label{sec:obs}
 The targets used in our retrieval study ar guided by the JWST ERS and GTO programs. This allows us to use well-defined observing strategies for each object, and present a clear case for the science that can be accomplished with these observations.
 While all three were discussed in Chapter 1, we will now outline the proposed observing strategies and science cases for each target.
 \subsubsection{VHS-1256B}
@@ -213,6 +213,28 @@ As a cold object, WISE 0855 provides the best known extra-solar template for old
 With the improved sensitivity and long wavelength coverage of JWST, it is hoped that more low mass and colder exoplanets may be directly imaged.
 Understanding the atmosphere of WISE 0855 will provide a great deal of insight for the challenges of such exoplanetary atmospheres. 
 Clouds are suspected to be present \parencite{Faherty2018}, a feature which will be better understood using mid infrared observations.
+
+\begin{table}[t]
+	\centering
+	\begin{tabular}{l|ccc}
+		\toprule
+		\textbf{Parameter} & \textbf{VHS-1256b} & \textbf{2M1207b} & \textbf{WISE 0855}\\
+		\midrule
+		ObsDate & 0.0 & 0.0 & 0.0\\
+		Path & SHORT/LONG & SHORT/LONG & SHORT/LONG\\
+		Dither & 2 point & 4-point & None\\
+		Disperser & ALL & ALL & ALL\\
+		Detector & SW/LW & SW/LW & SW/LW\\
+		MRS Mode & SLOW & SLOW & FAST\\
+		Exposures & 1 & 1 & 1\\
+		Integrations & 1 & 1 & 1\\
+		Groups & 30 & 76 & 180\\
+		Cosmic Rays & None & None & None\\
+		\bottomrule
+	\end{tabular}
+	\caption[Observation Parameters]{Observing parameters for each selected target. Observation parameters are based on JWST proposals, and set in order to cover channels 1 through 3. For the disperser, ALL implies running a simulation for each of the SHORT/MEDIUM/LONG sub-bands. A total of 6 simulations are necessary to cover the entire wavelength range. Cosmic rays are turned off due to issues with MIRISIM.}
+	\label{tab:obsparams}
+\end{table}
 \subsubsection{Science Goals}
 Atmospheric retrievals are currently the best tools for characterizing the composition and structure of exoplanet atmospheres. 
 Parameters such as the C/O ratio may trace the formation history of planets, and may be able to settle the debate between gravitational instability and core accretion formation models \parencite{Madhusudhan2012,Moses2013}.
