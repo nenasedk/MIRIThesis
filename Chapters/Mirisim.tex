@@ -206,7 +206,7 @@ The second stage pipeline applies instrument specific corrections that result in
 \end{enumerate} 
 \subsubsection{Photometric Calibration}
 Photometric calibration is the process of removing detector and optical biases to ensure that the measured output corresponds to the true flux incident onto the telescope.
-This process occurs in the PHOTOM step of the JWST pipeline, and uses reference files which store per-pixel photon-to-electron conversion efficiencies to transform the count rate data product to a flux measurement.
+This process occurs in the PHOTOM step of the JWST pipeline, and uses reference files which store per-pixel photon-to-electron conversion efficiencies along with pixel areas in arcsec to transform the count rate data product to a surface brightness measurement.
 This corrects for the wavelength dependent bias shown in Fig. \ref{fig:mirideteff}.
 
 However, this step remains under development, and does not produce absolutely calibrated images. In particular, even using the most up to date reference files (v8D.04.00) there remains discontinuities between channels, and poorly calibrated slopes.
@@ -217,7 +217,11 @@ However, this step remains under development, and does not produce absolutely ca
 Once the data from the pipeline has been transformed into a spectral cube, we can perform aperture photometry using the \verb|photutils| package to extract a 1D spectrum of the source.
 For each frame in each sub-band the coordinates of the spaxel at with the peak flux is detected using \verb|photutils| \verb|find_peaks|, which provides the location for the center of a circular aperture.
 A radius of 5 spaxels is used to encompass the entire PSF for a point source.
-If the files have already been photometrically calibrated, measuring the flux requires just adding the flux from each spaxel within the defined radius for each frame.
+The input file must be photometrically calibrated, with units of surface brightness in mJy/as$^{2}$.
+Using the \verb|aperture_photometry| function, we sum all of the contributions within the central aperture.
+Using a set of additional apertures, we measure and subtract the median background surface brightness.
+This measurement is then converted into flux units by multiplying by the spaxel area in as$^{2}$.
+The standard deviation of the background measurements is used to define the error on the flux measurement.
 While optimal extraction techniques exist, given our known input signal and background, this procedure is adequate for producing a spectrum in each sub-band, which can then be combined into a single spectrum for all measured sub-band.
 
 Unfortunately, due to the issues described above with the PHOTOM step of the JWST pipeline, the spectrum built using aperture photometry does not accurately reflect the input spectrum in slope or absolute photometry. 

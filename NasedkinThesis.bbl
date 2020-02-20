@@ -399,7 +399,7 @@
       \verb{file}
       \verb :home/evert/Documents/MIRIThesis/figures/DIExoplanets/Bailey{\_}2014{\_}ApJL{\_}780{\_}L4.pdf:pdf
       \endverb
-      \keyw{instrumentation: adaptive optics,open clusters and associations: individual (Lower Centaurus Crux),planet-disk interactions,planetary systems,stars: individual (HD 106906)}
+      \keyw{instrumentation: adaptive optics,open clusters and associations: individual (Lower,planet-disk interactions,planetary systems,stars: individual (HD 106906)}
     \endentry
     \entry{Barman2015}{article}{}
       \name{author}{4}{}{%
@@ -787,6 +787,89 @@
       \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Behmard, Petigura, Howard - 2019 - Data-driven Spectroscopy of Cool Stars at High Spectral Resolution.pdf:pdf
       \endverb
       \keyw{data analysis,fundamental parameters,methods,spectroscopic,stars,statistical,surveys,techniques}
+    \endentry
+    \entry{Beichman2014}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=1,uniquepart=given,hash=474cf2a36335ec5d09a8f598c27516de}{%
+           family={Beichman},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=55483595ff51d7e9907461552dd552e8}{%
+           family={Gelino},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89ee83b0a9124e9e7c1551b05a1f9f96}{%
+           family={Kirkpatrick},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi Davy},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bdeebebb7c92da5af33c49ee7dc9f1ed}{%
+           family={Cushing},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=86e704519797a789e99ddb03ed04c93d}{%
+           family={Dodson-Robinson},
+           familyi={D\bibinithyphendelim R\bibinitperiod},
+           given={Sally},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b83db609305b007bb1e802dcf6303ea3}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a635c27bd2601f3d98f61bb745a0c48}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a9118b2e2b8207f3a43fa42171a10a13}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={E.\bibnamedelimi L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec907a65150a66c09f5562a2a9089198}
+      \strng{fullhash}{3b5e7d4ffa56b3c895e7e01f5eadfd84}
+      \strng{bibnamehash}{ec907a65150a66c09f5562a2a9089198}
+      \strng{authorbibnamehash}{ec907a65150a66c09f5562a2a9089198}
+      \strng{authornamehash}{ec907a65150a66c09f5562a2a9089198}
+      \strng{authorfullhash}{3b5e7d4ffa56b3c895e7e01f5eadfd84}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have determined astrometric positions for 15 WISE-discovered late-type brown dwarfs (six T8-9 and nine Y dwarfs) using the Keck-II telescope, the Spitzer Space Telescope, and the Hubble Space Telescope. Combining data from 8 to 20 epochs we derive parallactic and proper motions for these objects, which puts the majority within 15 pc. For ages greater than a few Gyr, as suggested from kinematic considerations, we find masses of 10-30 M Jup based on standard models for the evolution of low-mass objects with a range of mass estimates for individual objects, depending on the model in question. Three of the coolest objects have effective temperatures 350 K and inferred masses of 10-15 M Jup. Our parallactic distances confirm earlier photometric estimates and direct measurements and suggest that the number of objects with masses below about 15 M Jup must be flat or declining, relative to higher mass objects. The masses of the coldest Y dwarfs may be similar to those inferred for recently imaged planet-mass companions to nearby young stars. Objects in this mass range, which appear to be rare in both the interstellar and protoplanetary environments, may both have formed via gravitational fragmentation - the brown dwarfs in interstellar clouds and companion objects in a protoplanetary disk. In both cases, however, the fact that objects in this mass range are relatively infrequent suggests that this mechanism must be inefficient in both environments. {©} 2014. The American Astronomical Society. All rights reserved.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{15384357}
+      \field{journaltitle}{Astrophysical Journal}
+      \field{number}{2}
+      \field{title}{{Wise y dwarfs as probes of the brown dwarf-exoplanet connection}}
+      \field{volume}{783}
+      \field{year}{2014}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1088/0004-637X/783/2/68
+      \endverb
+      \verb{eprint}
+      \verb 1401.1194
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Beichman{\_}2014{\_}ApJ{\_}783{\_}68.pdf:pdf
+      \endverb
+      \keyw{astrometry,brown dwarfs,parallaxes,proper motions,solar neighborhood}
     \endentry
     \entry{Beichman2019a}{unpublished}{}
       \name{author}{3}{}{%
@@ -2250,6 +2333,153 @@
       \endverb
       \keyw{binaries: visual,brown dwarfs,stars: atmospheres,stars: individual (WISE J104915.57-531906.1,Luhma,stars: variables: general}
     \endentry
+    \entry{Burningham2017}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=d5a308ecbb3b21ba7c6afeb670fe5466}{%
+           family={Burningham},
+           familyi={B\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e27d21735ef97fb6609dac6d02dd6c25}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28b2fef3cc7e9323bb92453b7681901e}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=52c6075d7230a76fe98d9b6fbf032bbf}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9e588a24ab4f561bc5406fa5efc8060b}{%
+           family={Visscher},
+           familyi={V\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4683b9d7e567aaa38ddccb203e6012ba}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c993af649f56b85b4d4c8d4df1b32ab6}{%
+           family={Saumon},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4c2e7d70fcaae0fd5e67716ce72a4f5d}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fe3c7c0f5ae3ce3045b26b9fe19c1439}
+      \strng{fullhash}{5791e9cacb2ff8b4ead9591a8854a801}
+      \strng{bibnamehash}{fe3c7c0f5ae3ce3045b26b9fe19c1439}
+      \strng{authorbibnamehash}{fe3c7c0f5ae3ce3045b26b9fe19c1439}
+      \strng{authornamehash}{fe3c7c0f5ae3ce3045b26b9fe19c1439}
+      \strng{authorfullhash}{5791e9cacb2ff8b4ead9591a8854a801}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the first results from applying the spectral inversion technique in the cloudy L dwarf regime. Our newframework provides a flexible approach to modelling cloud opacity which can be built incrementally as the data require and improves upon previous retrieval experiments in the brown dwarf regime by allowing for scattering in two-stream radiative transfer. Our first application of the tool to two mid-L dwarfs is able to reproduce their near-infrared spectra far more closely than grid models. Our retrieved thermal, chemical and cloud profiles allow us to estimate Teff = 1796-25+23 K and log g = 5.21-0.08+0.05 for 2MASS J05002100+0330501, and for 2MASSW J2224438-015852 we find Teff = 1723-19+18 K and log g = 5.31-0.08+0.04, in close agreement with previous empirical estimates. Our best model for both objects includes an optically thick cloud deck which passes $\tau$ cloud ≥ 1 (looking down) at a pressure of around 5 bar. The temperature at this pressure is too high for silicate species to condense, and we argue that corundum and/or iron clouds are responsible for this cloud opacity. Our retrieved profiles are cooler at depth and warmer at altitude than the forward grid models that we compare, and we argue that some form of heating mechanism may be at work in the upper atmospheres of these L dwarfs.We also identify anomalously high CO abundance in both targets, which does not correlate with the warmth of our upper atmospheres or our choice of cloud model, and find similarly anomalous alkali abundance for one of our targets. These anomalies may reflect unrecognized shortcomings in our retrieval model or inaccuracies in our gas phase opacities.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{13652966}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{number}{1}
+      \field{title}{{Retrieval of atmospheric properties of cloudy L dwarfs}}
+      \field{volume}{470}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{1177\bibrangedash 1197}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1093/MNRAS/STX1246
+      \endverb
+      \verb{eprint}
+      \verb 1701.01257
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/stx1246.pdf:pdf
+      \endverb
+      \keyw{Brown dwarfs,Planets and satellites: atmospheres,Radiative transfer,Stars: atmospheres}
+    \endentry
+    \entry{Burrows2001}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=cd2544407a7c4e07bb0d126d5d0e46f4}{%
+           family={Burrows},
+           familyi={B\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0f78b4d06350bddc264ee12add7b52de}{%
+           family={Hubbard},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=841b0342cb51fe517d9dca79608cddc2}{%
+           family={Lunine},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=58c8fd9805dd24738b5d55a9c5a3669a}{%
+           family={Liebert},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d981934d511a3db9b687bb0570f3d4ea}
+      \strng{fullhash}{3716ff54774fe6a329dbd75416727191}
+      \strng{bibnamehash}{3716ff54774fe6a329dbd75416727191}
+      \strng{authorbibnamehash}{3716ff54774fe6a329dbd75416727191}
+      \strng{authornamehash}{d981934d511a3db9b687bb0570f3d4ea}
+      \strng{authorfullhash}{3716ff54774fe6a329dbd75416727191}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Straddling the traditional realms of the planets and the stars, objects below the edge of the main sequence have such unique properties, and are being discovered in such quantities, that one can rightly claim that a new field at the interface of planetary science and astronomy is being born. This article extends the previous review of Burrows and Liebert (1993) and describes the essential elements of the theory of brown dwarfs and giant planets. It discusses their evolution, atmospheric composition, and spectra, including the new spectroscopic classes L and T. Particular topics which are important for an understanding of the spectral properties include the effects of condensates, clouds, molecular abundances, and atomic opacities. Moreover, it discusses the distinctive features of these extrasolar giant planets that are irradiated by a central primary, in particular, their reflection spectra, albedos, and transits. Overall, the theory explains the basic systematics of substellar-mass objects over three orders of magnitude in mass and age, and a factor of 30 in temperature.}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{issn}{00346861}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{3}
+      \field{title}{{The theory of brown dwarfs and extrasolar giant planets}}
+      \field{volume}{73}
+      \field{year}{2001}
+      \true{nocite}
+      \field{pages}{719\bibrangedash 765}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.73.719
+      \endverb
+      \verb{eprint}
+      \verb 0103383
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/0103383.pdf:pdf
+      \endverb
+    \endentry
     \entry{Burrows2018}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=cd2544407a7c4e07bb0d126d5d0e46f4}{%
@@ -2280,6 +2510,7 @@
       \strng{authorbibnamehash}{c069e05832397e3aee9c6430c2825bb0}
       \strng{authornamehash}{d981934d511a3db9b687bb0570f3d4ea}
       \strng{authorfullhash}{c069e05832397e3aee9c6430c2825bb0}
+      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
@@ -3687,6 +3918,137 @@
       \verb :home/evert/Documents/Papers/Thesis/Currie{\_}2012{\_}ApJL{\_}760{\_}L32.pdf:pdf
       \endverb
       \keyw{planetary systems,stars: individual: (Fomalhaut)}
+    \endentry
+    \entry{Cushing2011}{article}{}
+      \name{author}{16}{}{%
+        {{uniquename=0,uniquepart=base,hash=bdeebebb7c92da5af33c49ee7dc9f1ed}{%
+           family={Cushing},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89ee83b0a9124e9e7c1551b05a1f9f96}{%
+           family={Kirkpatrick},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi Davy},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55483595ff51d7e9907461552dd552e8}{%
+           family={Gelino},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55620a45c09786f19610d6e39b59822d}{%
+           family={Griffith},
+           familyi={G\bibinitperiod},
+           given={Roger\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bd10ac75610c119a8777e9defe631956}{%
+           family={Skrutskie},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ea3773b65534e117216f13d07bef7216}{%
+           family={Mainzer},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a4a0ecc579f272cdd7f1cac35b519900}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Kenneth\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6318a54c47f19e6bb8193cfa8b798b98}{%
+           family={Beichman},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6c364521b33b52ce7b42bb0ba090aeca}{%
+           family={Burgasser},
+           familyi={B\bibinitperiod},
+           given={Adam\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b206bf743137f6dedff68638c0476192}{%
+           family={Prato},
+           familyi={P\bibinitperiod},
+           given={Lisa\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e4a17d3af4404b047657f18aa135a4f1}{%
+           family={Simcoe},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b83db609305b007bb1e802dcf6303ea3}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c993af649f56b85b4d4c8d4df1b32ab6}{%
+           family={Saumon},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3a25605c7dc47148c3c5e9ffc790a73}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1a9262959410096bb5afa2298d467cde}{%
+           family={Eisenhardt},
+           familyi={E\bibinitperiod},
+           given={Peter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cc5ae1bc959eadbd4acd96c72d97469e}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Edward\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1d45ee35bc95487b374e0c05ee3350e}
+      \strng{fullhash}{a77e32da04df31423c210bac58fdb892}
+      \strng{bibnamehash}{a1d45ee35bc95487b374e0c05ee3350e}
+      \strng{authorbibnamehash}{a1d45ee35bc95487b374e0c05ee3350e}
+      \strng{authornamehash}{a1d45ee35bc95487b374e0c05ee3350e}
+      \strng{authorfullhash}{a77e32da04df31423c210bac58fdb892}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the discovery of seven ultracool brown dwarfs identified with the Wide-field Infrared Survey Explorer (WISE). Near-infrared spectroscopy reveals deep absorption bands of H2O and CH4 that indicate all seven of the brown dwarfs have spectral types later than UGPS J072227.51-054031.2, the latest-type T dwarf currently known. The spectrum of WISEP J182831.08+265037.8 is distinct in that the heights of the J- and H-band peaks are approximately equal in units of f $\lambda$, so we identify it as the archetypal member of the Y spectral class. The spectra of at least two of the other brown dwarfs exhibit absorption on the blue wing of the H-band peak that we tentatively ascribe to NH3. These spectral morphological changes provide a clear transition between the T dwarfs and the Y dwarfs. In order to produce a smooth near-infrared spectral sequence across the T/Y dwarf transition, we have reclassified UGPS 0722-05 as the T9 spectral standard and tentatively assign WISEP J173835.52+273258.9 as the Y0 spectral standard. In total, six of the seven new brown dwarfs are classified as Y dwarfs: four are classified as Y0, one is classified as Y0 (pec?), and WISEP J1828+2650 is classified as {>}Y0. We have also compared the spectra to the model atmospheres of Marley and Saumon and infer that the brown dwarfs have effective temperatures ranging from 300K to 500K, making them the coldest spectroscopically confirmed brown dwarfs known to date. {©} 2011. The American Astronomical Society. All rights reserved.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{15384357}
+      \field{journaltitle}{Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{{The discovery of y dwarfs using data from the wide-field infrared survey explorer (WISE)}}
+      \field{volume}{743}
+      \field{year}{2011}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1088/0004-637X/743/1/50
+      \endverb
+      \verb{eprint}
+      \verb 1108.4678
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Cushing{\_}2011{\_}ApJ{\_}743{\_}50.pdf:pdf
+      \endverb
+      \keyw{brown dwarfs,infrared: stars,stars: low-mass}
     \endentry
     \entry{Danielski2018}{article}{}
       \name{author}{7}{}{%
@@ -8352,9 +8714,6 @@
       \verb{eprint}
       \verb arXiv:1806.11568
       \endverb
-      \verb{file}
-      \verb :home/evert/Documents/MIRIThesis/figures/DIExoplanets/eso1821a.pdf:pdf
-      \endverb
       \keyw{and,detection,high angular resolution -,individual,pds 70 - techniques,protoplanetary disks - scattering,radiative transfer - planets,satellites,stars}
     \endentry
     \entry{Konopacky2013}{article}{}
@@ -9994,6 +10353,61 @@
       \verb :home/evert/Documents/Papers/Thesis/HD189733RefSpec2011.pdf:pdf
       \endverb
       \keyw{Methods: analytical,Planetary systems: individual: HD189733b,Planets and satellites: atmospheres,Radiative transfer}
+    \endentry
+    \entry{Leggett2015}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=c8919dbc9b9fd62b0c0deb1e93e33ae9}{%
+           family={Leggett},
+           familyi={L\bibinitperiod},
+           given={S.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a635c27bd2601f3d98f61bb745a0c48}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e27d21735ef97fb6609dac6d02dd6c25}{%
+           family={Marley},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c993af649f56b85b4d4c8d4df1b32ab6}{%
+           family={Saumon},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85a7b657bc91bdd6e7f156e668a0eb38}
+      \strng{fullhash}{964d0f6cedb99b98a5d578cae4159103}
+      \strng{bibnamehash}{964d0f6cedb99b98a5d578cae4159103}
+      \strng{authorbibnamehash}{964d0f6cedb99b98a5d578cae4159103}
+      \strng{authornamehash}{85a7b657bc91bdd6e7f156e668a0eb38}
+      \strng{authorfullhash}{964d0f6cedb99b98a5d578cae4159103}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present new near-infrared photometry for seven late-type T dwarfs and nine Y-type dwarfs, and lower limit magnitudes for a tenth Y dwarf, obtained at Gemini Observatory. We also present a reanalysis of H-band imaging data from the Keck Observatory Archive, for an 11th Y dwarf. These data are combined with earlier MKO-system photometry, Spitzer and WISE mid-infrared photometry, and available trigonometric parallaxes, to create a sample of late-type brown dwarfs that includes 10 T9-T9.5 dwarfs or dwarf systems, and 16 Y dwarfs. We compare the data to our models, which include updated H2 and NH3 opacity, as well as low-temperature condensate clouds. The models qualitatively reproduce the trends seen in the observed colors; however, there are discrepancies of around a factor of two in flux for the Y0-Y1 dwarfs, with Teff ≈ 350-400 K. At Teff ∼ 400 K, the problems could be addressed by significantly reducing the NH3 absorption, for example by halving the abundance of NH3 possibly by vertical mixing. At Teff ∼ 350 K, the discrepancy may be resolved by incorporating thick water clouds. The onset of these clouds might occur over a narrow range in Teff, as indicated by the observed small change in 5 $\mu$m flux over a large change in J - W2 color. Of the known Y dwarfs, the reddest in J - W2 are WISEP J182831.08 + 265037.8 and WISE J085510.83-071442.5. We interpret the former as a pair of identical 300-350 K dwarfs, and the latter as a 250 K dwarf. If these objects are ∼3 Gyr old, their masses are ∼10 and ∼5 Jupiter-masses, respectively.}
+      \field{issn}{15384357}
+      \field{journaltitle}{Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{{Near-infrared photometry of Y dwarfs: Low ammonia abundance and the onset of water clouds}}
+      \field{volume}{799}
+      \field{year}{2015}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1088/0004-637X/799/1/37
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Leggett{\_}2015{\_}ApJ{\_}799{\_}37.pdf:pdf
+      \endverb
+      \keyw{Brown dwarfs,Stars: Atmospheres}
     \endentry
     \entry{Li2006}{article}{}
       \name{author}{4}{}{%
@@ -17318,6 +17732,150 @@
       \endverb
       \keyw{infrared observations,planetary atmospheres,spectroscopy}
     \endentry
+    \entry{Tremblin2015}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=a49cf62ea72acc2a3191eeee33fb54a1}{%
+           family={Tremblin},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=25a5bd086364558a738ef07291da1900}{%
+           family={Amundsen},
+           familyi={A\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4e9353f0bcebcc8192159cd512289b1a}{%
+           family={Mourier},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1ca2b0364c57d38ce759886d29e7edde}{%
+           family={Baraffe},
+           familyi={B\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f11f8bd07d4feefeb1914d8dc003d616}{%
+           family={Chabrier},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c7ef579942a2f82a157146b737afa170}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4650a93e8d60ee76eee6cc3dc30d274c}{%
+           family={Homeier},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c6387f0d36819a9ae0d69141206daca3}{%
+           family={Venot},
+           familyi={V\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{779963346de5d7568d8df537e8a0bc1f}
+      \strng{fullhash}{86c4bdef2d00da10f0920f1025d35d32}
+      \strng{bibnamehash}{779963346de5d7568d8df537e8a0bc1f}
+      \strng{authorbibnamehash}{779963346de5d7568d8df537e8a0bc1f}
+      \strng{authornamehash}{779963346de5d7568d8df537e8a0bc1f}
+      \strng{authorfullhash}{86c4bdef2d00da10f0920f1025d35d32}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work aims to improve the current understanding of the atmospheres of brown dwarfs, especially cold ones with spectral types T and Y, whose modeling is a current challenge. Silicate and iron clouds are believed to disappear at the photosphere at the L/T transition, but cloudless models fail to reproduce correctly the spectra of T dwarfs, advocating for the addition of more physics, e.g., other types of clouds or internal energy transport mechanisms. We use a one-dimensional radiative/convective equilibrium code ATMO to investigate this issue. This code includes both equilibrium and out-of-equilibrium chemistry and solves consistently the PT structure. Included opacity sources are H2-H2, H2-He, H2O, CO, CO2, CH4, NH3, K, Na, and TiO, VO if they are present in the atmosphere. We show that the spectra of Y dwarfs can be accurately reproduced with a cloudless model if vertical mixing and NH3 quenching are taken into account. T dwarf spectra still have some reddening in, e.g., J-H, compared to cloudless models. This reddening can be reproduced by slightly reducing the temperature gradient in the atmosphere. We propose that this reduction of the stabilizing temperature gradient in these layers, leading to cooler structures, is due to the onset of fingering convection, triggered by the destabilizing impact of condensation of very thin dust.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{20418213}
+      \field{journaltitle}{Astrophysical Journal Letters}
+      \field{number}{1}
+      \field{title}{{Fingering convection and cloudless models for cool brown dwarf atmospheres}}
+      \field{volume}{804}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{6}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/2041-8205/804/1/L17
+      \endverb
+      \verb{eprint}
+      \verb 1504.03334
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Tremblin{\_}2015{\_}ApJL{\_}804{\_}L17.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/2041-8205/804/1/L17
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/2041-8205/804/1/L17
+      \endverb
+      \keyw{Brown dwarfs,Methods: numerical,Methods: observational}
+    \endentry
+    \entry{Turrini2015}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=4df61a9b98aaa6f88d56af4686e36592}{%
+           family={Turrini},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e682ea01b2fadcefdd6659dce3c6aa0a}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5f807183cd3d3e2b3157410392389c9e}{%
+           family={Barbieri},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d666fadd1156e3cd4d9f225e0407dea}
+      \strng{fullhash}{1ae1f170914eab9ecb9a33fe677fb3fd}
+      \strng{bibnamehash}{1ae1f170914eab9ecb9a33fe677fb3fd}
+      \strng{authorbibnamehash}{1ae1f170914eab9ecb9a33fe677fb3fd}
+      \strng{authornamehash}{7d666fadd1156e3cd4d9f225e0407dea}
+      \strng{authorfullhash}{1ae1f170914eab9ecb9a33fe677fb3fd}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last twenty years, the search for extrasolar planets has revealed the rich diversity of outcomes from the formation and evolution of planetary systems. In order to fully understand how these extrasolar planets came to be, however, the orbital and physical data we possess are not enough, and they need to be complemented with information about the composition of the exoplanets. Ground-based and space-based observations provided the first data on the atmospheric composition of a few extrasolar planets, but a larger and more detailed sample is required before we can fully take advantage of it. The primary goal of a dedicated space mission like the Exoplanet Characterization Observatory (EChO) proposal is to fill this gap and to expand the limited data we possess by performing a systematic survey of extrasolar planets. The full exploitation of the data that space-based and ground-based facilities will provide in the near future, however, requires knowledge about the sources and sinks of the chemical species and molecules that will be observed. Luckily, the study of the past history of the Solar System provides several indications about the effects of processes like migration, late accretion and secular impacts, and on the time they occur in the life of planetary systems. In this work we will review what is already known about the factors influencing the composition of planetary atmospheres, focusing on the case of gaseous giant planets, and what instead still need to be investigated.}
+      \field{journaltitle}{Experimental Astronomy}
+      \field{number}{2-3}
+      \field{title}{{The role of planetary formation and evolution in shaping the composition of exoplanetary atmospheres}}
+      \field{volume}{40}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{501\bibrangedash 522}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s10686-014-9401-6
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Turrini2015{\_}Article{\_}TheRoleOfPlanetaryFormationAnd.pdf:pdf
+      \endverb
+      \keyw{Atmospheres,Extrasolar planets,Giant planets,Migration,Planetary formation,Space missions}
+    \endentry
     \entry{VanderPlas2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=a5983c7fece954de36ec464381877b44}{%
@@ -17369,6 +17927,120 @@
       \verb http://dx.doi.org/10.3847/1538-4365/aab766
       \endverb
       \keyw{data analysis,methods,methods: data analysis,methods: statistical,statistical}
+    \endentry
+    \entry{Vos2019}{report}{}
+      \name{author}{13}{}{%
+        {{uniquename=0,uniquepart=base,hash=850c2bf7a27798bd5be58d7c675ba13d}{%
+           family={Vos},
+           familyi={V\bibinitperiod},
+           given={Johanna\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2fbf397d6090b92541425ada1e845026}{%
+           family={Allers},
+           familyi={A\bibinitperiod},
+           given={Katelyn},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d4bd30f8d316fcb8ae974693d9c9e0e4}{%
+           family={Apai},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ef17ed2f772648ef015f6c8a71965f21}{%
+           family={Biller},
+           familyi={B\bibinitperiod},
+           given={Beth},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=44be84d75bf8bfaa9e567547c297190d}{%
+           family={Burgasser},
+           familyi={B\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3cf3a5aee2d18899adfcd5dd6a7cd16b}{%
+           family={Faherty},
+           familyi={F\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f3c255454dc8746731a9f639d546ed74}{%
+           family={Gagn{é}},
+           familyi={G\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1517209f2d3d4609fdb9380987576e68}{%
+           family={Helling},
+           familyi={H\bibinitperiod},
+           given={Christiane},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fcfec5b934a7938dcf247d9d2a76d7b2}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0d8f411b0984e46334d6c929014605c}{%
+           family={Radigan},
+           familyi={R\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9f7794c10979d6286748d42f94f0fe88}{%
+           family={Showman},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=20dc67af07d30bc2ea2afbadf04c7179}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Xianyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=03b7f14e2ea9470849148654c968b2f2}{%
+           family={Tremblin},
+           familyi={T\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eba887e283e025cd051d7ee6bc35a06a}
+      \strng{fullhash}{66520b91e781bd614964a66ed3f6a1f3}
+      \strng{bibnamehash}{eba887e283e025cd051d7ee6bc35a06a}
+      \strng{authorbibnamehash}{eba887e283e025cd051d7ee6bc35a06a}
+      \strng{authornamehash}{eba887e283e025cd051d7ee6bc35a06a}
+      \strng{authorfullhash}{66520b91e781bd614964a66ed3f6a1f3}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The L/T transition is an important evolutionary phase in brown dwarf atmospheres, providing us with a unique opportunity to explore the effects of clouds, convection, winds, gravity and metallicity across a very narrow temperature range. Understanding these physical processes is critical for understanding ultracool atmospheres. In the next decade, we will answer three key questions regarding L/T transition atmospheres: 1. What is the physical mechanism behind the L/T transition? 2. What is the spatial extent of atmospheric structures at the L/T transition? 3. How do gravity and metallicity affect the L/T transition? The theory and methods developed for brown dwarfs will be used in the 2030s and beyond for solar-system age giant exoplanets and eventually habitable zone earth analogues. Developing these techniques now are crucial.}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Astro2020 White Paper: The L/T Transition}}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{eprint}
+      \verb 1903.06691
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/1903.06691.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1903.06691
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1903.06691
+      \endverb
     \endentry
     \entry{Waldmann2015a}{article}{}
       \name{author}{6}{}{%
@@ -17805,14 +18477,125 @@
       \verb :home/evert/Documents/Papers/Thesis/paper6.pdf:pdf
       \endverb
     \endentry
+    \entry{Wright2014}{article}{}
+      \name{author}{13}{}{%
+        {{uniquename=1,uniquepart=given,hash=cc5ae1bc959eadbd4acd96c72d97469e}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Edward\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=0,uniquepart=base,hash=08dc82ecd6c8b9f9548b465ca2fd521c}{%
+           family={Mainzer},
+           familyi={M\bibinitperiod},
+           given={Amy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89ee83b0a9124e9e7c1551b05a1f9f96}{%
+           family={Kirkpatrick},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi Davy},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6bbbb885149e6e0fb2f4b42d8b54ae7d}{%
+           family={Masci},
+           familyi={M\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bdeebebb7c92da5af33c49ee7dc9f1ed}{%
+           family={Cushing},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5e8b3710922534894d7aa47340324121}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=54b7f9a81e7262f31d1f37a72d32a903}{%
+           family={Fajardo-Acosta},
+           familyi={F\bibinithyphendelim A\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55483595ff51d7e9907461552dd552e8}{%
+           family={Gelino},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6318a54c47f19e6bb8193cfa8b798b98}{%
+           family={Beichman},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=daecb0b2fec62e8e209d92bcfad32306}{%
+           family={Skrutskie},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8b96002acaa28c143f2da907c9205f67}{%
+           family={Grav},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a16ad7c504cc230fe10666ed3f9dcac0}{%
+           family={Eisenhardt},
+           familyi={E\bibinitperiod},
+           given={Peter\bibnamedelima R.M.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a63865e2b2ecd84e23d85e328be838cc}{%
+           family={Cutri},
+           familyi={C\bibinitperiod},
+           given={Roc},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a5b1c04eda83aec08096dd5d58653d87}
+      \strng{fullhash}{d26eaa0358d49df34f35846aac71fdd7}
+      \strng{bibnamehash}{a5b1c04eda83aec08096dd5d58653d87}
+      \strng{authorbibnamehash}{a5b1c04eda83aec08096dd5d58653d87}
+      \strng{authornamehash}{a5b1c04eda83aec08096dd5d58653d87}
+      \strng{authorfullhash}{d26eaa0358d49df34f35846aac71fdd7}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Wide-field Infrared Survey Explorer (WISE) spacecraft has been reactivated as NEOWISE-R to characterize and search for near-Earth objects. The brown dwarf WISE J085510.83-071442.5 has now been re-observed by NEOWISE-R, and we confirm the results of Luhman, who found a very low effective temperature (≈250 K), a very high proper motion (8.″1 ± 0.″1 yr-1), and a large parallax (454 ± 45 mas). The large proper motion has separated the brown dwarf from the background sources that influenced the 2010 WISE data, allowing a measurement of a very red WISE color of W1 - W2 {>} 3.9 mag. A re-analysis of the 2010 WISE astrometry using only the W2 band, combined with the new NEOWISE-R 2014 position, gives an improved parallax of 448 ± 33 mas and a proper motion of 8.″08 ± 0.″05 yr-1. These are all consistent with values from Luhman.}
+      \field{issn}{00046256}
+      \field{journaltitle}{Astronomical Journal}
+      \field{number}{5}
+      \field{title}{{NEOWISE-R observation of the coolest known brown dwarf}}
+      \field{volume}{148}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{2012\bibrangedash 2015}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1088/0004-6256/148/5/82
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Wright{\_}2014{\_}AJ{\_}148{\_}82.pdf:pdf
+      \endverb
+      \keyw{astrometry,brown dwarfs,infrared: stars,solar neighborhood,stars: individual (WISE J085510.83-071442.5),stars: low-mass}
+    \endentry
     \entry{MIRI2}{article}{}
       \name{author}{12}{}{%
-        {{uniquename=0,uniquepart=base,hash=04cfbc786511d3fa62980581e44d4659}{%
+        {{uniquename=1,uniquepart=given,hash=04cfbc786511d3fa62980581e44d4659}{%
            family={Wright},
            familyi={W\bibinitperiod},
            given={G\bibnamedelima S},
            giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{uniquename=0,uniquepart=base,hash=cb0522ff2ab2fcc7b7a1b32334b28ace}{%
            family={Wright},
            familyi={W\bibinitperiod},
@@ -18212,7 +18995,7 @@
       \verb{url}
       \verb http://dx.doi.org/10.3847/1538-3881/ab037f
       \endverb
-      \keyw{atmospheres,methods,methods: observational,planetary systems,planets and satellites: atmospheres,observational,planetary systems,planets and satellites}
+      \keyw{atmospheres,methods,methods: observational,planetary systems,planets a,observational,planetary systems,planets and satellites}
     \endentry
     \entry{Zucker2003}{article}{}
       \name{author}{1}{}{%

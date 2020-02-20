@@ -59,27 +59,33 @@ Imaging techniques such as Angular Differential Imaging (ADI) \parencite{Marois2
 Coronagraphs are optical elements which suppress the stellar PSF through self-destructive interference or physical occultation, depending on the position in the optical path.
 The difference in spectra between the planet and the star can also be used to separate the two sources.
 
-
 Presently, 10m class telescopes such as the Very Large Telescope (VLT) in Paranal, Chile or the Gemini Observatory split between Hawaii and Chile provide the best combination of resolution and instrumentation to perform direct imaging of exoplanets.
 The NACO instrument at the VLT provided the first image of an exoplanet in 2004 \parencite{Chauvin2004}.
 These observatories are among those equipped with an adaptive optics system, corongraphic instrumentation and near to mid infrared imaging and spectroscopic capabilities to directly image exoplanets, with several exemplar systems becoming standard objects of interest.
 While it's terribly interesting to explore the details of each of these objects, we will focus our discussion on objects will be used further in this study, due to their scheduled observation as part of the JWST GTO and Early Release Science (ERS) programs \parencite{Beichman2019}. 
 The parameters of these and other directly imaged exoplanets and brown dwarfs are summarized in table \ref{tab:exoplanetparams}. 
+
+In order to understand these objects, we must use a measured spectrum in order to infer physical properties.
+Parameters such as the carbon-to-oxygen (C/O) ratio provide insight into formation mechanisms \parencite{Madhusudhan2012}.
+A planet that forms near its star will form in a hot region of the circumstellar disk, with a depletion of volatiles due to the high temperature - various species will freeze out at different radii within the disk. 
+The measured C/O ratio of a planet will thus depend on its initial formation location and its migration path.
+\parencite{Turrini2015} outlines several formation pathways and how the C/O ratio will be affected.
+The current climate of exoplanets is also of interest. This requires inferences of atmospheric composition and structure from the spectrum, and will ultimately require time resolved measurements in order to study dynamics and variability. 
+
+
  %Not 2019 - summary of JWST science and instruments
  %Exoplanet characterization with JWST MIRI white paper
 \subsubsection{VHS-1256 b}
-\begin{wrapfigure}{r}{5.8cm}
-	\vspace{-1em}
-	\centering
-	\includegraphics[width=5cm]{vhs1256b.jpg}
-	\caption{VHS-1256b as observed with Subaru/IRCS in the L'-band \parencite{Rich2016}, reduced using the LOCI algorithm \parencite{Galicher2011}.}
-	\vspace{-1em}
-\end{wrapfigure}
 Originally discovered in 2015 \parencite{Gauza2015} as part of the VISTA Hemisphere Survey, VHS-1256b is a late-L dwarf in a 102 AU orbit around an M dwarf.
 \parencite{Gauza2015} present astrometric, photometric and spectroscopic data on the planet, finding an age of 150-300 Myr from a moving group association, a luminosity log($L_{bol}/L_{\odot}$) of -5.05$\pm0.22$ and infer a mass of 11.2$^{+9.2}_{-1.8}$ M$_{J}$. 
 The effective temperature is found to be 880$^{+140}_{-110}$ K from evolutionary models. 
 This is substantially colder than field dwarfs of a similar spectral type (typically 1400K), and so it is proposed that a thick Fe and Mg-Si cloud layer acts to reduce the effective temperature.
 Similar findings are presented by \parencite{Rich2016} using Subaru/IRCS.
+\begin{wrapfigure}{r}{5.5cm}
+	\centering
+	\includegraphics[width=5.2cm]{vhs1256b.jpg}
+	\caption{VHS-1256b as observed with Subaru/IRCS in the L'-band \parencite{Rich2016}, reduced using the LOCI algorithm \parencite{Galicher2011}.}
+\end{wrapfigure}
 
 In \parencite{Miles2018}, methane is detected using KECK/NIRSPEC in the L-band. 
 The shallow depth of the feature indicates chemical disequilibrium in the photosphere, as the derived abundance departs from an equilibrium abundance by a factor of 10-100.
@@ -137,28 +143,68 @@ It will be observed as part of the JWST GTO program \parencite{Birkmann2019}.
 	\end{table}
 \end{landscape}
 \section{Brown Dwarfs}
-\parencite{Oliveira2015} %BDs with JWST
-\parencite{Helling2014}% Brown dwarf atmospheres
-\parencite{Cooper2003} %Brown dwarf clouds/cloud formation
-\parencite{Madhusudhan2018a} %BD observations/atmospheres
-\parencite{Burrows2018} % Brown dwarf models/spectra coolest dwarfs
-\parencite{Marley2015} %Modelling brown dwarf and giant planet atmospheres
-\parencite{Manjavacas2014} %Thesis - physical characterization of brown dwarfs
-\parencite{Biller2017} %Variability in time for BDs
-\parencite{Faherty2018} % Water clouds in cold BDs
-\parencite{Morley2014} %Water clouds in Y dwarfs and exoplanets
+Brown dwarfs are the low mass result of a failed star formation process.
+On the low end of the mass scale, an object is considered a brown dwarf at >13M$_{J}$, which is the deuterium burning limit.
+By 75M$_{J}$, the object is heavy enough to sustain hydrogen fusion and the object is considered a star.
+However, there have recently been observations even lower mass brown dwarfs, down to several Jupiter masses, raising questions of formation processes \parencite{Luhman2014}.
+It is generally thought that brown dwarfs form during the gravitational collapse of a molecular cloud, while exoplanets form through a core accretion process in a circumstellar disk.
+Observations of high mass companions and low mass field objects then challenge these standard models.
 
-\subsection{Physics}
+While brown dwarfs are objects of scientific interest in their own right, we are particularly interested in their use as analogs for exoplanets due to their similar temperatures and pressures.
+Without the issue of contrast between an exoplanet and its host star, brown dwarfs are ideal targets for medium and high resolution spectroscopic characterization.
+As shown in table \ref{tab:exoplanetparams}, they are also some of the closest known objects to the solar system, with several having been observed at around 2pc.
+
 \subsection{Observational Properties}
-\subsubsection{T-Type}
-\subsubsection{L-Type}
-\subsubsection{Luhman 16B}
-\subsubsection{Y-Type}
-\subsubsection{WISE 0855-0714}
+Brown dwarfs are characterized by their spectral type, either by comparison to spectral templates, using indicies derived from spectral parameters or through broadband photometric comparison \parencite{Helling2014}.
+Directly imaged exoplanets can also be classified using brown dwarf spectral types.
+Unlike stars which maintain their temperature and luminosity through fusion, brown dwarfs cool and change their spectral type with age, leading to a degeneracy between mass and age \parencite{Burrows2001}.
+This spectral series is shown in Fig. \ref{fig:bdspec}.
 
+As a brown dwarf cools and contracts over time, its surface gravity will increase, leading to the use of log(g) as a tracer of age \parencite{Manjavacas2014}.
+Young, low surface gravity objects are particularly comparable to directly imaged exoplanets.
+In these young objects, clouds are a nearly universal feature \parencite{Cooper2003,Helling2014}, with thicker cloud decks appearing in low gravity objects \parencite{Helling2014}.
+
+\begin{figure}[t]
+	\includegraphics[width=\linewidth]{bdspectral.png}
+	\caption[Brown Dwarf Spectra]{Near Infrared spectral series of brown dwarfs from early-M to early-Y as shown in \parencite{Helling2014}.}
+	\label{fig:bdspec}
+\end{figure}
+
+\subsubsection{L-Type}
+L-dwarfs are the hottest brown dwarfs, with typical effective temperatures between 1300K and 2100K \parencite{Burrows2001}.
+L-type spectra are notable for the disappearance of VO and TiO NIR absorption lines and the onset of molecular absorption features such as H$_{2}$O and CO, with CH$_{4}$ appearing in late L types \parencite{Manjavacas2014}.
+Further key features of L-dwarfs is the formation of iron and silicate condensate, as well as the growth of neutral alkali lines \parencite{Burrows2001}.
+\subsubsection{T-Type}
+As a brown dwarf ages it moves towards a T-type spectrum. 
+The L/T transition occurs  with the appearance of both CH$_{4}$ and CO absorption, and is characterized by increasingly blue J-H colour as the temperature decreases.
+There are several proposed mechanisms for this transition, with cloud fragmentation due to particle microphysics \parencite{Burningham2017} and convection processes being two examples \parencite{Tremblin2015}.
+Both T- and L-dwarfs are highly variable due to complex atmospheric dynamics ranging from clouds to banding structures to hot spots and more \parencite{Biller2017}.
+\parencite{Vos2019} presents how monitoring with JWST/MIRI will be able to constrain the mechanism behind this transition.
+
+\subsubsection{Y-Type}
+Y-type dwarfs are ultracool objects first discovered in \parencite{Cushing2011}. 
+With such cold temperatures, they contain deeper water and methane absorption features than present in T-dwarfs, and likely have ammonia present as well.
+Atmospheric models suggest typical temperatures between 300-500 K, which places them as the coldest detected and spectroscopically measured brown dwarfs to date \parencite{Cushing2011}.
+
+\subsubsection{WISE 0855-0714}
+WISE 0855 is the coldest known brown dwarf at 250K, with an inferred mass of 5 M$_{J}$ \parencite{Luhman2014}, and a Y2-4 spectral type \parencite{Leggett2015}.
+Although faint, with a J-band magnitude of 25, its proximity to the sun makes allows for its spectral characterization.
+Present measurements indicate the presence of ammonia \parencite{Leggett2015} and water clouds \parencite{Morley2014,Faherty2018} in its atmosphere.
+
+\begin{wrapfigure}{r}{5.5cm}
+	\centering
+	\vspace{-1em}
+	\includegraphics[width=5.2cm]{wise0855im.jpg}
+	\caption{W2, epoch 1 image of WISE0855 on top of a known background clump. The green circle represents the location of WISE0855, the yello is the position of the background source \parencite{Wright2014}. }
+	\label{fig:wise0855im}
+	\vspace{-6em}
+\end{wrapfigure} 
+WISE 0855, along with other Y-dwarfs will be the subject of JWST investigation \parencite{Oliveira2015,Oliveira2019}.
+Its low mass and cold temperature make it the closest analog to solar system objects, especially to Jupiter. 
+Further observations will allow for tighter constraints on atmospheric composition and cloud properties, as well as insight into whether such objects are the result of a star-like formation process or are an ejected, free floating planet \parencite{Beichman2014}.
 \section{Motivation}
 \subsection{Current Status of Atmospheric Characterization}
-Both exoplanets and brown dwarfs raise interesting questions, but the real challenge is in gathering and processing the data necessary to answer them. 
+Both exoplanets and brown dwarfs raise interesting questions with regards to atmospheric properties, but there are substantial challenges both in gathering the data necessary to answer them and modeling the physics underlying the observable parameters. 
 The best methods currently in use involve taking spectroscopic data and inferring atmospheric properties from the spectral features.
 The light we measure may be thermal emission from the planet, where it is absorbed and scattered as it passes through the planet's atmosphere, or it may be light from the planet's host star which passes through the upper layers of the atmosphere.
 These provide complementary information about the composition and structure of the atmosphere, probing different altitudes and pressures.
@@ -177,6 +223,11 @@ While a more complete overview of exoplanet atmospheres is covered in the litera
 \parencite{Biller2018}
 \parencite{Danielski2018}
 \parencite{GRAVITYCollaboration2019}
+\begin{figure}[t]
+	\includegraphics[width=\linewidth]{gravitybpic}
+	\caption{Flux calibrated K-Band emission spectrum of \bpic as measured using the VLTI/GRAVITY at R=500 \parencite{GRAVITYCollaboration2019}, along with the GPi K-Band spectrum from \parencite{Chilcote2017}.}
+	\label{fig:gravitybpic}
+\end{figure}
 \subsection{JWST Studies}
 \parencite{Beichman2019} %JWST whitepaper on imaging/spec
 \parencite{Danielski2018} % Atmospheric characterizaton with MIRI
