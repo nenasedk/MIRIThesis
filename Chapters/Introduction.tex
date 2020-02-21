@@ -38,7 +38,7 @@ The atmosphere, combined with the distance between the planet and its star deter
 \subsubsection{Direct Imaging}
 While the majority of exoplanet detections have been made using the radial velocity or transit techniques, direct imaging opens up the possibility of collecting light from the planet itself.
 This provides a window into the planet's atmosphere and surface.
-Most direct imaging to date has used near-to-mid infrared wavelengths, where the contrast between the thermal emission from the planet and the star is at a minimum.
+Most direct imaging to date has used near-to-mid infrared wavelengths, where the contrast between the thermal emission from the planet and the star is at a minimum, as in Fig. \ref{fig:solarsystem}.
 This has its drawbacks: we are so far only able to image young planets that have retained some of the heat from their formation.
  
 \begin{figure}[t]
@@ -51,7 +51,8 @@ This has its drawbacks: we are so far only able to image young planets that have
 \end{figure}
 
 Direct imaging can make use of both ground and space based observatories. 
-However, the high spatial resolution required drives the need for a large primary mirror, limiting the possibilities of space-based telescopes. On the other hand, atmospheric turbulence necessitates the use of an adaptive optics equipped facility to observe from the ground. 
+However, the high spatial resolution required drives the need for a large primary mirror, limiting the possibilities of space-based telescopes. 
+On the other hand, atmospheric turbulence necessitates the use of an adaptive optics equipped facility to observe from the ground. 
 Atmospheric absorption due to telluric lines (absorption lines of Earth's atmosphere) also restrict infrared observations to narrow bands.
 
 In addition to the requiring high spatial resolution, it is also challenging to separate the light emitted by the planet from that of the star.
@@ -59,6 +60,12 @@ Imaging techniques such as Angular Differential Imaging (ADI) \parencite{Marois2
 Coronagraphs are optical elements which suppress the stellar PSF through self-destructive interference or physical occultation, depending on the position in the optical path.
 The difference in spectra between the planet and the star can also be used to separate the two sources.
 
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=9cm]{solarsystemcontrast.png}
+	\caption{SAO solar system model at 10pc, illustrating the vast difference in luminosity between the Sun and the surrounding planets. However, in the mid infrared the contrast is dramatically reduced at the peak of the planet's emission spectra \parencite{DesMarais2002}.}
+	\label{fig:solarsystem}
+\end{figure}
 Presently, 10m class telescopes such as the Very Large Telescope (VLT) in Paranal, Chile or the Gemini Observatory split between Hawaii and Chile provide the best combination of resolution and instrumentation to perform direct imaging of exoplanets.
 The NACO instrument at the VLT provided the first image of an exoplanet in 2004 \parencite{Chauvin2004}.
 These observatories are among those equipped with an adaptive optics system, corongraphic instrumentation and near to mid infrared imaging and spectroscopic capabilities to directly image exoplanets, with several exemplar systems becoming standard objects of interest.
@@ -180,14 +187,13 @@ The L/T transition occurs  with the appearance of both CH$_{4}$ and CO absorptio
 There are several proposed mechanisms for this transition, with cloud fragmentation due to particle microphysics \parencite{Burningham2017} and convection processes being two examples \parencite{Tremblin2015}.
 Both T- and L-dwarfs are highly variable due to complex atmospheric dynamics ranging from clouds to banding structures to hot spots and more \parencite{Biller2017}.
 \parencite{Vos2019} presents how monitoring with JWST/MIRI will be able to constrain the mechanism behind this transition.
-
 \subsubsection{Y-Type}
 Y-type dwarfs are ultracool objects first discovered in \parencite{Cushing2011}. 
 With such cold temperatures, they contain deeper water and methane absorption features than present in T-dwarfs, and likely have ammonia present as well.
 Atmospheric models suggest typical temperatures between 300-500 K, which places them as the coldest detected and spectroscopically measured brown dwarfs to date \parencite{Cushing2011}.
 
 \subsubsection{WISE 0855-0714}
-WISE 0855 is the coldest known brown dwarf at 250K, with an inferred mass of 5 M$_{J}$ \parencite{Luhman2014}, and a Y2-4 spectral type \parencite{Leggett2015}.
+WISE-0855 is the coldest known brown dwarf at 250K, with an inferred mass of 5 M$_{J}$ \parencite{Luhman2014}, and a Y2-4 spectral type \parencite{Leggett2015}.
 Although faint, with a J-band magnitude of 25, its proximity to the sun makes allows for its spectral characterization.
 Present measurements indicate the presence of ammonia \parencite{Leggett2015} and water clouds \parencite{Morley2014,Faherty2018} in its atmosphere.
 
@@ -215,25 +221,72 @@ While a more complete overview of exoplanet atmospheres is covered in the litera
  %Atmospheric char with MIRI (coron,LRS, not MRS I think)
 %\parencite{Madhusudhan2016} %Chemistry, Formation, Habitabiltiy
 \subsubsection{Transmission Spectroscopy}
-\parencite{Kreidberg2018}
-\parencite{Lee2012} % HD189733b trans spec
-\parencite{MacDonald2017} % Nitrogen chem, HD209458b
-\parencite{Madhusudhan2011} %Wasp12b need year
+Many exoplanets have been discovered using the transit technique in which the planet passes in front of its host star, blocking a small fraction of its light.
+Through time series observations, particularly with satellites such as Hubble, Kepler, and TESS, we can observe this dip in stellar brightness, and infer properties of the planet.
+A key feature of this observation is that in the case the planet has an atmosphere, the brightness dip is wavelength dependent.
+Depending on the wavelength, different species within the atmosphere will absorb the light to a greater or lesser extent.
+Thus if a species is abundant within the atmosphere, it will create deep absorption features, which will make the apparent radius of the planet larger, increasing the transit depth.
+Measuring this radius variation is the procedure of transmission spectroscopy, and is used to probe the composition and structure of the upper atmospheres of transiting planets.
+In addition to transmission spectroscopy, secondary eclipse spectroscopy is another transit measurement that uses the reflected light and thermal emission of the planet, and measures the dip in total luminosity as the planet passes behind its host star.
+This provides a more direct measurement of the planet's reflection or emission spectrum.
+\parencite{Kreidberg2018} presents a concise overview of transmission and eclipse spectroscopy.
+
+Transmission spectroscopy attempts to answer questions about atmospheric composition, formation history and present climate.
+To date, water features and carbon-bearing molecules have been detected, though molecules commonly present in the solar system such as methane and ammonia have not been detected, largely due to lack of long wavelength coverage and the high temperatures of most transiting planets \parencite{Lee2012,Kreidberg2018}.
+The C/O ratio has been measured in some hot Jupiters, including WAST-12b, which provides a trace for formation history and current composition \parencite{Madhusudhan2011}. 
+For WASP-12b, the high C/O ratio (>1) and the lack of an observed thermal inversion in the highly irradiated atmosphere both stand in contrast to theoretical predictions, and demonstrate the necessity for improvements in atmospheric and formation modeling \parencite{Madhusudhan2011}.
+In other atmospheres, nitrogen chemistry has been observed, and condensates (clouds and hazes) are nearly universal \parencite{MacDonald2017}.
+
+Future observations will increase the spectral resolution of transit observations, and will also extend the wavelength coverage. 
+By probing the mid infrared, it may be possible to determine the composition of the clouds observed, and place tighter constraints of the abundances of species present within atmospheres \parencite{Kreidberg2018}.
+
 \subsubsection{Emission Spectroscopy}
-\parencite{Biller2018}
-\parencite{Danielski2018}
-\parencite{GRAVITYCollaboration2019}
+In contrast to transit observations, emission spectroscopy is a direct measurement of the light emitted by the planet, usually in the infrared, where the planet's luminosity peaks due to Wein's law.
+Due to the low levels of flux emitted from most planets, most emission spectroscopy to date has been low to medium resolution, in order to collect enough light for measurement. 
+However, this has already allowed us to begin to answer similar questions as posed for transmission spectroscopy.
+What are these atmospheres made of? How did these planets form?
+In many ways though, emission and transmission spectroscopy provide complementary information, and multiple ways of approaching these problems. 
+Due to the different wavelength regimes, they are able to identify different species and probe different atmospheric depths. 
+
+Only recently has high quality exoplanet emission spectroscopy become possible, and a comprehensive overview is provided in \parencite{Biller2018}.
+Measurements of H$\alpha$ emission in LkCa 15b have allowed for inferences of the mass accretion rate of a forming planet \parencite{Sallum2015}, while observations of the PDS 70 system indicate the presence of a circumplanetary disk around PDS 70b \parencite{Keppler2018,Christiaens2019}.
+With integrated field spectroscopy, \parencite{Hoeijmakers2018} show how spectroscopy can identify the presence of molecular species in a spectrum and how this can be used to discover companions within the contrast-limited regime.
+Using the VLTI/GRAVITY instrument, which combines light from all four Unit Telescopes (UTs) of the VLT into a single interferometer, medium resolution (R=500) spectra have been taken of HR 8799e \parencite{Lacour2019} and \bpic \parencite{GRAVITYCollaboration2019}, the latter of which is shown in Fig. \ref{fig:gravitybpic}. 
+These spectra represent some of the best data available to date for exoplanets, and additional observations of well-known directly imaged planets are planned in the near future.
+While not yet accomplished for an exoplanet, it may be possible in the near future to longitudinally map cloud features of exoplanets, as has already been accomplished for brown dwarfs using the CRIRES instrument \parencite{Crossfield2014}.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{gravitybpic}
 	\caption{Flux calibrated K-Band emission spectrum of \bpic as measured using the VLTI/GRAVITY at R=500 \parencite{GRAVITYCollaboration2019}, along with the GPi K-Band spectrum from \parencite{Chilcote2017}.}
 	\label{fig:gravitybpic}
-\end{figure}
+\end{figure}\\
+
+As most older planets will emit primarily in the thermal infrared, JWST/MIRI will provide unprecedented capabilities at imaging and characterizing these systems.
+\parencite{Danielski2018} shows that the MIRI LRS will allow for the detection of ammonia in the coldest targets, as well as characterize the abundances of other molecules such as CH$_{4}$, H$_{2}$O, CO$_{2}$ and PH$_{3}$.
+Many direct imaging observations of exoplanets have been proposed as part of the JWST GTO and ERS programs. In a white paper, \parencite{Beichman2019} discuss how JWST will provide new insight into exoplanet atmospheres using direct emission imaging and spectroscopy, while \parencite{Line2019} examines the possibility of characterizing terrestrial planets using thermal emission spectroscopy. 
+
 \subsection{JWST Studies}
-\parencite{Beichman2019} %JWST whitepaper on imaging/spec
-\parencite{Danielski2018} % Atmospheric characterizaton with MIRI
+With the launch of JWST imminent, many proposals have been made to cover a wide range of science cases, as well as performing instrumental testing, calibration and validation.
+Exoplanet science is well represented within these first observations, and several of the proposals will be presented here.
 \subsubsection{Early Release Science}
+The Early Release Science program is an initiative designed to help scientists develop an understanding of the instruments available on JWST, as well as the tools needed to process the data. 
+Thus the ERS provides an extensive catalog of public data immediately upon observation, and will take place within the first 5 months of JWST science operations.
+Both a transiting program \parencite{Bean2018} and a direct imaging program \parencite{Hinkley2019} have been approved.
+The direct imaging proposal has 52 hours observing time in order to take data using the full range of JWST instrumentation and observing modes.
+The goal is to image a representative sample of known directly imaged planets, including VHS-1256b, in order to develop the tools and techniques necessary to push the limits of the instrumentation.
+
 \subsubsection{GTO Programs}
+In addition to the ERS program, the Guaranteed Time Observations (GTO) program is designed to provide scientists who helped in the development of JWST hardware and software with a set amount of observing time. 
+Many GTO programs focused on exoplanet science have been approved, including spectroscopic studies of 2M1207b and other commonly studied systems \parencite{Birkmann2019}.
+Brown dwarf science is also well represented within the GTO program, with WISE-0855 receiving full spectroscopic coverage from 0.6-28 $\mu$m \parencite{Oliveira2019}.
+Details of the observations for VHS-1256b, 2M1207b and WISE-0855 are discussed in \ref{sec:obs}.
+
 \subsection{Biosignatures and Future Missions}
+While JWST will provide higher spectral and spatial resolution in the infrared than any previous observatory, many questions will remain open for future missions.
+One of the ultimate unanswered questions in science is "Are we alone?".
+The detection of biosignatures in the near future with next generation 40m class telescopes \parencite{Lopez-Morales2019} or proposed space missions such as LIFE \parencite{Quanz2019} and LUVOIR \parencite{Luvoir2019} may provide our best chance at answering such questions.
+Instruments such as METIS on the ELT will offer high resolution (R=100000) integral field spectroscopy of nearby terrestrial planets, while both proposed space missions will have the spatial and spectral resolution necessary to characterize a nearby earth like planet.
+With such a goal in mind, it is necessary to develop the technical capabilities in both theory and observation order to achieve such ambitious goals in the not-so-distant future.
+
 \section{Thesis Overview}
 With sufficient background and motivation, we will now outline the remainder of this thesis.
 

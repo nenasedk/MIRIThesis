@@ -27,18 +27,18 @@
            given={Andrew\bibnamedelima S.},
            giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=b83db609305b007bb1e802dcf6303ea3}{%
+        {{uniquename=2,uniquepart=given,hash=b83db609305b007bb1e802dcf6303ea3}{%
            family={Marley},
            familyi={M\bibinitperiod},
            given={Mark\bibnamedelima S.},
            giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
-      \strng{namehash}{d6edff753f900cbce6757468dd537cd7}
+      \strng{namehash}{76432ac3a2073e32ad1176e397989532}
       \strng{fullhash}{76432ac3a2073e32ad1176e397989532}
       \strng{bibnamehash}{76432ac3a2073e32ad1176e397989532}
       \strng{authorbibnamehash}{76432ac3a2073e32ad1176e397989532}
-      \strng{authornamehash}{d6edff753f900cbce6757468dd537cd7}
+      \strng{authornamehash}{76432ac3a2073e32ad1176e397989532}
       \strng{authorfullhash}{76432ac3a2073e32ad1176e397989532}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
@@ -76,11 +76,11 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{45c4e0a03e8f91694f9d5b6af7b287ff}
+      \strng{namehash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
       \strng{fullhash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
       \strng{bibnamehash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
       \strng{authorbibnamehash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
-      \strng{authornamehash}{45c4e0a03e8f91694f9d5b6af7b287ff}
+      \strng{authornamehash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
       \strng{authorfullhash}{e7ab4e27218e3b8d2c77a0a3bb2bbc0d}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
@@ -734,6 +734,657 @@
       \endverb
       \keyw{Brown dwarfs,Infrared: stars,Proper motions,Solar neighborhood,Stars: individual: WISE 0855-0714,Stars: low-mass}
     \endentry
+    \entry{Bean2018}{article}{}
+      \name{author}{102}{}{%
+        {{uniquename=0,uniquepart=base,hash=a2d7e83ad843313b717cfff7510c7e9a}{%
+           family={Bean},
+           familyi={B\bibinitperiod},
+           given={Jacob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=234864a6a23ca67082f40414fb1b1ab4}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima B.},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6b58e0b70330d87c4d5b83eb12fc0b25}{%
+           family={Batalha},
+           familyi={B\bibinitperiod},
+           given={Natalie\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1181158a9a63b53404a89effd8e34273}{%
+           family={Berta-Thompson},
+           familyi={B\bibinithyphendelim T\bibinitperiod},
+           given={Zachory},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e20a395ef49403df0444106e8ccc7b94}{%
+           family={Kreidberg},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=818496b76946bda1ec7e5d6611088cde}{%
+           family={Crouzet},
+           familyi={C\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89ba3427b8bb5132fbb3c9dbf6bb4016}{%
+           family={Benneke},
+           familyi={B\bibinitperiod},
+           given={Bj{ö}rn},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=741de90a04b5387fb92e0bf4ba30d8ac}{%
+           family={Sing},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ee1a07caa435dcccd6cba96efbf9d99d}{%
+           family={Wakeford},
+           familyi={W\bibinitperiod},
+           given={Hannah\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=35ef7013c53969d33053b7df09e14ceb}{%
+           family={Knutson},
+           familyi={K\bibinitperiod},
+           given={Heather\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2ff6ac56da8bda59b80b1c11d3403d80}{%
+           family={Kempton},
+           familyi={K\bibinitperiod},
+           given={Eliza\bibnamedelima M.R.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cfcef6df5937d2372adae183b4e89939}{%
+           family={D{é}sert},
+           familyi={D\bibinitperiod},
+           given={Jean\bibnamedelima Michel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=29ee980468e40166bde94cdee11cd5da}{%
+           family={Crossfield},
+           familyi={C\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1d7a06487b9d5a32f58c5ad1bbcb6a6a}{%
+           family={Batalha},
+           familyi={B\bibinitperiod},
+           given={Natasha\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5973ebcfe41508e28b84b553cead7dee}{%
+           family={Wit},
+           familyi={W\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c348892ebef35672742c1e88240af3be}{%
+           family={Parmentier},
+           familyi={P\bibinitperiod},
+           given={Vivien},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e469354cc6ed20924b52439df7606aa2}{%
+           family={Harrington},
+           familyi={H\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=23bd2d3bfebb607b5bcc4a1ddf97e54c}{%
+           family={Moses},
+           familyi={M\bibinitperiod},
+           given={Julianne\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b9058d6831b1882c214d81c4af3ef982}{%
+           family={Lopez-Morales},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={Mercedes},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6eac6644429a644634693b205082807}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Munazza\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dc46420bf4f9a6f3fbae642503a510c1}{%
+           family={Blecic},
+           familyi={B\bibinitperiod},
+           given={Jasmina},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d80a8af53ef7ebae2dfde52f8bc1a152}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2a7a8888f1dde2a89ca828ba2a66575}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Aarynn\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2473b852ceb3f91b779602e7b548902c}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ea2c84c095ada43661d06f2e83ad5a05}{%
+           family={Decin},
+           familyi={D\bibinitperiod},
+           given={Leen},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55e8995bada1c8f0133d696bbdd557ac}{%
+           family={Dragomir},
+           familyi={D\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2480e00863f69512d509b471b41b3013}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Thomas\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fb5bc82121702b0fabdde38d2aabfd73}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dced6dc4a7886f228fdec1c9bbdbb476}{%
+           family={Fraine},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=243ad7f7a51b82feff9fabcc9e27bc0d}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89853730788ff5da0bb06d5592d422a9}{%
+           family={Mu{ñ}oz},
+           familyi={M\bibinitperiod},
+           given={Antonio\bibnamedelima Garc{í}a},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ea4f857a0add66b4f8019c3b146671f5}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={Neale\bibnamedelima P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ab71a3f5e05c5e5e9401fa622abc2c76}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Jayesh\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dfdabcdf8506de88d17d786ae5857454}{%
+           family={Heng},
+           familyi={H\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=12267f504a8c7ecc809a139e20ff12d1}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Renyu},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fc63f913e329e76aaacde205c43c5f09}{%
+           family={Kendrew},
+           familyi={K\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=888aca6dc29c3fbe7f4505f8deb6ff0a}{%
+           family={Kilpatrick},
+           familyi={K\bibinitperiod},
+           given={Brian\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6d8ec66b747e1f02ecd5f9998e678ebf}{%
+           family={Krick},
+           familyi={K\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b24b899657f9e27f3d17cf017917f6af}{%
+           family={Lagage},
+           familyi={L\bibinitperiod},
+           given={Pierre\bibnamedelima Olivier},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=63322ad1e4bda3e6d3afd06f6267300c}{%
+           family={Lendl},
+           familyi={L\bibinitperiod},
+           given={Monika},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d2ff00dfc1ea349832efc76d07834985}{%
+           family={Louden},
+           familyi={L\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=281fb1a0b91393432959282227cca97e}{%
+           family={Madhusudhan},
+           familyi={M\bibinitperiod},
+           given={Nikku},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ad041466905ad70a2aee4a61f1b46902}{%
+           family={Mandell},
+           familyi={M\bibinitperiod},
+           given={Avi\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e19053ef798819baca0157f9aae18a3d}{%
+           family={Mansfield},
+           familyi={M\bibinitperiod},
+           given={Megan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fd80af6ba06a524dc4af46a7e65399d4}{%
+           family={May},
+           familyi={M\bibinitperiod},
+           given={Erin\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e242a580cd5139af630306fbd5916793}{%
+           family={Morello},
+           familyi={M\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a635c27bd2601f3d98f61bb745a0c48}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=00de990db6007f30f3c755fb5a0e3437}{%
+           family={Nikolov},
+           familyi={N\bibinitperiod},
+           given={Nikolay},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=59dfcddb5bc37c1558d40939a6a1bb7f}{%
+           family={Redfield},
+           familyi={R\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3d3eb721a18688d0c1881b3c913211b}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Jessica\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f349e16416f848c49f1729dccffca2c7}{%
+           family={Schlawin},
+           familyi={S\bibinitperiod},
+           given={Everett},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b10f688ce6a8eec9aae793a9aa029a67}{%
+           family={Spake},
+           familyi={S\bibinitperiod},
+           given={Jessica\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c09ec1433e7174455c97f6bc6f06514c}{%
+           family={Todorov},
+           familyi={T\bibinitperiod},
+           given={Kamen\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3ca2e0a68969ad6dd9cc67471a367692}{%
+           family={Tsiaras},
+           familyi={T\bibinitperiod},
+           given={Angelos},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4630e7595bb5ddb05b1cbf22d4c21b61}{%
+           family={Venot},
+           familyi={V\bibinitperiod},
+           given={Olivia},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=21266dad3eb6a6ab55dc20186632e7a6}{%
+           family={Waalkes},
+           familyi={W\bibinitperiod},
+           given={William\bibnamedelima C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e8c789a022e21d8e8c5305dcb50e0753}{%
+           family={Wheatley},
+           familyi={W\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f5a68f690f6e04139165f5fe3f29bc52}{%
+           family={Zellem},
+           familyi={Z\bibinitperiod},
+           given={Robert\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3a7e134a609700937e34a1f7f184e468}{%
+           family={Angerhausen},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3f5e932d9aed07de8a0d48cce96afd76}{%
+           family={Barrado},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d3c83cd25cbd72c62af10b5943f278b0}{%
+           family={Carone},
+           familyi={C\bibinitperiod},
+           given={Ludmila},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a8605c2ecd3c9f8520bc135484063e9b}{%
+           family={Casewell},
+           familyi={C\bibinitperiod},
+           given={Sarah\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c600102da2d74ad75f52e28e9bb25f5f}{%
+           family={Cubillos},
+           familyi={C\bibinitperiod},
+           given={Patricio\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e43b5e5e1e5d69f127fa921bdb2dc6b2}{%
+           family={Damiano},
+           familyi={D\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2bedd76b1ebb96ea1b9a2c59d0322017}{%
+           family={Borro},
+           familyi={B\bibinitperiod},
+           given={Miguel\bibnamedelimb De\bibnamedelima Val},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=247c22bb22c82b1bd827cb827e5865aa}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=734a2ecf660e56d735e3f1047f55eb77}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Billy},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c7f8fd4e76db9f3068fd6cb1d18fcca4}{%
+           family={Endl},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=be819016335e98782005d37394911ac7}{%
+           family={Espinoza},
+           familyi={E\bibinitperiod},
+           given={Nestor},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7bc787d27e9078b123093f8d31f4a86a}{%
+           family={France},
+           familyi={F\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5c0eff90de6657df1e590146a3d188fc}{%
+           family={Gizis},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9f5c29040a58505b87fe903d9c1b5f24}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Thomas\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1cbe42f5d86180049ae1febd81f43cf4}{%
+           family={Henning},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima K.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=53d86a7677851e916612cae03e7fbcc7}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Yucian},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4e89eea9fbb08f013c6c4de95101cc22}{%
+           family={Ingalls},
+           familyi={I\bibinitperiod},
+           given={James\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0cc16be97ad52119ca7334d663c0d68}{%
+           family={Iro},
+           familyi={I\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=18c8bb5106f0508431e0ce147c982ec7}{%
+           family={Irwin},
+           familyi={I\bibinitperiod},
+           given={Patrick\bibnamedelima G.J.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=631821d750d352aa904bc0c233b69c40}{%
+           family={Kataria},
+           familyi={K\bibinitperiod},
+           given={Tiffany},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bbae670d983ef3ad1df290fcd5dfa9cf}{%
+           family={Lahuis},
+           familyi={L\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9d891782956a9f8dccd371c87ed4c291}{%
+           family={Leconte},
+           familyi={L\bibinitperiod},
+           given={J{é}r{é}my},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=806c9804be15021a4113fed9e1bfc3b8}{%
+           family={Lillo-Box},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ffe0b630adaad14da90f54687bf5cb5f}{%
+           family={Lines},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=05fd1ee5236af3752e0bdb47b49891e2}{%
+           family={Lothringer},
+           familyi={L\bibinitperiod},
+           given={Joshua\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=433b0de33522c6ca8443d4d4a02c08f3}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=aef3106d2cbc6d4ad37030e3a5e97452}{%
+           family={Marchis},
+           familyi={M\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e73beafae38a5943250ca8e581a71114}{%
+           family={Mayne},
+           familyi={M\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bf1b76ac4c7cba1f251a449ab95ebffb}{%
+           family={Palle},
+           familyi={P\bibinitperiod},
+           given={Enric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ec9c1d42f2a1fbb58ff1e28e53710118}{%
+           family={Rauscher},
+           familyi={R\bibinitperiod},
+           given={Emily},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=65b8cea0f23a2e02e5323374e6b865fd}{%
+           family={Roudier},
+           familyi={R\bibinitperiod},
+           given={Ga{ë}l},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cc827af6453300d8077300a793cabd34}{%
+           family={Shkolnik},
+           familyi={S\bibinitperiod},
+           given={Evgenya\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c81f3e65d370aa23ce7496586334af98}{%
+           family={Southworth},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cc0e9914d8266b003c728df1383667ea}{%
+           family={Swain},
+           familyi={S\bibinitperiod},
+           given={Mark\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7f04e257d2df6d6868f0e7c02ebc74b3}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c7e00a1b57236df073ac9323f719cd8f}{%
+           family={Teske},
+           familyi={T\bibinitperiod},
+           given={Johanna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fdb3678508e1cd3b309118965f7f6560}{%
+           family={Tinetti},
+           familyi={T\bibinitperiod},
+           given={Giovanna},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=03b7f14e2ea9470849148654c968b2f2}{%
+           family={Tremblin},
+           familyi={T\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6e0022d3b71a3587eebcc47e285fa1fc}{%
+           family={Tucker},
+           familyi={T\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d0ee72b4959d7682e5a612ca69b02db7}{%
+           family={Boekel},
+           familyi={B\bibinitperiod},
+           given={Roy\bibnamedelima Van},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e7fe6c54e96913d57d9bd4f39b096f2}{%
+           family={Waldmann},
+           familyi={W\bibinitperiod},
+           given={Ingo\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=34835e25b1a89685babec85db8525c06}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={Ian\bibnamedelima C.},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0ed79fbb76936aac13d672e85015c65d}{%
+           family={Zingales},
+           familyi={Z\bibinitperiod},
+           given={Tiziano},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{606cbd96dba3d8b8bcc1b5bb1cd19e6f}
+      \strng{fullhash}{23323b046133f1dfd04414db891e749e}
+      \strng{bibnamehash}{606cbd96dba3d8b8bcc1b5bb1cd19e6f}
+      \strng{authorbibnamehash}{606cbd96dba3d8b8bcc1b5bb1cd19e6f}
+      \strng{authornamehash}{606cbd96dba3d8b8bcc1b5bb1cd19e6f}
+      \strng{authorfullhash}{23323b046133f1dfd04414db891e749e}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The James Webb Space Telescope (JWST) presents the opportunity to transform our understanding of planets and the origins of life by revealing the atmospheric compositions, structures, and dynamics of transiting exoplanets in unprecedented detail. However, the high-precision, timeseries observations required for such investigations have unique technical challenges, and prior experience with Hubble, Spitzer, and other facilities indicates that there will be a steep learning curve when JWST becomes operational. In this paper, we describe the science objectives and detailed plans of the Transiting Exoplanet Community Early Release Science (ERS) Program, which is a recently approved program for JWST observations early in Cycle 1. We also describe the simulations used to establish the program. The goal of this project, for which the obtained data will have no exclusive access period, is to accelerate the acquisition and diffusion of technical expertise for transiting exoplanet observations with JWST, while also providing a compelling set of representative data sets that will enable immediate scientific breakthroughs. The Transiting Exoplanet Community ERS Program will exercise the timeseries modes of all four JWST instruments that have been identified as the consensus highest priorities, observe the full suite of transiting planet characterization geometries (transits, eclipses, and phase curves), and target planets with host stars that span an illustrative range of brightnesses. The observations in this program were defined through an inclusive and transparent process that had participation from JWST instrument experts and international leaders in transiting exoplanet studies. The targets have been vetted with previous measurements, will be observable early in the mission, and have exceptional scientific merit. Community engagement in the project will be centered on a twophase Data Challenge that culminates with the delivery of planetary spectra, timeseries instrument performance reports, and open-source data analysis toolkits in time to inform the agenda for Cycle 2 of the JWST mission.}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Publications of the Astronomical Society of the Pacific}
+      \field{number}{993}
+      \field{title}{{The transiting exoplanet community early release science program for JWST}}
+      \field{volume}{130}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1088/1538-3873/aadbf3
+      \endverb
+      \verb{eprint}
+      \verb 1803.04985
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Bean{\_}2018{\_}PASP{\_}130{\_}114402.pdf:pdf
+      \endverb
+      \keyw{Methods: Observational,Planets and satellites: Atmospheres,Planets and satellites: Individual}
+    \endentry
     \entry{Behmard2019}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=cd24ba340765ff0ab25275739babad87}{%
@@ -1028,13 +1679,12 @@
            giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{925e4c5a45dc16b00ebc7bf2df4a890e}
+      \strng{namehash}{69500b614e29c3122ae31416a5feba59}
       \strng{fullhash}{69500b614e29c3122ae31416a5feba59}
       \strng{bibnamehash}{69500b614e29c3122ae31416a5feba59}
       \strng{authorbibnamehash}{69500b614e29c3122ae31416a5feba59}
-      \strng{authornamehash}{925e4c5a45dc16b00ebc7bf2df4a890e}
+      \strng{authornamehash}{69500b614e29c3122ae31416a5feba59}
       \strng{authorfullhash}{69500b614e29c3122ae31416a5feba59}
-      \field{extraname}{3}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
@@ -1055,7 +1705,7 @@
       \verb :home/evert/Documents/Papers/Thesis/ExoplanetsWithJWST.pdf:pdf
       \endverb
     \endentry
-    \entry{Beichman2019}{misc}{}
+    \entry{Beichman2019}{unpublished}{}
       \name{author}{38}{}{%
         {{uniquename=2,uniquepart=given,hash=6318a54c47f19e6bb8193cfa8b798b98}{%
            family={Beichman},
@@ -1292,7 +1942,7 @@
       \strng{authorbibnamehash}{925e4c5a45dc16b00ebc7bf2df4a890e}
       \strng{authornamehash}{925e4c5a45dc16b00ebc7bf2df4a890e}
       \strng{authorfullhash}{f7f1af9332d00f7959a27eb356c98954}
-      \field{extraname}{4}
+      \field{extraname}{3}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradate}{3}
@@ -1322,18 +1972,18 @@
            given={Bjoern},
            giveni={B\bibinitperiod},
            givenun=2}}%
-        {{uniquename=0,uniquepart=base,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
+        {{uniquename=2,uniquepart=given,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
            family={Seager},
            familyi={S\bibinitperiod},
            given={Sara},
            giveni={S\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
-      \strng{namehash}{d24ee23a4460a0c6c2ad66b45dd1e0dd}
+      \strng{namehash}{b9292e033fa01a5dbe4e058c466ad20f}
       \strng{fullhash}{b9292e033fa01a5dbe4e058c466ad20f}
       \strng{bibnamehash}{b9292e033fa01a5dbe4e058c466ad20f}
       \strng{authorbibnamehash}{b9292e033fa01a5dbe4e058c466ad20f}
-      \strng{authornamehash}{d24ee23a4460a0c6c2ad66b45dd1e0dd}
+      \strng{authornamehash}{b9292e033fa01a5dbe4e058c466ad20f}
       \strng{authorfullhash}{b9292e033fa01a5dbe4e058c466ad20f}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
@@ -1386,7 +2036,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Bayesian Atmospheric Retrieval for Exoplanets}}
-      \field{type}{phdthesis}
+      \field{type}{PhD Thesis}
       \field{year}{2013}
       \true{nocite}
       \field{pages}{187}
@@ -1458,11 +2108,11 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5f87be74a4ce2caf2357061921bcea4d}
+      \strng{namehash}{b9daf97dff2bd8ab8db2961349c5343f}
       \strng{fullhash}{b9daf97dff2bd8ab8db2961349c5343f}
       \strng{bibnamehash}{b9daf97dff2bd8ab8db2961349c5343f}
       \strng{authorbibnamehash}{b9daf97dff2bd8ab8db2961349c5343f}
-      \strng{authornamehash}{5f87be74a4ce2caf2357061921bcea4d}
+      \strng{authornamehash}{b9daf97dff2bd8ab8db2961349c5343f}
       \strng{authorfullhash}{b9daf97dff2bd8ab8db2961349c5343f}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
@@ -1488,7 +2138,7 @@
       \verb :home/evert/Documents/Papers/Thesis/1807.05136.pdf:pdf
       \endverb
     \endentry
-    \entry{Birkmann2019}{misc}{}
+    \entry{Birkmann2019}{unpublished}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=368d99bfdec62dd9a4261173c1c93fd8}{%
            family={Birkmann},
@@ -2595,7 +3245,7 @@
       \verb :home/evert/Documents/Papers/Thesis/JWSTDataCalPipeline.pdf:pdf
       \endverb
     \endentry
-    \entry{Carnall2017}{misc}{}
+    \entry{Carnall2017}{unpublished}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=c25af0749e1a83b28452a7e50ad96b37}{%
            family={Carnall},
@@ -2603,6 +3253,12 @@
            given={A.\bibnamedelimi C.},
            giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Insitute for Astronomy, University of Edinburgh}%
+      }
+      \list{location}{1}{%
+        {Edinburgh}%
       }
       \strng{namehash}{c25af0749e1a83b28452a7e50ad96b37}
       \strng{fullhash}{c25af0749e1a83b28452a7e50ad96b37}
@@ -2863,9 +3519,17 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Planets residing in circumstellar habitable zones (CHZs) offer our best opportunities to test hypotheses of life's potential pervasiveness and complexity. Constraining the precise boundaries of habitability and its observational discriminants is critical to maximizing our chances at remote life detection with future instruments. Conventionally, calculations of the inner edge of the habitable zone (IHZ) have been performed using both 1D radiative-convective and 3D general circulation models. However, these models lack interactive three-dimensional chemistry and do not resolve the mesosphere and lower thermosphere (MLT) region of the upper atmosphere. Here we employ a 3D high-top chemistry-climate model (CCM) to simulate the atmospheres of synchronously-rotating planets orbiting at the inner edge of habitable zones of K- and M-dwarf stars (between {\$}T{\_}{\{}\backslashrm eff{\}} ={\$} 2600 K and 4000 K). While our IHZ climate predictions are in good agreement with GCM studies, we find noteworthy departures in simulated ozone and HO{\$}{\_}{\{}\backslashrm x{\}}{\$} photochemistry. For instance, climates around inactive stars do not typically enter the classical moist greenhouse regime even with high ({\$}{>} 10{\^{}}{\{}-3{\}}{\$} mol mol{\$}{\^{}}{\{}-1{\}}{\$}) stratospheric water vapor mixing ratios, which suggests that planets around inactive M-stars may only experience minor water-loss over geologically significant timescales. In addition, we find much thinner ozone layers on potentially habitable moist greenhouse atmospheres, as ozone experiences rapid destruction via reaction with hydrogen oxide radicals. Using our CCM results as inputs, our simulated transmission spectra and secondary eclipse thermal emission spectra show that both water vapor and ozone features of these atmospheres could be detectable by instruments NIRSpec and MIRI LRS aboard the James Webb Space Telescope.}
       \field{eprinttype}{arXiv}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{1}
       \field{title}{{Habitability and Spectroscopic Observability of Warm M-dwarf Exoplanets Evaluated with a 3D Chemistry-Climate Model}}
+      \field{volume}{886}
       \field{year}{2019}
       \true{nocite}
+      \field{pages}{23}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-4357/ab4f7e
+      \endverb
       \verb{eprint}
       \verb 1907.10048
       \endverb
@@ -3802,7 +4466,7 @@
       \verb :home/evert/Documents/Papers/Thesis/BrownDwarfClouds.pdf:pdf
       \endverb
     \endentry
-    \entry{Cossou2018}{article}{}
+    \entry{Cossou2018}{unpublished}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=ada31fe60f9aeac30c3920b551b5ad25}{%
            family={Cossou},
@@ -3810,6 +4474,9 @@
            given={Christophe},
            giveni={C\bibinitperiod},
            givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {MIRISim Team}%
       }
       \strng{namehash}{ada31fe60f9aeac30c3920b551b5ad25}
       \strng{fullhash}{ada31fe60f9aeac30c3920b551b5ad25}
@@ -3830,6 +4497,119 @@
       \range{pages}{12}
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/MIRISim{\_}in{\_}Python{\_}userguide.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Crossfield2014}{article}{}
+      \name{author}{12}{}{%
+        {{uniquename=0,uniquepart=base,hash=13fb5987997c06dd83e1360669912dc3}{%
+           family={Crossfield},
+           familyi={C\bibinitperiod},
+           given={I.\bibnamedelimi J.M.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=487da68b844988689a20846bbda4eb61}{%
+           family={Biller},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6139c49f869c6d50c2baf8a03f8ab2a2}{%
+           family={Schlieder},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82bb2330959705935e11fbccb8ea09fc}{%
+           family={Deacon},
+           familyi={D\bibinitperiod},
+           given={N.\bibnamedelimi R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7ad23c7e1bce78efd8c9dd0df1e73415}{%
+           family={Bonnefoy},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4650a93e8d60ee76eee6cc3dc30d274c}{%
+           family={Homeier},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8ebbde8b178ee49f316fbd613ad2862c}{%
+           family={Allard},
+           familyi={A\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=803985a636a732f1fcaac86c7661a5e8}{%
+           family={Buenzli},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0e829027156fa2b25f0cc5dd89b0cf47}{%
+           family={Henning},
+           familyi={H\bibinitperiod},
+           given={Th},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=76877ab16cdae351e70116397169d89d}{%
+           family={Brandner},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=08a17f95197d57cd4b7c85a7a68eba5d}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ea8c4d6e33a29441662ba4e1389a5d4e}{%
+           family={Kopytova},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{a19cd2213d201f9894188205c5b99fd3}
+      \strng{fullhash}{02e0d0f3c353091d5c872584e3ae6483}
+      \strng{bibnamehash}{a19cd2213d201f9894188205c5b99fd3}
+      \strng{authorbibnamehash}{a19cd2213d201f9894188205c5b99fd3}
+      \strng{authornamehash}{a19cd2213d201f9894188205c5b99fd3}
+      \strng{authorfullhash}{02e0d0f3c353091d5c872584e3ae6483}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Brown dwarfs-substellar bodies more massive than planets but not massive enough to initiate the sustained hydrogen fusion that powers self-luminous stars-are born hot and slowly cool as they age. As they cool below about 2,300 kelvin, liquid or crystalline particles composed of calcium aluminates, silicates and iron condense into atmospheric 'dust', which disappears at still cooler temperatures (around 1,300 kelvin). Models to explain this dust dispersal include both an abrupt sinking of the entire cloud deck into the deep, unobservable atmosphere and breakup of the cloud into scattered patches (as seen on Jupiter and Saturn). However, hitherto observations of brown dwarfs have been limited to globally integrated measurements, which can reveal surface inhomogeneities but cannot unambiguously resolve surface features. Here we report a two-dimensional map of a brown dwarf's surface that allows identification of large-scale bright and dark features, indicative of patchy clouds. Monitoring suggests that the characteristic timescale for the evolution of global weather patterns is approximately one day. {©} 2014 Macmillan Publishers Limited.}
+      \field{issn}{00280836}
+      \field{journaltitle}{Nature}
+      \field{number}{7485}
+      \field{title}{{A global cloud map of the nearest known brown dwarf}}
+      \field{volume}{505}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{654\bibrangedash 656}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nature12955
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/nature12955.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1038/nature12955
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/nature12955
       \endverb
     \endentry
     \entry{Currie2012}{article}{}
@@ -4390,6 +5170,99 @@
       \endverb
       \keyw{adaptive optics,atmospheres,hd 95086,individual,infrared,infrared: planetary systems,instrumentation,instrumentation: adaptive optics,planetary systems,planets and satellites,planets and satellites: atmospheres,stars,stars: individual (HD 95086)}
     \endentry
+    \entry{DesMarais2002}{article}{}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=a8ab31d0cf08d7db8739a41ea3868ced}{%
+           family={{Des Marais}},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b0c21e772ea2695b106e7af806f26588}{%
+           family={Harwit},
+           familyi={H\bibinitperiod},
+           given={Martin\bibnamedelima O.},
+           giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=836a2bf7bf4d48d4b125f80e83755dcc}{%
+           family={Jucks},
+           familyi={J\bibinitperiod},
+           given={Kenneth\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d3a52050213c83b7f81a3080952a0247}{%
+           family={Kasting},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d20e17769f9b319099da9fcb99b97638}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Douglas\bibnamedelima N.C.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2cd3471199d3b4257d1f69ff710a208f}{%
+           family={Lunine},
+           familyi={L\bibinitperiod},
+           given={Jonathan\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6e5fb9c2095e2db69cd4303a4ce3d24b}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
+           family={Seager},
+           familyi={S\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4acaabcba9d1f3dddc5f68d167f43b21}{%
+           family={Traub},
+           familyi={T\bibinitperiod},
+           given={Wesley\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a501b775e70190baab7063901bf23ef}{%
+           family={Woolf},
+           familyi={W\bibinitperiod},
+           given={Neville\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4af45d08989f9d615d8cd7d0007d91d1}
+      \strng{fullhash}{ed323c8132be525fa643c6c77db983c0}
+      \strng{bibnamehash}{4af45d08989f9d615d8cd7d0007d91d1}
+      \strng{authorbibnamehash}{4af45d08989f9d615d8cd7d0007d91d1}
+      \strng{authornamehash}{4af45d08989f9d615d8cd7d0007d91d1}
+      \strng{authorfullhash}{ed323c8132be525fa643c6c77db983c0}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The major goals of NASA's Terrestrial Planet Finder (TPF) and the European Space Agency's Darwin missions are to detect terrestrial-sized extrasolar planets directly and to seek spectroscopic evidence of habitable conditions and life. Here we recommend wavelength ranges and spectral features for these missions. We assess known spectroscopic molecular band features of Earth, Venus, and Mars in the context of putative extrasolar analogs. The preferred wavelength ranges are 7-25 $\mu$m in the mid-IR and 0.5 to {\~{}}1.1 $\mu$m in the visible to near-IR. Detection of O2 or its photolytic product O 3 merits highest priority. Liquid H2O is not a bioindicator, but it is considered essential to life. Substantial CO2 indicates an atmosphere and oxidation state typical of a terrestrial planet. Abundant CH4 might require a biological source, yet abundant CH 4 also can arise from a crust and upper mantle more reduced than that of Earth. The range of characteristics of extrasolar rocky planets might far exceed that of the Solar System. Planetary size and mass are very important indicators of habitability and can be estimated in the mid-IR and potentially also in the visible to near-IR. Additional spectroscopic features merit study, for example, features created by other biosignature compounds in the atmosphere or on the surface and features due to Rayleigh scattering. In summary, we find that both the mid-IR and the visible to near-IR wavelength ranges offer valuable information regarding biosignatures and planetary properties; therefore both merit serious scientific consideration for TPF and Darwin. {©} Mary Ann Liebert, Inc.}
+      \field{issn}{15311074}
+      \field{journaltitle}{Astrobiology}
+      \field{number}{2}
+      \field{title}{{Remote sensing of planetary properties and biosignatures on extrasolar terrestrial planets}}
+      \field{volume}{2}
+      \field{year}{2002}
+      \true{nocite}
+      \field{pages}{153\bibrangedash 181}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1089/15311070260192246
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/15311070260192246.pdf:pdf
+      \endverb
+      \keyw{Biosignatures,Darwin,Extrasolar planets,Habitable planets,Spectroscopy,Terrestrial planet finder}
+    \endentry
     \entry{Faherty2014}{article}{}
       \name{author}{7}{}{%
         {{uniquename=2,uniquepart=given,hash=f97580f3f5344c9462d75ab253b80b82}{%
@@ -4533,11 +5406,11 @@
            giveni={K\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5f721019ae02de5103c7edb83c63dc54}
+      \strng{namehash}{f273ceff1027b46c4227f6f7bdda13f5}
       \strng{fullhash}{f273ceff1027b46c4227f6f7bdda13f5}
       \strng{bibnamehash}{f273ceff1027b46c4227f6f7bdda13f5}
       \strng{authorbibnamehash}{f273ceff1027b46c4227f6f7bdda13f5}
-      \strng{authornamehash}{5f721019ae02de5103c7edb83c63dc54}
+      \strng{authornamehash}{f273ceff1027b46c4227f6f7bdda13f5}
       \strng{authorfullhash}{f273ceff1027b46c4227f6f7bdda13f5}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
@@ -4646,7 +5519,7 @@
       \endverb
       \keyw{atmospheres,methods,methods: statistical,planets and satellites: atmos,planets and satellites,statistical,terrestrial planets}
     \endentry
-    \entry{Ferguson2016}{report}{}
+    \entry{Ferguson2016}{unpublished}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=c15bc0edd8d729f20b24cef2ddcb452b}{%
            family={Ferguson},
@@ -4679,10 +5552,11 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{JWST Astronomy Data Analysis Tools Roadmap Documentation}}
-      \field{type}{techreport}
+      \field{title}{{JWST Astronomy Data Analysis Tools Roadmap Documentation v0.1}}
       \field{year}{2016}
       \true{nocite}
+      \field{pages}{57}
+      \range{pages}{1}
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/jwst-da-roadmap.pdf:pdf
       \endverb
@@ -4702,13 +5576,12 @@
            giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{81940137546de164d738de2a62f2569b}
+      \strng{namehash}{c52fbc030fb4dc1a040f2d8109e258e6}
       \strng{fullhash}{c52fbc030fb4dc1a040f2d8109e258e6}
       \strng{bibnamehash}{c52fbc030fb4dc1a040f2d8109e258e6}
       \strng{authorbibnamehash}{c52fbc030fb4dc1a040f2d8109e258e6}
-      \strng{authornamehash}{81940137546de164d738de2a62f2569b}
+      \strng{authornamehash}{c52fbc030fb4dc1a040f2d8109e258e6}
       \strng{authorfullhash}{c52fbc030fb4dc1a040f2d8109e258e6}
-      \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
@@ -4764,7 +5637,6 @@
       \strng{authorbibnamehash}{c718adf05eeeb14a638b5125ab07949f}
       \strng{authornamehash}{81940137546de164d738de2a62f2569b}
       \strng{authorfullhash}{c718adf05eeeb14a638b5125ab07949f}
-      \field{extraname}{2}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{extradatescope}{labelyear}
@@ -4991,7 +5863,7 @@
       \verb :home/evert/Documents/Papers/Thesis/emcee.pdf:pdf
       \endverb
     \endentry
-    \entry{Fu1992}{misc}{}
+    \entry{Fu1992}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=68f17e7e60a79bb0606842a0ef03db5c}{%
            family={Fu},
@@ -5006,11 +5878,11 @@
            giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{72477d834745e979bfd5f50c6a7b5349}
+      \strng{namehash}{f75792e570ab1d17f32cb905ba73b04a}
       \strng{fullhash}{f75792e570ab1d17f32cb905ba73b04a}
       \strng{bibnamehash}{f75792e570ab1d17f32cb905ba73b04a}
       \strng{authorbibnamehash}{f75792e570ab1d17f32cb905ba73b04a}
-      \strng{authornamehash}{72477d834745e979bfd5f50c6a7b5349}
+      \strng{authornamehash}{f75792e570ab1d17f32cb905ba73b04a}
       \strng{authorfullhash}{f75792e570ab1d17f32cb905ba73b04a}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
@@ -5019,8 +5891,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Two correlated conditions are necessary and sufficient for the exact transformation of the wavenumber integration to an integration over the cumulative probability (g), a monotonically increasing and smooth function in the absorption coefficient space. These conditions involve the use of a reference condition to define the absorption coefficient and an assumption concerning the ordering of the absorption coefficient. The correlated conditions are exact in the context of a single line, periodic lines, and the strong- and weak-line limits. In realistic atmospheres, these assumptions are best for adjacent levels but produce increasing blurring or deviations for distant levels. -from Authors}
-      \field{booktitle}{Journal of the Atmospheric Sciences}
       \field{issn}{00224928}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
       \field{number}{22}
       \field{title}{{On the correlated k-distribution method for radiative transfer in nonhomogeneous atmospheres}}
       \field{volume}{49}
@@ -5103,18 +5975,18 @@
            given={Siddharth},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=281fb1a0b91393432959282227cca97e}{%
+        {{uniquename=2,uniquepart=given,hash=281fb1a0b91393432959282227cca97e}{%
            family={Madhusudhan},
            familyi={M\bibinitperiod},
            given={Nikku},
            giveni={N\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
-      \strng{namehash}{de209e1182b29dbaeddb23178fd2dc0c}
+      \strng{namehash}{9dcad9a2218119038ed42e4506f344b0}
       \strng{fullhash}{9dcad9a2218119038ed42e4506f344b0}
       \strng{bibnamehash}{9dcad9a2218119038ed42e4506f344b0}
       \strng{authorbibnamehash}{9dcad9a2218119038ed42e4506f344b0}
-      \strng{authornamehash}{de209e1182b29dbaeddb23178fd2dc0c}
+      \strng{authornamehash}{9dcad9a2218119038ed42e4506f344b0}
       \strng{authorfullhash}{9dcad9a2218119038ed42e4506f344b0}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
@@ -5315,18 +6187,18 @@
            given={R.},
            giveni={R\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=3e51019cd1a1f359adb29f979ecef1b6}{%
+        {{uniquename=1,uniquepart=given,hash=3e51019cd1a1f359adb29f979ecef1b6}{%
            family={Irwin},
            familyi={I\bibinitperiod},
            given={P.\bibnamedelimi G.\bibnamedelimi J.},
            giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
-      \strng{namehash}{180f3f40e585f3ad3123b4db770fbab8}
+      \strng{namehash}{28ffd40bf2e02d992c99cd4ba6198a2b}
       \strng{fullhash}{28ffd40bf2e02d992c99cd4ba6198a2b}
       \strng{bibnamehash}{28ffd40bf2e02d992c99cd4ba6198a2b}
       \strng{authorbibnamehash}{28ffd40bf2e02d992c99cd4ba6198a2b}
-      \strng{authornamehash}{180f3f40e585f3ad3123b4db770fbab8}
+      \strng{authornamehash}{28ffd40bf2e02d992c99cd4ba6198a2b}
       \strng{authorfullhash}{28ffd40bf2e02d992c99cd4ba6198a2b}
       \field{sortinit}{G}
       \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
@@ -5336,6 +6208,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Sophisticated atmospheric retrieval algorithms, such as Nested Sampling, explore large parameter spaces by iterating over millions of radiative transfer (RT) calculations. Probability distribution functions for retrieved parameters are highly sensitive to assumptions made within the RT forward model. One key difference between RT models is the computation of the gaseous absorption throughout the atmosphere. We compare two methods of calculating gaseous absorption, cross-sections and correlated-{\$}k{\$}, by examining their resulting spectra of a number of typical $\backslash$ce{\{}H2{\}}-He dominated exoplanetary and brown dwarf atmospheres. We also consider the effects of including $\backslash$ce{\{}H2{\}}-He pressure-broadening in some of these examples. We use NEMESIS to compute forward models. Our {\$}k{\$}-tables are verified by comparison to ExoMol cross-sections provided online and a line-by-line calculation. For test cases with typical resolutions ({\$}\backslashDelta \backslashnu = 1{\$}cm{\$}{\^{}}{\{}-1{\}}{\$}), we show that the cross-section method overestimates the amount of absorption present in the atmosphere and should be used with caution. For mixed-gas atmospheres the morphology of the spectra changes, producing `ghost' features. The two methods produce differences in flux of up to a few orders of magnitude. The addition of pressure broadening of lines adds up to an additional order of magnitude change in flux. These effects are more pronounced for brown dwarfs and secondary eclipse geometries. We note that correlated-{\$}k{\$} can produce similar results to very high-resolution cross-sections, but is much less computationally expensive. We conclude that inaccurate use of cross-sections and omission of pressure broadening can be key sources of error in the modelling of brown dwarf and exoplanet atmospheres.}
       \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv eprint}
       \field{number}{March}
       \field{title}{{Effectively Calculating Gaseous Absorption in Radiative Transfer Models of Exoplanetary and Brown Dwarf Atmospheres}}
       \field{year}{2019}
@@ -6999,11 +7872,11 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{bb46e2844273325d57f543d6ab938c97}
+      \strng{namehash}{a098f097fa8a12145b22ea73385e1fbe}
       \strng{fullhash}{a098f097fa8a12145b22ea73385e1fbe}
       \strng{bibnamehash}{a098f097fa8a12145b22ea73385e1fbe}
       \strng{authorbibnamehash}{a098f097fa8a12145b22ea73385e1fbe}
-      \strng{authornamehash}{bb46e2844273325d57f543d6ab938c97}
+      \strng{authornamehash}{a098f097fa8a12145b22ea73385e1fbe}
       \strng{authorfullhash}{a098f097fa8a12145b22ea73385e1fbe}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
@@ -7027,7 +7900,7 @@
       \endverb
       \keyw{acknowledges financial support of,an erc starting grant,atmospheres,brown dwarfs,chh highlights financial support,infrared,large-scale metallicity,low-mass,of the european community,radio lines,slc,stars,under the fp7 by,university of leicester,v,wild is thanked for,x-rays}
     \endentry
-    \entry{Hinkley2019}{misc}{}
+    \entry{Hinkley2019}{unpublished}{}
       \name{author}{38}{}{%
         {{uniquename=0,uniquepart=base,hash=8e37b3fb583532de983bea667ead5d91}{%
            family={Hinkley},
@@ -7363,12 +8236,12 @@
     \endentry
     \entry{Irwin2008}{article}{}
       \name{author}{10}{}{%
-        {{uniquename=0,uniquepart=base,hash=3e51019cd1a1f359adb29f979ecef1b6}{%
+        {{uniquename=1,uniquepart=given,hash=3e51019cd1a1f359adb29f979ecef1b6}{%
            family={Irwin},
            familyi={I\bibinitperiod},
            given={P.\bibnamedelimi G.J.},
            giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{uniquename=0,uniquepart=base,hash=57a13ea5258536676ef83f551505f74d}{%
            family={Teanby},
            familyi={T\bibinitperiod},
@@ -7830,7 +8703,7 @@
       \endverb
       \keyw{planetary systems,stars: solar-type,techniques: photometric}
     \endentry
-    \entry{jwstpipeline}{report}{}
+    \entry{jwstpipeline}{unpublished}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=c5b831ae69608025fc4979f5b450804f}{%
            family={JWST},
@@ -7850,7 +8723,6 @@
       \field{labeltitlesource}{title}
       \field{annotation}{Release 0.0.0.dev3984+gfa49540b}
       \field{title}{{JWST Pipeline Documentation}}
-      \field{type}{techreport}
       \field{year}{2018}
       \true{nocite}
       \verb{file}
@@ -8811,7 +9683,7 @@
       \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kreidberg - 2018 - Exoplanet Atmosphere Measurements from Transmission Spectroscopy and Other Planet Star Combined Light Observations.pdf:pdf
       \endverb
     \endentry
-    \entry{ref:mirical}{article}{}
+    \entry{ref:mirical}{inproceedings}{}
       \name{author}{19}{}{%
         {{uniquename=0,uniquepart=base,hash=4258e67ce81ca0d12168fc7eabbfc562}{%
            family={Labiano-Ortega},
@@ -8928,6 +9800,9 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Edinburgh}%
+      }
       \strng{namehash}{0af950949fa5e5be6e8d0677b2addb8f}
       \strng{fullhash}{11da55d166b59f528369059db0cc1352}
       \strng{bibnamehash}{0af950949fa5e5be6e8d0677b2addb8f}
@@ -8940,7 +9815,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{number}{exposure 1}
+      \field{booktitle}{SPIE Astronomical Telescopes + Instrumentation}
       \field{title}{{The MIRI Medium Resolution Spectrometer calibration pipeline}}
       \field{year}{2016}
       \true{nocite}
@@ -8968,11 +9843,11 @@
            giveni={V\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{9dd9c6f48e897f3f53506e6a85ed02dd}
+      \strng{namehash}{3cd7d1d6da2534911bb078458ddd2fc1}
       \strng{fullhash}{3cd7d1d6da2534911bb078458ddd2fc1}
       \strng{bibnamehash}{3cd7d1d6da2534911bb078458ddd2fc1}
       \strng{authorbibnamehash}{3cd7d1d6da2534911bb078458ddd2fc1}
-      \strng{authornamehash}{9dd9c6f48e897f3f53506e6a85ed02dd}
+      \strng{authornamehash}{3cd7d1d6da2534911bb078458ddd2fc1}
       \strng{authorfullhash}{3cd7d1d6da2534911bb078458ddd2fc1}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
@@ -9638,16 +10513,14 @@
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{74725d64e2c202facb75b33eca161b14}
+      \strng{namehash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
       \strng{fullhash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
       \strng{bibnamehash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
       \strng{authorbibnamehash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
-      \strng{authornamehash}{74725d64e2c202facb75b33eca161b14}
+      \strng{authornamehash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
       \strng{authorfullhash}{ca5f6c7b6b91fc1996f6d27dd7b5aa22}
-      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -9688,10 +10561,8 @@
       \strng{authorbibnamehash}{01b6bbfd418ad4849db5482c01bad374}
       \strng{authornamehash}{74725d64e2c202facb75b33eca161b14}
       \strng{authorfullhash}{01b6bbfd418ad4849db5482c01bad374}
-      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -9721,16 +10592,14 @@
            giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{74725d64e2c202facb75b33eca161b14}
+      \strng{namehash}{50a03c979a0df3a1dfb8a1f22f321917}
       \strng{fullhash}{50a03c979a0df3a1dfb8a1f22f321917}
       \strng{bibnamehash}{50a03c979a0df3a1dfb8a1f22f321917}
       \strng{authorbibnamehash}{50a03c979a0df3a1dfb8a1f22f321917}
-      \strng{authornamehash}{74725d64e2c202facb75b33eca161b14}
+      \strng{authornamehash}{50a03c979a0df3a1dfb8a1f22f321917}
       \strng{authorfullhash}{50a03c979a0df3a1dfb8a1f22f321917}
-      \field{extraname}{3}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -10144,11 +11013,11 @@
       \list{location}{1}{%
         {Waterloo}%
       }
-      \strng{namehash}{16bb328c0b1a452636c3add72c68c3ba}
+      \strng{namehash}{73e82475203b099fed428bb37801346e}
       \strng{fullhash}{73e82475203b099fed428bb37801346e}
       \strng{bibnamehash}{73e82475203b099fed428bb37801346e}
       \strng{authorbibnamehash}{73e82475203b099fed428bb37801346e}
-      \strng{authornamehash}{16bb328c0b1a452636c3add72c68c3ba}
+      \strng{authornamehash}{73e82475203b099fed428bb37801346e}
       \strng{authorfullhash}{73e82475203b099fed428bb37801346e}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
@@ -10167,7 +11036,7 @@
       \verb :home/evert/Documents/Papers/Thesis/FringesOld.pdf:pdf
       \endverb
     \endentry
-    \entry{Lahuis2018}{report}{}
+    \entry{Lahuis2018}{unpublished}{}
       \name{author}{2}{}{%
         {{uniquename=2,uniquepart=given,hash=bbae670d983ef3ad1df290fcd5dfa9cf}{%
            family={Lahuis},
@@ -10182,11 +11051,14 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{580a0edee0078982cc5cd81d95c9d4d2}
+      \list{institution}{1}{%
+        {MIRI European Consortium}%
+      }
+      \strng{namehash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
       \strng{fullhash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
       \strng{bibnamehash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
       \strng{authorbibnamehash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
-      \strng{authornamehash}{580a0edee0078982cc5cd81d95c9d4d2}
+      \strng{authornamehash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
       \strng{authorfullhash}{8e679b3b28bffdd5dc7cd1b7f24087ef}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
@@ -10195,9 +11067,10 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{MIRI MRS FM Fringing Analysis}}
-      \field{type}{techreport}
       \field{year}{2018}
       \true{nocite}
+      \field{pages}{22}
+      \range{pages}{1}
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/MIRI-RP-00510-NLC-MRS{\_}Fringing{\_}Issue2-2.pdf:pdf
       \endverb
@@ -10468,12 +11341,12 @@
     \endentry
     \entry{Line2016}{article}{}
       \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+        {{uniquename=2,uniquepart=given,hash=b5ec6b06d985cc5384744ba40e57805d}{%
            family={Line},
            familyi={L\bibinitperiod},
            given={Michael\bibnamedelima R.},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=c348892ebef35672742c1e88240af3be}{%
            family={Parmentier},
            familyi={P\bibinitperiod},
@@ -10484,13 +11357,12 @@
       \list{publisher}{1}{%
         {IOP Publishing}%
       }
-      \strng{namehash}{36c145971b856604fecafcded8df2446}
+      \strng{namehash}{46031ede2689c6ac86e65560aaf35556}
       \strng{fullhash}{46031ede2689c6ac86e65560aaf35556}
       \strng{bibnamehash}{46031ede2689c6ac86e65560aaf35556}
       \strng{authorbibnamehash}{46031ede2689c6ac86e65560aaf35556}
-      \strng{authornamehash}{36c145971b856604fecafcded8df2446}
+      \strng{authornamehash}{46031ede2689c6ac86e65560aaf35556}
       \strng{authorfullhash}{46031ede2689c6ac86e65560aaf35556}
-      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
@@ -10527,12 +11399,12 @@
     \endentry
     \entry{Line2013}{article}{}
       \name{author}{9}{}{%
-        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+        {{uniquename=2,uniquepart=given,hash=b5ec6b06d985cc5384744ba40e57805d}{%
            family={Line},
            familyi={L\bibinitperiod},
            given={Michael\bibnamedelima R.},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=56b4f460ffabaefaf9e497c28165285d}{%
            family={Wolf},
            familyi={W\bibinitperiod},
@@ -10588,7 +11460,7 @@
       \strng{authorbibnamehash}{36c145971b856604fecafcded8df2446}
       \strng{authornamehash}{36c145971b856604fecafcded8df2446}
       \strng{authorfullhash}{7ed7884b3ef8baec29788fbe4f590492}
-      \field{extraname}{2}
+      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
@@ -10617,12 +11489,12 @@
     \endentry
     \entry{Line2015}{article}{}
       \name{author}{5}{}{%
-        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+        {{uniquename=2,uniquepart=given,hash=b5ec6b06d985cc5384744ba40e57805d}{%
            family={Line},
            familyi={L\bibinitperiod},
            given={Michael\bibnamedelima R.},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=c7e00a1b57236df073ac9323f719cd8f}{%
            family={Teske},
            familyi={T\bibinitperiod},
@@ -10657,7 +11529,7 @@
       \strng{authorbibnamehash}{36c145971b856604fecafcded8df2446}
       \strng{authornamehash}{36c145971b856604fecafcded8df2446}
       \strng{authorfullhash}{b3e877cb7396326306000005fbe00825}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
@@ -10694,12 +11566,12 @@
     \endentry
     \entry{Line2017}{article}{}
       \name{author}{10}{}{%
-        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+        {{uniquename=2,uniquepart=given,hash=b5ec6b06d985cc5384744ba40e57805d}{%
            family={Line},
            familyi={L\bibinitperiod},
            given={Michael\bibnamedelima R.},
            giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=b83db609305b007bb1e802dcf6303ea3}{%
            family={Marley},
            familyi={M\bibinitperiod},
@@ -10761,7 +11633,7 @@
       \strng{authorbibnamehash}{36c145971b856604fecafcded8df2446}
       \strng{authornamehash}{36c145971b856604fecafcded8df2446}
       \strng{authorfullhash}{c8a4f2f3ee37fc63e5bd1ef618eda6ff}
-      \field{extraname}{4}
+      \field{extraname}{3}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
@@ -10787,6 +11659,242 @@
       \endverb
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/UniformRetrievalUltracoolDwarfs2016.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Line2019}{unpublished}{}
+      \name{author}{5}{}{%
+        {{uniquename=2,uniquepart=given,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=e931b6aa63b8e58b5276d7deb64b8f3e}{%
+           family={Quanz},
+           familyi={Q\bibinitperiod},
+           given={Sascha\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b80c997f900e85ead9b5e0c780a54daa}{%
+           family={Schwieterman},
+           familyi={S\bibinitperiod},
+           given={Edward\bibnamedelima W},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fb5bc82121702b0fabdde38d2aabfd73}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=234864a6a23ca67082f40414fb1b1ab4}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima B},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36c145971b856604fecafcded8df2446}
+      \strng{fullhash}{c2ab0c561ecc65f9bcbe2965da4c8828}
+      \strng{bibnamehash}{36c145971b856604fecafcded8df2446}
+      \strng{authorbibnamehash}{36c145971b856604fecafcded8df2446}
+      \strng{authornamehash}{36c145971b856604fecafcded8df2446}
+      \strng{authorfullhash}{c2ab0c561ecc65f9bcbe2965da4c8828}
+      \field{extraname}{4}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Astro2020}
+      \field{title}{{Astro2020 Science White Paper The Importance of Thermal Emission Spectroscopy for Understanding Terrestrial Exoplanets Thematic Areas}}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{7}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Astro2020{\_}Thermal{\_}Emission{\_}WP.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Lopez-Morales2019}{unpublished}{}
+      \name{author}{24}{}{%
+        {{uniquename=0,uniquepart=base,hash=87e18ff3f53d45c8f08907dffdd72692}{%
+           family={L{ó}pez-Morales},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={Mercedes},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=06040a719d4b7579306c94d96d15d530}{%
+           family={Currie},
+           familyi={C\bibinitperiod},
+           given={Thayne},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c7e00a1b57236df073ac9323f719cd8f}{%
+           family={Teske},
+           familyi={T\bibinitperiod},
+           given={Johanna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ac661a921c942d17fce3708ae1a4f86f}{%
+           family={Gaidos},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cf0cbdd5efa3bd58224bbb3ada40c4b3}{%
+           family={Kempton},
+           familyi={K\bibinitperiod},
+           given={Eliza},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f0920a5fd1d18a43e9882d1220d130d2}{%
+           family={Males},
+           familyi={M\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=748705efd82c4e30ba49555cb72ce9c0}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Nikole},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b68a6213458ad7c9e04ecccf68e8ab45}{%
+           family={Rackham},
+           familyi={R\bibinitperiod},
+           given={Benjamin\bibnamedelima V.},
+           giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4514107afbb32f93af99c8648b355c9d}{%
+           family={Ben-Ami},
+           familyi={B\bibinithyphendelim A\bibinitperiod},
+           given={Sagi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6f171abcc8d3357edd06e100b9b360a7}{%
+           family={Birkby},
+           familyi={B\bibinitperiod},
+           given={Jayne},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3d119b6b7e8e322ea37a6017cdb3555}{%
+           family={Charbonneau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=87366ee20c159cd65b7729a9db53fc5b}{%
+           family={Close},
+           familyi={C\bibinitperiod},
+           given={Laird},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d5eaea8792c3730401c83427765547b7}{%
+           family={Crane},
+           familyi={C\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f99a675fdccfb93a9f46b73786d179ba}{%
+           family={Dressing},
+           familyi={D\bibinitperiod},
+           given={Courtney},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=69ca12704f3ae47528c49471a4438675}{%
+           family={Froning},
+           familyi={F\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ddaf6a4a68d5a019cacc0c6cfff5fb84}{%
+           family={Hasegawa},
+           familyi={H\bibinitperiod},
+           given={Yasuhiro},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c41cb91b727b63c14efc07a56d9b172f}{%
+           family={Konopacky},
+           familyi={K\bibinitperiod},
+           given={Quinn},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=42ba796381b28c55fe340ee81e41c41a}{%
+           family={Kopparapu},
+           familyi={K\bibinitperiod},
+           given={Ravi\bibnamedelima K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a56182012add7df9bcb384e1b51d63b1}{%
+           family={Mawet},
+           familyi={M\bibinitperiod},
+           given={Dimitri},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28d3a40bf649d9239f8c88befe59a588}{%
+           family={Mennesson},
+           familyi={M\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1630c79a77b667cbbffe03f9de196eae}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Ramses},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=54977ba76b55bef6a6213322783895d2}{%
+           family={Stelter},
+           familyi={S\bibinitperiod},
+           given={Deno},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1fce4c3dccce8c891c86b809bd1ae4d6}{%
+           family={Szentgyorgyi},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=101864955a39bd807830fbac5dee909d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9990fc5a96a9e42a5bcb9b59523ac5c}
+      \strng{fullhash}{426637a56860048b43c553edc50c8dd5}
+      \strng{bibnamehash}{d9990fc5a96a9e42a5bcb9b59523ac5c}
+      \strng{authorbibnamehash}{d9990fc5a96a9e42a5bcb9b59523ac5c}
+      \strng{authornamehash}{d9990fc5a96a9e42a5bcb9b59523ac5c}
+      \strng{authorfullhash}{426637a56860048b43c553edc50c8dd5}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As we begin to discover rocky planets in the habitable zone of nearby stars with missions like TESS and CHEOPS, we will need quick advancements on instrumentation and observational techniques that will enable us to answer key science questions, such as What are the atmospheric characteristics of habitable zone rocky planets? How common are Earth-like biosignatures in rocky planets? How similar or dissimilar are those planets to Earth? Over the next decade we expect to have discovered several Earth-analog candidates, but we will not have the tools to study the atmospheres of all of them in detail. Ground-based ELTs can identify biosignatures in the spectra of these candidate exo-Earths and understand how the planets' atmospheres compare to the Earth at different epochs. Transit spectroscopy, high-resolution spectroscopy, and reflected-light direct imaging on ELTs can identify multiple biosignatures for habitable zone, rocky planets around M stars at optical to near-infrared wavelengths. Thermal infrared direct imaging can detect habitable zone, rocky planets around AFGK stars, identifying ozone and motivating reflected-light follow-up observations with NASA missions like HabEx/LUVOIR. Therefore, we recommend that the Astro2020 Decadal Survey Committee support: (1) the search for Earth-like biosignatures on rocky planets around nearby stars as a key science case; (2) the construction over the next decade of ground-based Extremely Large Telecopes (ELTs), which will provide the large aperture and spatial resolution necessary to start revealing the atmospheres of Earth-analogues around nearby stars; (3) the development of instrumentation that optimizes the detection of biosignatures; and (4) the generation of accurate line lists for potential biosignature gases, which are needed as model templates to detect those molecules.}
+      \field{eprinttype}{arXiv}
+      \field{series}{Astro2020}
+      \field{title}{{Detecting Earth-like Biosignatures on Rocky Exoplanets around Nearby Stars with Ground-based Extremely Large Telescopes}}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{eprint}
+      \verb 1903.09523
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/1903.09523.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1903.09523
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1903.09523
       \endverb
     \endentry
     \entry{Luhman2014}{article}{}
@@ -10907,6 +12015,37 @@
       \endverb
       \keyw{a coronagraph-equipped wfirst,atmospheres,composition,current estimates are that,methods,methods: statistical,mission will be able,planets and satellites,planets and satellites: atmospheres,planets and satellites: composition,spectra for at,spectroscopic,statistical,techniques,techniques: spectroscopic,to obtain photometry and}
     \endentry
+    \entry{Luvoir2019}{unpublished}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f29b207463740e87261fe5262f4dc79a}{%
+           family={{LUVOIR Mission Concept Study Team}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Aeronautics}%
+        {Space Agency}%
+      }
+      \strng{namehash}{f29b207463740e87261fe5262f4dc79a}
+      \strng{fullhash}{f29b207463740e87261fe5262f4dc79a}
+      \strng{bibnamehash}{f29b207463740e87261fe5262f4dc79a}
+      \strng{authorbibnamehash}{f29b207463740e87261fe5262f4dc79a}
+      \strng{authornamehash}{f29b207463740e87261fe5262f4dc79a}
+      \strng{authorfullhash}{f29b207463740e87261fe5262f4dc79a}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The LUVOIR Final Report}}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{426}
+      \range{pages}{1}
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/LUVOIR{\_}FinalReportAppendices{\_}2019-08-26.pdf:pdf
+      \endverb
+    \endentry
     \entry{MacDonald2017}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=289f3cec05f7ac53460516a57c8599db}{%
@@ -10915,18 +12054,18 @@
            given={Ryan\bibnamedelima J.},
            giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=281fb1a0b91393432959282227cca97e}{%
+        {{uniquename=2,uniquepart=given,hash=281fb1a0b91393432959282227cca97e}{%
            family={Madhusudhan},
            familyi={M\bibinitperiod},
            given={Nikku},
            giveni={N\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
-      \strng{namehash}{79c387887f4facd2f00fd2113a526c66}
+      \strng{namehash}{2d8226240e59959d003b86c5925a57e0}
       \strng{fullhash}{2d8226240e59959d003b86c5925a57e0}
       \strng{bibnamehash}{2d8226240e59959d003b86c5925a57e0}
       \strng{authorbibnamehash}{2d8226240e59959d003b86c5925a57e0}
-      \strng{authornamehash}{79c387887f4facd2f00fd2113a526c66}
+      \strng{authornamehash}{2d8226240e59959d003b86c5925a57e0}
       \strng{authorfullhash}{2d8226240e59959d003b86c5925a57e0}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -11564,11 +12703,11 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{d9602ac4aba997cb017dee4ec35dce2d}
+      \strng{namehash}{903407580b4b45104d6ec42842b5a5e8}
       \strng{fullhash}{903407580b4b45104d6ec42842b5a5e8}
       \strng{bibnamehash}{903407580b4b45104d6ec42842b5a5e8}
       \strng{authorbibnamehash}{903407580b4b45104d6ec42842b5a5e8}
-      \strng{authornamehash}{d9602ac4aba997cb017dee4ec35dce2d}
+      \strng{authornamehash}{903407580b4b45104d6ec42842b5a5e8}
       \strng{authorfullhash}{903407580b4b45104d6ec42842b5a5e8}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -11739,7 +12878,7 @@
       \endverb
       \keyw{Atmospheric chemistry,Exoplanetary atmospheres,Exoplanets,Habitability,Planet formation}
     \endentry
-    \entry{Madhusudhan2018a}{misc}{}
+    \entry{Madhusudhan2018a}{article}{}
       \name{author}{3}{}{%
         {{uniquename=2,uniquepart=given,hash=281fb1a0b91393432959282227cca97e}{%
            family={Madhusudhan},
@@ -11774,6 +12913,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv eprint}
       \field{title}{{Atmospheric Compositions of Three Brown Dwarfs and Implications for their Formation Conditions}}
       \field{year}{2018}
       \true{nocite}
@@ -12221,11 +13361,11 @@
            giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{9798ea039c95022780f4bec120ceae2b}
+      \strng{namehash}{263ff22ab7a2ce2ead7df11b618f4f37}
       \strng{fullhash}{263ff22ab7a2ce2ead7df11b618f4f37}
       \strng{bibnamehash}{263ff22ab7a2ce2ead7df11b618f4f37}
       \strng{authorbibnamehash}{263ff22ab7a2ce2ead7df11b618f4f37}
-      \strng{authornamehash}{9798ea039c95022780f4bec120ceae2b}
+      \strng{authornamehash}{263ff22ab7a2ce2ead7df11b618f4f37}
       \strng{authorfullhash}{263ff22ab7a2ce2ead7df11b618f4f37}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -12279,30 +13419,32 @@
       \field{type}{phdthesis}
       \field{year}{2014}
       \true{nocite}
+      \field{pages}{124}
+      \range{pages}{1}
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/thesis{\_}manjavacas.pdf:pdf
       \endverb
     \endentry
     \entry{Marley2015}{article}{}
       \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=e27d21735ef97fb6609dac6d02dd6c25}{%
+        {{uniquename=2,uniquepart=given,hash=e27d21735ef97fb6609dac6d02dd6c25}{%
            family={Marley},
            familyi={M\bibinitperiod},
            given={M\bibnamedelima S},
            giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=705151846e80ae9eeaf2b5ade7bf95ca}{%
+           givenun=2}}%
+        {{uniquename=2,uniquepart=given,hash=705151846e80ae9eeaf2b5ade7bf95ca}{%
            family={Robinson},
            familyi={R\bibinitperiod},
            given={T\bibnamedelima D},
            giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
       }
-      \strng{namehash}{567d8e4fd4197102654de8fcc281dcdb}
+      \strng{namehash}{0b8bda479e49f522133b3a86708f2491}
       \strng{fullhash}{0b8bda479e49f522133b3a86708f2491}
       \strng{bibnamehash}{0b8bda479e49f522133b3a86708f2491}
       \strng{authorbibnamehash}{0b8bda479e49f522133b3a86708f2491}
-      \strng{authornamehash}{567d8e4fd4197102654de8fcc281dcdb}
+      \strng{authornamehash}{0b8bda479e49f522133b3a86708f2491}
       \strng{authorfullhash}{0b8bda479e49f522133b3a86708f2491}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -12544,11 +13686,11 @@
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{a1f5697b10433c2e26cdb6acaf7088c5}
+      \strng{namehash}{94b63e2db9e3f53be24dac3a8f2efaf3}
       \strng{fullhash}{94b63e2db9e3f53be24dac3a8f2efaf3}
       \strng{bibnamehash}{94b63e2db9e3f53be24dac3a8f2efaf3}
       \strng{authorbibnamehash}{94b63e2db9e3f53be24dac3a8f2efaf3}
-      \strng{authornamehash}{a1f5697b10433c2e26cdb6acaf7088c5}
+      \strng{authornamehash}{94b63e2db9e3f53be24dac3a8f2efaf3}
       \strng{authorfullhash}{94b63e2db9e3f53be24dac3a8f2efaf3}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -12565,6 +13707,85 @@
       \range{pages}{2}
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/51pegb.pdf:pdf
+      \endverb
+    \endentry
+    \entry{McLatchey1973}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,uniquepart=base,hash=0051d54462d3bc6535c1b991071d6f94}{%
+           family={McLatchey},
+           familyi={M\bibinitperiod},
+           given={R.A.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6b8016e25c5af9383f9f881a737aff3e}{%
+           family={Benedict},
+           familyi={B\bibinitperiod},
+           given={W.S.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e172ed3e7530ed958a750da8ec442b31}{%
+           family={Clough},
+           familyi={C\bibinitperiod},
+           given={S.A.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=286ea07f43fc01a84f4ef2bc4c454086}{%
+           family={Burch},
+           familyi={B\bibinitperiod},
+           given={D.E.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9c7cc37b905336e42f361422b0815876}{%
+           family={Calfee},
+           familyi={C\bibinitperiod},
+           given={R.F.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5be4a9db8d5ceb2c743961ed38590a6d}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=984fa8d901c5ebaf4a0d6f2671d21828}{%
+           family={Rothman},
+           familyi={R\bibinitperiod},
+           given={L.S.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1e74c16cc211976d7ffdcf935276a106}{%
+           family={Garing},
+           familyi={G\bibinitperiod},
+           given={J.S.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc028b71437ccfa16d3ad81de287b4a3}
+      \strng{fullhash}{13bce23ff59eaa06d56ba1f8c8b77358}
+      \strng{bibnamehash}{cc028b71437ccfa16d3ad81de287b4a3}
+      \strng{authorbibnamehash}{cc028b71437ccfa16d3ad81de287b4a3}
+      \strng{authornamehash}{cc028b71437ccfa16d3ad81de287b4a3}
+      \strng{authorfullhash}{13bce23ff59eaa06d56ba1f8c8b77358}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The report describes a compliation of the molecular spectroscopic$\backslash$nparameters for a number of infrared-active molecules occuring naturally$\backslash$nin the terrestrial atmosphere. The following molecules are included$\backslash$nin the compliation: water vapor; carbon dioxide; ozone; nitrous oxide;$\backslash$ncarbon monoxide; methane; and oxygen. The spectral region covered$\backslash$nextends from less than 1 $\mu$m to the far infrared, and data are$\backslash$npresented on more than 100 000 spectral lines. The parameters included$\backslash$nin the compilation for each line are: frequency, intensity, half-width,$\backslash$nenergy of the lower state of the transition, vibrational and rotational$\backslash$nidentifications of the upper and lower energy states, an isotopic$\backslash$nidentification, and a molecular identification.$\backslash$n$\backslash$n$\backslash$nA discussion is provided seperately for each molecular species, indicating$\backslash$nthe sources and accuracy of the data and a general discussion of$\backslash$nhow the data were obtained.}
+      \field{issn}{0003-6935}
+      \field{journaltitle}{Environmental Research Papers}
+      \field{title}{{AFCRL atmospheric absorption line parameters compilation}}
+      \field{volume}{434}
+      \field{year}{1973}
+      \true{nocite}
+      \field{pages}{87}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/ao.20.000791
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/HITRAN-1973.pdf:pdf
       \endverb
     \endentry
     \entry{Mesa2019}{article}{}
@@ -13067,18 +14288,18 @@
            given={P.},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=22f48f720aaa655b34fa81fd28f66ac7}{%
+        {{uniquename=1,uniquepart=given,hash=22f48f720aaa655b34fa81fd28f66ac7}{%
            family={Snellen},
            familyi={S\bibinitperiod},
            given={I.\bibnamedelimi A.G.},
            giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
-      \strng{namehash}{22fdede6b5e21b64503d2433fc2fad7c}
+      \strng{namehash}{49eeba5487a3f3975fa688de92b04b1d}
       \strng{fullhash}{49eeba5487a3f3975fa688de92b04b1d}
       \strng{bibnamehash}{49eeba5487a3f3975fa688de92b04b1d}
       \strng{authorbibnamehash}{49eeba5487a3f3975fa688de92b04b1d}
-      \strng{authornamehash}{22fdede6b5e21b64503d2433fc2fad7c}
+      \strng{authornamehash}{49eeba5487a3f3975fa688de92b04b1d}
       \strng{authorfullhash}{49eeba5487a3f3975fa688de92b04b1d}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -13973,7 +15194,7 @@
       \verb :home/evert/Documents/Papers/Thesis/ExoplanetScienceStrategy.pdf:pdf
       \endverb
     \endentry
-    \entry{Oliveira2015}{misc}{}
+    \entry{Oliveira2015}{unpublished}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=ce3ece7e0cce528ef86e6125e2998517}{%
            family={Oliveira},
@@ -14000,8 +15221,14 @@
       \verb{file}
       \verb :home/evert/Documents/Papers/Thesis/AlvesdeOliveiraC.pdf:pdf
       \endverb
+      \verb{urlraw}
+      \verb https://www.cosmos.esa.int/documents/739790/758041/AlvesdeOliveiraC.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cosmos.esa.int/documents/739790/758041/AlvesdeOliveiraC.pdf
+      \endverb
     \endentry
-    \entry{Oliveira2019}{misc}{}
+    \entry{Oliveira2019}{unpublished}{}
       \name{author}{10}{}{%
         {{uniquename=0,uniquepart=base,hash=ce3ece7e0cce528ef86e6125e2998517}{%
            family={Oliveira},
@@ -14206,7 +15433,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Atmospheric characterization of terrestrial planets using high-resolution spectroscopy with ELT / METIS A study of Proxima Cen b}}
-      \field{type}{phdthesis}
+      \field{type}{Master's Thesis}
       \field{year}{2019}
       \true{nocite}
       \field{pages}{1\bibrangedash 28}
@@ -14216,45 +15443,333 @@
       \endverb
       \keyw{2019,context,cross-correlation technique,direct imaging,exoplanets,hdo in molli{è}re and,high resolution spectroscopy,ifs,snellen,suggest that hdo can,the tests performed for,with the cross-correlation technique}
     \endentry
-    \entry{QiangFu1992a}{misc}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=99404ff01113648611d88170555bb433}{%
-           family={{Qiang Fu}},
-           familyi={Q\bibinitperiod}}}%
-        {{uniquename=0,uniquepart=base,hash=77ea09311f427ab593109942a26ba9d9}{%
-           family={Liou},
+    \entry{Quanz2019}{unpublished}{}
+      \name{author}{48}{}{%
+        {{uniquename=0,uniquepart=base,hash=e931b6aa63b8e58b5276d7deb64b8f3e}{%
+           family={Quanz},
+           familyi={Q\bibinitperiod},
+           given={Sascha\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2127d33ce9d780e3497e798cdb53dc4f}{%
+           family={Absil},
+           familyi={A\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3a7e134a609700937e34a1f7f184e468}{%
+           family={Angerhausen},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2ffdb8a3d0a0a4fa0e5cf246d4c9ac04}{%
+           family={Benz},
+           familyi={B\bibinitperiod},
+           given={Willy},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=439fca12b11d16ad5e335b886a3f24cc}{%
+           family={Bonfils},
+           familyi={B\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=30cfcd7d86c9b43504c056f2311abaae}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e47bfc0f00af8c107977f6b0dc6edc9e}{%
+           family={Brogi},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f307961cd5e9e7606b85842821bbe354}{%
+           family={Cabrera},
+           familyi={C\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a6684595a56db97f3804cb9d2389801f}{%
+           family={Danchi},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a2c83f3e51ad3a232a351df2c6da8ed9}{%
+           family={Defr{è}re},
+           familyi={D\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ffa247b9b5c9376d123eca0925ae3d2b}{%
+           family={Dishoeck},
+           familyi={D\bibinitperiod},
+           given={Ewine},
+           giveni={E\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f4bd34882b8be918d166edcce051678e}{%
+           family={Ehrenreich},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e11f8e1e3c4d752846e0d5ea3447a800}{%
+           family={Ertel},
+           familyi={E\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f71ad7aee835df965d2c82f45cee1176}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9f3900837bf8bdd04b5db53bef8bab2e}{%
+           family={Gaudi},
+           familyi={G\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d41be0a4e39ff73809b8cb025711b684}{%
+           family={Girard},
+           familyi={G\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8ae678de422ce1c4a3ee07105d928459}{%
+           family={Glauser},
+           familyi={G\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=21b5fe51c4101a8d47f0ba63781710f9}{%
+           family={Grenfell},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima Lee},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=73e0514bb68d29b1aba62a024a986635}{%
+           family={Ireland},
+           familyi={I\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9136ddf5a6f8a84c73b79dc0a713874c}{%
+           family={Janson},
+           familyi={J\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=546e3c6f5658d007b211774a96ea2237}{%
+           family={Kammerer},
+           familyi={K\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3480b9742f5e0cb1731a3c1559a0272}{%
+           family={Kitzmann},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=aaa7032e9a5839e0618947d8dd33a194}{%
+           family={Kraus},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4b38cb2cee03eb2e9e066bec28b018ca}{%
+           family={Krause},
+           familyi={K\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=91e9101be74c77cd5245496ea9a7f2b8}{%
+           family={Labadie},
            familyi={L\bibinitperiod},
-           given={K.\bibnamedelimi N.},
-           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=07f45db2e9423092e983852721e326a3}{%
+           family={Lacour},
+           familyi={L\bibinitperiod},
+           given={Sylvestre},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=382f6f874eb15f56794de7ac3c45c951}{%
+           family={Lichtenberg},
+           familyi={L\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=63d413a2b375920085562b305ef959bf}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d2dc4566c8a5dd7eb5b85635d2bdabf5}{%
+           family={Linz},
+           familyi={L\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4d83f20db9e04f0249ada275424947d9}{%
+           family={Loicq},
+           familyi={L\bibinitperiod},
+           given={J{é}r{ô}me},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28d3a40bf649d9239f8c88befe59a588}{%
+           family={Mennesson},
+           familyi={M\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ee06b04f29d351189d38e0a839379260}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ed308c6e7494d30ce4cb14d258bebe80}{%
+           family={Miguel},
+           familyi={M\bibinitperiod},
+           given={Yamila},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c5c5ee295dddcf7f9e33de7c6c6c8729}{%
+           family={Monnier},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=057ad49ff69b434ee2f89db2e34c4bd0}{%
+           family={N'Diaye},
+           familyi={N\bibinitperiod},
+           given={Mamadou},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bcb10a62de2256585b23e4cff6ebccd0}{%
+           family={Pall{é}},
+           familyi={P\bibinitperiod},
+           given={Enric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f5d35eb8a124a5a563c6686d91ccc091}{%
+           family={Queloz},
+           familyi={Q\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bedfd86ee0907048e2b238bad65e2976}{%
+           family={Rauer},
+           familyi={R\bibinitperiod},
+           given={Heike},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6a0b9a6e82f7403f5e4c03c428b905f8}{%
+           family={Ribas},
+           familyi={R\bibinitperiod},
+           given={Ignasi},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1784419ff9c9543dbaaaadd4f31ee87d}{%
+           family={Rugheimer},
+           familyi={R\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a5c5ff4d38216d57440a52c56901bb11}{%
+           family={Selsis},
+           familyi={S\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=afa4d1a0499e85c1415d426d3339ade1}{%
+           family={Serabyn},
+           familyi={S\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=616f2a1e9ea80c3b378f9379dee9b806}{%
+           family={Snellen},
+           familyi={S\bibinitperiod},
+           given={Ignas},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e1c1d057a19aa353cbf45d5bb1a9b108}{%
+           family={Sozzetti},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ae8196ffefe78c99c6e7462c80054b41}{%
+           family={Stapelfeldt},
+           familyi={S\bibinitperiod},
+           given={Karl\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=abda9b96a22b91340248672e8ade86b5}{%
+           family={Triaud},
+           familyi={T\bibinitperiod},
+           given={Amaury},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4a0c7b710e77e08a8ea75ef8b819091b}{%
+           family={Udry},
+           familyi={U\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=86173402313b3f53d1fa24e2698d1219}{%
+           family={Wyatt},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5a9b06f80c9842776a70f48a01be1eef}
-      \strng{fullhash}{24388fd8ce9817a5c924ab7c0381b700}
-      \strng{bibnamehash}{24388fd8ce9817a5c924ab7c0381b700}
-      \strng{authorbibnamehash}{24388fd8ce9817a5c924ab7c0381b700}
-      \strng{authornamehash}{5a9b06f80c9842776a70f48a01be1eef}
-      \strng{authorfullhash}{24388fd8ce9817a5c924ab7c0381b700}
+      \list{institution}{1}{%
+        {European Space Agency}%
+      }
+      \strng{namehash}{f5700325d9fd371016bb75c8ee900fa8}
+      \strng{fullhash}{6c4484e9c87ae1195ae9287592c59e83}
+      \strng{bibnamehash}{f5700325d9fd371016bb75c8ee900fa8}
+      \strng{authorbibnamehash}{f5700325d9fd371016bb75c8ee900fa8}
+      \strng{authornamehash}{f5700325d9fd371016bb75c8ee900fa8}
+      \strng{authorfullhash}{6c4484e9c87ae1195ae9287592c59e83}
+      \field{extraname}{1}
       \field{sortinit}{Q}
       \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Two correlated conditions are necessary and sufficient for the exact transformation of the wavenumber integration to an integration over the cumulative probability (g), a monotonically increasing and smooth function in the absorption coefficient space. These conditions involve the use of a reference condition to define the absorption coefficient and an assumption concerning the ordering of the absorption coefficient. The correlated conditions are exact in the context of a single line, periodic lines, and the strong- and weak-line limits. In realistic atmospheres, these assumptions are best for adjacent levels but produce increasing blurring or deviations for distant levels. -from Authors}
-      \field{booktitle}{Journal of the Atmospheric Sciences}
-      \field{issn}{00224928}
-      \field{number}{22}
-      \field{title}{{On the correlated k-distribution method for radiative transfer in nonhomogeneous atmospheres}}
-      \field{volume}{49}
-      \field{year}{1992}
+      \field{abstract}{Exoplanet science is one of the most thriving fields of modern astrophysics. A major goal is the atmospheric characterization of dozens of small, terrestrial exoplanets in order to search for signatures in their atmospheres that indicate biological activity, assess their ability to provide conditions for life as we know it, and investigate their expected atmospheric diversity. None of the currently adopted projects or missions, from ground or in space, can address these goals. In this White Paper we argue that a large space-based mission designed to detect and investigate thermal emission spectra of terrestrial exoplanets in the MIR wavelength range provides unique scientific potential to address these goals and surpasses the capabilities of other approaches. While NASA might be focusing on large missions that aim to detect terrestrial planets in reflected light, ESA has the opportunity to take leadership and spearhead the development of a large MIR exoplanet mission within the scope of the "Voyage 2050" long-term plan establishing Europe at the forefront of exoplanet science for decades to come. Given the ambitious science goals of such a mission, additional international partners might be interested in participating and contributing to a roadmap that, in the long run, leads to a successful implementation. A new, dedicated development program funded by ESA to help reduce development and implementation cost and further push some of the required key technologies would be a first important step in this direction. Ultimately, a large MIR exoplanet imaging mission will be needed to help answer one of mankind's most fundamental questions: "How unique is our Earth?"}
+      \field{eprinttype}{arXiv}
+      \field{series}{Voyage 2050 long-term plan}
+      \field{title}{{Atmospheric characterization of terrestrial exoplanets in the mid-infrared: biosignatures, habitability {\&} diversity}}
+      \field{year}{2019}
       \true{nocite}
-      \field{pages}{2139\bibrangedash 2156}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1175/1520-0469(1992)049<2139:otcdmf>2.0.co;2
+      \verb{eprint}
+      \verb 1908.01316
       \endverb
       \verb{file}
-      \verb :home/evert/Documents/Papers/Thesis/FuCorr-k.pdf:pdf
+      \verb :home/evert/Documents/Papers/Thesis/1908.01316.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1908.01316
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1908.01316
       \endverb
     \endentry
     \entry{Quanz2010}{article}{}
@@ -14338,6 +15853,7 @@
       \strng{authorbibnamehash}{f5700325d9fd371016bb75c8ee900fa8}
       \strng{authornamehash}{f5700325d9fd371016bb75c8ee900fa8}
       \strng{authorfullhash}{54f56f9d38d6f0fea11ff7dda9586400}
+      \field{extraname}{2}
       \field{sortinit}{Q}
       \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
       \field{extradatescope}{labelyear}
@@ -15063,12 +16579,12 @@
     \endentry
     \entry{Robinson2016}{article}{}
       \name{author}{3}{}{%
-        {{uniquename=0,uniquepart=base,hash=a9f67930466864c5514c18c92851032c}{%
+        {{uniquename=2,uniquepart=given,hash=a9f67930466864c5514c18c92851032c}{%
            family={Robinson},
            familyi={R\bibinitperiod},
            given={Tyler\bibnamedelima D.},
            giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=ae8196ffefe78c99c6e7462c80054b41}{%
            family={Stapelfeldt},
            familyi={S\bibinitperiod},
@@ -15175,7 +16691,7 @@
       \verb :home/evert/Documents/Papers/Thesis/T{\_}Roellig{\_}Y-Dwarf{\_}Poster.pdf:pdf
       \endverb
     \endentry
-    \entry{Rothman1981}{misc}{}
+    \entry{Rothman1981}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=984fa8d901c5ebaf4a0d6f2671d21828}{%
            family={Rothman},
@@ -15197,8 +16713,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The report describes a compliation of the molecular spectroscopic$\backslash$nparameters for a number of infrared-active molecules occuring naturally$\backslash$nin the terrestrial atmosphere. The following molecules are included$\backslash$nin the compliation: water vapor; carbon dioxide; ozone; nitrous oxide;$\backslash$ncarbon monoxide; methane; and oxygen. The spectral region covered$\backslash$nextends from less than 1 $\mu$m to the far infrared, and data are$\backslash$npresented on more than 100 000 spectral lines. The parameters included$\backslash$nin the compilation for each line are: frequency, intensity, half-width,$\backslash$nenergy of the lower state of the transition, vibrational and rotational$\backslash$nidentifications of the upper and lower energy states, an isotopic$\backslash$nidentification, and a molecular identification.$\backslash$n$\backslash$n$\backslash$nA discussion is provided seperately for each molecular species, indicating$\backslash$nthe sources and accuracy of the data and a general discussion of$\backslash$nhow the data were obtained.}
-      \field{booktitle}{Applied Optics}
       \field{issn}{0003-6935}
+      \field{journaltitle}{Applied Optics}
       \field{number}{5}
       \field{title}{{AFGL atmospheric absorption line parameters compilation: 1980 version}}
       \field{volume}{20}
@@ -15210,7 +16726,7 @@
       \verb 10.1364/ao.20.000791
       \endverb
       \verb{file}
-      \verb :home/evert/Documents/Papers/Thesis/HITRAN-1973.pdf:pdf
+      \verb :home/evert/Documents/Papers/Thesis/ao-20-5-791.pdf:pdf
       \endverb
     \endentry
     \entry{Rothman2010}{article}{}
@@ -15652,11 +17168,11 @@
            giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{7c7d61e616585a46e9fb0fca68dad348}
+      \strng{namehash}{6f9705d63ecaa34baebde55c970ec0d5}
       \strng{fullhash}{6f9705d63ecaa34baebde55c970ec0d5}
       \strng{bibnamehash}{6f9705d63ecaa34baebde55c970ec0d5}
       \strng{authorbibnamehash}{6f9705d63ecaa34baebde55c970ec0d5}
-      \strng{authornamehash}{7c7d61e616585a46e9fb0fca68dad348}
+      \strng{authornamehash}{6f9705d63ecaa34baebde55c970ec0d5}
       \strng{authorfullhash}{6f9705d63ecaa34baebde55c970ec0d5}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
@@ -15972,12 +17488,12 @@
     \endentry
     \entry{Seager2010}{article}{}
       \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
+        {{uniquename=2,uniquepart=given,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
            family={Seager},
            familyi={S\bibinitperiod},
            given={Sara},
            giveni={S\bibinitperiod},
-           givenun=0}}%
+           givenun=2}}%
         {{uniquename=0,uniquepart=base,hash=10332b321cb674156236a37ef054c39b}{%
            family={Deming},
            familyi={D\bibinitperiod},
@@ -15985,11 +17501,11 @@
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{f329564e0c6987430bbafd785af287a7}
+      \strng{namehash}{341cd24127113b3db964fbe7c5bd68f7}
       \strng{fullhash}{341cd24127113b3db964fbe7c5bd68f7}
       \strng{bibnamehash}{341cd24127113b3db964fbe7c5bd68f7}
       \strng{authorbibnamehash}{341cd24127113b3db964fbe7c5bd68f7}
-      \strng{authornamehash}{f329564e0c6987430bbafd785af287a7}
+      \strng{authornamehash}{341cd24127113b3db964fbe7c5bd68f7}
       \strng{authorfullhash}{341cd24127113b3db964fbe7c5bd68f7}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
@@ -16855,7 +18371,7 @@
       \endverb
       \keyw{atmospheres,composition,gaseous planets,gj 504,individual,planets and satellites,planets and satellites: atmospheres,planets and satellites: composition,planets and satellites: gaseous planets,stars,stars: individual (GJ 504)}
     \endentry
-    \entry{Skilling2004}{article}{}
+    \entry{Skilling2004}{inproceedings}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=2f08a0c28df14bc0892cef59af7adb6c}{%
            family={Skilling},
@@ -16877,10 +18393,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{"The evidence Z is often the single most important number in the [Bayesian] problem and I think every effort should be devoted to calculating it" (MacKay 2003). Nested sampling does this by giving a direct estimate of the density of states. Posterior samples are an optional byproduct.}
+      \field{booktitle}{Bayesian Inference and Maximum Entropy Methods in Science and Engineering}
       \field{isbn}{0735402175}
       \field{number}{November 2004}
       \field{title}{{Nested Sampling}}
-      \field{volume}{395}
+      \field{volume}{735}
       \field{year}{2004}
       \true{nocite}
       \field{pages}{395\bibrangedash 405}
@@ -17194,6 +18711,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Markov Chain Monte Carlo (MCMC) methods have become a cornerstone of many modern scientific analyses by providing a straightforward approach to numerically estimate uncertainties in the parameters of a model using a sequence of random samples. This article provides a basic introduction to MCMC methods by establishing a strong conceptual understanding of what problems MCMC methods are trying to solve, why we want to use them, and how they work in theory and in practice. To develop these concepts, I outline the foundations of Bayesian inference, discuss how posterior distributions are used in practice, explore basic approaches to estimate posterior-based quantities, and derive their link to Monte Carlo sampling and MCMC. Using a simple toy problem, I then demonstrate how these concepts can be used to understand the benefits and drawbacks of various MCMC approaches. Exercises designed to highlight various concepts are also included throughout the article.}
       \field{eprinttype}{arXiv}
+      \field{journaltitle}{Journal of Statistics Education}
       \field{title}{{A Conceptual Introduction to Markov Chain Monte Carlo Methods}}
       \field{year}{2019}
       \true{nocite}
@@ -17430,13 +18948,12 @@
            giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5d69159c4f2deb9b4c2a46a06a471aa8}
+      \strng{namehash}{107c35d452f1e785d537c028d1ee7bdf}
       \strng{fullhash}{107c35d452f1e785d537c028d1ee7bdf}
       \strng{bibnamehash}{107c35d452f1e785d537c028d1ee7bdf}
       \strng{authorbibnamehash}{107c35d452f1e785d537c028d1ee7bdf}
-      \strng{authornamehash}{5d69159c4f2deb9b4c2a46a06a471aa8}
+      \strng{authornamehash}{107c35d452f1e785d537c028d1ee7bdf}
       \strng{authorfullhash}{107c35d452f1e785d537c028d1ee7bdf}
-      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{extradatescope}{labelyear}
@@ -17597,7 +19114,6 @@
       \strng{authorbibnamehash}{5d69159c4f2deb9b4c2a46a06a471aa8}
       \strng{authornamehash}{5d69159c4f2deb9b4c2a46a06a471aa8}
       \strng{authorfullhash}{3d115b30b14d51116296e489d11d22a8}
-      \field{extraname}{2}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{extradatescope}{labelyear}
@@ -17928,7 +19444,7 @@
       \endverb
       \keyw{data analysis,methods,methods: data analysis,methods: statistical,statistical}
     \endentry
-    \entry{Vos2019}{report}{}
+    \entry{Vos2019}{unpublished}{}
       \name{author}{13}{}{%
         {{uniquename=0,uniquepart=base,hash=850c2bf7a27798bd5be58d7c675ba13d}{%
            family={Vos},
@@ -18023,8 +19539,8 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The L/T transition is an important evolutionary phase in brown dwarf atmospheres, providing us with a unique opportunity to explore the effects of clouds, convection, winds, gravity and metallicity across a very narrow temperature range. Understanding these physical processes is critical for understanding ultracool atmospheres. In the next decade, we will answer three key questions regarding L/T transition atmospheres: 1. What is the physical mechanism behind the L/T transition? 2. What is the spatial extent of atmospheric structures at the L/T transition? 3. How do gravity and metallicity affect the L/T transition? The theory and methods developed for brown dwarfs will be used in the 2030s and beyond for solar-system age giant exoplanets and eventually habitable zone earth analogues. Developing these techniques now are crucial.}
       \field{eprinttype}{arXiv}
+      \field{series}{Astro2020}
       \field{title}{{Astro2020 White Paper: The L/T Transition}}
-      \field{type}{techreport}
       \field{year}{2019}
       \true{nocite}
       \field{pages}{1\bibrangedash 8}

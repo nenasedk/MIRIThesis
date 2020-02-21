@@ -263,8 +263,8 @@ MIRISIM requires the flux incident on the detector in units of $\mu$Jy, so we co
 \begin{equation}
 F_{inc} [\mu\textrm{Jy}] = 10^{29}\times F_{em} \times \left(\frac{R_{pl}}{d_{pl}}\right)^{2}
 \end{equation}
-The wavelength grid produced by petitRADTRANS is logspaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=30000 at 4.8$\mu$m. 
-This ensures the input spectrum will greatly oversample the instrumental spectral resolution.
+The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=12000 at 4.0$\mu$m. 
+This ensures the input spectrum will oversample the instrumental spectral resolution by a factor of at least 4 across the whole wavelength range.
 
 While it is possible to add a background term to a spectrum using MIRISIM, we chose not to use any background in order to improve our spectral extraction after processing with the JWST pipeline, with the understanding that errors from background subtraction will be negligible in actual data.
 \begin{table}[t]
