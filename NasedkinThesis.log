@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  21 FEB 2020 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  21 FEB 2020 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2774,6 +2774,12 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
 Package epstopdf Info: Source file: <figures/gravitybpic.eps>
 (epstopdf)                    date: 2020-02-20 12:52:52
 (epstopdf)                    size: 6963562 bytes
@@ -2782,13 +2788,13 @@ Package epstopdf Info: Source file: <figures/gravitybpic.eps>
 (epstopdf)                    size: 174922 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/gravitybpic-eps-co
 nverted-to.pdf figures/gravitybpic.eps>
-(epstopdf)             \includegraphics on input line 258.
+(epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
-<figures/gravitybpic-eps-converted-to.pdf, id=448, 509.905pt x 193.72375pt>
+<figures/gravitybpic-eps-converted-to.pdf, id=449, 509.905pt x 193.72375pt>
 File: figures/gravitybpic-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/gravitybpic-eps-converted-to.pdf>
 Package pdftex.def Info: figures/gravitybpic-eps-converted-to.pdf  used on inpu
-t line 258.
+t line 259.
 (pdftex.def)             Requested size: 370.0pt x 140.57765pt.
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -2815,7 +2821,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 251--263
 
  []
 
@@ -2839,18 +2845,21 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [11 <./figures/gravitybpic-eps-converted-to.pdf>]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[11 <./figures/gravitybpic-eps-converted-to.pdf>]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -2941,7 +2950,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-<figures/assembled.jpg, id=520, 1606.0pt x 1046.91125pt>
+<figures/assembled.jpg, id=522, 1606.0pt x 1046.91125pt>
 File: figures/assembled.jpg Graphic file (type jpg)
 <use figures/assembled.jpg>
 Package pdftex.def Info: figures/assembled.jpg  used on input line 21.
@@ -2993,7 +3002,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-<figures/coordinates.png, id=547, 1675.25874pt x 961.5925pt>
+<figures/coordinates.png, id=549, 1675.25874pt x 961.5925pt>
 File: figures/coordinates.png Graphic file (type png)
 <use figures/coordinates.png>
 Package pdftex.def Info: figures/coordinates.png  used on input line 98.
@@ -3013,7 +3022,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 
 LaTeX Warning: Citation 'ref:Chen2019' on page 17 undefined on input line 111.
 
-<figures/MIRI_MRS2.png, id=550, 1104.14107pt x 313.07364pt>
+<figures/MIRI_MRS2.png, id=552, 1104.14107pt x 313.07364pt>
 File: figures/MIRI_MRS2.png Graphic file (type png)
 <use figures/MIRI_MRS2.png>
 Package pdftex.def Info: figures/MIRI_MRS2.png  used on input line 114.
@@ -3126,7 +3135,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-<figures/WISE0855_1234SHORT_RAW.jpg, id=618, 2071.74pt x 1027.84pt>
+<figures/WISE0855_1234SHORT_RAW.jpg, id=620, 2071.74pt x 1027.84pt>
 File: figures/WISE0855_1234SHORT_RAW.jpg Graphic file (type jpg)
 <use figures/WISE0855_1234SHORT_RAW.jpg>
 Package pdftex.def Info: figures/WISE0855_1234SHORT_RAW.jpg  used on input line
@@ -3136,7 +3145,7 @@ Package pdftex.def Info: figures/WISE0855_1234SHORT_RAW.jpg  used on input line
 Underfull \vbox (badness 7133) has occurred while \output is active []
 
  [24]
-<figures/12SHORT_FRINGE_070200.png, id=625, 1035.87pt x 1027.84pt>
+<figures/12SHORT_FRINGE_070200.png, id=627, 1035.87pt x 1027.84pt>
 File: figures/12SHORT_FRINGE_070200.png Graphic file (type png)
 <use figures/12SHORT_FRINGE_070200.png>
 Package pdftex.def Info: figures/12SHORT_FRINGE_070200.png  used on input line 
@@ -3166,7 +3175,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 
 [25 <./figures/WISE0855_1234SHORT_RAW.jpg> <./figures/12SHORT_FRINGE_070200.png
 >]
-<figures/FM_ptsource_flat.png, id=636, 1035.87pt x 1027.84pt>
+<figures/FM_ptsource_flat.png, id=638, 1035.87pt x 1027.84pt>
 File: figures/FM_ptsource_flat.png Graphic file (type png)
 <use figures/FM_ptsource_flat.png>
 Package pdftex.def Info: figures/FM_ptsource_flat.png  used on input line 175.
@@ -3196,7 +3205,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 [27]
-<figures/cal_spectra_slope.pdf, id=665, 1156.32pt x 578.16pt>
+<figures/cal_spectra_slope.pdf, id=667, 1156.32pt x 578.16pt>
 File: figures/cal_spectra_slope.pdf Graphic file (type pdf)
 <use figures/cal_spectra_slope.pdf>
 Package pdftex.def Info: figures/cal_spectra_slope.pdf  used on input line 236.
@@ -5140,7 +5149,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
 Here is how much of TeX's memory you used:
  48660 strings out of 492609
  974048 string characters out of 6131461
- 2221017 words of memory out of 5000000
+ 2221049 words of memory out of 5000000
  51320 multiletter control sequences out of 15000+600000
  678201 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5166,10 +5175,10 @@ re/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonabi.pfb></usr/share/texlive
 /urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 
-Output written on NasedkinThesis.pdf (72 pages, 15904153 bytes).
+Output written on NasedkinThesis.pdf (72 pages, 15904294 bytes).
 PDF statistics:
- 2082 PDF objects out of 2487 (max. 8388607)
- 1913 compressed objects within 20 object streams
+ 2083 PDF objects out of 2487 (max. 8388607)
+ 1914 compressed objects within 20 object streams
  413 named destinations out of 1000 (max. 500000)
  35922 words of extra memory for PDF output out of 42996 (max. 10000000)
 
