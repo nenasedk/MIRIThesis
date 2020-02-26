@@ -1,41 +1,40 @@
-\chapter{Atmospheric Retrivals}
+\chapter{Atmospheric Retrievals}
 Everything photon of light that we receive from an exoplanet will interact with its atmosphere, and will therefore provide us with a hint of what that atmosphere may look like.
 An atmospheric retrieval is the process of reconstructing the atmosphere of an object based on an observed spectrum.
 This process relies heavily on having accurate models which can be parameterized by the physical quantities we are interested in: generally the temperature, pressure and composition \parencite{Madhusudhan2018}.
 As these models cover a very large parameter space (>10 parameters, each covering several orders of magnitude), it is necessary to have an efficient method for sampling this space, computing a model and comparing this model to the data 
-\parencite{Benneke2012}.
+\parencite{Benneke2012,Benneke2013}.
+Currently, atmospheric retrieval methods have been used for both exoplanets and brown dwarfs to identify water, methane, CO, CO$_{2}$ and other species \parencite{Konopacky2013,Barman2015}, along with clouds being a universal feature \parencite{Line2017,Schlawin2018,Morley2018}
 
-This chapter will outline the process of an atmospheric retrieval from modelling to marginalization of posteriors, and will examine the impact that the instrumental effects described in chapter \ref{ch:fringe} have on the retrieved parameters. 
-Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects.
+This chapter will outline the process of an atmospheric retrieval from modeling to marginalization of posteriors, and will examine the impact that the instrumental effects described in chapter \ref{ch:fringe} have on the retrieved parameters. 
+Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects, following similar studies from \parencite{Batalha2018} and \parencite{Feng2018}.
 
-\cite{Schlawin2018} %MIRI Clear + cloudy lrs
  %atmo ret,basically everything nested samp, 
-\cite{Fisher2019} %Cross corr machine learning hoeijmakers
-\cite{Oreshenko2019}% Model grid comparison random forest
-\cite{Barman2015} %HR8799b water methan CO 
-\cite{Benneke2013} %Benneke Thesis (Cite papers as well)
-\cite{Benneke2012} %And 2013 - distinguish cloudy mini neptunes and watery earths
-\cite{Blanco-Cuaresma2018} %Stel spec caveats
-\cite{Konopacky2013} %CO and water in hr8799
+%\cite{Fisher2019} %Cross corr machine learning hoeijmakers
+%\cite{Oreshenko2019}% Model grid comparison random forest
+%\cite{Barman2015} %HR8799b water methan CO 
 
-\parencite{Morley2018} %D/H ratios
-\cite{Lupu2016} %Is actually 2016 - reflected light atmo rets (multinest)
-\cite{Gandhi2018} %HyDRA retrieval code
-\cite{Baudino2017} %Troublesome model params
-\cite{Line2013} %Secondary eclipse retrieval technique comparison
-\cite{Madhusudhan2018b} % With Seagar - temp nad abundance retrieval pt profile
-\cite{Irwin2008} %Nemisis atmo ret code
-\cite{Robinson2016} %Observations of planets with coronographs in space (WFIRST)
-\cite{Waldmann2015} %TauRex
-\cite{Waldmann2015a} %TauRex emission
-\cite{Line2015,Line2017,Zalesky2019} % Brown dwarf retrieval part 1,2,3
+%\cite{Blanco-Cuaresma2018} %Stel spec caveats
+%\cite{Konopacky2013} %CO and water in hr8799
 
-\cite{Batalha2018}%MIRI LRS - strategies (obs)
+%\parencite{Morley2018} %D/H ratios
+%\cite{Lupu2016} %Is actually 2016 - reflected light atmo rets (multinest)
+%\cite{Gandhi2018} %HyDRA retrieval code
+%\cite{Baudino2017} %Troublesome model params
+%\cite{Line2013} %Secondary eclipse retrieval technique comparison
+%\cite{Madhusudhan2018b} % With Seagar - temp nad abundance retrieval pt profile
+%\cite{Irwin2008} %Nemisis atmo ret code
+%\cite{Robinson2016} %Observations of planets with coronographs in space %(WFIRST)
+%\cite{Waldmann2015} %TauRex
+%\cite{Waldmann2015a} %TauRex emission
+%\cite{Line2015,Line2017,Zalesky2019} % Brown dwarf retrieval part 1,2,3
+
+%\cite{Batalha2018}%MIRI LRS - strategies (obs)
 % Gravity Beta Pic - petitRadTrans retrieval how to, CO
-\cite{Feng2018} %Future ref light: basis of mine but emission
-\cite{Molliere2019}% Two papers, isotopologues and petitRadTrans
+%\cite{Feng2018} %Future ref light: basis of mine but emission
+%\cite{Molliere2019}% Two papers, isotopologues and petitRadTrans
 \subsubsection{Atmospheric Modeling}
-Atmospheric modelling is the task of creating an spectra based on the physical properties of the atmosphere.
+Atmospheric modeling is the task of creating an spectra based on the physical properties of the atmosphere.
 This is a broad task that can range from a 3D Global Circulation Model (GCM) which accounts for self-consistent atmospheric chemistry \parencite{Chen2019} to a 1D model based around an empirical temperature-pressure profile \parencite{Molliere2019}.
 The choice of model depends largely on the requirements for accuracy and computational cost. 
 Considering the potentially millions of possible atmospheres that must be examined in a retrieval problem, whatever model is used must be computationally efficient above all else.
@@ -326,6 +325,8 @@ While it is possible to add a background term to a spectrum using MIRISIM, we ch
 \end{table}
 
 \section{Results}
+
+\cite{Schlawin2018} %MIRI Clear + cloudy lrs
 \subsection{Model Selection}
 \begin{figure}[h]
 	%\includegraphics[content...]{imagefile}

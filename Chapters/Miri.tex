@@ -4,7 +4,7 @@ MIRI is an instrument that will provide unique capabilities for studying exoplan
 %
 %
 \section{The James Webb Space Telescope}
-JWST is a 6.5m space based observatory built in collaboration between NASA, ESA and CSA that will be located in a halo orbit at the L2 Earth-Sun Lagrange point. 
+JWST is a 6.5 m space based observatory built in collaboration between NASA, ESA and CSA that will be located in a halo orbit at the L2 Earth-Sun Lagrange point. 
 As the successor to the Hubble Space Telescope and the Spitzer Space Telescope, it will provide a new perspective for infrared astronomy. 
 It is currently scheduled to launch in March 2021.
 
@@ -14,7 +14,7 @@ A large sun-shield will help block solar infrared radiation.
 The lightweight beryllium mirrors are coated in gold to maximize reflectivity out to the mid infrared.
 
 Of key interest to exoplanet science is the both the sensitivity and spatial resolution of the instrument. 
-With its 6.5m primary, JWST will have a spatial resolution from 0.01" at 0.6 micron to 0.92" at 29 micron.
+With its 6.5 m primary, JWST will have a spatial resolution from 0.01" at 0.6 micron to 0.92" at 29 micron.
 The increase in sensitivity is due in part to the larger collecting area, but also to advances in detector technology since the previous generation of infrared observatories.
 For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \parencite{MIRI9}.
 \begin{figure}[t]
@@ -30,34 +30,48 @@ The Fine Guidance Sensor/ Near-Infrared Imager and Slitless Spectrograph (FGS/NI
 The final instrument, MIRI, is the subject of this thesis.
 
 \section{MIRI}
-The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \parencite{Rieke2015}.
-It will operate at a temperature of 6.7K to reduce instrumental backgrounds over its wavelength range of 0.6-28.8 micron. %MIRI intro
+The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \parencite{MIRI2}.
+These sub-instruments are enclosed in a closed-cycle cooler to maintain a temperature of 6.7 K in order to reduce the thermal background.
+At its most sensitive, MIRI is about 1000$\times$ more sensitive than comparable instrumentation on Spitzer. 
+Sub-instrument sensitivities are shown in Fig. \ref{fig:sensitivity}.
+While this will prove tremendously valuable for exoplanet science, it will also allow exploration of star formation, extra galactic astronomy and high-redshift observations. 
+These and further science cases are described in \parencite{MIRI1}. 
+ %MIRI intro
 
 \begin{table}[t]
-	\begin{tabular}{l}
+	\begin{footnotesize}
+	\centering
+	\begin{tabular}{l|lll}
 		\toprule
-		\textbf{Subsystem}\\
+		\textbf{Subsystem} & \textbf{$\lambda$ Range [$\mu$m]} & \textbf{Px Scale ["/px]} & $\Delta\lambda/\lambda$\\
 		\midrule
-		Imaging\\
-		4QPM Coronagraphic Imaging\\
-		Lyot Coronagraphic Imaging\\
-		Low Resolution Spectroscopy\\
-		Medium Resolution Spectroscopy\\
+		Imaging & 5-28 & 0.11 & 3.5-16.1\\
+		4QPM Coronagraphic Imaging & 10.65,11.4,15.5 & 0.11 & 14.1-17.2\\
+		Lyot Coronagraphic Imaging & 23 & 0.11 & 4.1\\
+		Low Resolution Spectroscopy & 5-12 & 0.11 & 100 @ 7.5$\mu$m\\
+		Medium Resolution Spectroscopy & 4.9-28.8 & 0.196-0.273 & 1550-3300 \\
 		\bottomrule
 	\end{tabular}
 	\caption{Summary of MIRI observing modes.}
 	\label{tab:mirimodes}
+	\end{footnotesize}
 \end{table}
-\parencite{Kendrew2015} % MIRI IV - LRS
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{mirisensitivities.png}
+	\caption{Sensitivities of MIRI sub-instruments for an SNR of 10, with a 10 000s integration \parencite{MIRI1}.}
+	\label{fig:sensitivities}
+\end{figure}
 \section{The Medium Resolution Spectrograph}\label{sec:mrs}
 The Medium Resolution Spectrograph (MRS) consists of four integrated field spectrographs projected onto two detectors, covering 4.8-28 micron with a spectral resolution varying from R=1700 to R=3500.
-
+Its FoV ranges from 4"$\times$4" to 7.7"$\times$7.7".
+While a full description of the MRS is given in \parencite{MIRI6}, in this section we will outline the optical design of the instrument.
 \begin{table}[t]
 	\begin{small}
 	\centering
 	\begin{tabular}{l|lc|cccc}
 		\toprule
-		\textbf{Channel} & \textbf{Sub-band} & \textbf{Band} & \textbf{Detector} & $\lambda$ \textbf{Range [$\mu$m]} & \textbf{FOV [as]} & $\lambda$/$\Delta\lambda$\\
+		\textbf{Channel} & \textbf{Sub-band} & \textbf{Band} & \textbf{Detector} & $\lambda$ \textbf{Range [$\mu$m]} & \textbf{FoV [as]} & $\lambda$/$\Delta\lambda$\\
 		\midrule
 		\multirow{3}{*}{1}  &Short & 1A & \multirow{3}{*}{SW}   & 4.83 - 5.82 & 3.46$\times$3.72 & 3500 \\
 							&Medium & 1B &						& 5.62 - 6.73 & 3.46$\times$3.72 & 3500 \\
@@ -77,12 +91,10 @@ The Medium Resolution Spectrograph (MRS) consists of four integrated field spect
 		\bottomrule
 	\end{tabular}
 	\end{small}
-
 	\caption{Properties of the MIRI MRS channels \parencite{MIRI6}.}
 	\label{tab:mrs}
 \end{table}
 
-\parencite{Wells2015} %MIRI VI MRS
 \subsection{Coordinates}
 There are three primary coordinate systems in use with JWST/MIRI-MRS, of which two will be relevant for this thesis, with the detector and local MRS coordinates described in Fig. \ref{fig:mrscoords} \parencite{Argyriou2020}.
 
@@ -106,16 +118,45 @@ The third coordinate frame is the global coordinate system of JWST itself, V1,V2
 	\caption{Detector images of a spatially and spectrally flat calibration source for the SW detector (left) and LW detector (right).}
 	\label{fig:flatfield}
 \end{figure}
-\subsection{Integrated Field Spectroscopy}
-\subsection{Optical Systems}
-Channels, bands, etc \cite{ref:Chen2019}
+\subsection{Integral Field Spectroscopy}
+As an integrated field spectrograph (IFS) consisting of 4 integrated field units (IFUs), the MRS provides both spatial and spectral information.
+This is accomplished by slicing the on sky image, and performing spectroscopy on each of the image slices. 
+Here we will step step through some of the key optical systems used to accomplish this, while a more detailed description of the optics is given in section 2 of \parencite{MIRI6}.
+
+A series of optics picks of a FoV from the telescope optics, and directs it to the IFU slicing mirrors, where the focal plane is re-imaged. 
+The image slicer consists of an array of thin mirrors at unique angles, in order to separate different spatial slices of the on-sky image.
+The across slice width is equal to the FWHM of the Airy pattern at the shortest wavelength of the given IFU.
+There are a total of 4 image slicers, one for each of the MRS channels.
+Each slice is then collimated, and directed to a diffraction grating. Each channel has 3 separate gratings, each covering approximately a third of the wavelength range of each channel. 
+Thus it requires 3 total exposures to cover the wavelength range of a channel.
+Channels one and two are each projected onto separate halves of a single detector, as are channels 3 and 4.
+As such, multiple wavelength ranges are imaged simultaneously, and it requires only 3 exposures in order to cover the entire MRS wavelength range. 
 \subsection{Detectors}
+MIRI uses a three arsenic-doped silicon (Si:As) impurity band conduction (IBC) detectors descended from those used in the Spitzer Space Telescope.
+Each detector uses a 1024$\times$1024 pixel format.
+One detector is used for the imaging and LRS modes, while the remaining two detectors are used in the MRS.
+The full technical details of the detectors are described in \parencite{MIRI7}.
+
+Si:As IBC detectors are ideal for mid-infrared measurements.
+Each detector is built onto a high resistivity transparent contact. 
+A 25-35 micron thick, heavily arsenic doped layer acts as the absorption layer, with an electric field maintained across the layer in order to transport the generated photoelectron.
+A transparent contact layer provides a connection to the detector electronics, where the signal is amplified and read out.
+A schematic of the layers in the detector is provided in the context of the fringing effect in Fig. \ref{fig:layers}.
+These detectors have a quantum efficiency that is wavelength dependent, and provides a fundamental limitation on the sensitivity.
+Precise measurement of this photon-to-electron conversion efficiency is critical for photometrically calibrating observations. 
+The efficiencies are shown for each sub-band of the MRS detectors in Fig. \ref{fig:mirideteff}.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{MIRI_MRS2.png}
-	\caption{Average photon-to-electron conversion efficiencies for the MIRI MRS detectors}
+	\caption{Average photon-to-electron conversion efficiencies for the MIRI MRS detectors.}
 	\label{fig:mirideteff}
 \end{figure}
 \subsubsection{Readout Modes}
+The MRS has two primary readout modes, which can be selected for different observing strategies.
+\begin{itemize}
+	\item FAST - A 2.78 s integration with a single sample per pixel. Higher noise, but more suited for bright targets.
+	\item SLOW - a 24 s integration, with 9 samples per pixel. A lower noise mode, but can saturate on bright sources.
+\end{itemize}
+
 \section{Observations}
 \subsection{Dithering}
 \subsection{Exposure time calculations}
