@@ -2045,6 +2045,138 @@
       \verb :home/evert/Documents/Papers/Thesis/BennekeThesisAtmoRet.pdf:pdf
       \endverb
     \endentry
+    \entry{Benneke2019}{article}{}
+      \name{author}{16}{}{%
+        {{uniquename=2,uniquepart=given,hash=89ba3427b8bb5132fbb3c9dbf6bb4016}{%
+           family={Benneke},
+           familyi={B\bibinitperiod},
+           given={Bj{ö}rn},
+           giveni={B\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=78b7eada7e433919aadcef39ee8bfe14}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=68d5e854722f8e4ca68c5db754065f75}{%
+           family={Piaulet},
+           familyi={P\bibinitperiod},
+           given={Caroline},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=35ef7013c53969d33053b7df09e14ceb}{%
+           family={Knutson},
+           familyi={K\bibinitperiod},
+           given={Heather\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b95485f8cade9f99f299046f489ce6b3}{%
+           family={Lothringer},
+           familyi={L\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8a635c27bd2601f3d98f61bb745a0c48}{%
+           family={Morley},
+           familyi={M\bibinitperiod},
+           given={Caroline\bibnamedelima V.},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c61d5c969acb40a90e729b7a745e61f3}{%
+           family={Crossfield},
+           familyi={C\bibinitperiod},
+           given={Ian\bibnamedelimb J.\bibnamedelimi M.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=243ad7f7a51b82feff9fabcc9e27bc0d}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9f5c29040a58505b87fe903d9c1b5f24}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Thomas\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f99a675fdccfb93a9f46b73786d179ba}{%
+           family={Dressing},
+           familyi={D\bibinitperiod},
+           given={Courtney},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55e8995bada1c8f0133d696bbdd557ac}{%
+           family={Dragomir},
+           familyi={D\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9558f906ce525e2af7c7a6d317fbbfbd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7b956e5c275c55b19f0bbfd1ac5ec739}{%
+           family={McCullough},
+           familyi={M\bibinitperiod},
+           given={Peter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=63d8bbe04ce27a85d027788decbbdc05}{%
+           family={Kempton},
+           familyi={K\bibinitperiod},
+           given={Eliza\bibnamedelima M.-R.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fb5bc82121702b0fabdde38d2aabfd73}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=54a68173cc7ce71bdfa49f7144c837e9}{%
+           family={Fraine},
+           familyi={F\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6d34142166d9a71d3129282352223087}
+      \strng{fullhash}{79d0e77f11121ba4326f6f5b755f66b9}
+      \strng{bibnamehash}{6d34142166d9a71d3129282352223087}
+      \strng{authorbibnamehash}{6d34142166d9a71d3129282352223087}
+      \strng{authornamehash}{6d34142166d9a71d3129282352223087}
+      \strng{authorfullhash}{79d0e77f11121ba4326f6f5b755f66b9}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Results from the Kepler mission indicate that the occurrence rate of small planets ({\$}{<}3{\$} {\$}R{\_}\backslashoplus{\$}) in the habitable zone of nearby low-mass stars may be as high as 80{\%}. Despite this abundance, probing the conditions and atmospheric properties on any habitable-zone planet is extremely difficult and has remained elusive to date. Here, we report the detection of water vapor and the likely presence of liquid and icy water clouds in the atmosphere of the {\$}2.6{\$} {\$}R{\_}\backslashoplus{\$} habitable-zone planet K2-18b. The simultaneous detection of water vapor and clouds in the mid-atmosphere of K2-18b is particularly intriguing because K2-18b receives virtually the same amount of total insolation from its host star ({\$}1368{\_}{\{}-107{\}}{\^{}}{\{}+114{\}}{\$} W m{\$}{\^{}}{\{}-2{\}}{\$}) as the Earth receives from the Sun (1361 W m{\$}{\^{}}{\{}-2{\}}{\$}), resulting in the right conditions for water vapor to condense and explain the detected clouds. In this study, we observed nine transits of K2-18b using HST/WFC3 in order to achieve the necessary sensitivity to detect the water vapor, and we supplement this data set with Spitzer and K2 observations to obtain a broader wavelength coverage. While the thick hydrogen-dominated envelope we detect on K2-18b means that the planet is not a true Earth analog, our observations demonstrate that low-mass habitable-zone planets with the right conditions for liquid water are accessible with state-of-the-art telescopes.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{2041-8213}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{{Water Vapor and Clouds on the Habitable-zone Sub-Neptune Exoplanet K2-18b}}
+      \field{volume}{887}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{L14}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/2041-8213/ab59dc
+      \endverb
+      \verb{eprint}
+      \verb 1909.04642
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Benneke{\_}2019{\_}ApJL{\_}887{\_}L14.pdf:pdf
+      \endverb
+    \endentry
     \entry{Biller2017}{article}{}
       \name{author}{1}{}{%
         {{uniquename=1,uniquepart=given,hash=ef17ed2f772648ef015f6c8a71965f21}{%
@@ -9683,6 +9815,139 @@
       \verb :home/evert/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kreidberg - 2018 - Exoplanet Atmosphere Measurements from Transmission Spectroscopy and Other Planet Star Combined Light Observations.pdf:pdf
       \endverb
     \endentry
+    \entry{Kreidberg2014}{article}{}
+      \name{author}{16}{}{%
+        {{uniquename=0,uniquepart=base,hash=e20a395ef49403df0444106e8ccc7b94}{%
+           family={Kreidberg},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a2d7e83ad843313b717cfff7510c7e9a}{%
+           family={Bean},
+           familyi={B\bibinitperiod},
+           given={Jacob\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cfcef6df5937d2372adae183b4e89939}{%
+           family={D{é}sert},
+           familyi={D\bibinitperiod},
+           given={Jean\bibnamedelima Michel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fb5bc82121702b0fabdde38d2aabfd73}{%
+           family={Fortney},
+           familyi={F\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=281fb1a0b91393432959282227cca97e}{%
+           family={Madhusudhan},
+           familyi={M\bibinitperiod},
+           given={Nikku},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=234864a6a23ca67082f40414fb1b1ab4}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima B.},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7d7efb983ac135ef2eb3eb9d4b31457c}{%
+           family={Showman},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c3d119b6b7e8e322ea37a6017cdb3555}{%
+           family={Charbonneau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7b956e5c275c55b19f0bbfd1ac5ec739}{%
+           family={McCullough},
+           familyi={M\bibinitperiod},
+           given={Peter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85533eec9f4b1ee168bba3d0a0607fb5}{%
+           family={Seager},
+           familyi={S\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd2544407a7c4e07bb0d126d5d0e46f4}{%
+           family={Burrows},
+           familyi={B\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b757136c8d39db814e489a9d98029f81}{%
+           family={Henry},
+           familyi={H\bibinitperiod},
+           given={Gregory\bibnamedelima W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1a5298178085deb8aa2376eb39481fa6}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=631821d750d352aa904bc0c233b69c40}{%
+           family={Kataria},
+           familyi={K\bibinitperiod},
+           given={Tiffany},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ae1c4948fc5b55ff5d11527cbb976ebc}{%
+           family={Homeier},
+           familyi={H\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b49b0701e774572863eed622cf5c548}
+      \strng{fullhash}{bf0236b372f3d1820087ff447bbed9ce}
+      \strng{bibnamehash}{1b49b0701e774572863eed622cf5c548}
+      \strng{authorbibnamehash}{1b49b0701e774572863eed622cf5c548}
+      \strng{authornamehash}{1b49b0701e774572863eed622cf5c548}
+      \strng{authorfullhash}{bf0236b372f3d1820087ff447bbed9ce}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The water abundance in a planetary atmosphere provides a key constraint on the planet's primordial origins because water ice is expected to play an important role in the core accretion model of planet formation. However, the water content of the solar system giant planets is not well known because water is sequestered in clouds deep in their atmospheres. By contrast, short-period exoplanets have such high temperatures that their atmospheres have water in the gas phase, making it possible to measure the water abundance for these objects. We present a precise determination of the water abundance in the atmosphere of the 2 M Jup short-period exoplanet WASP-43b based on thermal emission and transmission spectroscopy measurements obtained with the Hubble Space Telescope. We find the water content is consistent with the value expected in a solar composition gas at planetary temperatures (0.4-3.5 × solar at 1$\sigma$ confidence). The metallicity of WASP-43b's atmosphere suggested by this result extends the trend observed in the solar system of lower metal enrichment for higher planet masses.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{20418213}
+      \field{journaltitle}{Astrophysical Journal Letters}
+      \field{number}{2}
+      \field{title}{{A precise water abundance measurement for the hot jupiter WASP-43b}}
+      \field{volume}{793}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{2\bibrangedash 7}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1088/2041-8205/793/2/L27
+      \endverb
+      \verb{eprint}
+      \verb 1410.2255
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Kreidberg{\_}2014{\_}ApJL{\_}793{\_}L27.pdf:pdf
+      \endverb
+      \keyw{planets and satellites: atmospheres,planets and satellites: composition,planets and satellites: individual (WASP-43b)}
+    \endentry
     \entry{ref:mirical}{inproceedings}{}
       \name{author}{19}{}{%
         {{uniquename=0,uniquepart=base,hash=4258e67ce81ca0d12168fc7eabbfc562}{%
@@ -12042,9 +12307,6 @@
       \true{nocite}
       \field{pages}{426}
       \range{pages}{1}
-      \verb{file}
-      \verb :home/evert/Documents/Papers/Thesis/LUVOIR{\_}FinalReportAppendices{\_}2019-08-26.pdf:pdf
-      \endverb
     \endentry
     \entry{MacDonald2017}{article}{}
       \name{author}{2}{}{%
@@ -18933,6 +19195,81 @@
       \endverb
       \keyw{125723,9,92,binaries,binaries: close,brown dwarfs,close,individual,low-mass,stars,stars: individual (VHS J125601.92–125723.9),stars: low-mass,vhs j125601}
     \endentry
+    \entry{Taylor2020}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=7f04e257d2df6d6868f0e7c02ebc74b3}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c348892ebef35672742c1e88240af3be}{%
+           family={Parmentier},
+           familyi={P\bibinitperiod},
+           given={Vivien},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=18c8bb5106f0508431e0ce147c982ec7}{%
+           family={Irwin},
+           familyi={I\bibinitperiod},
+           given={Patrick\bibnamedelimb G.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=34e211acbe3aeedca6e334e94d98cc63}{%
+           family={Aigrain},
+           familyi={A\bibinitperiod},
+           given={Suzanne},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=31b33b419784b10616958bf2aa30a9fc}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Graham\bibnamedelimb K.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3c889caf07d28a75ff67de1be01bb7b2}{%
+           family={Krissansen-Totton},
+           familyi={K\bibinithyphendelim T\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59a1196eb1647a0ed29695f96ee50bbe}
+      \strng{fullhash}{13b36e929410c17bb60505b23f50afca}
+      \strng{bibnamehash}{59a1196eb1647a0ed29695f96ee50bbe}
+      \strng{authorbibnamehash}{59a1196eb1647a0ed29695f96ee50bbe}
+      \strng{authornamehash}{59a1196eb1647a0ed29695f96ee50bbe}
+      \strng{authorfullhash}{13b36e929410c17bb60505b23f50afca}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exoplanet emission spectra are often modelled assuming that the hemisphere observed is well represented by a horizontally homogenised atmosphere. However this approximation will likely fail for planets with a large temperature contrast in the James Webb Space Telescope (JWST) era, potentially leading to erroneous interpretations of spectra. We first develop an analytic formulation to quantify the signal-to-noise ratio and wavelength coverage necessary to disentangle temperature inhomogeneities from a hemispherically averaged spectrum. We find that for a given signal-to-noise ratio, observations at shorter wavelengths are better at detecting the presence of inhomogeneities. We then determine why the presence of an inhomogeneous thermal structure can lead to spurious molecular detections when assuming a fully homogenised planet in the retrieval process. Finally, we quantify more precisely the potential biases by modelling a suite of hot Jupiter spectra, varying the spatial contributions of a hot and a cold region, as would be observed by the different instruments of JWST/NIRSpec. We then retrieve the abundances and temperature profiles from the synthetic observations. We find that in most cases, assuming a homogeneous thermal structure when retrieving the atmospheric chemistry leads to biased results, and spurious molecular detection. Explicitly modelling the data using two profiles avoids these biases, and is statistically supported provided the wavelength coverage is wide enough, and crucially also spanning shorter wavelengths. For the high contrast used here, a single profile with a dilution factor performs as well as the two-profile case, with only one additional parameter compared to the 1-D approach.}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{accepted Monthly Notices of the Royal Astronomical Society}
+      \field{number}{February}
+      \field{title}{{Understanding and Mitigating Biases when Studying Inhomogeneous Emission Spectra with JWST}}
+      \field{volume}{in Press}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+      \verb{eprint}
+      \verb 2002.00773
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/jwstbiases.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2002.00773
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2002.00773
+      \endverb
+      \keyw{analytical,atmospheres,methods,planets and satellites,radiative transfer,spectroscopic,techniques}
+    \endentry
     \entry{Tennyson2017}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=abde27073a2ab1a81311c3289a4e28c5}{%
@@ -19341,6 +19678,81 @@
       \verb http://dx.doi.org/10.1088/2041-8205/804/1/L17
       \endverb
       \keyw{Brown dwarfs,Methods: numerical,Methods: observational}
+    \endentry
+    \entry{Tsiaras2019}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=3ca2e0a68969ad6dd9cc67471a367692}{%
+           family={Tsiaras},
+           familyi={T\bibinitperiod},
+           given={Angelos},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e7fe6c54e96913d57d9bd4f39b096f2}{%
+           family={Waldmann},
+           familyi={W\bibinitperiod},
+           given={Ingo\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fdb3678508e1cd3b309118965f7f6560}{%
+           family={Tinetti},
+           familyi={T\bibinitperiod},
+           given={Giovanna},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=abde27073a2ab1a81311c3289a4e28c5}{%
+           family={Tennyson},
+           familyi={T\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=84af27b736591fd9d7ce97d10b92ca71}{%
+           family={Yurchenko},
+           familyi={Y\bibinitperiod},
+           given={Sergey\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{5f61746fcad60a96d643f6c45377f005}
+      \strng{fullhash}{29a2eefb3d6b10f9bac1cb366ef5d6c8}
+      \strng{bibnamehash}{5f61746fcad60a96d643f6c45377f005}
+      \strng{authorbibnamehash}{5f61746fcad60a96d643f6c45377f005}
+      \strng{authornamehash}{5f61746fcad60a96d643f6c45377f005}
+      \strng{authorfullhash}{29a2eefb3d6b10f9bac1cb366ef5d6c8}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the past decade, observations from space and the ground have found water to be the most abundant molecular species, after hydrogen, in the atmospheres of hot, gaseous extrasolar planets1–5. Being the main molecular carrier of oxygen, water is a tracer of the origin and the evolution mechanisms of planets. For temperate, terrestrial planets, the presence of water is of great importance as an indicator of habitable conditions. Being small and relatively cold, these planets and their atmospheres are the most challenging to observe, and therefore no atmospheric spectral signatures have so far been detected6. Super-Earths—planets lighter than ten Earth masses—around later-type stars may provide our first opportunity to study spectroscopically the characteristics of such planets, as they are best suited for transit observations. Here, we report the detection of a spectroscopic signature of water in the atmosphere of K2-18 b—a planet of eight Earth masses in the habitable zone of an M dwarf7—with high statistical confidence (Atmospheric Detectability Index5 = 5.0, {\~{}}3.6$\sigma$ (refs. 8,9)). In addition, the derived mean molecular weight suggests an atmosphere still containing some hydrogen. The observations were recorded with the Hubble Space Telescope/Wide Field Camera 3 and analysed with our dedicated, publicly available, algorithms5,9. Although the suitability of M dwarfs to host habitable worlds is still under discussion10–13, K2-18 b offers an unprecedented opportunity to gain insight into the composition and climate of habitable-zone planets.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{23973366}
+      \field{journaltitle}{Nature Astronomy}
+      \field{number}{12}
+      \field{title}{{Water vapour in the atmosphere of the habitable-zone eight-Earth-mass planet K2-18 b}}
+      \field{volume}{3}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1086\bibrangedash 1091}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41550-019-0878-9
+      \endverb
+      \verb{eprint}
+      \verb 1909.05218
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/s41550-019-0878-9.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1038/s41550-019-0878-9
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1038/s41550-019-0878-9
+      \endverb
     \endentry
     \entry{Turrini2015}{article}{}
       \name{author}{3}{}{%
