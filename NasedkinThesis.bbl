@@ -13608,6 +13608,91 @@
       \endverb
       \keyw{atmospheres,methods,methods: numerical,opacity,planets and satellites:,numerical,opacity,planets and satellites,radiative transfer,scattering}
     \endentry
+    \entry{Malumuth2003}{article}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,uniquepart=base,hash=7f63799beda0f3062611bb0ef8aabf60}{%
+           family={Malumuth},
+           familyi={M\bibinitperiod},
+           given={Eliot\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89a5d5964b1a7802943232ac1c13b265}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2066d8311478031d087380c18f6933c7}{%
+           family={Gull},
+           familyi={G\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=12384e5c97adf11831b9e8e8152cab9f}{%
+           family={Woodgate},
+           familyi={W\bibinitperiod},
+           given={Bruce\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dbc42528f2a7277fe4534da781896054}{%
+           family={Bowers},
+           familyi={B\bibinitperiod},
+           given={Charles\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=898cfe8a5951c61500147aa001e7563b}{%
+           family={Kimble},
+           familyi={K\bibinitperiod},
+           given={Randy\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4d62f8dc3d1fbbc926b8ed4076b9aff1}{%
+           family={Lindler},
+           familyi={L\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ebc5eadabf3c657b83ffa85e1400f3a8}{%
+           family={Plait},
+           familyi={P\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=865659a9f0765fe4493491cfb13bb815}{%
+           family={Blouke},
+           familyi={B\bibinitperiod},
+           given={Morley},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{598ba002e2649572b5cdca32e3dd677a}
+      \strng{fullhash}{110af2da351fac96d3a015dd4b3570fa}
+      \strng{bibnamehash}{598ba002e2649572b5cdca32e3dd677a}
+      \strng{authorbibnamehash}{598ba002e2649572b5cdca32e3dd677a}
+      \strng{authornamehash}{598ba002e2649572b5cdca32e3dd677a}
+      \strng{authorfullhash}{110af2da351fac96d3a015dd4b3570fa}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0004-6280}
+      \field{journaltitle}{Publications of the Astronomical Society of the Pacific}
+      \field{number}{804}
+      \field{title}{{Removing the Fringes from Space Telescope Imaging Spectrograph Slitless Spectra}}
+      \field{volume}{115}
+      \field{year}{2003}
+      \true{nocite}
+      \field{pages}{218\bibrangedash 234}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1086/345913
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/Malumuth{\_}2003{\_}PASP{\_}115{\_}218.pdf:pdf
+      \endverb
+    \endentry
     \entry{Mamajek2014}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=ae39c900066fb211916059f63e022ff2}{%

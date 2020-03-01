@@ -300,6 +300,17 @@ While it is possible to add a background term to a spectrum using MIRISIM, we ch
 \end{table}
 \subsection{Atmospheric Retrieval Setup}
 \subsubsection{Prior choice}
+The choice of priors is a consistent challenge when using a Bayesian framework.
+When performing a free-retrieval, uninformative priors must be chosen to allow the data to drive the posterior distribution.
+This can lead to unphysical solutions or combinations of parameters.
+The alternative is to use physically motivated priors, at the risk of missing unexpected phenomena.
+
+We based our prior selection on the choices made in \parencite{Molliere2019}.
+We use an uninformative uniform distribution on the temperature parameters, as well as on the log of abundance, gravity and pressure parameters.
+Uniformly drawing from the log of the parameters allows for better coverage of the very large parameter space (from 10$^{-15}$ to $10^{0}$ in each of the fractional abundances).
+For the opacity parameters $\gamma,\delta$ and $\alpha$ we use a normal distribution centered around the expected value. 
+Trial runs showed that the posterior distributions for these parameters are not driven by the priors.
+Our prior choices and the ranges over which they cover are given in table \ref{tab:priors}.
 % Uniform in log space
 % Gaussian/normal for some
 % based on petitRadTrans paper
@@ -336,6 +347,7 @@ While it is possible to add a background term to a spectrum using MIRISIM, we ch
 % Number of parameters
 % Bayesian evidence
 \subsection{Fringing Comparison}
+PRELIMINARY PLOTS NOT FINAL
 \begin{figure}[h]
 	%\includegraphics[content...]{imagefile}
 	\caption{Posterior Distributions for XX for different fringe cases}
@@ -363,8 +375,8 @@ While it is possible to add a background term to a spectrum using MIRISIM, we ch
 
 \subsection{2M1207b}
 \begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Posterior Distributions for}
+	\includegraphics[width=\linewidth]{2M1207B_v2_fringing_corner}
+	\caption{Posterior Distributions for 2M1207b.}
 	\label{fig:post2M}
 \end{figure}
 \begin{figure}[h]
@@ -385,12 +397,13 @@ While it is possible to add a background term to a spectrum using MIRISIM, we ch
 	\label{fig:postWISE}
 \end{figure}
 \begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Pressure Temperature profile for}
+	\includegraphics[width=\linewidth]{WISE0855_ptsrc_onax_pt_env}
+	\caption{Pressure Temperature profile for WISE 0855.}
 	\label{fig:presWISE}
 \end{figure}
 \begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Best fit model for}
+	\includegraphics[width=\linewidth]{BestfitBrownDwarf_fringe}
+	\includegraphics[width=\linewidth]{BestfitWISE0855}
+	\caption{Best fit model for WISE0855}
 	\label{fig:bestfitWISE}
 \end{figure}

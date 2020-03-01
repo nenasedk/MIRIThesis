@@ -2159,12 +2159,13 @@
     <bcf:citekey order="131">Lahuis2003</bcf:citekey>
     <bcf:citekey order="132">Lahuis2003</bcf:citekey>
     <bcf:citekey order="133">Malumuth2003</bcf:citekey>
-    <bcf:citekey order="134">Argryiou2020</bcf:citekey>
+    <bcf:citekey order="134">Argyriou2020</bcf:citekey>
     <bcf:citekey order="135">Lahuis2018</bcf:citekey>
     <bcf:citekey order="136">MIRI7</bcf:citekey>
     <bcf:citekey order="137">MIRI7</bcf:citekey>
-    <bcf:citekey order="138">VanderPlas2018</bcf:citekey>
-    <bcf:citekey order="139">Lahuis2018</bcf:citekey>
+    <bcf:citekey order="138">Lahuis2003</bcf:citekey>
+    <bcf:citekey order="138">Lahuis2018</bcf:citekey>
+    <bcf:citekey order="139">Argyriou2018a</bcf:citekey>
     <bcf:citekey order="140">ref:mirisimdocs</bcf:citekey>
     <bcf:citekey order="141">ref:mirisimdocs</bcf:citekey>
     <bcf:citekey order="142">Cossou2018</bcf:citekey>
@@ -2172,13 +2173,15 @@
     <bcf:citekey order="144">Argyriou2020</bcf:citekey>
     <bcf:citekey order="145">Bushouse2015</bcf:citekey>
     <bcf:citekey order="146">ref:mirical</bcf:citekey>
-    <bcf:citekey order="147">Carnall2017</bcf:citekey>
-    <bcf:citekey order="148">Snellen2014</bcf:citekey>
-    <bcf:citekey order="149">Simkin1974</bcf:citekey>
-    <bcf:citekey order="150">Tonry1979</bcf:citekey>
-    <bcf:citekey order="151">Petermann2019</bcf:citekey>
-    <bcf:citekey order="152">Bodis2007</bcf:citekey>
-    <bcf:citekey order="154">Molliere2019</bcf:citekey>
+    <bcf:citekey order="147">Snellen2014</bcf:citekey>
+    <bcf:citekey order="148">Simkin1974</bcf:citekey>
+    <bcf:citekey order="149">Tonry1979</bcf:citekey>
+    <bcf:citekey order="150">Petermann2019</bcf:citekey>
+    <bcf:citekey order="151">Bodis2007</bcf:citekey>
+    <bcf:citekey order="153">Molliere2019</bcf:citekey>
+    <bcf:citekey order="154">Carnall2017</bcf:citekey>
+    <bcf:citekey order="155">Hoeijmakers2018</bcf:citekey>
+    <bcf:citekey order="155">Haffert2019</bcf:citekey>
     <bcf:citekey order="156">Madhusudhan2018</bcf:citekey>
     <bcf:citekey order="157">Benneke2012</bcf:citekey>
     <bcf:citekey order="157">Benneke2013</bcf:citekey>
@@ -2261,8 +2264,9 @@
     <bcf:citekey order="216">Miles2018</bcf:citekey>
     <bcf:citekey order="217">Molliere2019</bcf:citekey>
     <bcf:citekey order="218">Miles2018</bcf:citekey>
-    <bcf:citekey order="219">Schlawin2018</bcf:citekey>
-    <bcf:citekey order="220">Taylor2020</bcf:citekey>
+    <bcf:citekey order="219">Molliere2019</bcf:citekey>
+    <bcf:citekey order="220">Schlawin2018</bcf:citekey>
+    <bcf:citekey order="221">Taylor2020</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
