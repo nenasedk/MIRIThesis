@@ -8,23 +8,25 @@
 Since the first detection of a planet around a sun-like star \parencite{Mayor1995} the field of exoplanets has evolved rapidly.
 Thousands of companions have been identified using the radial velocity and transit detection methods, and a handful have been imaged directly using both ground and space based observatories.
 In the last decade, many advances have been made that allow us to begin to characterize the properties of a few of these planets using spectroscopy.
-With the launch of the James Webb Space Telescope (JWST) in 2021, and the dawn of the era of extremely large telescopes, we will be able to peer deeper into these planets and further constrain atmospheric or geological properties, allowing us to answer questions about their formation history, climate, and even the prospects for habitability and life.
+With the launch of the James Webb Space Telescope (JWST) in 2021, and the dawn of the era of extremely large telescopes, we will be able to peer deeper into these planets and further constrain atmospheric or geological properties. 
+This will allow us to answer questions about their formation history, climate, and in the long term even the prospects for habitability and life.
 
 JWST will operate in near to mid infrared wavelengths, which will provide a new window into studying the atmospheres of exoplanets and brown dwarfs. 
 The Mid Infrared Instrument (MIRI) will provide unprecedented spectral resolution in the mid infrared, allowing for the measurement of composition, pressure and temperature. 
 Novel instrumentation does not come without challenges. 
 Optical and instrumental effects will constrain the ability to which we can measure spectral features, which will ultimately limit the science that can be accomplished.
 
-In this thesis, we will measure the impact of thin-film fringing in the layers of the detectors in the MIRI Medium-Resolution Spectrometer on measurements of atmospheric parameters of brown dwarfs and exoplanets.
-This will provide a baseline for determining the level of correction necessary to minimize the impact of fringing, as well as providing a first look into the ability of the MRS to characterize atmospheres.
+In this thesis, we will measure the impact of thin-film fringing in the layers of the detectors in the MIRI Medium-Resolution Spectrometer (MRS) on measurements of atmospheric parameters of brown dwarfs and exoplanets.
+This will provide a baseline for determining the level of correction necessary to minimize the impact of fringing, as well as providing a first look into the ability of the MRS to characterize atmospheres through mid-infrared spectroscopic observations, and using modern atmospheric retrieval techniques.
 
 \section{Exoplanets}
 The last quarter century of observations has revealed the diversity of exoplanets and extra-solar systems.
 Both the architecture and individual planetary characteristics vary greatly when compared to each other, as well as to our own solar system.
-From the hot Jupiters initially found by Mayor and Queloz \parencite{Mayor1995} to the thousands of planets discovered by the Kepler mission, the variety in exoplanets has raised questions about their formation and development, as well as their present day structure, climate, and even prospects for life.
+From the hot Jupiters initially found by Mayor and Queloz \parencite{Mayor1995} to the thousands of planets discovered by the Kepler mission, the variety in exoplanets has raised questions about their formation and development, as well as their present day structure and climate.
 Improvements to observational techniques have allowed us to improve our understanding of these planets.
 Secondary eclipse and transmission spectroscopy has opened the door to the study of planets in close orbits to their host stars, while emission spectroscopy of young planet has allowed for constraints on models of planet formation.
-Over the next decades, new instruments will be developed that improve sensitivity, allowing us to study smaller, colder and fainter planets: with the ultimate goal of studying atmospheric and surface features of an earth-like planet.
+Over the next decades new instruments will be developed that improve sensitivity, allowing us to study smaller, colder and fainter planets.
+This will address one of the ultimate goals of exoplanet science in studying the atmospheric and surface features of an earth-like planet in the hopes of detecting unambiguous biosignatures.
 
 Of particular interest are observable features that allow us to measure physical properties of exoplanets.
 The radial velocity (RV) method provides a measure of the planet mass, while a transit can constrain the radius.
@@ -43,7 +45,7 @@ This has its drawbacks: we are so far only able to image young planets that have
  
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.75\linewidth]{familyphoto.png}
+	\includegraphics[width=0.9\linewidth]{familyphoto.png}
 	\caption{A family portrait of some of the directly imaged exoplanets.
 		In order:
 	\parencite{Marois2010}, \parencite{Rameau2013}, \parencite{Stolker2020}, \parencite{Sallum2015}, \parencite{Keppler2018}, \parencite{Currie2012}, \parencite{Macintosh2015}, \parencite{Chauvin2004}, \parencite{Quanz2010}.}
@@ -53,7 +55,7 @@ This has its drawbacks: we are so far only able to image young planets that have
 Direct imaging can make use of both ground and space based observatories. 
 However, the high spatial resolution required drives the need for a large primary mirror, limiting the possibilities of space-based telescopes. 
 On the other hand, atmospheric turbulence necessitates the use of an adaptive optics equipped facility to observe from the ground. 
-Atmospheric absorption due to telluric lines (absorption lines of Earth's atmosphere) also restrict infrared observations to narrow bands.
+Atmospheric absorption due to telluric lines (absorption lines of Earth's atmosphere) along with the strong background due to thermal emission from the ground and atmosphere also restrict infrared observations to narrow bands.
 
 In addition to the requiring high spatial resolution, it is also challenging to separate the light emitted by the planet from that of the star.
 Imaging techniques such as Angular Differential Imaging (ADI) \parencite{Marois2006} and Reference Differential Imaging (RDI) \parencite{Lafreniere2009,Soummer2011} provide methods for reducing the stellar point-spread-function (PSF). %\parencite{Macintosh2006} %ADI
@@ -83,16 +85,16 @@ The current climate of exoplanets is also of interest. This requires inferences 
  %Not 2019 - summary of JWST science and instruments
  %Exoplanet characterization with JWST MIRI white paper
 \subsubsection{VHS-1256 b}
-Originally discovered in 2015 \parencite{Gauza2015} as part of the VISTA Hemisphere Survey, VHS-1256b is a late-L dwarf in a 102 AU orbit around an M dwarf.
-\parencite{Gauza2015} present astrometric, photometric and spectroscopic data on the planet, finding an age of 150-300 Myr from a moving group association, a luminosity log($L_{bol}/L_{\odot}$) of -5.05$\pm0.22$ and infer a mass of 11.2$^{+9.2}_{-1.8}$ M$_{J}$. 
-The effective temperature is found to be 880$^{+140}_{-110}$ K from evolutionary models. 
-This is substantially colder than field dwarfs of a similar spectral type (typically 1400K), and so it is proposed that a thick Fe and Mg-Si cloud layer acts to reduce the effective temperature.
-Similar findings are presented by \parencite{Rich2016} using Subaru/IRCS.
 \begin{wrapfigure}{r}{5.5cm}
 	\centering
 	\includegraphics[width=5.2cm]{vhs1256b.jpg}
 	\caption{VHS-1256b as observed with Subaru/IRCS in the L'-band \parencite{Rich2016}, reduced using the LOCI algorithm \parencite{Galicher2011}.}
 \end{wrapfigure}
+Originally discovered in 2015 \parencite{Gauza2015} as part of the VISTA Hemisphere Survey, VHS-1256b is a late-L dwarf in a 102 AU orbit around an M dwarf.
+\parencite{Gauza2015} present astrometric, photometric and spectroscopic data on the planet, finding an age of 150-300 Myr from a moving group association, a luminosity log($L_{bol}/L_{\odot}$) of -5.05$\pm0.22$ and infer a mass of 11.2$^{+9.2}_{-1.8}$ M$_{J}$. 
+The effective temperature is found to be 880$^{+140}_{-110}$ K from evolutionary models. 
+This is substantially colder than field dwarfs of a similar spectral type (typically 1400K), and so it is proposed that a thick Fe and Mg-Si cloud layer acts to reduce the effective temperature.
+Similar findings are presented by \parencite{Rich2016} using Subaru/IRCS.
 
 In \parencite{Miles2018}, methane is detected using KECK/NIRSPEC in the L-band. 
 The shallow depth of the feature indicates chemical disequilibrium in the photosphere, as the derived abundance departs from an equilibrium abundance by a factor of 10-100.
@@ -105,7 +107,7 @@ This will enable a more precise measurement of the abundance of methane and othe
 Using VLT/NACO, \parencite{Chauvin2004} discovered a low mass companion to the brown dwarf 2MASSWJ 1207334-393254 (2M1207) at a separation of 0.8", or 55 AU, shown bottom-center in Fig \ref{fig:family}. 
 From their H,K and L'-band photometric observations and NIR spectroscopic measurements, 2M1207b was found to have a spectral type of L5-L9.5, a mass of 5$\pm2$ M$_{J}$ and an effective temperature of 1250$\pm$200 K. Followup VLT/NACO observations from \parencite{Mohanty2007} found a higher effective temperature of 1600$\pm$100 K, and a higher mass of 8$\pm$2 M$_{J}$, pushing it closer to the deuterium burning limit. More recent observations have measured periodic signals due to rotation and variability, but failed to constrain the rotation rate due to pointing variance \parencite{Zhou2019}. 
 
-\parencite{Zhou2019} Also present simulated JWST/NIRCAM observations of 2M1207b. Access to medium resolution spectroscopy in the mid infrared will allow the characterization of cloud condensate properties. 
+\parencite{Zhou2019} also present simulated JWST/NIRCAM observations of 2M1207b. Access to medium resolution spectroscopy in the mid infrared will allow the characterization of cloud condensate properties. 
 The improvement in photometric precision by an order of magnitude will allow better measurement of the rotation rate and variability, and the increase in sensitivity will place lower limits on the possibility of further companions within the system.
 It will be observed as part of the JWST GTO program \parencite{Birkmann2019}.
 
@@ -141,7 +143,8 @@ It will be observed as part of the JWST GTO program \parencite{Birkmann2019}.
 				\multicolumn{9}{c}{\textbf{Nearby Brown Dwarfs}}\\
 				\midrule
 				WISE 0855   & $2.2\pm0.2$ & $3-10$ & \ldots & \ldots & $10^{3}-10^{4}$ & $-10.5$ &  $225-260$ & \parencite{Luhman2014,Tinney2014}\\
-				Luhman 16B   & $1.998\pm0.0004$ & $28.6\pm0.3$ & \ldots & \ldots & $600-800$ & $-4.68$&  $1201$ & \parencite{Sahlmann2015,Garcia2017}\\
+				Luhman 16B   & $1.998\pm0.0004$ & $28.6\pm0.3$ & \ldots & \ldots & $600-800$ & $-4.68$&  $1201$ & \parencite{Sahlmann2015};\\
+																								&&&&&&&&\parencite{Garcia2017}\\
 				\bottomrule
 			\end{tabular}
 		\end{small}
@@ -151,7 +154,8 @@ It will be observed as part of the JWST GTO program \parencite{Birkmann2019}.
 \end{landscape}
 \section{Brown Dwarfs}
 Brown dwarfs are the low mass result of a failed star formation process.
-On the low end of the mass scale, an object is considered a brown dwarf at >13M$_{J}$, which is the deuterium burning limit.
+On the low end of the mass scale, an object is considered a brown dwarf at >13M$_{J}$, which is the deuterium burning limit. 
+Recent observations of low mass (~1 M$_{J}$), free floating observations have led to challenges of this definition defining the boundaries between planets and brown dwarfs.
 By 75M$_{J}$, the object is heavy enough to sustain hydrogen fusion and the object is considered a star.
 However, there have recently been observations even lower mass brown dwarfs, down to several Jupiter masses, raising questions of formation processes \parencite{Luhman2014}.
 It is generally thought that brown dwarfs form during the gravitational collapse of a molecular cloud, while exoplanets form through a core accretion process in a circumstellar disk.
@@ -191,20 +195,23 @@ Both T- and L-dwarfs are highly variable due to complex atmospheric dynamics ran
 Y-type dwarfs are ultra-cool objects first discovered in \parencite{Cushing2011}. 
 With such cold temperatures, they contain deeper water and methane absorption features than present in T-dwarfs, and likely have ammonia present as well.
 Atmospheric models suggest typical temperatures between 300-500 K, which places them as the coldest detected and spectroscopically measured brown dwarfs to date \parencite{Cushing2011}.
+Due to the very low temperatures of Y-dwarfs, mid-infrared observations are ideal for detection and characterization.
+Most spectral features of interest (CH$_{4}$,NH$_{3}$,etc) will be present at longer wavelengths, while the mid infrared will also present opportunities for measurements of cloud properties and composition.
 
+\clearpage
 \subsubsection{WISE 0855-0714}
-WISE-0855 is the coldest known brown dwarf at 250 K, with an inferred mass of 5 M$_{J}$ \parencite{Luhman2014}, and a Y2-4 spectral type \parencite{Leggett2015}.
-Although faint, with a J-band magnitude of 25, its proximity to the sun makes allows for its spectral characterization.
-Present measurements indicate the presence of ammonia \parencite{Leggett2015} and water clouds \parencite{Morley2014,Faherty2018} in its atmosphere.
-
 \begin{wrapfigure}{r}{5.5cm}
 	\centering
 	\vspace{-1em}
 	\includegraphics[width=5.2cm]{wise0855im.jpg}
 	\caption{W2, epoch 1 image of WISE0855 on top of a known background clump. The green circle represents the location of WISE0855, the yellow is the position of the background source \parencite{Wright2014}. }
 	\label{fig:wise0855im}
-	\vspace{-6em}
-\end{wrapfigure} 
+	%\vspace{-4em}
+\end{wrapfigure}
+WISE-0855 is the coldest known brown dwarf at 250 K, with an inferred mass of 5 M$_{J}$ \parencite{Luhman2014}, and a Y2-4 spectral type \parencite{Leggett2015}.
+Although faint, with a J-band magnitude of 25, its proximity to the sun makes allows for its spectral characterization.
+Present measurements indicate the presence of ammonia \parencite{Leggett2015} and water clouds \parencite{Morley2014,Faherty2018} in its atmosphere.
+
 WISE 0855, along with other Y-dwarfs will be the subject of JWST investigation \parencite{Oliveira2015,Oliveira2019}.
 Its low mass and cold temperature make it the closest analog to solar system objects, especially to Jupiter. 
 Further observations will allow for tighter constraints on atmospheric composition and cloud properties, as well as insight into whether such objects are the result of a star-like formation process or are an ejected, free floating planet \parencite{Beichman2014}.
@@ -263,7 +270,7 @@ While not yet accomplished for an exoplanet, it may be possible in the near futu
 \end{figure}\\
 
 As most older planets will emit primarily in the thermal infrared, JWST/MIRI will provide unprecedented capabilities at imaging and characterizing these systems.
-\parencite{Danielski2018} shows that the MIRI LRS will allow for the detection of ammonia in the coldest targets, as well as characterize the abundances of other molecules such as CH$_{4}$, H$_{2}$O, CO$_{2}$ and PH$_{3}$.
+\parencite{Danielski2018} shows that the MIRI Low Resolution Spectrometer will allow for the detection of ammonia in the coldest targets, as well as characterize the abundances of other molecules such as CH$_{4}$, H$_{2}$O, CO$_{2}$ and PH$_{3}$.
 Many direct imaging observations of exoplanets have been proposed as part of the JWST GTO and ERS programs. In a white paper, \parencite{Beichman2019} discuss how JWST will provide new insight into exoplanet atmospheres using direct emission imaging and spectroscopy, while \parencite{Line2019} examines the possibility of characterizing terrestrial planets using thermal emission spectroscopy. 
 
 \subsection{JWST Studies}
@@ -274,7 +281,8 @@ The Early Release Science program is an initiative designed to help scientists d
 Thus the ERS provides an extensive catalog of public data immediately upon observation, and will take place within the first 5 months of JWST science operations.
 Both a transiting program \parencite{Bean2018} and a direct imaging program \parencite{Hinkley2019} have been approved.
 The direct imaging proposal has 52 hours observing time in order to take data using the full range of JWST instrumentation and observing modes.
-The goal is to image a representative sample of known directly imaged planets, including VHS-1256b, in order to develop the tools and techniques necessary to push the limits of the instrumentation.
+The goal is to image a representative sample of known directly imaged planets, in order to develop the tools and techniques necessary to push the limits of the instrumentation.
+For a subset of the imaged planets, including VHS-1256b, spectroscopic data covering the full wavelength range of JWST will be taken using a combination of the available instruments.
 
 \subsubsection{GTO Programs}
 In addition to the ERS program, the Guaranteed Time Observations (GTO) program is designed to provide scientists who helped in the development of JWST hardware and software with a set amount of observing time. 
@@ -303,7 +311,7 @@ With the degraded spectra from the simulated data, we measure the impact of frin
 This in turn motivates Chapter 4, where the species identified using molecular mapping can justify the inclusion or exclusion of particular species in an atmospheric retrieval.
 
 In Chapter 4 we explore atmospheric retrievals with the MIRI MRS.
-We outline our procedure for performing a retrieval using the petitRADTRANS radiative transfer code and Multinest as an implementation of the nested sampling strategy for parameter space exploration
+We outline our procedure for performing a retrieval using the petitRADTRANS radiative transfer code and Multinest as an implementation of the nested sampling strategy for parameter space exploration.
 We measure the impact of fringing on parameter estimation, and also investigate how observing parameters will impact retrievals, discussing the advantages and challenges of studying atmospheres in the mid infrared.
 
 Finally we summarize and discuss our findings and future investigations in the final chapter.

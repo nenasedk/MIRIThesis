@@ -6,8 +6,9 @@ As these models cover a very large parameter space (>10 parameters, each coverin
 \parencite{Benneke2012,Benneke2013}.
 Currently, atmospheric retrieval methods have been used for both exoplanets and brown dwarfs to identify water, methane, CO, CO$_{2}$ and other species \parencite{Konopacky2013,Barman2015}, along with clouds being a universal feature \parencite{Line2017,Schlawin2018,Morley2018}
 
-This chapter will outline the process of an atmospheric retrieval from modeling to marginalization of posteriors, and will examine the impact that the instrumental effects described in chapter \ref{ch:fringe} have on the retrieved parameters. 
-Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects, following similar studies from \parencite{Batalha2018} and \parencite{Feng2018}.
+This chapter will outline the process of an atmospheric retrieval from modeling to marginalization of posteriors, and will examine the impact that the instrumental effects described in Chapter \ref{ch:fringe} have on the retrieved parameters. 
+Additionally, this will provide an example of how the MIRI MRS can be used to explore exoplanet and brown dwarf atmospheres, and what observational parameters should be considered when studying these objects, following similar studies from \parencite{Batalha2018,Schlawin2018} for NIRSpec and LRS observations and \parencite{Feng2018} for future reflected light missions.
+
 
  %atmo ret,basically everything nested samp, 
 %\cite{Fisher2019} %Cross corr machine learning hoeijmakers
@@ -37,7 +38,7 @@ Additionally, this will provide an example of how the MIRI MRS can be used to ex
 Atmospheric modeling is the task of creating an spectra based on the physical properties of the atmosphere.
 This is a broad task that can range from a 3D Global Circulation Model (GCM) which accounts for self-consistent atmospheric chemistry \parencite{Chen2019} to a 1D model based around an empirical temperature-pressure profile \parencite{Molliere2019}.
 The choice of model depends largely on the requirements for accuracy and computational cost. 
-Considering the potentially millions of possible atmospheres that must be examined in a retrieval problem, whatever model is used must be computationally efficient above all else.
+Considering the potentially millions of possible atmospheres that must be examined in a retrieval problem, whatever model is used must be computationally efficient while still maintaining a close approximation of reality.
 
 %\cite{Zhang2019} %PLATON Transmission spectra generation
 \section{petitRADTRANS}
@@ -66,8 +67,8 @@ PetitRADTRANS can compute both emission and transmission spectra, with an output
 	\label{tab:petitradparams}
 \end{table}
 
-Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \parencite{Goyal2018}, Planetary Spectrum Generator \parencite{Villanueva2018}, HELIOS \parencite{Malik2017,Malik2019} and others.
-Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \parencite{Rothman1973,Rothman2010,Gordon2017}, ExoMol/ExoCross \parencite{Tennyson2016,Tennyson2016a,Yurchenko2018} and others. 
+Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \parencite{Goyal2019}, Planetary Spectrum Generator \parencite{Villanueva2018}, HELIOS \parencite{Malik2017,Malik2019} and others.
+Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \parencite{Rothman1981,Rothman2010,Gordon2017}, ExoMol/ExoCross \parencite{Tennyson2016,Tennyson2017,Yurchenko2018} and others. 
 %\cite{Behmard2019}%Cool star spectroscopy, hires
 
 \subsection{Radiative Transfer}
@@ -78,7 +79,24 @@ I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(
 \end{equation}
 $N_{L}$ is the number of layers in the atmosphere, and $\mathcal{T}$ is the transmission from a given layer to the top of the atmosphere. All quantities are averaged per wavelength bin in c-k mode, while they are evaluated at each wavelength point in line-by-line mode.
 
-\parencite{Guillot2010} %Guillot model, radiative eq irrad planets
+In order to compute the temperature structure of the atmosphere, a modified Guillot model \parencite{Guillot2010} was used, as used in \parencite{Molliere2017,Molliere2019}.
+The temperature structure is defined as 
+\begin{equation}
+T(P) = \left<T_{Guillot}(P)\left(1-\frac{\alpha}{1+P/P_{trans}}\right)\right>_{P}.
+\end{equation}
+As denoted by $\left<\right>_{P}$, this profile is boxcar-smoothed over log(P), with bin widths of 1.25 dex \parencite{Molliere2019}. 
+The modified Guillot profile is defined as
+\begin{align}
+T_{Guillot}(P) &= \frac{3T^{4}_{int}}{4}\left(\frac{2}{3} + \delta P\right)\\
+&+\frac{3T^{4}_{eq}}{4}\left[\frac{2}{3} + \frac{1}{\gamma\sqrt{3}} + \left(\frac{\gamma}{\sqrt{3}} - \frac{1}{\gamma\sqrt{3}}\right)e^{-\gamma\delta\sqrt{3}P}\right]
+\end{align}
+with the second term accounting for irradiation of the upper atmosphere.
+The opacity parameters $\delta=\kappa_{IR}/g$ and  $\gamma=\kappa_{V}/\kappa_{IR}$ are defined such that the optical depth $\tau=\delta\cdot P$. 
+$T_{int}$ is the internal temperature of the planet, and is equivalent to the effective temperature of the planet, that is the temperature of a blackbody with the same luminosity as itself.
+$T_{eq}$ is the equilibrium temperature of the planet, based on the temperature of the host star and separation of the planet. 
+For an isolated, free floating object this temperature goes to 0.
+The remaining free parameters $\alpha$, $P_{trans}$ simply modify the shape of the temperature structure according to the pressure.
+
 \subsection{Opacity Sources}
 To compute the emission spectra of an atmosphere, petitRADTRANS accounts for various opacity contributions including absorption and emission lines, collisionally induced absorption, cloud opacity and scattering and Rayleigh scattering cross sections. These sources are described in detail in \parencite{Molliere2019}, summarized in tables 2 and 3. For this work we consider only the case of a cloud-free atmosphere due to the complexity of realistic cloud modeling.
 \subsubsection{Line-by-line}
@@ -91,11 +109,20 @@ While petitRADTRANS implements a c-k method with a spectral resolution of 1000, 
 However, the principle utility of the c-k method is in the dramatic reduction in computational cost for computing a spectra such that petitRADTRANS can be used as the foundation for an atmospheric retrieval code requiring hundreds of thousands or millions of models to be generated. 
 \parencite{Molliere2019} discusses the variations between the results of the line-by-line method and the c-k method, finding discrepancy of at most 6\%.
 Typical variation is much lower, as seen in Fig. 2 of \parencite{Molliere2019}.
+
 \subsubsection{Clouds}
-\cite{Line2016} %Clouds in transits
-\cite{Faherty2018} % Water clouds in cold BDs
-\cite{Morley2014} %Water clouds in Y dwarfs and exoplanets
-\cite{Lavie2017} %Helios
+While clouds are a seemingly universal feature in exoplanets and brown dwarfs \parencite{Morley2014,Line2016,Faherty2018}, they remain a difficult problem for retrieval studies. 
+Clouds form when a species condenses out of the gas phase, typically around a small nucleus.
+This creates a layer of particles at a reasonably well defined altitude in the atmosphere, and prevents the observation of deeper atmospheric layers.
+While a simple model of clouds may be a `gray' cloud deck that acts uniformly across wavelength, a more complex model will account for differing IR and visible opacities, as well as particle scattering and other complex microphysics.
+From experience on Earth and within the solar system, cloud systems are highly complex and variable, with shifting cloud coverage and structure.
+The mid infrared in particular may allow for an observational window to probe deeper atmospheric layers and begin to characterize cloud composition.
+In current retrieval codes, clouds are generally designed from a simple model based on a given particle distribution \parencite{Ackerman2001}, or simply as a gray cloud deck at a specified pressure level.
+Both of these models are implemented in petitRADTRANS.
+These models do not agree well with microphysical models, and lead to substantial difficulties in the interpretation of retrieved spectra.
+This remains an open problem for atmospheric retrievals, and we do not attempt to examine cloud effects in this work, instead choosing the simple, though unrealistic case of a clear atmosphere. 
+\parencite{Schlawin2018} examines potential impacts of clouds on atmospheric retrievals with the MIRI LRS.
+
 \section{Bayesian Inference}
 An atmospheric retrieval is the process of extracting information about physical parameters from a measured spectrum. 
 In general this procedure involves comparing the data to a series of template spectra with known parameters and identifying the best fit model.
@@ -128,6 +155,7 @@ The Markov Chain Monte Carlo method and the Nested Sampling method described bel
 \cite{MacKay2003} %MCMC
 \subsection{Nested Sampling}
 Nested sampling attempts to address several of the shortcomings of MCMC methods while simultaneously improving computational efficiency \parencite{Skilling2004}.
+A particular strength of the method is in the sampling of highly multimodal distributions, removing the problem where an MCMC approach may get stuck in a single local maximum.
 MCMC methods generate samples `proportional to' the true posterior distributions, which lead to difficulties in computing the evidence $\mathcal{Z}$ \parencite{Speagle2020}. 
 In contrast, nested sampling puts the evidence first and provides estimates of the posterior distributions from the importance weights of the final set of samples. First described in \parencite{Skilling2004}, nested sampling has been adopted as the sampling algorithm of choice within the astrophysics community \parencite{Feroz2009,Buchner2014,Feroz2019,Speagle2020}.
 
@@ -179,7 +207,7 @@ Retrievals were typically performed using 500 or 1000 live points, with the conv
 set to 0.3 for parameter estimation and 0.8 for model comparison, as suggested in the pyMultinest documentation.
 
 \section{Observations}\label{sec:obs}
-The targets used in our retrieval study ar guided by the JWST ERS and GTO programs. This allows us to use well-defined observing strategies for each object, and present a clear case for the science that can be accomplished with these observations.
+The targets used in our retrieval study are guided by the JWST ERS and GTO programs. This allows us to use well-defined observing strategies for each object, and present a clear case for the science that can be accomplished with these observations.
 While all three were discussed in Chapter 1, we will now outline the proposed observing strategies and science cases for each target.
 \subsubsection{VHS-1256B}
 VHS-1256b is a young (0.2Gyr), high mass (11.2M$_{Jup}$) planet at a distance of 12.7pc \parencite{Bowler2016}. 
@@ -255,7 +283,7 @@ Here we will outline how we generated our input spectra, and the procedure we us
 We used petitRADTRANS in high resolution, line-by-line mode in order to calculate a spectrum that can be passed as input to MIRISIM.
 The parameters chosen for each target are given in table \ref{tab:inputparams}. 
 All spectra cover a range of 4.8-18.5 micron in order to fully cover channels 1 through 3 of the MRS. 
-Channel 4 is ignored due to photometric calibration issues.
+Channel 4 is ignored due to photometric calibration issues and lack of sensitivity to faint sources.
 
 The spectra generated by petitRADTRANS are in terms of the emitted flux and are in units of erg cm$^{-2}$ m$^{-2}$ s$^{-1}$ $Hz^{-1}$. 
 MIRISIM requires the flux incident on the detector in units of $\mu$Jy, so we convert the as 
@@ -309,6 +337,7 @@ We based our prior selection on the choices made in \parencite{Molliere2019}.
 We use an uninformative uniform distribution on the temperature parameters, as well as on the log of abundance, gravity and pressure parameters.
 Uniformly drawing from the log of the parameters allows for better coverage of the very large parameter space (from 10$^{-15}$ to $10^{0}$ in each of the fractional abundances).
 For the opacity parameters $\gamma,\delta$ and $\alpha$ we use a normal distribution centered around the expected value. 
+
 Trial runs showed that the posterior distributions for these parameters are not driven by the priors.
 Our prior choices and the ranges over which they cover are given in table \ref{tab:priors}.
 % Uniform in log space
@@ -336,8 +365,6 @@ Our prior choices and the ranges over which they cover are given in table \ref{t
 \end{table}
 
 \section{Results}
-
-\cite{Schlawin2018} %MIRI Clear + cloudy lrs
 \subsection{Model Selection}
 \begin{figure}[h]
 	%\includegraphics[content...]{imagefile}

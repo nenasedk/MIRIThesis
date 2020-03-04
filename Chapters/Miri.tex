@@ -16,7 +16,7 @@ The lightweight beryllium mirrors are coated in gold to maximize reflectivity ou
 Of key interest to exoplanet science is the both the sensitivity and spatial resolution of the instrument. 
 With its 6.5 m primary, JWST will have a spatial resolution from 0.01" at 0.6 micron to 0.92" at 29 micron.
 The increase in sensitivity is due in part to the larger collecting area, but also to advances in detector technology since the previous generation of infrared observatories.
-For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \parencite{MIRI9}.
+For example, the MIRI instrument will have a minimum detectable flux of 0.13 $\mu$Jy at 5.6 micron and a 10 000 second integration, or roughly a factor of 1000 better than what was possible with the Spitzer Space Telescope \parencite{MIRI9}.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{assembled.jpg}
 	\caption{The James Webb Space Telescope during integration of the telescope into the Spacecraft Element \parencite{assembled}. }
@@ -33,9 +33,13 @@ The final instrument, MIRI, is the subject of this thesis.
 The Mid-Infrared Instrument (MIRI) provides imaging, fixed slit and integrated field spectroscopy between 4.8 and 28 micron \parencite{MIRI2}.
 These sub-instruments are enclosed in a closed-cycle cooler to maintain a temperature of 6.7 K in order to reduce the thermal background.
 At its most sensitive, MIRI is about 1000$\times$ more sensitive than comparable instrumentation on Spitzer. 
-Sub-instrument sensitivities are shown in Fig. \ref{fig:sensitivity}.
+Sub-instrument sensitivities are shown in Fig. \ref{fig:sensitivities}.
 While this will prove tremendously valuable for exoplanet science, it will also allow exploration of star formation, extra galactic astronomy and high-redshift observations. 
 These and further science cases are described in \parencite{MIRI1}. 
+In its imaging mode, MIRI can operate with either a Lyot or 4-Quadrant-Phase-Mask coronagraph to reduce stellar glare, the MRS is not equipped with such an element. 
+Thus its use for exoplanet observations is restricted to highly separated or bright targets. 
+It may also be possible to use the differences between the host star and companion spectra in order to image close in planets.
+
  %MIRI intro
 
 \begin{table}[t]
@@ -102,7 +106,7 @@ The detector coordinate grid is formed by counting x/y pixels, as well as the sl
 Each of the two MRS detectors is an array of 1032$\times$1024 pixels, though only 1024 are photosensitive in the horizontal direction.
 Each image slice from the IFU appears as a curved stripe on the detector, though neighboring stripes on the detector do not correspond to neighbouring slices of the image. 
 
-The local MRS coordinate system is described in terms of $\alpha,\beta$ and $\lambda$. The continuous $\alpha$ coordinate is the along slice direction, while $beta$ is perpendicular and discrete, corresponding to the slice number. $\lambda$ is the wavelength. Both $\alpha$ and $\lambda$ are fit by a second order polynomial to account for along and across slice distortion \parencite{MIRI6}. Each detector sub array has its own mapping to $\alpha,\beta,\lambda$ space, due to the differences in FoV, slice count, distortion and spectral resolution.
+The local MRS coordinate system is described in terms of $\alpha,\beta$ and $\lambda$. The continuous $\alpha$ coordinate is the along slice direction, while $\beta$ is perpendicular and discrete, corresponding to the slice number. $\lambda$ is the wavelength. Both $\alpha$ and $\lambda$ are fit by a second order polynomial to account for along and across slice distortion \parencite{MIRI6}. Each detector sub array has its own mapping to $\alpha,\beta,\lambda$ space, due to the differences in FoV, slice count, distortion and spectral resolution.
 
 The third coordinate frame is the global coordinate system of JWST itself, V1,V2,V3. The V1 coordinate refers to the symmetry axis of the telescope, V3 points towards the foldable secondary mirror support structure strut. V2 completes the coordinate system, being orthogonal to V1 and V3. This coordinate system will not be used in this thesis.
 
@@ -123,7 +127,7 @@ As an integrated field spectrograph (IFS) consisting of 4 integrated field units
 This is accomplished by slicing the on sky image, and performing spectroscopy on each of the image slices. 
 Here we will step step through some of the key optical systems used to accomplish this, while a more detailed description of the optics is given in section 2 of \parencite{MIRI6}.
 
-A series of optics picks of a FoV from the telescope optics, and directs it to the IFU slicing mirrors, where the focal plane is re-imaged. 
+A series of optics picks off a FoV from the telescope beam, and directs it to the IFU slicing mirrors, where the focal plane is re-imaged. 
 The image slicer consists of an array of thin mirrors at unique angles, in order to separate different spatial slices of the on-sky image.
 The across slice width is equal to the FWHM of the Airy pattern at the shortest wavelength of the given IFU.
 There are a total of 4 image slicers, one for each of the MRS channels.
@@ -132,7 +136,7 @@ Thus it requires 3 total exposures to cover the wavelength range of a channel.
 Channels one and two are each projected onto separate halves of a single detector, as are channels 3 and 4.
 As such, multiple wavelength ranges are imaged simultaneously, and it requires only 3 exposures in order to cover the entire MRS wavelength range. 
 \subsection{Detectors}
-MIRI uses a three arsenic-doped silicon (Si:As) impurity band conduction (IBC) detectors descended from those used in the Spitzer Space Telescope.
+MIRI uses three arsenic-doped silicon (Si:As) impurity band conduction (IBC) detectors descended from those used in the Spitzer Space Telescope.
 Each detector uses a 1024$\times$1024 pixel format.
 One detector is used for the imaging and LRS modes, while the remaining two detectors are used in the MRS.
 The full technical details of the detectors are described in \parencite{MIRI7}.
@@ -158,5 +162,18 @@ The MRS has two primary readout modes, which can be selected for different obser
 \end{itemize}
 
 \section{Observations}
+The observations in this work are based on proposed exoplanet observations for the ERS and GTO programs.
+The observing parameters have been checked using the JWST Exposure Time Calculator in order to ensure sufficient SNR.
+Several of the observations make use of a dithering procedure, described below.
 \subsection{Dithering}
+The MIRI PSF is spatially undersampled in the MRS in order to allow for wider wavelength coverage and increased throughput.
+This design choice was made in order to reduce the weight of components that would be necessary in order to provide a fully sampled PSF while meeting the spectroscopic requirements.
+In order to fully sample the PSF, observations are dithered: that is, multiple telescope pointings are used, and the exposures from each pointing combined into a single observation.
+An optimal dithering strategy for each channel has been designed in order to fully sample the PSF in a minimum of observations. 
+For a point source, it will be typical to use a 2 or 4 point dither pattern.
+
 \subsection{Exposure time calculations}
+The JWST Exposure time calculator (ETC) is a publicly available tool that can be used to estimate outcomes of a given set of observational parameters on a specified target.
+This can be used to estimate the SNR in different wavelength bands, optimize observing  and check for detector saturation.
+All observations in this work were checked using the ETC in order to prevent saturation and ensure sufficient SNR.
+However, we did not attempt to optimize the observing strategy for our targets, and instead used the parameters specified in the ERS and GTO observing proposals.

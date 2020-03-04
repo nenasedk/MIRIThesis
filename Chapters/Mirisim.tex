@@ -9,10 +9,10 @@ This provides a measure of the extent to which the signal has been degraded.
 In addition we examine the impact of this on the science case of molecular mapping, where cross correlations between a cube of IFU data and a molecular spectral template are used to identify the presence of a given species in an observed object. 
 
 \section{Fringing}
-Thin film interference occurs when light is coherently reflected at the boundary between two layers and interferes with the incident light.
+Thin film interference occurs when light is coherently reflected at the internal boundaries between two layers and interferes with the incident light.
 This is the principle on which Fabry-P\'{e}rot interferometers function.
 As we wish to determine the effect of fringing on the amplitude of the signal received by the detector as a function of wavelength, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
-Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light travels within the cavity, we can compute the transmittance as:
+Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light enters the cavity, we can compute the transmittance as:
 \begin{equation}\label{eqn:trans}
 T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
 \end{equation}
@@ -25,7 +25,7 @@ Systems with a spacing on the order of micrometers to millimeters produces signi
 The detectors of the MRS consist of several layers, as shown in Fig. \ref{fig:layers}, with a characteristic thickness of tens of micron, which results in significant (10\%-30\%) `fringing' in a spectrally flat signal - visible in Fig. \ref{fig:flatfield}.
 The geometric thicknesses of the detector layers are given in table \ref{tab:layers}.
 
-While this is typical for infrared detectors such as those in the Spitzer Space Telescope \parencite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \parencite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increase the significance of this issue.
+While this is typical for infrared detectors such as those in the Spitzer Space Telescope \parencite{Lahuis2003} or in the Space Telescope Imaging Spectrograph on board HST \parencite{Malumuth2003}, the sensitivity and spectral resolution of the MRS increases the significance of this issue.
 The MIRI consortium has stated that the error budget for all detector effects must be 3.3\% or less. 
 Present fringing corrections result in a 5\% deviation from a photometrically accurate signal, and can introduce correlated noise which will degrade any measured spectrum.
 Therefore it is critical to examine the impact of fringing on a signal, the parameters that influence the fringing strength and phase, and possible solutions for fringe correction. 
@@ -85,6 +85,8 @@ The extended source fringe flat is used both in MIRISIM to model the effect as w
 This basic correction is insufficient to properly correct for fringing, and in the worst case can add additional fringing effects to the data. 
 Therefore an additional iterative correction is used to attempt to remove fringing frequencies in Fourier space \parencite{Lahuis2003,Lahuis2018}.
 Unfortunately, this can also remove real signals from the data.
+\parencite{Argyriou2020} proposes a novel method for fringe correction based on modeling sources as a collection of point sources, leading to a sum of overlapping point source fringe patterns.
+They show that this improves fringing correction to sub-percent levels, with mostly uncorrelated residuals.
 
 Due to the dependence of fringing on the incident angle of the light, a single extended source model of fringing is insufficient to describe the full effect. 
 In this work, we implement a more realistic fringing model based on point-source FM data and the concepts described in \parencite{Argyriou2018a}. 
@@ -105,7 +107,7 @@ We  will quantify how this changes the extracted spectra after processing in the
 \section{MIRISIM}
 
 %MIRISIM in python
-The MIRI instrument has been modeled in python as a program known unsurprisingly as MIRISIM \parencite{ref:mirisimdocs}. 
+The MIRI instrument has been simulated in python as a program known - perhaps unsurprisingly - as MIRISIM \parencite{ref:mirisimdocs}. 
 This program takes in an astronomical `scene' along with some configuration parameters to output a detector data product, similar to what will be produced by the actual instrument.
 MIRISIM is relatively full-featured simulator, modeling the instrumental PSF, various noise sources and distortion maps, among other effects.
 While MIRISIM is functional for all of the MIRI sub-instruments, this report will only deal with the Medium-Resolution Spectrometer (MRS) sub instrument, described in section \ref{sec:mrs}.
@@ -163,6 +165,8 @@ They convert from an incident flux to detector counts based on measured efficien
 Recently the PHOTOM files were modified from being divided into the illumination model to being multiplied in. 
 This, along with other issues, has led to inconsistencies between the input flux and output of the JWST pipeline.
 To best correct for this, we ensure that we are using the most up-to-date PHOTOM files (v8B.04.00) in both MIRISIM and the JWST pipeline.
+Even still, there remains residual fringing and absorption features present in the PHOTOM CDP files, leading to errors in the extracted spectrum.
+Noteably there is a large spike in channel 2A, and significant high frequency modulation in channel 2C.
 
 The FRINGE CDP files contain fringe flats which are multiplied into the illumination model. 
 Presently, these are based off extended source CV data (v07.02.05).
@@ -170,28 +174,39 @@ However, for point source observations this produces results very different than
 Thus we attempt to improve the fringing model by using a set of fringe flats derived from point source FM data. 
 In principle, a complete set of fringe flats that cover point sources located at each position in the detector plane would reproduce an extended source fringe flat.
 Indeed, at the center of the PSF, the extended source fringe flat models the point source fairly well, with discrepancies increasing towards the PSF wings \parencite{Argyriou2020}.
-In order to fairly compare our improvements, we will also compare to an older version of the fringe CDPs (v07.02.00) which is based of FM extended source data.
+In order to fairly compare our improvements, we will also compare to an older version of the fringe CDPs (v07.02.00) which is based on FM extended source data.
 
 
 \subsection{Fringing Model Implementation}
 \begin{wrapfigure}{r}{5.5cm}
+	\vspace{-1em}
 	\includegraphics[width=5.5cm]{FM_ptsource_flat.png}
-	\caption{Point source fringe flat derived from FM data for channel 1A at $\alpha=1.001$, $\beta=0.602$. Color scale is linear.}
+	\caption{Fringe flat derived from FM data for a point source in channel 1A at $\alpha=1.001$, $\beta=0.602$. Color scale is linear.}
 	\label{fig:ptsrcfringeflat}
 \end{wrapfigure}
-Ultimately this data collection produced a series of fringe flats of an almost point like at various position across the detector and in each channel.
-We implemented a new routine into the \verb|pySpecSim| module of MIRISIM to read in the location of point sources within a scene, and apply the correct position dependent fringe flat. 
+Ultimately the data collection from the FM campaign produced a series of fringe flats of an almost point like at various position across the detector and in each channel.
+We implemented a new routine into the \verb|pySpecSim| module of MIRISIM to read in the location of point sources within a scene, and apply the nearest available position dependent fringe flat. 
+Dithered observations are accounted for, with unique fringe flats being applied to each exposure.
+A new dithering strategy was designed, such that the locations of each exposure correspond to the locations of the nearest fringe flat to the standard dither offsets.
+
 This implementation comes with several caveats: namely that the fringing model is not yet fully developed, so it can only be considered accurate for point sources located at the same ($\alpha,\beta$) location as the source used to produce the fringe flat. Additionally, the source used to generate the data is not a true point source, nor are there fringe flats produced for the full MRS wavelength range.
 We stress that the goal of this testing is to demonstrate the significance of this effect to justify the need for a more complete model along with additional calibration data to constrain the detector layer parameters.
 
 \section{JWST Pipeline}
-The JWST Pipeline is used for reducing all data from the telescope, and is currently under development by the Space Telescope Science Institute. The latest version of the pipeline (v0.15a) is used for all processing within this work \parencite{Bushouse2015}. %JWST Pipeline
+The JWST Pipeline is used for reducing all data from the telescope, and is currently under development by the Space Telescope Science Institute. The latest version of the pipeline (v0.15a) is used for all processing within this work \parencite{Bushouse2015}.
+It is broken into several stages. 
+Stage one is applied to all telescope data, and corrects for detector level effects.
+Stage two provides photometric calibration, with separate pipelines for imaging or spectroscopic data.
+Stage three, which is unusued in this work, will provide high level science products for end users.%JWST Pipeline
  % MIRI MRS Cal pipeline
 \subsection{Stage 1 Processing}
 The raw data files read from MIRISIM (or eventually the MIRI instrument itself) are a series of \textit{exposures}, each made up of set of \textit{integrations} containing a some number of \textit{groups} or frames.
-Each group is a non-destructive readout of the detector arrays, providing a series of increasing counts known as ramps in DN/s (digital number per second). 
+Each group is a non-destructive readout of the detector arrays, providing a series of increasing counts known as ramps in DN (digital number per second). 
 The first stage of the JWST pipeline takes these raw files, applies a series of steps and outputs a single file for each input exposure in units of countrate.
-This procedure is applied to any MIRI data.
+During this stage, several data quality checks are performed, looking for saturated pixels or jumps in in the data, which can be used to correct for cosmic rays.
+Dark current correction is also applied.
+Finally, the set of frames in an integration are fit with a linear slope in order to calculate the count rate in DN/s.
+This procedure is applied to all MIRI data.
 We used default pipeline settings to apply this procedure, and applied all steps applicable to the MIRI instrument.
 The particular calibration procedures for MIRI MRS data is described in \parencite{ref:mirical}.
 \subsection{Stage 2 Processing}
@@ -212,7 +227,8 @@ Photometric calibration is the process of removing detector and optical biases t
 This process occurs in the PHOTOM step of the JWST pipeline, and uses reference files which store per-pixel photon-to-electron conversion efficiencies along with pixel areas in arcsec to transform the count rate data product to a surface brightness measurement.
 This corrects for the wavelength dependent bias shown in Fig. \ref{fig:mirideteff}.
 
-However, this step remains under development, and does not produce absolutely calibrated images. In particular, even using the most up to date reference files (v8D.04.00) there remains discontinuities between channels, and poorly calibrated slopes.
+However, this step remains under development, and does not produce absolutely calibrated images. In particular, even using the most up to date reference files (v8D.04.00) there remains discontinuities between channels, and poorly calibrated spectral slopes.
+
 \subsubsection{Fringing correction}
 Fringing correction within the JWST pipeline is accomplished by dividing a known fringe flat into the photometrically calibrated detector image. 
 This fringe flat is based of extended source CV data, and a unique flat is used for each detector/sub-band configuration.
@@ -223,15 +239,11 @@ A set of transformations for each band maps each detector pixel to a a spaxel in
 These transformations produce an irregular grid that samples the on-sky intensity, which can then be combined into a regularly spaced grid of spaxels.
 Each spaxel filled by a weighted sum of points, with the weight decreasing with distance from the spaxel. 
 This should also account for changes in the MIRI PSF with wavelength, however issues with the cube building prevent use of the \verb|miripsf| weighting scheme.
-Instead, the default flux-conserving Shepards method is used.
+Instead, the flux-conserving Shepards method is used, setting the weighting parameter to \verb|'emsm'|.
 It should be noted that this procedure introduces correlations between the spaxels, which is not accounted in the error on each spaxel.
 
 \subsubsection{Aperture Photometry}
-\begin{figure}[t]
-	\includegraphics[width=1.11\linewidth]{cal_spectra_slope.pdf}
-	\caption{Comparison of an input spectrum generated using petitRadTrans and the empirically calibrated output spectrum after extraction from the cube produced by the JWST pipeline.}
-	\label{fig:cal}
-\end{figure}
+
 Once the data from the pipeline has been transformed into a spectral cube, we can perform aperture photometry using the \verb|photutils| package to extract a 1D spectrum of the source.
 For each frame in each sub-band the coordinates of the spaxel at with the peak flux is detected using \verb|photutils| \verb|find_peaks|, which provides the location for the center of a circular aperture.
 A radius of 5 spaxels is used to encompass the entire PSF for a point source.
@@ -241,6 +253,11 @@ Using a set of additional apertures, we measure and subtract the median backgrou
 This measurement is then converted into flux units by multiplying by the spaxel area in as$^{2}$.
 The standard deviation of the background measurements is used to define the error on the flux measurement.
 While optimal extraction techniques exist, given our known input signal and background, this procedure is adequate for producing a spectrum in each sub-band, which can then be combined into a single spectrum for all measured sub-band.
+\begin{figure}[t]
+	\includegraphics[width=1.11\linewidth]{cal_spectra_slope.pdf}
+	\caption{Comparison of an input spectrum generated using petitRadTrans and the empirically calibrated output spectrum after extraction using aperture photometry from the cube produced by the JWST pipeline.}
+	\label{fig:cal}
+\end{figure}
 
 Unfortunately, due to the issues described above with the PHOTOM step of the JWST pipeline, the spectrum built using aperture photometry does not accurately reflect the input spectrum in slope or absolute photometry. 
 Therefore, we correct the extracted spectrum channel by channel. 
@@ -250,13 +267,10 @@ Thus this procedure corrects the slope and median flux value, but does not affec
 Fig. \ref{fig:cal} shows an example of the results of this procedure. 
 We believe that this is a justified measure, as the errors with photometric calibration in the pipeline should be resolved before first light of the telescope.
 
-\subsection{Cross-Correlation}\label{sec:cc}
-\cite{Snellen2014}% BetaPicFast Rotation - cross correlation
-\cite{Simkin1974} %Cross cor
-\cite{Tonry1979} %Old cross corr
-\cite{Petermann2019} %Robin thesis cross corr
-\cite{Bodis2007} %Alternative to cc - spectral similarity
-To quantify the similarity of the spectrum output by the JWST pipeline to the input into MIRISIM, we rely on the technique of cross correlation \cite{}.
+\section{Cross-Correlation}\label{sec:cc}
+To quantify the similarity of the spectrum output by the JWST pipeline to the input into MIRISIM, we rely on the technique of cross correlation.
+Originally used in a spectroscopic context by \parencite{Simkin1974} in order to compute galaxy velocity dispersions, cross correlations have become a popular technique used to quantify exoplanet parameters \parencite{Snellen2014}.
+
 For two arbitrary, complex-valued functions $f(t)$ and $g(t)$, we can compute the cross correlation as as function of the shift $\tau$ between the functions (typically in time or velocity space):
 \begin{equation}\label{eqn:crosscorr}
 \left(f \star g\right)(\tau) \equiv \int_{-\infty}^{\infty}f^{*}(t)g(t + \tau)dt
@@ -268,7 +282,7 @@ Our signals of interest are astrophysical spectra, measured in a finite number o
 
 Care must be taken when cross-correlating signals, as differences in normalization can result in changes in the correlation coefficient. 
 Our procedure takes in two spectra. 
-The first is an emission spectrum produced by the petitRadTrans program \cite{Molliere2019}, which provides our forward model with which we compare our data spectrum.
+The first is an emission spectrum produced by the petitRADTRANS program \parencite{Molliere2019}, which provides our forward model with which we compare our data spectrum.
 Our data is the result of passing the template spectrum through MIRISIM, and extracting it from the resulting detector image using the JWST pipeline.
 We then rebin the high-resolution input spectrum to the same wavelength bins as the data spectrum, using the \verb|spectres| package \parencite{Carnall2017}.
 Prior to normalization, we remove any outliers from the spectrum (due to binning errors or instrumental effects) by setting any data points separater by more than 15 standard deviations from the mean to the median value of the spectrum.
@@ -281,11 +295,36 @@ The cross correlation between the forward model and itself is computed, excludin
 This `autocorrelation' is subtracted from the cross correlation between the forward model and the data spectrum in order to remove secondary peaks.
 Finally, we normalize the cross correlation by the standard deviation of the cross correlation (excluding the central peak), giving an output measured as a signal to noise ratio.
 \begin{figure}[h]
-	\includegraphics[width=1.1\linewidth]{hr8799eclosecor_v5}
+	\centering
+	\includegraphics[width=0.9\linewidth,trim=4cm 3.5cm 4cm 4.5cm]{hr8799eclosecor_v5}
 	\caption{FIXME FIXME FIXME - Use correct planet model. \textbf{A} Normalized spectra of VHS1256b, with the input template in red, a spectrum with no fringing and no correction applied in pink, with extended source fringing and with correction in green, and extended source fringing and no correction in blue. \textbf{B} Residuals found from subtracting the extracted spectra from the input template. \textbf{C} Histogram of residuals. Note the difference in the distribution widths due to fringing. \textbf{D} Cross correlation between the extracted spectra and the template.}
 	\label{fig:CrossCor1D}	
 \end{figure}
 
+\subsection{Molecular Mapping}
+Cross correlations are used to identify the presence of a given molecular species in the spectrum of an atmosphere \parencite{Hoeijmakers2018,Haffert2019}.
+As shown above, fringing has a significant impact on cross-correlations. 
+By extending our iterating over each spaxel from the MRS cube and using a molecular template rather than the input spectrum, we can examine the impact of fringing on such an analysis.
+\begin{figure}[t]
+	\includegraphics[width=\linewidth]{VHSSpeciesTemplates}
+	\caption{Species templates for VHS1256b. Each species emission spectrum is computed using petitRADTRANS with a single species atmosphere with Jupiter-like abundances of H$_{2}$ and He, and an internal temperature of 900 K. There is a 500$\mu$Jy offset between each species.}
+	\label{fig:speciestemplates}
+\end{figure}
+
+We use petitRADTRANS to generate a single-species atmosphere in order to generate the molecular emission spectrum templates. 
+We chose to use VHS1256b as our template for this study, and all other atmospheric parameters remain the same, as described in table \ref{tab:petitradparams}. 
+A fractional abundance of 1\% was used for each species.
+The emission spectrum for each of these species is shown in Fig. \ref{fig:speciestemplates}.
+Using the same normalization procedure described in section \ref{sec:cc} for each spaxel, we take the peak cross correlation value from within a narrow window around the expected peak at 0 offset between the template and measured spectra. 
+This was repeated for each of the fringing cases and each of the molecular templates. 
+We also compare the cross correlation as computed sub-band by sub-band to the full wavelength range used.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.8\linewidth]{IFU_CrossCor_Test}
+	\caption{Pixel by pixel cross correlation between the extracted 2M1207b spectrum with an H2O template spectrum. FIXME FIXME FIXME add with/without fringing.}
+	\label{fig:h2omap}
+\end{figure}
+\clearpage
 \section{Results}
 %\begin{table}[h]
 %	\begin{tabular}{cr|c|c|c|c|}
@@ -329,25 +368,3 @@ This provides us with a  distribution which should have a mean of 0 and unit wid
 
 4. Iterative Corretion on Point Source input
 
-\subsection{Molecular Mapping}
-Cross correlations are used to identify the presence of a given molecular species in the spectrum of an atmosphere \parencite{Hoeijmakers2018,Haffert2019}.
-As shown above, fringing has a significant impact on cross-correlations. 
-By extending our iterating over each spaxel from the MRS cube and using a molecular template rather than the input spectrum, we can examine the impact of fringing on such an analysis.
-\begin{figure}[t]
-	\includegraphics[width=\linewidth]{VHSSpeciesTemplates}
-	\caption{Species templates for VHS1256b. Each species emission spectrum is computed using petitRADTRANS with a single species atmosphere with Jupiter-like abundances of H$_{2}$ and He, and an internal temperature of 900 K. There is a 500$\mu$Jy offset between each species.}
-	\label{fig:speciestemplates}
-\end{figure}
-
-We use petitRADTRANS to generate a single-species atmosphere in order to generate the molecular emission spectrum templates. 
-We chose to use VHS1256b as our template for this study, and all other atmospheric parameters remain the same, as described in table \ref{tab:petitradparams}. 
-A fractional abundance of 1\% was used for each species.
-The emission spectrum for each of these species is shown in Fig. \ref{fig:speciestemplates}.
-Using the same normalization procedure described in section \ref{sec:cc} for each spaxel, we take the peak cross correlation value from within a narrow window around the expected peak at 0 offset between the template and measured spectra. 
-This was repeated for each of the fringing cases and each of the molecular templates. 
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=0.8\linewidth]{IFU_CrossCor_Test}
-	\caption{Pixel by pixel cross correlation between the extracted 2M1207b spectrum with an H2O template spectrum. FIXME FIXME FIXME add with/without fringing.}
-	\label{fig:h2omap}
-\end{figure}
