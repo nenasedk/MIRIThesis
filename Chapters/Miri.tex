@@ -117,12 +117,19 @@ The third coordinate frame is the global coordinate system of JWST itself, V1,V2
 \end{figure}
 
 \begin{figure}[t]
-	%\includegraphics[width = 0.45\linewidth]{}
-	%\includegraphics[width = 0.45\linewidth]{}
-	\caption{Detector images of a spatially and spectrally flat calibration source for the SW detector (left) and LW detector (right).}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{MRSRAW.png}
+	\includegraphics[width = 0.45\linewidth]{MRSRAW.png}
+	\caption{Detector images of a spatially and spectrally flat calibration source for the SW detector (left) and LW detector (right). FIXMEREPLACE}
 	\label{fig:flatfield}
 \end{figure}
 \subsection{Integral Field Spectroscopy}
+\begin{wrapfigure}{r}{5.5cm}
+	\vspace{-1em}
+	\includegraphics[width=5.5cm]{WISE0855_Dither_Cube_1A.png}
+	\caption{The reconstructed JWST PSF as imaged by the MRS, using a 2-pattern dither.}
+	\label{fig:miripsf}
+\end{wrapfigure}
 As an integrated field spectrograph (IFS) consisting of 4 integrated field units (IFUs), the MRS provides both spatial and spectral information.
 This is accomplished by slicing the on sky image, and performing spectroscopy on each of the image slices. 
 Here we will step step through some of the key optical systems used to accomplish this, while a more detailed description of the optics is given in section 2 of \parencite{MIRI6}.
@@ -131,9 +138,11 @@ A series of optics picks off a FoV from the telescope beam, and directs it to th
 The image slicer consists of an array of thin mirrors at unique angles, in order to separate different spatial slices of the on-sky image.
 The across slice width is equal to the FWHM of the Airy pattern at the shortest wavelength of the given IFU.
 There are a total of 4 image slicers, one for each of the MRS channels.
-Each slice is then collimated, and directed to a diffraction grating. Each channel has 3 separate gratings, each covering approximately a third of the wavelength range of each channel. 
+Each slice is then collimated, and directed to a diffraction grating. 
+Each channel has 3 separate gratings, each covering approximately a third of the wavelength range of each channel. 
 Thus it requires 3 total exposures to cover the wavelength range of a channel.
-Channels one and two are each projected onto separate halves of a single detector, as are channels 3 and 4.
+Channels 1 and 2 are each projected onto separate halves of a single detector, as are channels 3 and 4 as seen in Fig. \ref{fig:flatfield}.
+When reconstructed, the PSF is an undersampled image of the JWST PSF, though dithering can be used to improve the spatial sampling.
 As such, multiple wavelength ranges are imaged simultaneously, and it requires only 3 exposures in order to cover the entire MRS wavelength range. 
 \subsection{Detectors}
 MIRI uses three arsenic-doped silicon (Si:As) impurity band conduction (IBC) detectors descended from those used in the Spitzer Space Telescope.

@@ -55,134 +55,142 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}{Integral Field Spectroscopy}}{18}{subsection.2.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}{Detectors}}{18}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.3}{Detectors}}{19}{subsection.2.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Readout Modes}}{19}{subsubsection*.27}% 
+\contentsline {subsubsection}{{Readout Modes}}{20}{subsubsection*.28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}{Observations}}{20}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}{Dithering}}{20}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}{Exposure time calculations}}{20}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}{Exposure time calculations}}{21}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}{Fringing Effects in MIRI}}{21}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}{Fringing Effects in MIRI}}{23}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}{Fringing}}{21}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}{Fringing}}{23}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}{Current Status of Fringing Correction}}{23}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.1}{Current Status of Fringing Correction}}{25}{subsection.3.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}{MIRISIM}}{23}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}{MIRISIM}}{25}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}{Architecture}}{24}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.1}{Architecture}}{26}{subsection.3.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}{Data Products}}{25}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.2}{Data Products}}{27}{subsection.3.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}{Fringing Model Implementation}}{26}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}{Fringing Model Implementation}}{28}{subsection.3.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}{JWST Pipeline}}{27}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}{JWST Pipeline}}{29}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}{Stage 1 Processing}}{27}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.1}{Stage 1 Processing}}{29}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}{Stage 2 Processing}}{27}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}{Stage 2 Processing}}{30}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Photometric Calibration}}{28}{subsubsection*.33}% 
+\contentsline {subsubsection}{{Photometric Calibration}}{30}{subsubsection*.35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Fringing correction}}{28}{subsubsection*.34}% 
+\contentsline {subsubsection}{{Fringing correction}}{31}{subsubsection*.36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Cube Building}}{28}{subsubsection*.35}% 
+\contentsline {subsubsection}{{Residual Fringe Correction}}{31}{subsubsection*.37}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Aperture Photometry}}{28}{subsubsection*.36}% 
+\contentsline {subsubsection}{{Cube Building}}{31}{subsubsection*.39}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}{Cross-Correlation}}{29}{section.3.4}% 
+\contentsline {subsubsection}{{Aperture Photometry}}{32}{subsubsection*.40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}{Molecular Mapping}}{30}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.4}{Cross-Correlation}}{34}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}{Results}}{34}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.4.1}{Residual Statistics}}{35}{subsection.3.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}{Residual Statistics}}{34}{subsection.3.5.1}% 
+\contentsline {subsection}{\numberline {3.4.2}{Molecular Mapping}}{35}{subsection.3.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}{Fringing Results}}{34}{subsection.3.5.2}% 
+\contentsline {section}{\numberline {3.5}{Results}}{37}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}{Fringing Correction}}{34}{subsection.3.5.3}% 
+\contentsline {subsection}{\numberline {3.5.1}{Molecular Mapping}}{39}{subsection.3.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}{Atmospheric Retrievals}}{35}{chapter.4}% 
+\contentsline {subsubsection}{{Object Detection}}{39}{subsubsection*.46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Atmospheric Modeling}}{35}{subsubsection*.41}% 
+\contentsline {subsubsection}{{Species Detection}}{39}{subsubsection*.48}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}{petitRADTRANS}}{36}{section.4.1}% 
+\contentsline {subsection}{\numberline {3.5.2}{Discussion}}{40}{subsection.3.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}{Radiative Transfer}}{36}{subsection.4.1.1}% 
+\contentsline {chapter}{\numberline {4}{Atmospheric Retrievals}}{43}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}{Opacity Sources}}{37}{subsection.4.1.2}% 
+\contentsline {subsubsection}{{Atmospheric Modeling}}{43}{subsubsection*.51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Line-by-line}}{37}{subsubsection*.43}% 
+\contentsline {section}{\numberline {4.1}{petitRADTRANS}}{44}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Correlated K}}{37}{subsubsection*.44}% 
+\contentsline {subsection}{\numberline {4.1.1}{Radiative Transfer}}{44}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Clouds}}{38}{subsubsection*.45}% 
+\contentsline {subsection}{\numberline {4.1.2}{Opacity Sources}}{45}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}{Bayesian Inference}}{38}{section.4.2}% 
+\contentsline {subsubsection}{{Line-by-line}}{45}{subsubsection*.53}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}{MCMC}}{39}{subsection.4.2.1}% 
+\contentsline {subsubsection}{{Correlated K}}{45}{subsubsection*.54}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}{Nested Sampling}}{39}{subsection.4.2.2}% 
+\contentsline {subsubsection}{{Clouds}}{46}{subsubsection*.55}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Method}}{40}{subsubsection*.46}% 
+\contentsline {section}{\numberline {4.2}{Bayesian Inference}}{46}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}{Multinest}}{41}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.1}{MCMC}}{47}{subsection.4.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}{Observations}}{41}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.2.2}{Nested Sampling}}{47}{subsection.4.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{VHS-1256B}}{41}{subsubsection*.47}% 
+\contentsline {subsubsection}{{Method}}{48}{subsubsection*.56}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{2M1207b}}{42}{subsubsection*.48}% 
+\contentsline {subsection}{\numberline {4.2.3}{Multinest}}{49}{subsection.4.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{WISE 0855-0714}}{42}{subsubsection*.49}% 
+\contentsline {section}{\numberline {4.3}{Observations}}{49}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Science Goals}}{42}{subsubsection*.51}% 
+\contentsline {subsubsection}{{VHS-1256B}}{49}{subsubsection*.57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}{Methods}}{43}{section.4.4}% 
+\contentsline {subsubsection}{{2M1207b}}{50}{subsubsection*.58}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}{Spectra Generation}}{43}{subsection.4.4.1}% 
+\contentsline {subsubsection}{{WISE 0855-0714}}{50}{subsubsection*.59}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}{Atmospheric Retrieval Setup}}{45}{subsection.4.4.2}% 
+\contentsline {subsubsection}{{Science Goals}}{50}{subsubsection*.61}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Prior choice}}{45}{subsubsection*.53}% 
+\contentsline {section}{\numberline {4.4}{Methods}}{51}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}{Results}}{45}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.4.1}{Spectra Generation}}{51}{subsection.4.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}{Model Selection}}{45}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.4.2}{Atmospheric Retrieval Setup}}{52}{subsection.4.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}{Fringing Comparison}}{46}{subsection.4.5.2}% 
+\contentsline {subsubsection}{{Prior choice}}{52}{subsubsection*.64}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}{VHS-1256b}}{46}{subsection.4.5.3}% 
+\contentsline {section}{\numberline {4.5}{Results}}{53}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.4}{2M1207b}}{46}{subsection.4.5.4}% 
+\contentsline {subsection}{\numberline {4.5.1}{Model Selection}}{53}{subsection.4.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.5}{WISE 0855}}{46}{subsection.4.5.5}% 
+\contentsline {subsection}{\numberline {4.5.2}{Fringing Comparison}}{53}{subsection.4.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}{Discussion and Conclusions}}{49}{chapter.5}% 
+\contentsline {subsection}{\numberline {4.5.3}{VHS-1256b}}{54}{subsection.4.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}{Summary of Results}}{49}{section.5.1}% 
+\contentsline {subsection}{\numberline {4.5.4}{2M1207b}}{54}{subsection.4.5.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}{Effects of fringing on cross correlations}}{49}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {4.5.5}{WISE 0855}}{54}{subsection.4.5.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}{Effects of fringing on atmospheric retrievals}}{49}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {4.5.6}{Discussion}}{54}{subsection.4.5.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}{Atmospheric retrievals with the MIRI MRS}}{49}{subsection.5.1.3}% 
+\contentsline {chapter}{\numberline {5}{Discussion and Conclusions}}{57}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}{Discussion}}{49}{section.5.2}% 
+\contentsline {section}{\numberline {5.1}{Summary of Results}}{57}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}{Implications for GTO Observations}}{49}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.1.1}{Effects of fringing on cross correlations}}{57}{subsection.5.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}{Caveats and Limitations}}{49}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.1.2}{Effects of fringing on atmospheric retrievals}}{57}{subsection.5.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}{Future work}}{49}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.1.3}{Atmospheric retrievals with the MIRI MRS}}{57}{subsection.5.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}{Conclusions}}{49}{section.5.3}% 
+\contentsline {section}{\numberline {5.2}{Discussion}}{57}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}{Appendices}}{51}{appendix.A}% 
+\contentsline {subsection}{\numberline {5.2.1}{Implications for GTO Observations}}{57}{subsection.5.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}{Package Requirements}}{51}{section.A.1}% 
+\contentsline {subsection}{\numberline {5.2.2}{Caveats and Limitations}}{57}{subsection.5.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Works Cited}}{53}{section*.66}% 
+\contentsline {subsection}{\numberline {5.2.3}{Future work}}{57}{subsection.5.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}{Conclusions}}{57}{section.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}{Appendices}}{59}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}{Package Requirements}}{59}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Works Cited}}{61}{section*.77}% 
