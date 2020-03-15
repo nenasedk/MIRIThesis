@@ -398,8 +398,7 @@ If the point source is off axis, and thus has a different fringe pattern, the SN
 Finally, the RFC applied to point source fringing substantially degrades the signal, leaving an SNR of 4.3.
 These results are similar for each of our targets. 
 Fig. \ref{fig:ccall} shows the cross correlation results for each target and each examined fringing case.
-The cross correlation SNR does not significantly depend on the wavelength coverage of the spectrum.
-We find at most a marginal increase in the SNR ($\approx$0.5) for each species when extending to the full wavelength regime. (FIXME TRUE FOR ALL PLANETS?)
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth,trim=4cm 3.5cm 4cm 4.5cm, clip]{VHS1256bCrossCorrTemplate}
@@ -416,16 +415,8 @@ We find at most a marginal increase in the SNR ($\approx$0.5) for each species w
 \end{figure}
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{VHSMethaneConc}
-	\caption{Dependence of the cross correlation on the abundance of a methane in VHS 1256b.}
+	\caption{Dependence of the cross correlation on the abundance of a methane in the VHS 1256b species template. The true abundance in the full atmosphere is marked with the red dashed line.}
 	\label{fig:vhsmeth}
-\end{figure}
-\subsubsection{Object Detection}
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\linewidth]{IFUCrossCor_draft_wmandwise.png}
-	\caption{\textbf{Left} Pixel by pixel cross correlation between the extracted 2M1207b spectrum with an H2O template spectrum. FIXME FIXME FIXME add with/without fringing.
-		\textbf{Right} DRAFT DRAFT Cross correlation between the WISE0855 spectrum in channel 1C and an NH3 template}
-	\label{fig:h2omap}
 \end{figure}
 \subsubsection{Species Detection}
 In order to best identify any molecular species present in the atmosphere, we cross correlate the 1D spectrum extracted through aperture photometry with the molecular templates in order to maximize the available flux.
@@ -439,17 +430,61 @@ We see that within an order of magnitude of the true value, the cross correlatio
 Another feature seen in Fig. \ref{fig:ccspecvhs} is the variation in the SNR due to the different fringe correction methods. 
 Although below the 5$\sigma$ detection threshold, we observe that the SNR of the H$_{2}$S cross correlation increases when using the extended source fringe flat to correct the point source fringe, although H$_{2}$S is only negligibly present in the atmosphere (at an abundance of 10$^{-10}$).
 This presents challenges in determining whether a species detected is a true detection or a false positive due to poor corrections.
+
+Fig.\ref{fig:ccspec2mfull} shows similar results for 2M1207b. 
+Here we also compare the variation in cross correlation when using the full spectrum as compared to channel 1 only. 
+For VHS1256b, the cross correlation SNR does not significantly depend on the wavelength coverage of the spectrum.
+Fig. \ref{fig:ccspec2mfull} shows the effect of using the full wavelength regime.
+For CO, the increase in coverage results in a shift from a marginal to a strong detection.
+Note that this comparison is limited, as point source fringing is only available for channel 1, and the remainder of the spectrum uses extended source fringing.
+We observe significant decreases in SNR when point source fringing is used.
+The SNR for water is reduced by half, while CO drops below the 5$\sigma$ detection threshold.
+This demonstrates the necessity of improved fringe correction if detections of even relatively abundant species are to be made.
+We also note that in some cases, the normalization procedure actually results in a higher SNR when only a single channel is used.
+It is important to examine specific wavelength regions of interest for each species such that important features are highlighted.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{CrossCorVHSSpecies}
 	\caption{Channel 1 Cross correlations for each molecular species against the extracted spectra for VHS1256b. The input abundances of each species are given in table \ref{tab:inputparams}. }
 	\label{fig:ccspecvhs}
 \end{figure}
 \begin{figure}[h]
-	\includegraphics[width=\linewidth]{CrossCorVHSSpecies}
-	\caption{Full spectrum Cross correlations for each molecular species against the extracted spectra for VHS1256b. FIXME FULL SPECTRUM }
-	\label{fig:ccspecvhsfull}
+	\includegraphics[width=\linewidth]{CrossCor2MSpeciesfull}
+	\caption{Cross correlations for each molecular species against the extracted spectra for 2M1207b. Solid lines indicate the full wavelength range was used, while dashed lines are for channel 1 only.}
+	\label{fig:ccspec2mfull}
 \end{figure}
 
+\subsubsection{Object Detection}
+In addition to detecting the presence of a given species in a known planet, we can use molecular templates to identify the presence of an object.
+In practice, this would involve iterating through a grid of single species spectral templates, and cross-correlating with each spaxel in the IFU cube.
+We aim to demonstrate that this technique is effective for MRS data, and that fringing reduces the capability to make detections.
+
+Fig. \ref{fig:2dccmap} illustrates the ability of the MRS to identify a point source from the presence of a species in the atmosphere.
+The cross correlation was performed on a spectrum from each spatial location in the IFU cube with a single species atmospheric template, with similar parameters as used in the full atmospheric model.
+This extends the 1D cross correlation used to infer the presence of a species to the full spatial coverage of the MRS.
+However, note that this the spectrum extracted from the data does NOT have the same corrections applied as in the 1D case, but is rather the raw data in MJy/sr.
+As noted in the section on aperture photometry, these spectra depart significantly from the input templates, and are not yet reliable.
+Following continuum subtraction and normalization, a cross-correlation should still provide a robust metric of similarity in the case that the relative line depths and positions are well represented by the spectrum.
+
+We compare highly abundant species on the left, to species with low or no presence on the right for each of our targets, in the case that there is no fringing.
+For highly abundant targets, the cross correlation traces the JWST PSF.
+The peak value of the SNR in 2D is not expected to be equal to the SNR of the 1D cross correlation, which contains significantly more flux than in any individual spaxel.
+The peak SNR does not trace the abundance distribution of the input atmosphere.
+For WISE0855, H$_{2}$O has a much higher SNR than NH$_{3}$ (20 vs 4), though the underlying abundance is lower (10$^{-4}$ vs 10$^{-3}$).
+Although CO has an extremely low abundance in WISE0855 (10$^{-15}$), the cross correlation produces a high SNR of 8.
+This suggests that the cross correlation is likely tracing the magnitude of the PSF, rather than the presence of the species itself.
+We therefore caution the use of cross correlations to infer the presence of a planet, as false positives are both likely and difficult to quantify.
+Without proper photometric calibration, the 2D cross correlations remain unreliable, and further work is required to reduce false detections.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_H2O}
+	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_H2S}
+	\includegraphics[width=0.47\linewidth]{0_WISE0855_IFU_CrossCor_Test_NH3}
+	\includegraphics[width=0.47\linewidth]{0_WISE0855_IFU_CrossCor_Test_CO}
+	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_CO}
+	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_CH4}
+	\caption{Cross correlations for each of the targets with a selection of molecular templates, with extended source fringe. Scales are not the same for each image. \textbf{TOP:} VHS1256b with H$_2$O (right) and H$_{2}$S (left). \textbf{Center} WISE0855 with NH$_{3}$ (left) and CO (right). \textbf{Bottom:} 2M1207b with CO (right) and CH$_{4}$ (left).}
+	\label{fig:2dccmap}
+\end{figure}
 \subsection{Discussion}
 We have examined different fringing correction methods, and compared a realistic point-source fringing model to the simplified extended source model used in MIRISIM.
 We find that the point source fringing significantly reduces the SNR in a cross correlation. 

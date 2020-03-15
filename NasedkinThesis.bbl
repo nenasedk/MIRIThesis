@@ -473,6 +473,79 @@
       \endverb
       \keyw{brown dwarfs,planetary systems,stars: atmospheres,stars: low-mass}
     \endentry
+    \entry{Barstow2020}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=b48c4c3fe71d441f1ec19aeba035ce50}{%
+           family={Barstow},
+           familyi={B\bibinitperiod},
+           given={Joanna\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dd2f5fed287807002d45c307e3125ba7}{%
+           family={Changeat},
+           familyi={C\bibinitperiod},
+           given={Quentin},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b07c40e32cee87cc5e70ac74366b601e}{%
+           family={Garland},
+           familyi={G\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b5ec6b06d985cc5384744ba40e57805d}{%
+           family={Line},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=930f80da259ee5e063d8f6a8f84e2814}{%
+           family={Rocchetto},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e7fe6c54e96913d57d9bd4f39b096f2}{%
+           family={Waldmann},
+           familyi={W\bibinitperiod},
+           given={Ingo\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6ff0b83bd83b8e2c77dc94d3ce4bf5d4}
+      \strng{fullhash}{b1d6ac8213e111dc91441b14eeb39677}
+      \strng{bibnamehash}{6ff0b83bd83b8e2c77dc94d3ce4bf5d4}
+      \strng{authorbibnamehash}{6ff0b83bd83b8e2c77dc94d3ce4bf5d4}
+      \strng{authornamehash}{6ff0b83bd83b8e2c77dc94d3ce4bf5d4}
+      \strng{authorfullhash}{b1d6ac8213e111dc91441b14eeb39677}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last several years, spectroscopic observations of transiting exoplanets have begun to uncover information about their atmospheres, including atmospheric composition and indications of the presence of clouds and hazes. Spectral retrieval is the leading technique for interpretation of transmission spectra and is employed by several teams using a variety of forward models and parameter estimation algorithms. However, different model suites have mostly been used in isolation and so it is unknown whether the results from each are comparable. As we approach the launch of the James Webb Space Telescope we anticipate advances in wavelength coverage, precision, and resolution of transit spectroscopic data, so it is important that the tools that will be used to interpret these information rich spectra are validated. To this end, we present an inter-model comparison of three retrieval suites: TauREx, NEMESIS and CHIMERA. We demonstrate that the forward model spectra are in good agreement (residual deviations on the order of 20 - 40 ppm), and discuss the results of cross retrievals between the three tools. Generally, the constraints from the cross retrievals are consistent with each other and with input values to within 1 sigma However, for high precision scenarios with error envelopes of order 30 ppm, subtle differences in the simulated spectra result in discrepancies between the different retrieval suites, and inaccuracies in retrieved values of several sigma. This can be considered analogous to substantial systematic/astrophysical noise in a real observation, or errors/omissions in a forward model such as molecular linelist incompleteness or missing absorbers.}
+      \field{eprinttype}{arXiv}
+      \field{title}{{A comparison of exoplanet spectroscopic retrieval tools}}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1093/mnras/staa548
+      \endverb
+      \verb{eprint}
+      \verb 2002.01063
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/staa548.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2002.01063
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2002.01063
+      \endverb
+      \keyw{atmospheres,data analysis,methods,planets and satellites,radiative transfer,scopic,spectro-,statistical,techniques}
+    \endentry
     \entry{Batalha2018}{article}{}
       \name{author}{5}{}{%
         {{uniquename=0,uniquepart=base,hash=1d7a06487b9d5a32f58c5ad1bbcb6a6a}{%
@@ -5937,6 +6010,44 @@
       \endverb
       \keyw{atmospheres,planets and satellites}
     \endentry
+    \entry{Foreman-Mackey2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=297dd34bb5e0d14212907cc52b120315}{%
+           family={Foreman-Mackey},
+           familyi={F\bibinithyphendelim M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{297dd34bb5e0d14212907cc52b120315}
+      \strng{fullhash}{297dd34bb5e0d14212907cc52b120315}
+      \strng{bibnamehash}{297dd34bb5e0d14212907cc52b120315}
+      \strng{authorbibnamehash}{297dd34bb5e0d14212907cc52b120315}
+      \strng{authornamehash}{297dd34bb5e0d14212907cc52b120315}
+      \strng{authorfullhash}{297dd34bb5e0d14212907cc52b120315}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This Python module uses matplotlib (Hunter 2007) to visualize multidimensional samples using a scatterplot matrix. In these visualizations, each one-and two-dimensional pro-jection of the sample is plotted to reveal covariances. corner was originally conceived to display the results of Markov Chain Monte Carlo simulations and the defaults are chosen with this application in mind but it can be used for displaying many qualitatively different samples.}
+      \field{issn}{2475-9066}
+      \field{journaltitle}{The Journal of Open Source Software}
+      \field{number}{2}
+      \field{title}{{corner.py: Scatterplot matrices in Python}}
+      \field{volume}{1}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{24}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21105/joss.00024
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/corner.pdf:pdf
+      \endverb
+    \endentry
     \entry{Foreman-Mackey2013}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=297dd34bb5e0d14212907cc52b120315}{%
@@ -7898,6 +8009,32 @@
       \verb :home/evert/Documents/Papers/Thesis/RadEqIrradiatedPlanets201.pdf:pdf
       \endverb
       \keyw{planetary systems,planets and satellites: general,stars: atmospheres}
+    \endentry
+    \entry{assembled}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7c849af4fc062d9e3dfd36472c712ca3}{%
+           family={Gunn},
+           familyi={G\bibinitperiod},
+           given={NASA/Chris},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \strng{fullhash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \strng{bibnamehash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \strng{authorbibnamehash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \strng{authornamehash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \strng{authorfullhash}{7c849af4fc062d9e3dfd36472c712ca3}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.flickr.com/photos/nasawebbtelescope/48636487393/}
+      \field{title}{Nasa's James Webb Space Telescope Has Been Assembled For The First Time}
+      \field{year}{2019}
+      \true{nocite}
     \endentry
     \entry{Haffert2019}{article}{}
       \name{author}{8}{}{%
