@@ -277,6 +277,39 @@ With simulated spectra from petitRADTRANS providing a ground truth, we can compa
 %\cite{Garland2019} %BD absorption
 %\cite{Fegley1994} %Jupiter/Saturn atmospheres
 %\cite{Tokunaga1983} %MIR atmosphere spectra
+\begin{table}[t]
+	\centering
+	\begin{tabular}{l|ccc}
+		\toprule
+		\textbf{Parameter} & \textbf{VHS-1256b} & \textbf{2M1207b} & \textbf{WISE 0855}\\
+		\midrule
+		Radius [R$_Jup$] & 1.29 & 1.5 & 1.17\\
+		Distance [pc] & 12.7 & 52.4 & 2.23\\
+		$\log g$ & 4.25 & 3.2 & 4\\
+		$T_{int}$ [K]& 900 & 1600 & 250\\
+		$T_{equ}$ [K]& 3.4 & 10 & 3.4\\
+		$\kappa_{IR}$ & 0.01 & 0.01 & 0.01\\
+		$\gamma$ & 0.3 & 0.4 & 0.3\\
+		\midrule
+		\multicolumn{4}{c}{\textbf{Abundances}}\\
+		\midrule
+		H$_{2}$ & 0.898 & 0.74 & 0.73\\
+		He & 0.102 & 0.24 & 0.25\\
+		H$_{2}$O & 1$\times10^{-3}$ & 5$\times10^{-3}$ & 5$\times10^{-4}$\\
+		CO & 1$\times10^{-7}$& 1$\times10^{-2}$ & 1$\times10^{-15}$\\
+		CO$_{2}$ & 1$\times10^{-5}$& 1$\times10^{-3}$ & 1$\times10^{-14}$\\
+		CH$_{4}$ & 3$\times10^{-3}$& 1$\times10^{-6}$ & 3$\times10^{-4}$\\
+		NH$_{3}$ & 1$\times10^{-5}$& 1$\times10^{-7}$ & 3$\times10^{-3}$\\
+		C$_{2}$H$_{2}$ & 1$\times10^{-8}$& 1$\times10^{-9}$& \ldots \\
+		HCN & 1$\times10^{-10}$ & 1$\times10^{-9}$ & 1$\times10^{-9}$ \\
+		TiO & \ldots & 5$\times10^{-7}$ & \ldots \\
+		SiO & 1$\times10^{-6}$ &  \ldots & \ldots \\
+		\bottomrule
+	\end{tabular}
+	\caption[petitRADTRANS inputs.]{Input parameters to generate spectra using petitRADTRANS. High resolution line-by-line mode was used. $\kappa_{IR}$ and $\gamma$ are the infrared opacity and ratio of visible to IR opacities respectively. The values chosen for these parameters are based on \parencite{Molliere2019}. The mass-fraction abundances chosen are arbitrary values chosen to encompass a wide range of compositions and to test the ability of the retrieval code to recover small abundances. Where possible, values were chosen to qualitatively reflect known species present \parencite{Miles2018}. }
+	\label{tab:inputparams}
+\end{table}
+
 \section{Methods}
 Here we will outline how we generated our input spectra, and the procedure we used to perform our atmospheric retrieval.
 \subsection{Spectra Generation}
@@ -300,38 +333,7 @@ The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \ver
 This ensures the input spectrum will oversample the instrumental spectral resolution by a factor of at least 4 across the whole wavelength range.
 
 While it is possible to add a background term to a spectrum using MIRISIM, we chose not to use any background in order to improve our spectral extraction after processing with the JWST pipeline, with the understanding that errors from background subtraction will be negligible in actual data.
-\begin{table}[t]
-	\centering
-	\begin{tabular}{l|ccc}
-		\toprule
-		\textbf{Parameter} & \textbf{VHS-1256b} & \textbf{2M1207b} & \textbf{WISE 0855}\\
-		\midrule
-		Radius [R$_Jup$] & 1.29 & 1.5 & 1.17\\
-		Distance [pc] & 12.7 & 52.4 & 2.23\\
-		$\log g$ & 4.25 & 3.2 & 4\\
-		$T_{int}$ [K]& 900 & 1600 & 250\\
-		$T_{equ}$ [K]& 3.4 & 10 & 3.4\\
-		$\kappa_{IR}$ & 0.01 & 0.01 & 0.01\\
-		$\gamma$ & 0.3 & 0.4 & 0.3\\
-		\midrule
-		\multicolumn{4}{c}{\textbf{Abundances}}\\
-		\midrule
-		 H$_{2}$ & 0.898 & 0.74 & 0.73\\
-		 He & 0.102 & 0.24 & 0.25\\
-		 H$_{2}$O & 1$\times10^{-3}$ & 5$\times10^{-3}$ & 5$\times10^{-4}$\\
-		 CO & 1$\times10^{-7}$& 1$\times10^{-2}$ & 1$\times10^{-15}$\\
-		 CO$_{2}$ & 1$\times10^{-5}$& 1$\times10^{-3}$ & 1$\times10^{-14}$\\
-		 CH$_{4}$ & 3$\times10^{-3}$& 1$\times10^{-6}$ & 3$\times10^{-4}$\\
-		 NH$_{3}$ & 1$\times10^{-5}$& 1$\times10^{-7}$ & 3$\times10^{-3}$\\
-		 C$_{2}$H$_{2}$ & 1$\times10^{-8}$& 1$\times10^{-9}$& \ldots \\
-		 HCN & 1$\times10^{-10}$ & 1$\times10^{-9}$ & 1$\times10^{-9}$ \\
-		 TiO & \ldots & 5$\times10^{-7}$ & \ldots \\
-		 SiO & 1$\times10^{-6}$ &  \ldots & \ldots \\
-		\bottomrule
-	\end{tabular}
-	\caption[petitRADTRANS inputs.]{Input parameters to generate spectra using petitRADTRANS. High resolution line-by-line mode was used. $\kappa_{IR}$ and $\gamma$ are the infrared opacity and ratio of visible to IR opacities respectively. The values chosen for these parameters are based on \parencite{Molliere2019}. The abundances chosen are arbitrary values chosen to encompass a wide range of compositions and to test the ability of the retrieval code to recover small abundances. Where possible, values were chosen to qualitatively reflect known species present \parencite{Miles2018}. }
-	\label{tab:inputparams}
-\end{table}
+
 \subsection{Atmospheric Retrieval Setup}
 \subsubsection{Prior choice}
 The choice of priors is a consistent challenge when using a Bayesian framework.
@@ -371,44 +373,77 @@ Our prior choices and the ranges over which they cover are given in table \ref{t
 \end{table}
 
 \section{Results}
-\subsection{Model Selection}
-\begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Bayesian evidence for models of differing dimensionality.}
-	\label{fig:bicdim}
-\end{figure}
+We ran numerous atmospheric retrievals to examine the effects of fringing on parameter retrieval, as well as to better understand how to use the MRS to study atmospheres.
+
+%\subsection{Model Selection}
+%\begin{figure}[h]
+%	%\includegraphics[content...]{imagefile}
+%	\caption{Bayesian evidence for models of differing dimensionality.}
+%	\label{fig:bicdim}
+%\end{figure}
 % Number of parameters
 % Bayesian evidence
 \subsection{Fringing Comparison}
-PRELIMINARY PLOTS NOT FINAL
-\begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Posterior Distributions for XX for different fringe cases}
-	\label{fig:postfringe}
-\end{figure}
+We begin by comparing the results of different fringing cases, using VHS-1256b as a template.
+The first set of retrievals use only Channel 1 data from 4.9-7.5 $\mu$m, as point source fringe flats have only been generated for this wavelength range.
+We compare the case of a retrieval with no fringing added to the spectrum to having an on-axis point-source derived fringe flat applied and an extended-source fringe flat used for correction.
+The case of an extended source fringe flat was not used, as the correction is near ideal, and it is well represented by the no-fringing case.
+Residual fringe correction was not used, as the extent to which it degrades the spectrum makes it clear it cannot currently be used for atmospheric retrieval studies.
+This was repeated for each of the targets described above.
+Typical $\log\mathcal{Z}$ evidences ranged from the order of $-10^{3}$ to $-10^{-5}$.
+While low evidences for a single model, the size of the parameter space and the number of data points ensures that the likelihood of any given model being true is low, and therefore the low absolute value of the evidence is expected. 
+We also consider the use of the full spectral coverage, and examine the impact this has on parameter estimation.
+
+We find that fringing has a significant impact on atmospheric retrievals.
+In many cases, the fringing prevented the nested sampling method from adequately sampling the parameter space.
+As no physical model will produce the features introduced by fringing, all produce similar evidence, leading to rapid convergence and sparse sampling, and thus failing to retrieve correct atmospheric parameters. 
+Adjusting the number of live points or other hyperparameters did not affect this failure mode.
+For the point source fringing, it was leaving the spectrum uncorrected led to better results by reducing the additional fringing induced by the interference between the point-source and extended-source fringe flats.
+
+We found that the wavelength coverage was critical to accurately retrieving parameters. Figures \ref{fig:postVHS_tr} through \ref{fig:bestfitVHS} demonstrate the results for using a single channel, while Figures XX through YY show the full wavelength coverage.
+Of key interest is the variation in retrieved abundances.
+We used H$_{2}$S to examine how the retrieval would behave when searching for a species not present in the atmosphere. 
+With most of its absorption lines located in Channel 2, the Channel 1 only retrieval dramatically overestimated the presence of the molecule, while the full spectrum retrieval correctly identified it as not present.
+Not only does this impact the abundance of H$_{2}$S itself, but correlations with other species such as water and methane contributed to incorrect abundance measurements.
 % Bias of different parameters
 % Different widths
 % Detection of non-existant species
-\subsection{VHS-1256b}
-\begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Posterior Distributions for}
-	\label{fig:postVHS}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.5\linewidth]{VHS1256bCH1_nofringe_tempradius_corner.png}
+	\caption{Interior temperature and planet radius posteriors for VHS1256b, using only CH1 for the retrieval. Uncorrected point-source fringing was applied. As expected, these parameters are highly correlated: a higher temperatures and larger radii both result in increases in the overall luminosity of the planet. The true value of both parameters falls outside the displayed distributions. FIXME AXIS LABELS}
+	\label{fig:postVHS_tr}
 \end{figure}
 \begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Pressure Temperature profile for}
+	\centering
+	\includegraphics[width=\linewidth]{VHS1256bCH1_nofringe_nuisance_corners.png}
+	\caption{Posterior distributions for the nuisance parameters of VHS1256b, in the uncorrected point-source fringing case. As most of these are non physical parameters, the P-T distribution provides a better metric for determining whether the atmospheric structure has been retrieved, as opposed to specific parameter values. }
+	\label{fig:postVHS_nuisance}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{VHS1256bCH1_nofringe_abundances_corner.png}
+	\caption{Posterior distributions for species abundances in VHS1256b, in the uncorrected point-source fringing case using CH1 data. While several species were successfully retrieved, the very high abundance of H$_{2}$S, which is not present in the atmosphere and whose absorption features fall mostly outside of CH1, demonstrates the need for wide wavelength coverage to correctly identify the presence of a given species. There also exists significant correlation between H$_{2}$O and CH$_{4}$, with some additional correlation to H$_{2}$S, which has led to incorrect abundance measurements.}
+	\label{fig:postVHS_abundances}
+\end{figure}
+\begin{figure}[t]
+	\includegraphics[width=0.95\linewidth]{VHS1256bTempPressInputRetrieved}
+	\caption{Pressure-Temperature profile for VHS-1256b, using the CH1 spectrum with no fringing or correction applied. Using different P-T profiles for the retrieval results in significant differences from the input profile. In the case where the underlying profile is unknown, multiple profiles should be compared.}
 	\label{fig:presVHS}
 \end{figure}
 \begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Best fit model for}
+	\centering
+	\includegraphics[width=0.9\linewidth,trim=5cm 2cm 5cm 1cm,clip]{VHS_retrieved_models_ext}
+	\includegraphics[width=0.9\linewidth,trim=5cm 2cm 5cm 2cm,clip]{VHS_retrieved_models_ext_narrow_fringe}
+	\caption{Best fit models for VHS-1256b in the no fringing and corrected point-source fringing cases. \textbf{Top:} Full wavelength range for Channel 1. \textbf{Bottom:} Inset to show the impact of fringing.}
 	\label{fig:bestfitVHS}
 \end{figure}
 
+\subsection{VHS-1256b}
+NEED TO REPLACE ALL OF THESE BECAUSE THEY ARE NOISELESS?
 \subsection{2M1207b}
 \begin{figure}[h]
-	\includegraphics[width=\linewidth]{2M1207B_v2_fringing_corner}
+	%\includegraphics[width=\linewidth]{2M1207B_v2_fringing_corner}
 	\caption{Posterior Distributions for 2M1207b.}
 	\label{fig:post2M}
 \end{figure}
