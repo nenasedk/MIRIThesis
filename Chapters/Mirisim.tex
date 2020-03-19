@@ -246,9 +246,11 @@ This corrects for the wavelength dependent bias shown in Fig. \ref{fig:miridetef
 
 However, this step remains under development, and does not produce absolutely calibrated images. In particular, even using the most up to date reference files (v8D.04.00) there remains discontinuities between channels, and poorly calibrated spectral slopes.
 In particular there remains a significant high frequency modulation in channel 2C, and a large spike in the flux in channel 2A.
+Corrections for these issues are planned for a forthcoming CDP release.
 Fringing effects appear in most PHOTOM CDP files, adding an additional fringing component that is not removed during standard fringing correction.
 While we expect the photom files should not affect the output spectrum as they are simply multiplied in and divided out, these effects that are visible within the CDP files remain present in the extracted spectrum.
 This is a substantial limitation for spectral extraction, and must be rectified prior to analysis of on sky data. 
+
 
 \subsubsection{Fringing correction}
 Fringing correction within the JWST pipeline is accomplished by dividing a known fringe flat into the photometrically calibrated detector image. 

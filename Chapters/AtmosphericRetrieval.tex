@@ -149,12 +149,14 @@ To simplify notation, we adopt the following convention for Bayes' theorem:
 In general, the goal of an atmospheric retrieval is to find the best fit model by maximizing the evidence $\mathcal{Z}$, and as a by product finding the marginalized posterior distributions for each parameter.
 This comes with many challenges, especially when dealing with large numbers of parameters.
 Selection of the priors and model will determine the extent to which a result can be interpreted, while sampling large parameter spaces and computing likelihoods introduces substantial numerical challenges. 
-The Markov Chain Monte Carlo method and the Nested Sampling method described below attempt to solve the challenges of exploring a large parameter space.
-\subsection{MCMC}
-\cite{Foreman-Mackey2013} %emcee
-\cite{MacKay2003} %MCMC
+The Nested Sampling method described below attempts to solve the challenges of exploring a large parameter space.
+%\subsection{MCMC}
+%An MCMC method generates many 
+%\cite{Foreman-Mackey2013} %emcee
+%\cite{MacKay2003} %MCMC
+
 \subsection{Nested Sampling}
-Nested sampling attempts to address several of the shortcomings of MCMC methods while simultaneously improving computational efficiency \parencite{Skilling2004}.
+Nested sampling attempts to address several of the shortcomings of Markov Chain Monte Carlo (MCMC) methods while simultaneously improving computational efficiency \parencite{Skilling2004}.
 A particular strength of the method is in the sampling of highly multimodal distributions, removing the problem where an MCMC approach may get stuck in a single local maximum.
 MCMC methods generate samples `proportional to' the true posterior distributions, which lead to difficulties in computing the evidence $\mathcal{Z}$ \parencite{Speagle2020}. 
 In contrast, nested sampling puts the evidence first and provides estimates of the posterior distributions from the importance weights of the final set of samples. First described in \parencite{Skilling2004}, nested sampling has been adopted as the sampling algorithm of choice within the astrophysics community \parencite{Feroz2009,Buchner2014,Feroz2019,Speagle2020}.
@@ -333,7 +335,12 @@ The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \ver
 This ensures the input spectrum will oversample the instrumental spectral resolution by a factor of at least 4 across the whole wavelength range.
 
 While it is possible to add a background term to a spectrum using MIRISIM, we chose not to use any background in order to improve our spectral extraction after processing with the JWST pipeline, with the understanding that errors from background subtraction will be negligible in actual data.
-
+\begin{figure}[t]
+	\includegraphics[width=\linewidth,trim=4.7cm 2cm 5.7cm 1cm,clip]{VHS_retrieved_extracted}
+	\includegraphics[width=\linewidth,trim=4.7cm 2cm 5.7cm 1cm,clip]{VHS_retrieved_extracted_narrow_fringe}
+	\caption{The extracted 1D spectrum for VHS1256b with no fringing applied compared to the input template and the best fit model from a channel one atmospheric retrieval.}
+	\label{fig:vhsnofringeextractedbestfit}
+\end{figure}
 \subsection{Atmospheric Retrieval Setup}
 \subsubsection{Prior choice}
 The choice of priors is a consistent challenge when using a Bayesian framework.
@@ -401,6 +408,7 @@ Adjusting the number of live points or other hyperparameters did not affect this
 For the point source fringing, it was leaving the spectrum uncorrected led to better results by reducing the additional fringing induced by the interference between the point-source and extended-source fringe flats.
 
 We found that the wavelength coverage was critical to accurately retrieving parameters. Figures \ref{fig:postVHS_tr} through \ref{fig:bestfitVHS} demonstrate the results for using a single channel, while Figures XX through YY show the full wavelength coverage.
+Contours are set at the 50\%, 95\% and 99\% coverage levels for all marginal plots.
 Of key interest is the variation in retrieved abundances.
 We used H$_{2}$S to examine how the retrieval would behave when searching for a species not present in the atmosphere. 
 With most of its absorption lines located in Channel 2, the Channel 1 only retrieval dramatically overestimated the presence of the molecule, while the full spectrum retrieval correctly identified it as not present.
@@ -414,6 +422,7 @@ Not only does this impact the abundance of H$_{2}$S itself, but correlations wit
 	\caption{Interior temperature and planet radius posteriors for VHS1256b, using only CH1 for the retrieval. Uncorrected point-source fringing was applied. As expected, these parameters are highly correlated: a higher temperatures and larger radii both result in increases in the overall luminosity of the planet. The true value of both parameters falls outside the displayed distributions. FIXME AXIS LABELS}
 	\label{fig:postVHS_tr}
 \end{figure}
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{VHS1256bCH1_nofringe_nuisance_corners.png}
@@ -426,15 +435,16 @@ Not only does this impact the abundance of H$_{2}$S itself, but correlations wit
 	\caption{Posterior distributions for species abundances in VHS1256b, in the uncorrected point-source fringing case using CH1 data. While several species were successfully retrieved, the very high abundance of H$_{2}$S, which is not present in the atmosphere and whose absorption features fall mostly outside of CH1, demonstrates the need for wide wavelength coverage to correctly identify the presence of a given species. There also exists significant correlation between H$_{2}$O and CH$_{4}$, with some additional correlation to H$_{2}$S, which has led to incorrect abundance measurements.}
 	\label{fig:postVHS_abundances}
 \end{figure}
-\begin{figure}[t]
+\begin{figure}[h]
+	\centering
 	\includegraphics[width=0.95\linewidth]{VHS1256bTempPressInputRetrieved}
 	\caption{Pressure-Temperature profile for VHS-1256b, using the CH1 spectrum with no fringing or correction applied. Using different P-T profiles for the retrieval results in significant differences from the input profile. In the case where the underlying profile is unknown, multiple profiles should be compared.}
 	\label{fig:presVHS}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth,trim=5cm 2cm 5cm 1cm,clip]{VHS_retrieved_models_ext}
-	\includegraphics[width=0.9\linewidth,trim=5cm 2cm 5cm 2cm,clip]{VHS_retrieved_models_ext_narrow_fringe}
+	\includegraphics[width=\linewidth,trim=4.7cm 2cm 5.7cm 1cm,clip]{VHS_retrieved_models_ext_modelonly}
+	\includegraphics[width=\linewidth,trim=4.7cm 2cm 5.7cm 2cm,clip]{VHS_retrieved_models_ext_narrow_fringe}
 	\caption{Best fit models for VHS-1256b in the no fringing and corrected point-source fringing cases. \textbf{Top:} Full wavelength range for Channel 1. \textbf{Bottom:} Inset to show the impact of fringing.}
 	\label{fig:bestfitVHS}
 \end{figure}

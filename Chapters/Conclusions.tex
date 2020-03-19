@@ -1,21 +1,65 @@
 \chapter{Discussion and Conclusions}
+Astronomy is a constantly evolving field. 
+With a new era of  infrared observations fast approaching, we set out to examine how instrumental effects will limit our scientific capabilities, and to explore atmospheric retrievals in the mid infrared.
+Keeping these goals in mind, we characterized the effects of fringing on spectral extraction in the MIRI MRS.
+We also selected targets from the Early Release Science and Guaranteed Time Observation programs for JWST to perform realistic atmospheric retrievals on emission spectra as observed with the MRS.
+To accomplish this we developed an analysis pipeline to simulate, process and examine synthetic MRS observations, which can easily be used for future observing proposals or data reductions.
+
 \section{Summary of Results}
-\subsection{Effects of fringing on cross correlations}
+\subsection{Fringing in the MIRI MRS}
+In order to quantify the effects of thin film fringing in the detector layers of the MIRI MRS, we used cross correlations to compare the extracted spectrum with the input template.
+The current version of the instrumental simulator, MIRISIM, uses a fringe flat derived from a spatially extended source, and the JWST Pipeline uses the same fringe flat to correct for this effect.
+However, the extended source does not provide a realistic model of fringing for point sources. 
+We implemented a routine to substitute a point-source derived fringe flat into MIRISIM, using a large set of fringe flats to cover the detector plane.
+We then corrected this point-source fringing using the extended source fringe flat currently used in the JWST Pipeline, as well as using residual fringe correction to filter out fringing frequencies.
+We found that the current implementation provides near ideal correction, comparing well to the case with no fringing.
+The correction performed less well on point source fringing, decreasing the signal to noise of the cross correlation peak by 10\% if the point source is located in the center of the detector plane, and 20\% if the source is located off-axis.
+The residual fringe correction significantly degraded the spectrum, reducing the SNR by more than 80\%.
+
+To emphasize the importance of this effect, we compared the extracted spectrum to molecular templates using the same cross correlation procedure.
+As when correlated with the full input template, we showed that the the current instrumental model will overestimate the SNR of a detection as compared to the more realistic point-source fringe model. 
+The reduction in SNR when using the point-source model is substantial enough to move a species from a significant, $>$5$\sigma$ to a marginal detection.
+
+Moving forward, point source fringing should be added to the instrumental simulator in order to provide users with more realistic synthetic datasets with which to test analysis tools and plan observations. 
+Residual fringe correction requires further development in order to properly correct MRS data, though it has shown success in the past for Spitzer and Hubble.
+A more robust fringe correction must be developed in order to analyze MRS data.
+This may require additional calibration or commissioning data with the specific goal of characterizing this feature, but current corrections are inadequate for the science cases presented for JWST.
+
 \subsection{Effects of fringing on atmospheric retrievals}
 \subsection{Atmospheric retrievals with the MIRI MRS}
 \section{Discussion}
 \subsection{Implications for GTO Observations}
 \subsection{Caveats and Limitations}
-MIRISIM issues
-JWST pipeline issues
-petitRadTrans as input and output - validate models
-petitRadTrans spectral resolution
-1D models - planets aren't 1D \parencite{Taylor2020}
-No background
+The conclusions and recommendations given here must come with certain caveats.
+All of the software used within this work are at varying stages of development, and are explicitly stated as being unready for public use.
+Thus there are still many open issues - particularly in MIRISIM and the JWST pipeline.
+In MIRISIM, there are particular issues with photometric calibration. 
+While several of these effects have been noted and will be fixed in upcoming releases, others will inevitably remain.
+These effects include unusual spikes or drops across the spectrum, saturating detectors in the absence of a bright source, additional fringing components and potential interpolation issues.
+The JWST pipeline is also under development, and throughout this work we use version 0.15.
+Several of the pipeline steps - e.g. \verb|ref_pix|, \verb|jump_step| and \verb|extract_1d_step| - are incomplete or have particular open issues for the MRS.
+Cube building is another source of concern, and the correlations introduced by this step are poorly understood.
+The extracted spectrum requires significant ad-hoc adjustment to resemble the input spectrum, a procedure which is not possible for an astronomical source.
+Atmospheric retrievals in particular rely on accurate spectral extraction, and all of the results presented here are likely to change as development continues.
+
+Beyond software development issues, there are many more fundamental limitations within this work.
+\parencite{Barstow2020} provides a comparison of various atmospheric modeling and retrieval tools, demonstrating how different retrieval tools can produce different results on the same input.
+We used petitRADTRANS for both our spectrum generation and our retrieval code, and any inherent issues with this tool will be manifest in the results presented here.
+It will ultimately be necessary to use multiple tools to perform retrieval studies in order to generate robust results.
+Further still \parencite{Taylor2020} demonstrates the limitations of 1D models with the quality of data produced by JWST.
+2D disk effects, variability and more will all greatly impact the spectra observed with the MRS, and a 1D model cannot capture the full 3D atmospheric physics present in nature.
+Finally, we ignore the presence of astronomical backgrounds, including the contamination from the host star of an exoplanet - thus neglecting one of the most significant challenges in exoplanet astronomy.
+Such issues are areas of ongoing research, and will present challenges for all atmospheric retrieval studies in the near future.
+
 \subsection{Future work}
-Properly implement fringe model and correction
-Clouds + variability
-Designing better observing strategies
-Comparing different spectral models
-Extracting planet spectrum in contrast limited regime
-\section{Conclusions}
+Going forward there are many improvements to be made to this work.
+Clouds are a universal atmospheric feature, and were neglected from the atmospheric retrieval study presented here.
+The mid-infrared will allow us to explore novel cloud features, potentially constraining particle size and composition through 10$\mu$m observations.
+Variability studies will also be possible for both brown dwarfs and some exoplanets.
+The use of the tools developed here could prove useful in designing observations to maximize the capabilities of the MIRI MRS for exoplanet observations.
+
+Extensive validation should be performed on the atmospheric retrieval code used here.
+From clouds to atmospheric chemistry to parameter selection, there are many significant challenges to overcome before the results of a retrieval are to be fully trusted.
+Quantitative metrics such as the Bayes' factor should be used to determine whether or not a given parameter should be included in the retrieval.
+Unfortunately performing a retrieval for each parameter becomes computationally expensive, which is the true limitation of all retrieval codes available today.
+Nevertheless, computational resources and software will continue to improve, allowing ever more detailed retrieval studies that will provide us the means to explore atmospheres of other worlds.
