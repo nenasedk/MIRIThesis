@@ -75,7 +75,7 @@ Many (or even most) of these programs rely on the same set of high-resolution mo
 In order to compute the emission spectrum an initial featureless blackbody spectrum $B(T_{int})$ is passed through multiple discrete layers of the atmosphere, parameterized by their temperature, pressure, and the opacities of each of the species present in a given layer.
 Modeling each layer as plane parallel, the intensity is computed as in \parencite{Irwin2008,Molliere2017,Molliere2019}
 \begin{equation}
-I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(T^{i}) + B(T^{i+1})\right]\left(\mathcal{T}^{i}-\mathcal{T}^{i+1}\right)
+I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(T^{i}) + B(T^{i+1})\right]\left(\mathcal{T}^{i}-\mathcal{T}^{i+1}\right).
 \end{equation}
 $N_{L}$ is the number of layers in the atmosphere, and $\mathcal{T}$ is the transmission from a given layer to the top of the atmosphere. All quantities are averaged per wavelength bin in c-k mode, while they are evaluated at each wavelength point in line-by-line mode.
 
@@ -88,7 +88,7 @@ As denoted by $\left<\right>_{P}$, this profile is boxcar-smoothed over log(P), 
 The modified Guillot profile is defined as
 \begin{align}
 T_{Guillot}(P) &= \frac{3T^{4}_{int}}{4}\left(\frac{2}{3} + \delta P\right)\\
-&+\frac{3T^{4}_{eq}}{4}\left[\frac{2}{3} + \frac{1}{\gamma\sqrt{3}} + \left(\frac{\gamma}{\sqrt{3}} - \frac{1}{\gamma\sqrt{3}}\right)e^{-\gamma\delta\sqrt{3}P}\right]
+&+\frac{3T^{4}_{eq}}{4}\left[\frac{2}{3} + \frac{1}{\gamma\sqrt{3}} + \left(\frac{\gamma}{\sqrt{3}} - \frac{1}{\gamma\sqrt{3}}\right)e^{-\gamma\delta\sqrt{3}P}\right],
 \end{align}
 with the second term accounting for irradiation of the upper atmosphere.
 The opacity parameters $\delta=\kappa_{IR}/g$ and  $\gamma=\kappa_{V}/\kappa_{IR}$ are defined such that the optical depth $\tau=\delta\cdot P$. 
@@ -134,7 +134,7 @@ Here we will follow \parencite{Speagle2019} to provide a brief overview of Bayes
 
 To measure the likelihood of a given model, we turn to Bayes' Theorem:
 \begin{equation}\label{eqn:bayes}
-P(\mathbf{\Theta}_{M}|\mathbf{D},M) = \frac{P(\mathbf{D}|\mathbf{\Theta},M)P(\mathbf{\Theta}|M)}{P(\mathbf{D}|M)}
+P(\mathbf{\Theta}_{M}|\mathbf{D},M) = \frac{P(\mathbf{D}|\mathbf{\Theta},M)P(\mathbf{\Theta}|M)}{P(\mathbf{D}|M)}.
 \end{equation}
 In our notation, $\mathbf{\Theta}$ is the set of parameters that describe a model $M$, that is fit to the data $\mathbf{D}$. 
 Bayes' theorem asks what is the probability that the parameters $\mathbf{\Theta}$ are true given the data and model. 
@@ -143,7 +143,7 @@ The distributions for each parameter are the \textbf{posterior} distributions.
 This is then related to the \textbf{likelihood} $P(\mathbf{D}|\mathbf{\Theta},M)$ of measuring the data given the model, the \textbf{prior} probability $P(\mathbf{\Theta}|M)$ which describes our degree of belief in our model and the \textbf{evidence} $P(\mathbf{D}|M)$, which is marginalized over all possible $\mathbf{\Theta}$ and quantifies how well the model describes the data.
 To simplify notation, we adopt the following convention for Bayes' theorem:
 \begin{equation}
-\mathcal{P}(\mathbf{\Theta}) = \frac{\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})}{\mathcal{Z}}
+\mathcal{P}(\mathbf{\Theta}) = \frac{\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})}{\mathcal{Z}}.
 \end{equation}
 
 In general, the goal of an atmospheric retrieval is to find the best fit model by maximizing the evidence $\mathcal{Z}$, and as a by product finding the marginalized posterior distributions for each parameter.
@@ -164,17 +164,17 @@ In contrast, nested sampling puts the evidence first and provides estimates of t
 With the goal of parameter estimation, nested sampling attempts to estimate the evidence $\mathcal{Z}$ rather than directly sampling the posteriors \parencite{Skilling2004}. 
 This is done by integrating over the entire parameter space of $\mathbf{\Theta}$
 \begin{equation}
-\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta}
+\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta}.
 \end{equation}
 This is difficult.
 
 Rather than attempting to directly solve the entire multidimensional integral, nested sampling transforms this into an integration over the \textit{prior} volume X:
 \begin{equation}
-\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta} = \int_{0}^{1}\mathcal{L}(X)dX
+\mathcal{Z} = \int_{\Omega_{\mathbf{\Theta}}}\mathcal{L}(\mathbf{\Theta})\pi(\mathbf{\Theta})d\mathbf{\Theta} = \int_{0}^{1}\mathcal{L}(X)dX.
 \end{equation}
 This is now a contour integral over isocontours $\mathcal{L}(X)$ which bound the prior volume
 \begin{equation}
-X(\lambda) = \int_{\Omega_{\mathbf{\Theta}}:\mathcal{L}(\mathbf{\Theta})\geq\lambda}\pi(\mathbf{\Theta})d\mathbf{\Theta}
+X(\lambda) = \int_{\Omega_{\mathbf{\Theta}}:\mathcal{L}(\mathbf{\Theta})\geq\lambda}\pi(\mathbf{\Theta})d\mathbf{\Theta},
 \end{equation} 
 which is the fraction of the prior where the likelihood of the data given the model is above some threshold $\lambda$.
 The integration is now simplified into a 1D integration over X, given proper prior selection.
@@ -329,7 +329,7 @@ Channel 4 is ignored due to photometric calibration issues and lack of sensitivi
 The spectra generated by petitRADTRANS are in terms of the emitted flux and are in units of erg cm$^{-2}$ m$^{-2}$ s$^{-1}$ $Hz^{-1}$. 
 MIRISIM requires the flux incident on the detector in units of $\mu$Jy, so we convert the as 
 \begin{equation}
-F_{inc} [\mu\textrm{Jy}] = 10^{29}\times F_{em} \times \left(\frac{R_{pl}}{d_{pl}}\right)^{2}
+F_{inc} [\mu\textrm{Jy}] = 10^{29}\times F_{em} \times \left(\frac{R_{pl}}{d_{pl}}\right)^{2}.
 \end{equation}
 The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=12000 at 4.0$\mu$m. 
 This ensures the input spectrum will oversample the instrumental spectral resolution by a factor of at least 4 across the whole wavelength range.
@@ -402,10 +402,7 @@ While low evidences for a single model, the size of the parameter space and the 
 We also consider the use of the full spectral coverage, and examine the impact this has on parameter estimation.
 
 We find that fringing has a significant impact on atmospheric retrievals.
-In many cases, the fringing prevented the nested sampling method from adequately sampling the parameter space.
-As no physical model will produce the features introduced by fringing, all produce similar evidence, leading to rapid convergence and sparse sampling, and thus failing to retrieve correct atmospheric parameters. 
-Adjusting the number of live points or other hyperparameters did not affect this failure mode.
-For the point source fringing, it was leaving the spectrum uncorrected led to better results by reducing the additional fringing induced by the interference between the point-source and extended-source fringe flats.
+For the point source fringing, leaving the spectrum uncorrected led to better results by reducing the additional fringing induced by the interference between the point-source and extended-source fringe flats.
 
 We found that the wavelength coverage was critical to accurately retrieving parameters. Figures \ref{fig:postVHS_tr} through \ref{fig:bestfitVHS} demonstrate the results for using a single channel, while Figures XX through YY show the full wavelength coverage.
 Contours are set at the 50\%, 95\% and 99\% coverage levels for all marginal plots.
@@ -413,13 +410,38 @@ Of key interest is the variation in retrieved abundances.
 We used H$_{2}$S to examine how the retrieval would behave when searching for a species not present in the atmosphere. 
 With most of its absorption lines located in Channel 2, the Channel 1 only retrieval dramatically overestimated the presence of the molecule, while the full spectrum retrieval correctly identified it as not present.
 Not only does this impact the abundance of H$_{2}$S itself, but correlations with other species such as water and methane contributed to incorrect abundance measurements.
+
+
+\begin{table}[t]
+	\begin{scriptsize}
+	\begin{tabular}{l|lcccccc}
+		\toprule
+		\textbf{Name} & \textbf{Live} & \textbf{Wavelength [$\mu m$]} & \textbf{Fringing} & \textbf{T$_{int}$ [K]} & \textbf{R$_{pl}$ [R$_{j}$]} & \textbf{C/O in} & \textbf{C/O ret}\\
+		\midrule
+		\multirow{3}{*}{VHS-1256b} & 1500 & 5-7.5  & No  & $833\pm1$   & $1.44\pm0.004$ &&\\
+		                           & 10000 & 5-7.5 & Yes &  &&&\\
+		                           & 10000 & 5-18  & No  & $734\pm0.3$ & $1.65\pm0.001$ &&\\
+		                           \midrule
+		\multirow{3}{*}{WISE0855}  & 1500 & 5-7.5  & No  & $235\pm1$   & $1.24\pm0.004$ &&\\
+								   & 1500 & 5-7.5  & Yes &  &&&\\
+							       & 6000 & 5-18   & No  &  &&&\\
+							       \midrule
+		\multirow{3}{*}{2M1207b}   & 800 & 5-7.5   & No  &  &&&\\
+								   & 800 & 5-18    & No  &  &&&\\
+		\bottomrule
+	\end{tabular}
+	\caption{Summary of atmospheric retrievals.}
+	\label{tab:atmosum}
+	\end{scriptsize}
+\end{table}
+
 % Bias of different parameters
 % Different widths
 % Detection of non-existant species
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.5\linewidth]{VHS1256bCH1_nofringe_tempradius_corner.png}
-	\caption{Interior temperature and planet radius posteriors for VHS1256b, using only CH1 for the retrieval. Uncorrected point-source fringing was applied. As expected, these parameters are highly correlated: a higher temperatures and larger radii both result in increases in the overall luminosity of the planet. The true value of both parameters falls outside the displayed distributions. FIXME AXIS LABELS}
+	\caption{Interior temperature and planet radius posteriors for VHS1256b, using only CH1 for the retrieval. Uncorrected point-source fringing was applied. As expected, these parameters are highly correlated: a higher temperatures and larger radii both result in increases in the overall luminosity of the planet. The true value of both parameters falls outside the displayed distributions.}
 	\label{fig:postVHS_tr}
 \end{figure}
 
@@ -450,7 +472,7 @@ Not only does this impact the abundance of H$_{2}$S itself, but correlations wit
 \end{figure}
 
 \subsection{VHS-1256b}
-NEED TO REPLACE ALL OF THESE BECAUSE THEY ARE NOISELESS?
+
 \subsection{2M1207b}
 \begin{figure}[h]
 	%\includegraphics[width=\linewidth]{2M1207B_v2_fringing_corner}

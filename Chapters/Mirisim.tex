@@ -260,6 +260,7 @@ This fringe flat is based of extended source CV data, and a unique flat is used 
 While not a part of the JWST pipeline, we also examined the use of Residual Fringe Correction (RFC) \parencite{Lahuis2003,Lahuis2018} to remove fringing from photometrically calibrated data products. 
 This is an iterative procedure that fits 20 sinusoids of varying frequency and amplitude to each iso-alpha contour in order to detect and remove fringing patterns.
 We applied this procedure to on axis point-source fringe data in order to provide a comparison to using the standard fringe correction procedure using an extended source fringe flat.
+There is currently a conflict between the \verb|dark_current| step in the JWST pipeline and the RFC, and therefore this step was not applied to data using the RFC.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.8\linewidth]{RFC}
@@ -271,7 +272,7 @@ We applied this procedure to on axis point-source fringe data in order to provid
 In order to extract the spectrum measured by the MRS, the detector image is converted into an IFU Cube in $(\alpha,\beta,\lambda)$ space, using the transformation which was outlined in Fig. \ref{fig:mrscoords}.
 A set of transformations for each band maps each detector pixel to a a spaxel in cube space, accounting for  optical distortions. 
 These transformations produce an irregular grid that samples the on-sky intensity, which can then be combined into a regularly spaced grid of spaxels.
-Each spaxel filled by a weighted sum of points, with the weight decreasing with distance from the spaxel. 
+Each spaxel filled by a weighted sum of points, with the weight decreasing exponentially with distance from the spaxel. 
 This should also account for changes in the MIRI PSF with wavelength, however issues with the cube building prevent use of the \verb|miripsf| weighting scheme.
 Instead, the flux-conserving Shepards method is used, setting the weighting parameter to \verb|'emsm'|.
 It should be noted that this procedure introduces correlations between the spaxels, which is not accounted in the error on each spaxel.
@@ -327,9 +328,10 @@ Our procedure takes in two spectra.
 The first is an emission spectrum produced by the petitRADTRANS program \parencite{Molliere2019}, which provides our forward model with which we compare our data spectrum.
 Our data is the result of passing the template spectrum through MIRISIM, and extracting it from the resulting detector image using the JWST pipeline.
 We then rebin the high-resolution input spectrum to the same wavelength bins as the data spectrum, using the \verb|spectres| package \parencite{Carnall2017}.
-Prior to normalization, we remove any outliers from the spectrum (due to binning errors or instrumental effects) by setting any data points separater by more than 15 standard deviations from the mean to the median value of the spectrum.
-For each spectrum, we subtract the minimum value to remove any offset in the spectrum, and divide by the maximum value to restrict the range to [0,1]. 
-We then use apply a Savitzky-Golay filter with a window of 1/4 the length of the spectrum and a polynomial order of 3, which we then subtract from the unfiltered spectrum. 
+Prior to normalization, we remove any outliers from the spectrum (due to binning errors or instrumental effects) by setting any data points separated by more than 10 standard deviations from the mean to the median value of the spectrum.
+We then use apply a median filter with a window of 55 datapoints, which we then subtract from the unfiltered spectrum. 
+A window size of 55 was in order to remove the continuum of the spectrum, without affecting larger scale features.
+We compared the use of a median filter to a Savitsky-Golay polynomial filter, and found no significant changes to the results.
 This removes the continuum emission from the spectrum, and centers it around 0.
 We then renormalize the spectrum by dividing by the maximum absolute value such that the range is in [-1,1]. 
 This procedure removes the continuum which would introduce an overall slope to the cross correlation, but preserves the relative line depths and positions.
@@ -351,14 +353,16 @@ By extending our iterating over each spaxel from the MRS cube and using a molecu
 	\includegraphics[width=\linewidth,trim=3cm 0.5cm 5cm 2.5cm, clip]{VHSSpeciesTemplates}
 	\includegraphics[width=\linewidth,trim=3cm 0.5cm 5cm 2cm,clip]{WISESpeciesTemplates}
 	\includegraphics[width=\linewidth,trim=3cm 0.5cm 5cm 2cm,clip]{2MSpeciesTemplates}
-	\caption{\textbf{Top:} Species templates for VHS1256b. Each species emission spectrum is computed using petitRADTRANS with a single species atmosphere with Jupiter-like abundances of H$_{2}$ and He, and an internal temperature of 900 K. There is a 500$\mu$Jy offset between each species. \textbf{Center:} The same, but using WISE 0855 parameters. \textbf{Bottom:} The same for 2M1207b.}
+	\caption{\textbf{Top:} Species templates for VHS1256b. Each species emission spectrum is computed using petitRADTRANS with a single species atmosphere with Jupiter-like abundances of H$_{2}$ and He and a 1\% mass fraction for the remaining species. There is a 500$\mu$Jy offset between each species. \textbf{Center:} The same, but using WISE 0855 parameters. \textbf{Bottom:} The same for 2M1207b.}
 	\label{fig:speciestemplates}
 \end{figure}
 
 We use petitRADTRANS to generate a single-species atmosphere in order to generate the molecular emission spectrum templates. 
 We chose to use VHS1256b as our template for this study, and all other atmospheric parameters remain the same, as described in table \ref{tab:petitradparams}. 
-A fractional abundance of 1\% was used for each species.
+A mass fraction abundance of 1\% was used for each species.
 The emission spectrum for each of these species is shown in Fig. \ref{fig:speciestemplates}.
+This is of the same order as the most abundant species, and ensures that molecular features will be strongly present in the normalized spectrum.
+In Fig. \ref{fig:vhsmeth} we vary the abundance of a single species to demonstrate its impact on the cross correlation.
 Using the same normalization procedure described in section \ref{sec:cc} for each spaxel, we take the peak cross correlation value from within a narrow window around the expected peak at 0 offset between the template and measured spectra. 
 This was repeated for each of the fringing cases and each of the molecular templates. 
 We also compare the cross correlation as computed sub-band by sub-band to the full wavelength range used.
@@ -380,8 +384,8 @@ We examined the cross correlation between the input template and the extracted s
 	\item No fringing applied in MIRISIM, no Correction
 	\item Extended source fringing, Corrected with an extended source fringe flat
 	\item On axis point source fringing, corrected with an extended source fringe flat
-	\item On axis point source fringing, corrected using residual fringing correction for each iso-alpha contour
 	\item Off axis point source fringing, corrected using an extended source fringe flat.
+	\item On axis point source fringing, corrected using residual fringing correction for each iso-alpha contour
 \end{enumerate}
 In addition, we compare the extracted spectrum to a set of molecular templates computed in petitRADTRANS, using the atmospheric parameters for each target, but only a single species other than hydrogen and helium at a 1\% abundance.
 
@@ -390,21 +394,29 @@ Fig. \ref{fig:CrossCor1D} shows the results of cross correlating the extracted s
 Point source fringe flats are only available for channel 1, hence we restrict our analysis of the fringing variation to this channel alone.
 We show the spectrum normalized to the range [-1,1], along with the residuals from subtracting the extracted spectrum from the template.
 Note the fringing present in the residuals of the spectrum with point source fringing: dividing by an extended source fringe flat does not properly correct for point source fringing.
-While the residual fringe correction (RFC) does not have structure apparent, it also removes nearly any signal originally present, and dramatically alters the shape of the spectrum
-By examining the distribution of the residuals, we can also see that the widths of residuals varies, with RFC producing the widest distribution.
+When compared to leaving the point source fringing uncorrected, applying the extended source flat reduces the SNR by 21\%.
+By examining the distribution of the residuals, we can also see that the widths of residuals varies, with off axis point source producing the widest distribution.
 Importantly, this corresponds directly to the reduction in SNR of the cross correlation, as shown in the bottom plot. 
 
-The cases with no fringing and with an extended source corrected by an extended source fringe flat show nearly identical SNRs of 22.3.
-The point source fringing corrected by an extended source fringe flat fares slightly worse, with an SNR of 20.9. 
-If the point source is off axis, and thus has a different fringe pattern, the SNR worsens to 18.6.
-Finally, the RFC applied to point source fringing substantially degrades the signal, leaving an SNR of 4.3.
+The cases with no fringing and with an extended source corrected by an extended source fringe flat show nearly identical SNRs of 22.4.
+This is expected, as using the same fringe flat for both the production and correction of fringing should result in an optimal correction.
+The point source fringing corrected by an extended source fringe flat fares slightly worse, with an SNR of 19.5. 
+If the point source is off axis, and thus has a different fringe pattern, the SNR worsens to 17.4.
+Finally, the RFC applied to point source fringing provides a slight improvement in the SNR, increasing to 21.6.
 These results are similar for each of our targets. 
-Fig. \ref{fig:ccall} shows the cross correlation results for each target and each examined fringing case.
+Fig. \ref{fig:ccall} shows the cross correlation results for each target and each examined fringing case for channel 1.
+Cross correlation plots for each targets are included in appendix A.1.
+
+We also examined the effect of varying the wavelength coverage on the SNR. 
+By including all 3 channels, we found that the SNR increased by a factor of 1.3-1.5 for each case. 
+However, note that the fringing variations are only in the Channel 1 region of the spectrum, and the extended source fringe flat was used for the remainder of the spectrum where applicable.
+Thus in a realistic case, we would expect a less significant improvement in the SNR, as the point source fringing will result in a worse correction across the spectrum.
+
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth,trim=4cm 3.5cm 4cm 4.5cm, clip]{VHS1256bCrossCorrTemplate}
-	\caption{\textbf{A} Normalized CH1 spectra of VHS1256b. \textbf{B} Residuals found from subtracting the extracted spectra from the input template. \textbf{C} Histogram of residuals. Note the difference in the distribution widths due to fringing. \textbf{D} Cross correlation between the extracted spectra and the template.}
+	\includegraphics[width=\linewidth,trim=4cm 3.5cm 4cm 4.5cm, clip]{VHSCrossCorTemplateCH1}
+	\caption{\textbf{A.} Normalized CH1 spectra of VHS1256b. \textbf{B.} Residuals found from subtracting the extracted spectra from the input template. \textbf{C.} Histogram of residuals. Note the difference in the distribution widths due to fringing. \textbf{D.} Cross correlation between the extracted spectra and the template. The no fringing, extended source and on axis peaks overlap.}
 	\label{fig:CrossCor1D}	
 \end{figure}
 \clearpage
@@ -422,28 +434,33 @@ Fig. \ref{fig:ccall} shows the cross correlation results for each target and eac
 \end{figure}
 \subsubsection{Species Detection}
 In order to best identify any molecular species present in the atmosphere, we cross correlate the 1D spectrum extracted through aperture photometry with the molecular templates in order to maximize the available flux.
-Following the procedure for cross correlating the extracted spectra with the full input template, we show the results of cross correlating the extracted channel 1 spectra with the molecular templates in Fig. \ref{fig:ccspecvhs} for VHS1256b.
-The SNR values reasonably trace the input abundances of each species.
-Notably though, methane is detected as less abundant than water: this may be due to the location of the methane lines around 10$\mu$m, where the spectral extraction is poor due to errors within the PHOTOM files in MIRISIM.
+Following the procedure for cross correlating the extracted spectra with the full input template, we show the results of cross correlating the extracted Channel 1 and full wavelength spectra with the molecular templates in Fig. \ref{fig:ccspecvhs} for VHS1256b.
+The SNR values reasonably trace the input abundances of each species, 5$\sigma$ detections for each of the three most abundant species in water, methane and CO, with mass fraction abundances of 1$\times10^{-3}$, 3$\times10^{-3}$ and 1$\times10^{-5}$ respectively. 
+Although carbon dioxide has the same input abundance as CO, it was not detected at the 5$\sigma$ level.
+However, the detection of CO required the use of the full 5-18 micron spectrum, while both water and methane were detectable in a single channel.
+Notably however, methane is detected as less abundant than water. 
+This may be due to suppression of the methane features due to strong water and CO lines. 
 As visible in Fig \ref{fig:speciestemplates}, the relative line depths at a 1\% abundance are deeper for water than for methane, which could also lead to a more significant cross correlation.
 We examined the dependence of the cross correlation on the abundance of a given species by varying the abundance of methane from 0.1\% to 10\%, shown in Fig. \ref{fig:vhsmeth}.
 We see that within an order of magnitude of the true value, the cross correlation is relatively constant, but drops off at significantly higher or lower concentrations.
 
 Another feature seen in Fig. \ref{fig:ccspecvhs} is the variation in the SNR due to the different fringe correction methods. 
-Although below the 5$\sigma$ detection threshold, we observe that the SNR of the H$_{2}$S cross correlation increases when using the extended source fringe flat to correct the point source fringe, although H$_{2}$S is only negligibly present in the atmosphere (at an abundance of 10$^{-10}$).
-This presents challenges in determining whether a species detected is a true detection or a false positive due to poor corrections.
+The poor correction for point source fringing results in a moderate decrease in the SNR, while the RFC provides effective correction.
 
-Fig.\ref{fig:ccspec2mfull} shows similar results for 2M1207b. 
-Here we also compare the variation in cross correlation when using the full spectrum as compared to channel 1 only. 
-For VHS1256b, the cross correlation SNR does not significantly depend on the wavelength coverage of the spectrum.
-Fig. \ref{fig:ccspec2mfull} shows the effect of using the full wavelength regime.
+Figs.\ref{fig:ccspec2mfull} and \ref{fig:ccspecwisefull} shows similar results for 2M1207b and WISE0855 respectively. 
 For CO, the increase in coverage results in a shift from a marginal to a strong detection.
 Note that this comparison is limited, as point source fringing is only available for channel 1, and the remainder of the spectrum uses extended source fringing.
 We observe significant decreases in SNR when point source fringing is used.
 The SNR for water is reduced by half, while CO drops below the 5$\sigma$ detection threshold.
 This demonstrates the necessity of improved fringe correction if detections of even relatively abundant species are to be made.
-We also note that in some cases, the normalization procedure actually results in a higher SNR when only a single channel is used.
-It is important to examine specific wavelength regions of interest for each species such that important features are highlighted.
+In particular, we found that the RFC was not effective for 2M1207b. 
+This is likely due to the relatively weak input signal without strong molecular lines, resulting in significant degradation of the spectrum by the procedure.
+
+WISE0855 demonstrates the necessity of examining specific wavelength regions of interest for each species.
+NH$_{3}$ is the most abundant species within its atmosphere, but due to strong absorption in Channel 1 it requires the full spectrum for a strong detection.
+This target also demonstrates the possibility of false positives from the cross correlation technique.
+CO is present only at the 10$^{-15}$ level within the WISE0855 atmosphere, but achieves a 5$\sigma$ detection. 
+Examination of the spectral template in Fig. \ref{fig:wiseco} (included in the appendix) shows that the CO template lacks significant spectral coverage, and the cross correlation does not result in a significant peak amidst the noise.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{CrossCorVHSSpecies}
 	\caption{Channel 1 Cross correlations for each molecular species against the extracted spectra for VHS1256b. The input abundances of each species are given in table \ref{tab:inputparams}. }
@@ -454,11 +471,15 @@ It is important to examine specific wavelength regions of interest for each spec
 	\caption{Cross correlations for each molecular species against the extracted spectra for 2M1207b. Solid lines indicate the full wavelength range was used, while dashed lines are for channel 1 only.}
 	\label{fig:ccspec2mfull}
 \end{figure}
-
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{CrossCorWISEpeciesfull}
+	\caption{Cross correlations for each molecular species against the extracted spectra for WISE0855. Solid lines indicate the full wavelength range was used, while dashed lines are for channel 1 only.}
+	\label{fig:ccspecwisefull}
+\end{figure}
 \subsubsection{Object Detection}
 In addition to detecting the presence of a given species in a known planet, we can use molecular templates to identify the presence of an object.
 In practice, this would involve iterating through a grid of single species spectral templates, and cross-correlating with each spaxel in the IFU cube.
-We aim to demonstrate that this technique is effective for MRS data, and that fringing reduces the capability to make detections.
+Using species known to be present or absent from the target atmospheres, we aim to demonstrate that this technique is effective for MRS data.
 
 Fig. \ref{fig:2dccmap} illustrates the ability of the MRS to identify a point source from the presence of a species in the atmosphere.
 The cross correlation was performed on a spectrum from each spatial location in the IFU cube with a single species atmospheric template, with similar parameters as used in the full atmospheric model.
@@ -470,29 +491,27 @@ Following continuum subtraction and normalization, a cross-correlation should st
 We compare highly abundant species on the left, to species with low or no presence on the right for each of our targets, in the case that there is no fringing.
 For highly abundant targets, the cross correlation traces the JWST PSF.
 The peak value of the SNR in 2D is not expected to be equal to the SNR of the 1D cross correlation, which contains significantly more flux than in any individual spaxel.
-The peak SNR does not trace the abundance distribution of the input atmosphere.
-For WISE0855, H$_{2}$O has a much higher SNR than NH$_{3}$ (20 vs 4), though the underlying abundance is lower (10$^{-4}$ vs 10$^{-3}$).
-Although CO has an extremely low abundance in WISE0855 (10$^{-15}$), the cross correlation produces a high SNR of 8.
-This suggests that the cross correlation is likely tracing the magnitude of the PSF, rather than the presence of the species itself.
-We therefore caution the use of cross correlations to infer the presence of a planet, as false positives are both likely and difficult to quantify.
-Without proper photometric calibration, the 2D cross correlations remain unreliable, and further work is required to reduce false detections.
+
+For each of our targets, the highly abundant species are detected with a high SNR using only Channel 1 data, and trace the PSF of the object.
+The normalization procedure emphasizes faint features, and thus the SNR is approximately constant across the PSF, regardless of the sampled intensity.
+For 2M1207b, the lack of strong molecular features results in a lower cross correlation signal when compared to VHS1256b or WISE0855.
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_H2O}
-	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_H2S}
-	\includegraphics[width=0.47\linewidth]{0_WISE0855_IFU_CrossCor_Test_NH3}
-	\includegraphics[width=0.47\linewidth]{0_WISE0855_IFU_CrossCor_Test_CO}
-	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_CO}
-	\includegraphics[width=0.47\linewidth,trim=4cm 0cm 1cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_CH4}
-	\caption{Cross correlations for each of the targets with a selection of molecular templates, with extended source fringe. Scales are not the same for each image. \textbf{TOP:} VHS1256b with H$_2$O (right) and H$_{2}$S (left). \textbf{Center} WISE0855 with NH$_{3}$ (left) and CO (right). \textbf{Bottom:} 2M1207b with CO (right) and CH$_{4}$ (left).}
+	\includegraphics[width=0.48\linewidth,trim=7.6cm 0cm 3.8cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_H2O}
+	\includegraphics[width=0.48\linewidth,trim=7.6cm 0cm 3.8cm 0cm,clip]{0_VHS1256b_IFU_CrossCor_Test_HCN}
+	\includegraphics[width=0.48\linewidth,trim=7.6cm 0cm 3.8cm 0cm,clip]{0_WISE0855_IFU_CrossCor_Test_H2O}
+	\includegraphics[width=0.48\linewidth,trim=7.2cm 0cm 3.8cm 0cm,clip]{0_WISE0855_IFU_CrossCor_Test_HCN}
+	\includegraphics[width=0.48\linewidth,trim=7.6cm 0cm 3.8cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_H2O}
+	\includegraphics[width=0.48\linewidth,trim=7.6cm 0cm 3.8cm 0cm,clip]{0_2M1207b_IFU_CrossCor_Test_HCN}
+	\caption{Cross correlations for each of the targets with a selection of molecular templates, with no fringing applied. On the left is H$_{2}$O, on the right is HCN.  Due to the normalization the cross correlation exaggerates low-flux features, tracing the JWST PSF. From top to bottom: VHS-1256b, WISE0855 and 2M1207b.}
 	\label{fig:2dccmap}
 \end{figure}
 \subsection{Discussion}
 We have examined different fringing correction methods, and compared a realistic point-source fringing model to the simplified extended source model used in MIRISIM.
 We find that the point source fringing significantly reduces the SNR in a cross correlation. 
 Apart from marginal detections, this will likely not be the limiting factor in determining the presence of a given species.
-Residual fringing correction as used in the Spitzer Space Telescope cannot be directly applied to MIRI MRS spectra. 
-This procedure significantly removes real features from the spectra, leading to non-detections of species known to be present.
+Residual fringing correction as used in the Spitzer Space Telescope can reduce the impact of fringing on an extracted spectrum, but also has the potential to degrade the spectrum.
+The results of this procedure should be examined closely to ensure that it has been correctly applied, and it will likely prove more useful for bright targets than for faint sources. 
 
 Ultimately this analysis is limited by the development status of both MIRISIM and the JWST pipeline. 
 Calibration is an ongoing process, and the CDP files available as of March 2020 still leave significant residual effects present in the extracted spectrum.
