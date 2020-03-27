@@ -14,11 +14,11 @@ This is the principle on which Fabry-P\'{e}rot interferometers function.
 As we wish to determine the effect of fringing on the amplitude of the signal received by the detector as a function of wavelength, we are effectively interested in the transmittance of a series of Fabry--P\'{e}rot interferometers. 
 Assuming an ideal plane-parallel optical cavity with a reflectance R at both boundaries, thickness D, and an angle $\theta$ at which the light enters the cavity, we can compute the transmittance as:
 \begin{equation}\label{eqn:trans}
-T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}
+T_{c} = \frac{1}{1+\frac{4R}{\left(1-R\right)^{2}}\sin^{2}\left(\frac{\delta}{2}\right)}.
 \end{equation}
 Where the phase $\delta$ at half a wavelength ($\phi = \pi$), with wavenumber $\sigma$ is:
 \begin{equation}\label{eqn:phase}
-\delta = 4\pi\sigma D \cos\theta - (\phi - \pi)
+\delta = 4\pi\sigma D \cos\theta - (\phi - \pi).
 \end{equation}
 Systems with a spacing on the order of micrometers to millimeters produces significant interference for infrared light \parencite{Lahuis2003}.
 
@@ -97,7 +97,7 @@ We  will quantify how this changes the extracted spectra after processing in the
 
 % - FRINGING REQUIREMENTS FOR MIRI - context
 % - sub percent residuals - is this true and if so how much does it impact real spectral %features?
-% - What has been done so far - fitting, optical modelling
+% - What has been done so far - fitting, optical modeling
 % - only for some channels
 % - Might remove actual spectral features as well - justification for this work (especially re posn dependence)
 % - need to reproduce plots from fringing white paper
@@ -170,7 +170,7 @@ Recently the PHOTOM files were modified from being divided into the illumination
 This, along with other issues, has led to inconsistencies between the input flux and output of the JWST pipeline.
 To best correct for this, we ensure that we are using the most up-to-date PHOTOM files (v8B.04.00) in both MIRISIM and the JWST pipeline.
 Even still, there remains residual fringing and absorption features present in the PHOTOM CDP files, leading to errors in the extracted spectrum.
-Noteably there is a large spike in channel 2A, and significant high frequency modulation in channel 2C.
+Notably there is a large spike in channel 2A, and significant high frequency modulation in channel 2C.
 
 The FRINGE CDP files contain fringe flats which are multiplied into the illumination model. 
 Presently, these are based off extended source CV data (v07.02.05).
@@ -209,12 +209,12 @@ The JWST Pipeline is used for reducing all data from the telescope, and is curre
 It is broken into several stages. 
 Stage one is applied to all telescope data, and corrects for detector level effects.
 Stage two provides photometric calibration, with separate pipelines for imaging or spectroscopic data.
-Stage three, which is unusued in this work, will provide high level science products for end users.%JWST Pipeline
+Stage three, which is unused in this work, will provide high level science products for end users.%JWST Pipeline
  % MIRI MRS Cal pipeline
 \subsection{Stage 1 Processing}
 The raw data files read from MIRISIM (or eventually the MIRI instrument itself) are a series of \textit{exposures}, each made up of set of \textit{integrations} containing a some number of \textit{groups} or frames.
 Each group is a non-destructive readout of the detector arrays, providing a series of increasing counts known as ramps in DN (digital number per second). 
-The first stage of the JWST pipeline takes these raw files, applies a series of steps and outputs a single file for each input exposure in units of countrate.
+The first stage of the JWST pipeline takes these raw files, applies a series of steps and outputs a single file for each input exposure in units of count-rate
 During this stage, several data quality checks are performed, looking for saturated pixels or jumps in in the data, which can be used to correct for cosmic rays.
 Dark current correction is also applied.
 Finally, the set of frames in an integration are fit with a linear slope in order to calculate the count rate in DN/s.

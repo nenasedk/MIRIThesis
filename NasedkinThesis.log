@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  26 MAR 2020 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  27 MAR 2020 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4006,24 +4006,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
 [52]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -4049,46 +4031,49 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-<figures/petitInputSpectra.pdf, id=1355, 1300.86pt x 722.7pt>
-File: figures/petitInputSpectra.pdf Graphic file (type pdf)
-<use figures/petitInputSpectra.pdf>
-Package pdftex.def Info: figures/petitInputSpectra.pdf  used on input line 319.
-
-(pdftex.def)             Requested size: 370.0pt x 205.55258pt.
-
-Underfull \vbox (badness 4872) has occurred while \output is active []
-
- [53]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-<figures/VHS_retrieved_extracted.pdf, id=1364, 1734.48pt x 650.43pt>
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[53]
+<figures/petitInputSpectra.pdf, id=1359, 1300.86pt x 722.7pt>
+File: figures/petitInputSpectra.pdf Graphic file (type pdf)
+<use figures/petitInputSpectra.pdf>
+Package pdftex.def Info: figures/petitInputSpectra.pdf  used on input line 322.
+
+(pdftex.def)             Requested size: 370.0pt x 205.55258pt.
+<figures/VHS_retrieved_extracted.pdf, id=1362, 1734.48pt x 650.43pt>
 File: figures/VHS_retrieved_extracted.pdf Graphic file (type pdf)
 <use figures/VHS_retrieved_extracted.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_extracted.pdf  used on input lin
-e 339.
+e 334.
 (pdftex.def)             Requested size: 370.0pt x 145.32869pt.
-<figures/VHS_retrieved_extracted_narrow_fringe.pdf, id=1366, 1734.48pt x 650.43
+<figures/VHS_retrieved_extracted_narrow_fringe.pdf, id=1364, 1734.48pt x 650.43
 pt>
 File: figures/VHS_retrieved_extracted_narrow_fringe.pdf Graphic file (type pdf)
 
 <use figures/VHS_retrieved_extracted_narrow_fringe.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_extracted_narrow_fringe.pdf  use
-d on input line 340.
+d on input line 335.
 (pdftex.def)             Requested size: 370.0pt x 145.32869pt.
-
-Overfull \hbox (4.40186pt too wide) in paragraph at lines 337--344
-[]\T1/pplj/m/n/10.95 While it is pos-si-ble to add a back-ground term to a spec
--trum us-ing MIRISIM,
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [54 <./figures/petitInputSpectra.pdf>]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4096,73 +4081,108 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55 <./figures/petitInputSpectra.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56 <./figures/VHS_retrieved_extracted.pdf> <./figures/VHS_retrieved_extracted
-_narrow_fringe.pdf>]
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <8> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 419.
-
-Overfull \hbox (4.62193pt too wide) in paragraph at lines 417--433
-[][] 
+Overfull \hbox (4.40186pt too wide) in paragraph at lines 347--348
+[]\T1/pplj/m/n/10.95 While it is pos-si-ble to add a back-ground term to a spec
+-trum us-ing MIRISIM,
  []
 
-<figures/VHS1256bCH1_nofringe_tempradius_corner.png, id=1421, 506.89375pt x 566
-.115pt>
+[55 <./figures/VHS_retrieved_extracted.pdf> <./figures/VHS_retrieved_extracted_
+narrow_fringe.pdf>]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[56]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <8> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 402.
+<figures/VHS1256bCH1_nofringe_tempradius_corner.png, id=1423, 506.89375pt x 605
+.26125pt>
 File: figures/VHS1256bCH1_nofringe_tempradius_corner.png Graphic file (type png
 )
 <use figures/VHS1256bCH1_nofringe_tempradius_corner.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_tempradius_corner.png  us
 ed on input line 443.
-(pdftex.def)             Requested size: 185.0pt x 206.60866pt.
-<figures/VHS1256bCH1_nofringe_nuisance_corners.png, id=1422, 906.38625pt x 868.
+(pdftex.def)             Requested size: 111.00113pt x 132.5391pt.
+File: figures/VHS1256bCH1_nofringe_tempradius_corner.png Graphic file (type png
+)
+<use figures/VHS1256bCH1_nofringe_tempradius_corner.png>
+Package pdftex.def Info: figures/VHS1256bCH1_nofringe_tempradius_corner.png  us
+ed on input line 444.
+(pdftex.def)             Requested size: 111.00113pt x 132.5391pt.
+<figures/vhsfull10000temprad.png, id=1424, 525.965pt x 629.35126pt>
+File: figures/vhsfull10000temprad.png Graphic file (type png)
+<use figures/vhsfull10000temprad.png>
+Package pdftex.def Info: figures/vhsfull10000temprad.png  used on input line 44
+5.
+(pdftex.def)             Requested size: 111.00113pt x 129.81828pt.
+<figures/VHS1256bTempPressInputRetrieved.pdf, id=1426, 1156.32pt x 578.16pt>
+File: figures/VHS1256bTempPressInputRetrieved.pdf Graphic file (type pdf)
+<use figures/VHS1256bTempPressInputRetrieved.pdf>
+Package pdftex.def Info: figures/VHS1256bTempPressInputRetrieved.pdf  used on i
+nput line 455.
+(pdftex.def)             Requested size: 351.49887pt x 175.74306pt.
+
+
+LaTeX Warning: Reference `tab:retspecies' on page 57 undefined on input line 46
+6.
+
+[57
+
+]
+<figures/VHS1256bCH1_nofringe_nuisance_corners.png, id=1439, 906.38625pt x 868.
 24374pt>
 File: figures/VHS1256bCH1_nofringe_nuisance_corners.png Graphic file (type png)
 
 <use figures/VHS1256bCH1_nofringe_nuisance_corners.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_nuisance_corners.png  use
-d on input line 450.
+d on input line 482.
 (pdftex.def)             Requested size: 370.0pt x 354.43219pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1423, 821.0675pt x 862.
+<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1440, 821.0675pt x 862.
 22125pt>
 File: figures/VHS1256bCH1_nofringe_abundances_corner.png Graphic file (type png
 )
 <use figures/VHS1256bCH1_nofringe_abundances_corner.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_abundances_corner.png  us
-ed on input line 456.
+ed on input line 489.
+(pdftex.def)             Requested size: 370.0pt x 388.53539pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figures/VHS1256bCH1_nofringe_abundances_corner.png Graphic file (type png
+)
+<use figures/VHS1256bCH1_nofringe_abundances_corner.png>
+Package pdftex.def Info: figures/VHS1256bCH1_nofringe_abundances_corner.png  us
+ed on input line 495.
 (pdftex.def)             Requested size: 370.0pt x 388.53539pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/VHS1256bTempPressInputRetrieved.pdf, id=1424, 1156.32pt x 578.16pt>
-File: figures/VHS1256bTempPressInputRetrieved.pdf Graphic file (type pdf)
-<use figures/VHS1256bTempPressInputRetrieved.pdf>
-Package pdftex.def Info: figures/VHS1256bTempPressInputRetrieved.pdf  used on i
-nput line 462.
-(pdftex.def)             Requested size: 351.49887pt x 175.74306pt.
+<figures/VHS_full_species_1000.png, id=1441, 929.4725pt x 985.6825pt>
+File: figures/VHS_full_species_1000.png Graphic file (type png)
+<use figures/VHS_full_species_1000.png>
+Package pdftex.def Info: figures/VHS_full_species_1000.png  used on input line 
+501.
+(pdftex.def)             Requested size: 370.0pt x 392.37094pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/VHS_retrieved_models_ext_modelonly.pdf, id=1425, 1734.48pt x 650.43pt>
+<figures/VHS_retrieved_models_ext_modelonly.pdf, id=1442, 1734.48pt x 650.43pt>
 
 File: figures/VHS_retrieved_models_ext_modelonly.pdf Graphic file (type pdf)
 <use figures/VHS_retrieved_models_ext_modelonly.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_models_ext_modelonly.pdf  used o
-n input line 468.
+n input line 508.
 (pdftex.def)             Requested size: 370.0pt x 145.32869pt.
-<figures/VHS_retrieved_models_ext_narrow_fringe.pdf, id=1427, 1734.48pt x 650.4
+<figures/VHS_retrieved_models_ext_narrow_fringe.pdf, id=1444, 1734.48pt x 650.4
 3pt>
 File: figures/VHS_retrieved_models_ext_narrow_fringe.pdf Graphic file (type pdf
 )
 <use figures/VHS_retrieved_models_ext_narrow_fringe.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_models_ext_narrow_fringe.pdf  us
-ed on input line 469.
+ed on input line 509.
 (pdftex.def)             Requested size: 370.0pt x 138.01103pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4177,50 +4197,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58 <./figures/vhsfull10000temprad.png> <./figures/VHS1256bCH1_nofringe_tempra
+dius_corner.png>]
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/WISE0855_ptsrc_onax_pt_env.pdf, id=1429, 722.7pt x 433.62pt>
+<figures/WISE0855_ptsrc_onax_pt_env.pdf, id=1454, 722.7pt x 433.62pt>
 File: figures/WISE0855_ptsrc_onax_pt_env.pdf Graphic file (type pdf)
 <use figures/WISE0855_ptsrc_onax_pt_env.pdf>
 Package pdftex.def Info: figures/WISE0855_ptsrc_onax_pt_env.pdf  used on input 
-line 500.
+line 539.
 (pdftex.def)             Requested size: 370.0pt x 221.9968pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/BestfitBrownDwarf_fringe.png, id=1430, 1156.32pt x 578.16pt>
+<figures/BestfitBrownDwarf_fringe.png, id=1455, 1156.32pt x 578.16pt>
 File: figures/BestfitBrownDwarf_fringe.png Graphic file (type png)
 <use figures/BestfitBrownDwarf_fringe.png>
 Package pdftex.def Info: figures/BestfitBrownDwarf_fringe.png  used on input li
-ne 505.
+ne 544.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
-<figures/BestfitWISE0855.png, id=1431, 1156.32pt x 578.16pt>
+<figures/BestfitWISE0855.png, id=1456, 1156.32pt x 578.16pt>
 File: figures/BestfitWISE0855.png Graphic file (type png)
 <use figures/BestfitWISE0855.png>
-Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 506.
+Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 545.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Chapters/Conclusions.tex
+[59 <./figures/VHS1256bTempPressInputRetrieved.pdf>])
+(./Chapters/Conclusions.tex
 Chapter 5.
-[57] [58 <./figures/VHS1256bCH1_nofringe_tempradius_corner.png>] [59 <./figures
-/VHS1256bCH1_nofringe_nuisance_corners.png>] [60 <./figures/VHS1256bCH1_nofring
-e_abundances_corner.png>] [61 <./figures/VHS_retrieved_models_ext_modelonly.pdf
-> <./figures/VHS_retrieved_models_ext_narrow_fringe.pdf> <./figures/VHS1256bTem
-pPressInputRetrieved.pdf
+[60 <./figures/VHS1256bCH1_nofringe_nuisance_corners.png>] [61 <./figures/VHS12
+56bCH1_nofringe_abundances_corner.png>] [62] [63 <./figures/VHS_full_species_10
+00.png>] [64 <./figures/VHS_retrieved_models_ext_modelonly.pdf> <./figures/VHS_
+retrieved_models_ext_narrow_fringe.pdf>] [65 <./figures/WISE0855_ptsrc_onax_pt_
+env.pdf> <./figures/BestfitBrownDwarf_fringe.png> <./figures/BestfitWISE0855.pn
+g>] [66
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/VHS1256bTempPressInputRetriev
-ed.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
->] [62 <./figures/WISE0855_ptsrc_onax_pt_env.pdf> <./figures/BestfitBrownDwarf_
-fringe.png> <./figures/BestfitWISE0855.png>]
+]
 Underfull \vbox (badness 5862) has occurred while \output is active []
 
- [63
-
-
-]
+ [67]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4233,19 +4254,19 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[64]) (./Chapters/Appendices.tex
+[68]) (./Chapters/Appendices.tex
 Appendix A.
-[65] [66
+[69] [70
 
 
 ]
-<figures/WISECrossCorTemplate.pdf, id=1561, 1156.32pt x 1445.4pt>
+<figures/WISECrossCorTemplate.pdf, id=1591, 1156.32pt x 1445.4pt>
 File: figures/WISECrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/WISECrossCorTemplate.pdf>
 Package pdftex.def Info: figures/WISECrossCorTemplate.pdf  used on input line 5
 .
 (pdftex.def)             Requested size: 370.0pt x 485.17006pt.
-<figures/WISECO.pdf, id=1563, 1156.32pt x 1445.4pt>
+<figures/WISECO.pdf, id=1593, 1156.32pt x 1445.4pt>
 File: figures/WISECO.pdf Graphic file (type pdf)
 <use figures/WISECO.pdf>
 Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
@@ -4254,7 +4275,7 @@ Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/2M1207bCrossCorTemplate.pdf, id=1565, 1156.32pt x 1445.4pt>
+<figures/2M1207bCrossCorTemplate.pdf, id=1595, 1156.32pt x 1445.4pt>
 File: figures/2M1207bCrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/2M1207bCrossCorTemplate.pdf>
 Package pdftex.def Info: figures/2M1207bCrossCorTemplate.pdf  used on input lin
@@ -4263,7 +4284,7 @@ e 14.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1567, 1156.32pt x 1445.4pt>
+<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1597, 1156.32pt x 1445.4pt>
 File: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf Graphic file (type pdf)
 <use figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf>
 Package pdftex.def Info: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf  used on 
@@ -4272,13 +4293,13 @@ input line 18.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67 <./figures/WISECrossCorTemplate.pdf>] [68 <./figures/WISECO.pdf>] [69 <./fi
-gures/2M1207bCrossCorTemplate.pdf>] [70 <./figures/VHSCrossCorTemplateUncorrOnA
+[71 <./figures/WISECrossCorTemplate.pdf>] [72 <./figures/WISECO.pdf>] [73 <./fi
+gures/2M1207bCrossCorTemplate.pdf>] [74 <./figures/VHSCrossCorTemplateUncorrOnA
 xCH1.pdf>]
 File: Chapters/requirements.txt  (verbatim)
-) [71
+) [75
 
-] (./FrontBackMatter/Bibliography.tex) [72
+] (./FrontBackMatter/Bibliography.tex) [76
 
 
 
@@ -4361,7 +4382,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[73
+[77
 
 
 ]
@@ -4445,7 +4466,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[74]
+[78]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4519,7 +4540,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[75]
+[79]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4600,7 +4621,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[76]
+[80]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4680,7 +4701,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[77]
+[81]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4766,7 +4787,7 @@ Overfull \hbox (5.39415pt too wide) in paragraph at lines 22--22
 -ated plan-e-tary at-mo-spheres''.
  []
 
-[78]
+[82]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4839,7 +4860,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[79]
+[83]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4906,7 +4927,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[80]
+[84]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4991,7 +5012,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[81]
+[85]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5082,7 +5103,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[82]
+[86]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5155,7 +5176,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[83]
+[87]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5228,7 +5249,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[84]
+[88]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5301,7 +5322,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[85]
+[89]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5375,7 +5396,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[86]
+[90]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5456,7 +5477,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[87]
+[91]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5523,7 +5544,7 @@ Overfull \hbox (1.00868pt too wide) in paragraph at lines 22--22
 Heather A. Knut-
  []
 
-[88]
+[92]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -5542,7 +5563,7 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[89]
+[93]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
  (./NasedkinThesis.aux)
@@ -5568,10 +5589,10 @@ Package logreq Info: Writing requests to 'NasedkinThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
  ) 
 Here is how much of TeX's memory you used:
- 49016 strings out of 492609
- 984802 string characters out of 6131461
- 2260798 words of memory out of 5000000
- 51561 multiletter control sequences out of 15000+600000
+ 49039 strings out of 492609
+ 985338 string characters out of 6131461
+ 2262255 words of memory out of 5000000
+ 51576 multiletter control sequences out of 15000+600000
  680974 words of font info for 245 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,23n,93p,9112b,3241s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5597,10 +5618,10 @@ onts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on NasedkinThesis.pdf (99 pages, 24284949 bytes).
+Output written on NasedkinThesis.pdf (103 pages, 24727410 bytes).
 PDF statistics:
- 2879 PDF objects out of 2984 (max. 8388607)
- 2468 compressed objects within 25 object streams
- 486 named destinations out of 1000 (max. 500000)
- 37319 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2910 PDF objects out of 2984 (max. 8388607)
+ 2493 compressed objects within 25 object streams
+ 492 named destinations out of 1000 (max. 500000)
+ 37335 words of extra memory for PDF output out of 42996 (max. 10000000)
 
