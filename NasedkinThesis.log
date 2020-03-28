@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  27 MAR 2020 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  28 MAR 2020 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,8 +1236,12 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
-(./arsclassica-settings.tex
+)
+
+Package biblatex Warning: 'firstinits' option is deprecated.
+(biblatex)                Please use 'giveninits' instead.
+
+) (./arsclassica-settings.tex
 LaTeX Info: Redefining \classicthesis on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1678,24 +1682,29 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count451
 \@quotereset=\count452
+
+Package biblatex Warning: Conflicting options.
+(biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
+(biblatex)                Setting 'uniquename=init' on input line 3.
+
 (./NasedkinThesis.aux)
 \openout1 = `NasedkinThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
@@ -1737,7 +1746,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 2.
+LaTeX Info: Redefining \microtypecontext on input line 3.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1750,7 +1759,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 \AtBeginShipoutBox=\box89
-Package hyperref Info: Link coloring ON on input line 2.
+Package hyperref Info: Link coloring ON on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1760,9 +1769,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count460
 )
-LaTeX Info: Redefining \ref on input line 2.
-LaTeX Info: Redefining \pageref on input line 2.
-LaTeX Info: Redefining \nameref on input line 2.
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
 
 (./NasedkinThesis.out) (./NasedkinThesis.out)
 \@outlinefile=\write5
@@ -1774,7 +1783,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message with `\usepackage{bookmark}'
-(scrreprt)           before \begin{document} on input line 2.
+(scrreprt)           before \begin{document} on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -1795,8 +1804,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'NasedkinThesis.bbl' found.
 
 (./NasedkinThesis.bbl)
-Package biblatex Info: Reference section=0 on input line 2.
-Package biblatex Info: Reference segment=0 on input line 2.
+Package biblatex Info: Reference section=0 on input line 3.
+Package biblatex Info: Reference segment=0 on input line 3.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -1919,7 +1928,7 @@ lusion: found PDF version <1.6>, but at most version <1.5> allowed
 <declaration-originality.pdf, id=18, 597.55246pt x 845.07718pt>
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf  used on input line 7.
+Package pdftex.def Info: declaration-originality.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -1927,7 +1936,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./declaration-originality.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf>
-Package pdftex.def Info: declaration-originality.pdf  used on input line 7.
+Package pdftex.def Info: declaration-originality.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -1941,28 +1950,28 @@ lusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf , page1 used on input line
- 7.
+ 8.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf , page1 used on input line
- 7.
+ 8.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2]
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf , page1 used on input line
- 7.
+ 8.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf , page1 used on input line
- 7.
+ 8.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: declaration-originality.pdf Graphic file (type pdf)
 <use declaration-originality.pdf, page 1>
 Package pdftex.def Info: declaration-originality.pdf , page1 used on input line
- 7.
+ 8.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [3 <./declaration-originality.pdf>] [4
 
@@ -4086,8 +4095,11 @@ Overfull \hbox (4.40186pt too wide) in paragraph at lines 347--348
 -trum us-ing MIRISIM,
  []
 
-[55 <./figures/VHS_retrieved_extracted.pdf> <./figures/VHS_retrieved_extracted_
-narrow_fringe.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55 <./figures/VHS_retrieved_extracted.pdf> <./figures/VHS_retrieved_extracted
+_narrow_fringe.pdf>]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4096,152 +4108,207 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 
 [56]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <8> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 402.
-<figures/VHS1256bCH1_nofringe_tempradius_corner.png, id=1423, 506.89375pt x 605
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 412.
+
+Overfull \hbox (4.00494pt too wide) in paragraph at lines 410--426
+[][] 
+ []
+
+[57
+
+]
+<figures/vhs_ch1_nofringe_tr.png, id=1434, 606.265pt x 619.31375pt>
+File: figures/vhs_ch1_nofringe_tr.png Graphic file (type png)
+<use figures/vhs_ch1_nofringe_tr.png>
+Package pdftex.def Info: figures/vhs_ch1_nofringe_tr.png  used on input line 45
+4.
+(pdftex.def)             Requested size: 118.76968pt x 121.31851pt.
+<figures/VHS1256bCH1_nofringe_tempradius_corner.png, id=1435, 506.89375pt x 605
 .26125pt>
 File: figures/VHS1256bCH1_nofringe_tempradius_corner.png Graphic file (type png
 )
 <use figures/VHS1256bCH1_nofringe_tempradius_corner.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_tempradius_corner.png  us
-ed on input line 443.
-(pdftex.def)             Requested size: 111.00113pt x 132.5391pt.
-File: figures/VHS1256bCH1_nofringe_tempradius_corner.png Graphic file (type png
-)
-<use figures/VHS1256bCH1_nofringe_tempradius_corner.png>
-Package pdftex.def Info: figures/VHS1256bCH1_nofringe_tempradius_corner.png  us
-ed on input line 444.
-(pdftex.def)             Requested size: 111.00113pt x 132.5391pt.
-<figures/vhsfull10000temprad.png, id=1424, 525.965pt x 629.35126pt>
+ed on input line 455.
+(pdftex.def)             Requested size: 103.59955pt x 123.7007pt.
+<figures/vhsfull10000temprad.png, id=1436, 525.965pt x 629.35126pt>
 File: figures/vhsfull10000temprad.png Graphic file (type png)
 <use figures/vhsfull10000temprad.png>
-Package pdftex.def Info: figures/vhsfull10000temprad.png  used on input line 44
-5.
-(pdftex.def)             Requested size: 111.00113pt x 129.81828pt.
-<figures/VHS1256bTempPressInputRetrieved.pdf, id=1426, 1156.32pt x 578.16pt>
+Package pdftex.def Info: figures/vhsfull10000temprad.png  used on input line 45
+6.
+(pdftex.def)             Requested size: 103.59955pt x 121.15497pt.
+<figures/VHS1256bTempPressInputRetrieved.pdf, id=1438, 1156.32pt x 578.16pt>
 File: figures/VHS1256bTempPressInputRetrieved.pdf Graphic file (type pdf)
 <use figures/VHS1256bTempPressInputRetrieved.pdf>
 Package pdftex.def Info: figures/VHS1256bTempPressInputRetrieved.pdf  used on i
-nput line 455.
-(pdftex.def)             Requested size: 351.49887pt x 175.74306pt.
+nput line 466.
+(pdftex.def)             Requested size: 344.09729pt x 172.04663pt.
 
 
-LaTeX Warning: Reference `tab:retspecies' on page 57 undefined on input line 46
-6.
+LaTeX Warning: Reference `tab:retspecies' on page 58 undefined on input line 47
+7.
 
-[57
+<figures/vhs_nofringe_ch1_nuisance.png, id=1442, 1057.9525pt x 1077.02374pt>
+File: figures/vhs_nofringe_ch1_nuisance.png Graphic file (type png)
+<use figures/vhs_nofringe_ch1_nuisance.png>
+Package pdftex.def Info: figures/vhs_nofringe_ch1_nuisance.png  used on input l
+ine 480.
+(pdftex.def)             Requested size: 370.0pt x 376.66815pt.
 
-]
-<figures/VHS1256bCH1_nofringe_nuisance_corners.png, id=1439, 906.38625pt x 868.
-24374pt>
-File: figures/VHS1256bCH1_nofringe_nuisance_corners.png Graphic file (type png)
+Underfull \vbox (badness 5260) has occurred while \output is active []
 
-<use figures/VHS1256bCH1_nofringe_nuisance_corners.png>
-Package pdftex.def Info: figures/VHS1256bCH1_nofringe_nuisance_corners.png  use
-d on input line 482.
-(pdftex.def)             Requested size: 370.0pt x 354.43219pt.
-<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1440, 821.0675pt x 862.
+ [58 <./figures/vhsfull10000temprad.png> <./figures/vhs_ch1_nofringe_tr.png> <.
+/figures/VHS1256bCH1_nofringe_tempradius_corner.png> <./figures/VHS1256bTempPre
+ssInputRetrieved.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/VHS1256bTempPressInputRetriev
+ed.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>] [59 <./figures/vhs_nofringe_ch1_nuisance.png>]
+<figures/vhs_nofringe_ch1_abundance.png, id=1466, 997.7275pt x 1002.74625pt>
+File: figures/vhs_nofringe_ch1_abundance.png Graphic file (type png)
+<use figures/vhs_nofringe_ch1_abundance.png>
+Package pdftex.def Info: figures/vhs_nofringe_ch1_abundance.png  used on input 
+line 515.
+(pdftex.def)             Requested size: 370.0pt x 371.85184pt.
+<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1467, 821.0675pt x 862.
 22125pt>
 File: figures/VHS1256bCH1_nofringe_abundances_corner.png Graphic file (type png
 )
 <use figures/VHS1256bCH1_nofringe_abundances_corner.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_abundances_corner.png  us
-ed on input line 489.
+ed on input line 521.
 (pdftex.def)             Requested size: 370.0pt x 388.53539pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figures/VHS1256bCH1_nofringe_abundances_corner.png Graphic file (type png
-)
-<use figures/VHS1256bCH1_nofringe_abundances_corner.png>
-Package pdftex.def Info: figures/VHS1256bCH1_nofringe_abundances_corner.png  us
-ed on input line 495.
-(pdftex.def)             Requested size: 370.0pt x 388.53539pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/VHS_full_species_1000.png, id=1441, 929.4725pt x 985.6825pt>
+<figures/VHS_full_species_1000.png, id=1468, 980.66376pt x 985.6825pt>
 File: figures/VHS_full_species_1000.png Graphic file (type png)
 <use figures/VHS_full_species_1000.png>
 Package pdftex.def Info: figures/VHS_full_species_1000.png  used on input line 
-501.
-(pdftex.def)             Requested size: 370.0pt x 392.37094pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/VHS_retrieved_models_ext_modelonly.pdf, id=1442, 1734.48pt x 650.43pt>
-
-File: figures/VHS_retrieved_models_ext_modelonly.pdf Graphic file (type pdf)
-<use figures/VHS_retrieved_models_ext_modelonly.pdf>
-Package pdftex.def Info: figures/VHS_retrieved_models_ext_modelonly.pdf  used o
-n input line 508.
-(pdftex.def)             Requested size: 370.0pt x 145.32869pt.
-<figures/VHS_retrieved_models_ext_narrow_fringe.pdf, id=1444, 1734.48pt x 650.4
-3pt>
-File: figures/VHS_retrieved_models_ext_narrow_fringe.pdf Graphic file (type pdf
-)
-<use figures/VHS_retrieved_models_ext_narrow_fringe.pdf>
-Package pdftex.def Info: figures/VHS_retrieved_models_ext_narrow_fringe.pdf  us
-ed on input line 509.
-(pdftex.def)             Requested size: 370.0pt x 138.01103pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+527.
+(pdftex.def)             Requested size: 370.0pt x 371.88606pt.
+<figures/VHS_retrieved_comp_full_v2.pdf, id=1469, 1344.22195pt x 505.89pt>
+File: figures/VHS_retrieved_comp_full_v2.pdf Graphic file (type pdf)
+<use figures/VHS_retrieved_comp_full_v2.pdf>
+Package pdftex.def Info: figures/VHS_retrieved_comp_full_v2.pdf  used on input 
+line 534.
+(pdftex.def)             Requested size: 370.0pt x 151.9575pt.
+<figures/VHS_retrieved_comp_5_v2.pdf, id=1471, 867.24pt x 867.24pt>
+File: figures/VHS_retrieved_comp_5_v2.pdf Graphic file (type pdf)
+<use figures/VHS_retrieved_comp_5_v2.pdf>
+Package pdftex.def Info: figures/VHS_retrieved_comp_5_v2.pdf  used on input lin
+e 535.
+(pdftex.def)             Requested size: 177.59842pt x 177.59814pt.
+<figures/VHS_retrieved_comp_10_v2.pdf, id=1473, 867.24pt x 867.24pt>
+File: figures/VHS_retrieved_comp_10_v2.pdf Graphic file (type pdf)
+<use figures/VHS_retrieved_comp_10_v2.pdf>
+Package pdftex.def Info: figures/VHS_retrieved_comp_10_v2.pdf  used on input li
+ne 536.
+(pdftex.def)             Requested size: 177.59842pt x 177.59814pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<figures/vhs_total_emissioncont.pdf, id=1475, 1300.86pt x 578.16pt>
+File: figures/vhs_total_emissioncont.pdf Graphic file (type pdf)
+<use figures/vhs_total_emissioncont.pdf>
+Package pdftex.def Info: figures/vhs_total_emissioncont.pdf  used on input line
+ 541.
+(pdftex.def)             Requested size: 370.0pt x 164.44208pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[60] [61 <./figures/vhs_nofringe_ch1_abundance.png>] [62 <./figures/VHS1256bCH1
+_nofringe_abundances_corner.png>] [63 <./figures/VHS_full_species_1000.png>]
+[64 <./figures/VHS_retrieved_comp_full_v2.pdf> <./figures/VHS_retrieved_comp_5_
+v2.pdf> <./figures/VHS_retrieved_comp_10_v2.pdf> <./figures/vhs_total_emissionc
+ont.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/vhs_total_emissioncont.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] [65
+
+]
+<figures/WISE0855_nofringe_pt_env.pdf, id=1546, 1300.86pt x 867.24pt>
+File: figures/WISE0855_nofringe_pt_env.pdf Graphic file (type pdf)
+<use figures/WISE0855_nofringe_pt_env.pdf>
+Package pdftex.def Info: figures/WISE0855_nofringe_pt_env.pdf  used on input li
+ne 570.
+(pdftex.def)             Requested size: 370.0pt x 246.66312pt.
+
+
+LaTeX Warning: Reference `ig:postWISEnuis' on page 66 undefined on input line 5
+81.
+
+
+Overfull \hbox (5.43106pt too wide) in paragraph at lines 574--585
+[]\T1/pplj/m/n/10.95 With strong molec-u-lar fea-tures, the re-trieval per-form
+ed bet-ter for WISE0855
+ []
+
+<figures/wise_ch1nofringe_nuis.png, id=1548, 1027.84pt x 1041.8925pt>
+File: figures/wise_ch1nofringe_nuis.png Graphic file (type png)
+<use figures/wise_ch1nofringe_nuis.png>
+Package pdftex.def Info: figures/wise_ch1nofringe_nuis.png  used on input line 
+587.
+(pdftex.def)             Requested size: 370.0pt x 375.06512pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[66
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58 <./figures/vhsfull10000temprad.png> <./figures/VHS1256bCH1_nofringe_tempra
-dius_corner.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/WISE0855_ptsrc_onax_pt_env.pdf, id=1454, 722.7pt x 433.62pt>
-File: figures/WISE0855_ptsrc_onax_pt_env.pdf Graphic file (type pdf)
-<use figures/WISE0855_ptsrc_onax_pt_env.pdf>
-Package pdftex.def Info: figures/WISE0855_ptsrc_onax_pt_env.pdf  used on input 
-line 539.
-(pdftex.def)             Requested size: 370.0pt x 221.9968pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/BestfitBrownDwarf_fringe.png, id=1455, 1156.32pt x 578.16pt>
+ <./figures/WISE0855_nofringe_pt_env.pdf>]
+<figures/wise_ch1nofringe_abund.png, id=1566, 975.645pt x 986.68625pt>
+File: figures/wise_ch1nofringe_abund.png Graphic file (type png)
+<use figures/wise_ch1nofringe_abund.png>
+Package pdftex.def Info: figures/wise_ch1nofringe_abund.png  used on input line
+ 608.
+(pdftex.def)             Requested size: 370.0pt x 374.1919pt.
+<figures/BestfitBrownDwarf_fringe.png, id=1567, 1156.32pt x 578.16pt>
 File: figures/BestfitBrownDwarf_fringe.png Graphic file (type png)
 <use figures/BestfitBrownDwarf_fringe.png>
 Package pdftex.def Info: figures/BestfitBrownDwarf_fringe.png  used on input li
-ne 544.
+ne 613.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
-<figures/BestfitWISE0855.png, id=1456, 1156.32pt x 578.16pt>
+<figures/BestfitWISE0855.png, id=1568, 1156.32pt x 578.16pt>
 File: figures/BestfitWISE0855.png Graphic file (type png)
 <use figures/BestfitWISE0855.png>
-Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 545.
+Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 614.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
+<figures/wise_total_emissioncont.pdf, id=1569, 1300.86pt x 578.16pt>
+File: figures/wise_total_emissioncont.pdf Graphic file (type pdf)
+<use figures/wise_total_emissioncont.pdf>
+Package pdftex.def Info: figures/wise_total_emissioncont.pdf  used on input lin
+e 619.
+(pdftex.def)             Requested size: 370.0pt x 164.44208pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59 <./figures/VHS1256bTempPressInputRetrieved.pdf>])
-(./Chapters/Conclusions.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[67 <./figures/wise_ch1nofringe_nuis.png>] [68 <./figures/wise_ch1nofringe_abun
+d.png>] [69 <./figures/BestfitBrownDwarf_fringe.png> <./figures/BestfitWISE0855
+.png> <./figures/wise_total_emissioncont.pdf>]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[70
+
+]) (./Chapters/Conclusions.tex
 Chapter 5.
-[60 <./figures/VHS1256bCH1_nofringe_nuisance_corners.png>] [61 <./figures/VHS12
-56bCH1_nofringe_abundances_corner.png>] [62] [63 <./figures/VHS_full_species_10
-00.png>] [64 <./figures/VHS_retrieved_models_ext_modelonly.pdf> <./figures/VHS_
-retrieved_models_ext_narrow_fringe.pdf>] [65 <./figures/WISE0855_ptsrc_onax_pt_
-env.pdf> <./figures/BestfitBrownDwarf_fringe.png> <./figures/BestfitWISE0855.pn
-g>] [66
+[71] [72
 
 
 ]
 Underfull \vbox (badness 5862) has occurred while \output is active []
 
- [67]
+ [73]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4254,19 +4321,19 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[68]) (./Chapters/Appendices.tex
+[74]) (./Chapters/Appendices.tex
 Appendix A.
-[69] [70
+[75] [76
 
 
 ]
-<figures/WISECrossCorTemplate.pdf, id=1591, 1156.32pt x 1445.4pt>
+<figures/WISECrossCorTemplate.pdf, id=1637, 1156.32pt x 1445.4pt>
 File: figures/WISECrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/WISECrossCorTemplate.pdf>
 Package pdftex.def Info: figures/WISECrossCorTemplate.pdf  used on input line 5
 .
 (pdftex.def)             Requested size: 370.0pt x 485.17006pt.
-<figures/WISECO.pdf, id=1593, 1156.32pt x 1445.4pt>
+<figures/WISECO.pdf, id=1639, 1156.32pt x 1445.4pt>
 File: figures/WISECO.pdf Graphic file (type pdf)
 <use figures/WISECO.pdf>
 Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
@@ -4275,7 +4342,7 @@ Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/2M1207bCrossCorTemplate.pdf, id=1595, 1156.32pt x 1445.4pt>
+<figures/2M1207bCrossCorTemplate.pdf, id=1641, 1156.32pt x 1445.4pt>
 File: figures/2M1207bCrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/2M1207bCrossCorTemplate.pdf>
 Package pdftex.def Info: figures/2M1207bCrossCorTemplate.pdf  used on input lin
@@ -4284,7 +4351,7 @@ e 14.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1597, 1156.32pt x 1445.4pt>
+<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1643, 1156.32pt x 1445.4pt>
 File: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf Graphic file (type pdf)
 <use figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf>
 Package pdftex.def Info: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf  used on 
@@ -4293,96 +4360,14 @@ input line 18.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[71 <./figures/WISECrossCorTemplate.pdf>] [72 <./figures/WISECO.pdf>] [73 <./fi
-gures/2M1207bCrossCorTemplate.pdf>] [74 <./figures/VHSCrossCorTemplateUncorrOnA
+[77 <./figures/WISECrossCorTemplate.pdf>] [78 <./figures/WISECO.pdf>] [79 <./fi
+gures/2M1207bCrossCorTemplate.pdf>] [80 <./figures/VHSCrossCorTemplateUncorrOnA
 xCH1.pdf>]
 File: Chapters/requirements.txt  (verbatim)
-) [75
+) [81
 
-] (./FrontBackMatter/Bibliography.tex) [76
+] (./FrontBackMatter/Bibliography.tex) [82
 
-
-
-]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (7.55437pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Ackerman, An-drew S. and Mark S. Mar-ley. ``Pre-cip-i-tat-
-ing con-den-sa-tion clouds
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[77
 
 
 ]
@@ -4393,509 +4378,104 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (3.96904pt too wide) in paragraph at lines 22--22
-\T1/fvm/m/n/10.95 00094v1$[][] \T1/pplj/m/n/10.95 (2019): 68. arXiv: [][]$\T1/f
-vm/m/n/10.95 arXiv : 1904 . 00094v1$[][]\T1/pplj/m/n/10.95 . arXiv: [][]$\T1/fv
-m/m/n/10.95 arXiv : 1904 . 00094v1$[][]\T1/pplj/m/n/10.95 . 
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[83
+
+
+]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (4.38345pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/n/10.95 con-strain-ing the at-mo-spheric com-po-si-tion with trans-m
+is-sion spec-troscopy''.
  []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (6.1793pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 Uniquely con-strain-ing the at-mo-spheric com-po-si-tion wit
-h trans-mis-sion spec-
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (0.41345pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Biller, Beth A. and Mick-aël Bon-nefoy. ``Ex-o-planet At-m
-o-sphere Mea-sure-ments
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (0.29063pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 (2019): 2075^^U2101. arXiv: [][]$\T1/fvm/m/n/10.95 arXiv : 1
-902 . 09558v2$[][]\T1/pplj/m/n/10.95 . arXiv: [][]$\T1/fvm/m/n/10.95 arXiv : 19
-02 . 09558v2$[][]\T1/pplj/m/n/10.95 . 
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[78]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (11.8752pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 dwarfs''. \T1/pplj/m/it/10.95 Monthly No-tices of the Royal 
-As-tro-nom-i-cal So-ci-ety \T1/pplj/m/n/10.95 470.1. \T1/pplj/m/sc/10.95 issn\T
-1/pplj/m/n/10.95 : 13652966.
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (1.5558pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 Dwarfs: The-o-ret-i-cal Spec-tra, Col-ors, and De-tectabil-i
-ty of the Coolest Brown
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[79]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (48.6322pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/it/10.95 As-tro-phys-i-cal Jour-nal \T1/pplj/m/n/10.95 156.2. \T1/pp
-lj/m/sc/10.95 doi\T1/pplj/m/n/10.95 : [][]$\T1/fvm/m/n/10.95 10 . 1086 / 367763
-$[][]\T1/pplj/m/n/10.95 . arXiv: [][]$\T1/fvm/m/n/10.95 0205192v3$ [arXiv:astro
--ph][][]
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[80]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (17.15314pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 biosig-na-tures on ex-tra-so-lar ter-res-trial plan-ets''. \
-T1/pplj/m/it/10.95 As-tro-bi-ol-ogy \T1/pplj/m/n/10.95 2.2. \T1/pplj/m/sc/10.95
- issn\T1/pplj/m/n/10.95 : 15311074.
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[81]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (2.16888pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/it/10.95 Jour-nal of Quan-ti-ta-tive Spec-troscopy and Ra-dia-tive T
-rans-fer \T1/pplj/m/n/10.95 42.6. \T1/pplj/m/sc/10.95 issn\T1/pplj/m/n/10.95 : 
-00224073.
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (5.39415pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Guillot, T. ``On the ra-dia-tive equi-lib-rium of ir-ra-di
--ated plan-e-tary at-mo-spheres''.
- []
-
-[82]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-[83]
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (15.705pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Lafrenière, David, Chris-tian Marois, René Doyon, and Trav
-is Bar-man. ``HST/nic-
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -4935,9 +4515,39 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (0.315pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Line, Michael R. and Vivien Par-men-tier. ``the In-flu-enc
-e of Nonuni-form Cloud
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (10.5101pt too wide) in paragraph at lines 23--23
+[]\T1/pplj/m/n/10.95 Burningham, B., et al. ``Re-trieval of at-mo-spheric prop-
+er-ties of cloudy L dwarfs''.
  []
 
 
@@ -4959,52 +4569,10 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (2.47281pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 López-Morales, Mer-cedes, et al. ``De-tect-ing Earth-like 
-Biosig-na-tures on Rocky
- []
-
-
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (9.24123pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 ev-i-dence of ni-tro-gen chem-istry, patchy clouds and sub-s
-olar wa-ter''. \T1/pplj/m/it/10.95 Monthly
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (10.98744pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 MacKay, David J.C. \T1/pplj/m/it/10.95 In-for-ma-tion The-
-ory, In-fer-ence, and Learn-ing Al-go-rithms\T1/pplj/m/n/10.95 . Fourth
- []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5026,12 +4594,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (0.59119pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 ^^U^^U^^U.``C/O ra-tio as a di-men-sion for char-ac-ter-iz
--ing ex-o-plan-e-tary at-mo-spheres''.
- []
-
-
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
@@ -5068,12 +4630,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (3.20009pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Malik, Matej, et al. `` Self-luminous and Ir-ra-di-ated Ex
--o-plan-e-tary At-mo-spheres
- []
-
-
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
@@ -5084,12 +4640,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (9.61905pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Manjavacas, Elena. ``Phys-i-cal char-ac-ter-i-za-tion of b
-rown dwarfs''. Diss. Ruperto-
- []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5202,33 +4752,10 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (3.50212pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Oreshenko, Maria, et al. ``Su-per-vised Ma-chine Learn-ing
- for Inter-comparision
- []
-
-
-Overfull \hbox (3.89401pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Petermann, R. ``At-mo-spheric char-ac-ter-i-za-tion of ter
--res-trial plan-ets us-ing high-
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (0.24994pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Quanz, Sascha P., et al. ``First re-sults from very large 
-tele-scope NACO apodiz-
+Overfull \hbox (1.61131pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/n/10.95 nearby M dwarf VHS J125601.92-125723.9''. \T1/pplj/m/it/10.9
+5 As-tro-phys-i-cal Jour-nal \T1/pplj/m/n/10.95 804.2. \T1/pplj/m/sc/10.95 issn
+\T1/pplj/m/n/10.95 :
  []
 
 
@@ -5242,6 +4769,42 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (5.39415pt too wide) in paragraph at lines 23--23
+[]\T1/pplj/m/n/10.95 Guillot, T. ``On the ra-dia-tive equi-lib-rium of ir-ra-di
+-ated plan-e-tary at-mo-spheres''.
+ []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5299,10 +4862,10 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
+Overfull \hbox (5.70073pt too wide) in paragraph at lines 23--23
+[]\T1/pplj/m/n/10.95 Kreidberg, L. ``Ex-o-planet At-mo-sphere Mea-sure-ments fr
+om Trans-mis-sion Spec-
+ []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5315,6 +4878,12 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (3.49464pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/n/10.95 bra-tion pipeline''. \T1/pplj/m/it/10.95 SPIE As-tro-nom-i-c
+al Tele-scopes + In-stru-men-ta-tion\T1/pplj/m/n/10.95 . Ed-in-burgh,
+ []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5370,13 +4939,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (25.67505pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 arXiv: [][]$\T1/fvm/m/n/10.95 1404 . 7506$ [astro-ph.EP][][]
- \T1/pplj/m/n/10.95 (2014): 63^^U65. arXiv: [][]$\T1/fvm/m/n/10.95 1404 . 7506$
- [astro-ph.EP][][]\T1/pplj/m/n/10.95 .
- []
 
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
@@ -5452,26 +5014,6 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Overfull \hbox (9.83847pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 brown dwarf at-mo-spheres''. \T1/pplj/m/it/10.95 As-tro-phys
--i-cal Jour-nal Let-ters \T1/pplj/m/n/10.95 804.1. \T1/pplj/m/sc/10.95 issn\T1/
-pplj/m/n/10.95 : 20418213.
- []
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (12.02863pt too wide) in paragraph at lines 22--22
-\T1/pplj/m/n/10.95 zone eight-Earth-mass planet K2-18 b''. \T1/pplj/m/it/10.95 
-Na-ture As-tron-omy \T1/pplj/m/n/10.95 3.12. \T1/pplj/m/sc/10.95 issn\T1/pplj/m
-/n/10.95 : 23973366.
- []
-
-
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
@@ -5491,58 +5033,77 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Falling back to '\mkmonthzeros'.
 
 
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Package biblatex Warning: '\mkdatezeros' is deprecated.
-(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
-(biblatex)                '\mkdayzeros' as appropriate. 
-(biblatex)                Falling back to '\mkmonthzeros'.
-
-
-Overfull \hbox (1.00868pt too wide) in paragraph at lines 22--22
-[]\T1/pplj/m/n/10.95 Zhang, Michael, Yayaati Chachan, Eliza M.R. Kemp-ton, and 
-Heather A. Knut-
+Overfull \hbox (0.59119pt too wide) in paragraph at lines 23--23
+[]\T1/pplj/m/n/10.95 ^^U^^U^^U.``C/O ra-tio as a di-men-sion for char-ac-ter-iz
+-ing ex-o-plan-e-tary at-mo-spheres''.
  []
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (3.26518pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/it/10.95 arXiv eprint\T1/pplj/m/n/10.95 . arXiv: [][]$\T1/fvm/m/n/10
+.95 arXiv : 1612 . 03174v1$[][] \T1/pplj/m/n/10.95 (2018). arXiv: [][]$\T1/fvm/
+m/n/10.95 arXiv : 1612 . 03174v1$[][]\T1/pplj/m/n/10.95 .
+ []
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
 
 [92]
 
@@ -5563,12 +5124,427 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (0.5665pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/n/10.95 spheres us-ing ground-based high-dispersion spec-troscopy''.
+ \T1/pplj/m/it/10.95 As-tron-omy and
+ []
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
 [93]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (3.89401pt too wide) in paragraph at lines 23--23
+[]\T1/pplj/m/n/10.95 Petermann, R. ``At-mo-spheric char-ac-ter-i-za-tion of ter
+-res-trial plan-ets us-ing high-
+ []
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[94]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[95]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[96]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Overfull \hbox (9.83847pt too wide) in paragraph at lines 23--23
+\T1/pplj/m/n/10.95 brown dwarf at-mo-spheres''. \T1/pplj/m/it/10.95 As-tro-phys
+-i-cal Jour-nal Let-ters \T1/pplj/m/n/10.95 804.1. \T1/pplj/m/sc/10.95 issn\T1/
+pplj/m/n/10.95 : 20418213.
+ []
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[97]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[98]
+
+Package biblatex Warning: '\mkdatezeros' is deprecated.
+(biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
+(biblatex)                '\mkdayzeros' as appropriate. 
+(biblatex)                Falling back to '\mkmonthzeros'.
+
+[99]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./NasedkinThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
 Package rerunfilecheck Info: File `NasedkinThesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -5586,16 +5562,16 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'NasedkinThesis.run.xml'.
 \openout1 = `NasedkinThesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 49039 strings out of 492609
- 985338 string characters out of 6131461
- 2262255 words of memory out of 5000000
- 51576 multiletter control sequences out of 15000+600000
+ 49098 strings out of 492609
+ 986901 string characters out of 6131461
+ 2266430 words of memory out of 5000000
+ 51617 multiletter control sequences out of 15000+600000
  680974 words of font info for 245 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,23n,93p,9112b,3241s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,23n,92p,9112b,3240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/share/texlive/texmf-dist/fonts/type
@@ -5618,10 +5594,10 @@ onts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on NasedkinThesis.pdf (103 pages, 24727410 bytes).
+Output written on NasedkinThesis.pdf (109 pages, 30486274 bytes).
 PDF statistics:
- 2910 PDF objects out of 2984 (max. 8388607)
- 2493 compressed objects within 25 object streams
- 492 named destinations out of 1000 (max. 500000)
- 37335 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2962 PDF objects out of 2984 (max. 8388607)
+ 2564 compressed objects within 26 object streams
+ 503 named destinations out of 1000 (max. 500000)
+ 37376 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -151,7 +151,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -2269,8 +2269,9 @@
     <bcf:citekey order="216">Moses2013</bcf:citekey>
     <bcf:citekey order="217">Carnall2017</bcf:citekey>
     <bcf:citekey order="218">Molliere2019</bcf:citekey>
-    <bcf:citekey order="219">Barstow2020</bcf:citekey>
-    <bcf:citekey order="220">Taylor2020</bcf:citekey>
+    <bcf:citekey order="219">MacDonald2020</bcf:citekey>
+    <bcf:citekey order="220">Barstow2020</bcf:citekey>
+    <bcf:citekey order="221">Taylor2020</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

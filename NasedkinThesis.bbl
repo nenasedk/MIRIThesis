@@ -12447,6 +12447,58 @@
       \field{pages}{426}
       \range{pages}{1}
     \endentry
+    \entry{MacDonald2020}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=289f3cec05f7ac53460516a57c8599db}{%
+           family={MacDonald},
+           familyi={M\bibinitperiod},
+           given={Ryan\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ab71a3f5e05c5e5e9401fa622abc2c76}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Jayesh\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9472727f12b593af1a457b8e4b4615fa}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Nikole\bibnamedelima K.},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{79c387887f4facd2f00fd2113a526c66}
+      \strng{fullhash}{82dda2c543a2bec36c3f1ad28380c57a}
+      \strng{bibnamehash}{82dda2c543a2bec36c3f1ad28380c57a}
+      \strng{authorbibnamehash}{82dda2c543a2bec36c3f1ad28380c57a}
+      \strng{authornamehash}{79c387887f4facd2f00fd2113a526c66}
+      \strng{authorfullhash}{82dda2c543a2bec36c3f1ad28380c57a}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transmission spectroscopy is a powerful technique widely used to probe exoplanet terminators. Atmospheric retrievals of transmission spectra are enabling comparative studies of exoplanet atmospheres. However, the atmospheric properties inferred by retrieval techniques display a significant anomaly: most retrieved temperatures are far colder than expected. In some cases, retrieved temperatures are {\~{}}1000 K colder than T{\_}eq. Here, we provide an explanation for this conundrum. We demonstrate that erroneously cold temperatures result when 1D atmospheric models are applied to spectra of planets with differing morning-evening terminator compositions. Despite providing an acceptable fit, 1D retrieval techniques artificially tune atmospheric parameters away from terminator-averaged properties. Retrieved temperature profiles are hundreds of degrees cooler and have weaker temperature gradients than reality. Retrieved abundances are mostly biased by {>} 1{\$}\backslashsigma{\$} and sometimes by {>} 3{\$}\backslashsigma{\$}, with the most extreme biases for ultra-hot Jupiters. When morning-evening compositional differences manifest for prominent opacity sources, H{\$}{\_}2{\$}O abundances retrieved by 1D models can be biased by over an order of magnitude. Finally, we demonstrate that these biases provide an explanation for the cold retrieved temperatures reported for WASP-17b and WASP-12b. To overcome biases associated with 1D atmospheric models, there is an urgent need to develop multidimensional retrieval techniques.}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Why is it so Cold in Here?: Explaining the Cold Temperatures Retrieved from Transmission Spectra of Exoplanet Atmospheres}}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2003.11548
+      \endverb
+      \verb{file}
+      \verb :home/evert/Documents/Papers/Thesis/2003.11548.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2003.11548
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2003.11548
+      \endverb
+      \keyw{atmospheres,data analysis,methods,planets and satellites}
+    \endentry
     \entry{MacDonald2017}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=289f3cec05f7ac53460516a57c8599db}{%
