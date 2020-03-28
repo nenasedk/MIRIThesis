@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  28 MAR 2020 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.21)  28 MAR 2020 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4143,20 +4143,6 @@ File: figures/VHS1256bTempPressInputRetrieved.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/VHS1256bTempPressInputRetrieved.pdf  used on i
 nput line 466.
 (pdftex.def)             Requested size: 344.09729pt x 172.04663pt.
-
-
-LaTeX Warning: Reference `tab:retspecies' on page 58 undefined on input line 47
-7.
-
-<figures/vhs_nofringe_ch1_nuisance.png, id=1442, 1057.9525pt x 1077.02374pt>
-File: figures/vhs_nofringe_ch1_nuisance.png Graphic file (type png)
-<use figures/vhs_nofringe_ch1_nuisance.png>
-Package pdftex.def Info: figures/vhs_nofringe_ch1_nuisance.png  used on input l
-ine 480.
-(pdftex.def)             Requested size: 370.0pt x 376.66815pt.
-
-Underfull \vbox (badness 5260) has occurred while \output is active []
-
  [58 <./figures/vhsfull10000temprad.png> <./figures/vhs_ch1_nofringe_tr.png> <.
 /figures/VHS1256bCH1_nofringe_tempradius_corner.png> <./figures/VHS1256bTempPre
 ssInputRetrieved.pdf
@@ -4164,54 +4150,61 @@ ssInputRetrieved.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/VHS1256bTempPressInputRetriev
 ed.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
->] [59 <./figures/vhs_nofringe_ch1_nuisance.png>]
-<figures/vhs_nofringe_ch1_abundance.png, id=1466, 997.7275pt x 1002.74625pt>
+>]
+<figures/vhs_nofringe_ch1_nuisance.png, id=1459, 1057.9525pt x 1077.02374pt>
+File: figures/vhs_nofringe_ch1_nuisance.png Graphic file (type png)
+<use figures/vhs_nofringe_ch1_nuisance.png>
+Package pdftex.def Info: figures/vhs_nofringe_ch1_nuisance.png  used on input l
+ine 484.
+(pdftex.def)             Requested size: 370.0pt x 376.66815pt.
+ [59 <./figures/vhs_nofringe_ch1_nuisance.png>]
+<figures/vhs_nofringe_ch1_abundance.png, id=1468, 997.7275pt x 1002.74625pt>
 File: figures/vhs_nofringe_ch1_abundance.png Graphic file (type png)
 <use figures/vhs_nofringe_ch1_abundance.png>
 Package pdftex.def Info: figures/vhs_nofringe_ch1_abundance.png  used on input 
-line 515.
+line 519.
 (pdftex.def)             Requested size: 370.0pt x 371.85184pt.
-<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1467, 821.0675pt x 862.
+<figures/VHS1256bCH1_nofringe_abundances_corner.png, id=1469, 821.0675pt x 862.
 22125pt>
 File: figures/VHS1256bCH1_nofringe_abundances_corner.png Graphic file (type png
 )
 <use figures/VHS1256bCH1_nofringe_abundances_corner.png>
 Package pdftex.def Info: figures/VHS1256bCH1_nofringe_abundances_corner.png  us
-ed on input line 521.
+ed on input line 525.
 (pdftex.def)             Requested size: 370.0pt x 388.53539pt.
-<figures/VHS_full_species_1000.png, id=1468, 980.66376pt x 985.6825pt>
+<figures/VHS_full_species_1000.png, id=1470, 980.66376pt x 985.6825pt>
 File: figures/VHS_full_species_1000.png Graphic file (type png)
 <use figures/VHS_full_species_1000.png>
 Package pdftex.def Info: figures/VHS_full_species_1000.png  used on input line 
-527.
+531.
 (pdftex.def)             Requested size: 370.0pt x 371.88606pt.
-<figures/VHS_retrieved_comp_full_v2.pdf, id=1469, 1344.22195pt x 505.89pt>
+<figures/VHS_retrieved_comp_full_v2.pdf, id=1471, 1344.22195pt x 505.89pt>
 File: figures/VHS_retrieved_comp_full_v2.pdf Graphic file (type pdf)
 <use figures/VHS_retrieved_comp_full_v2.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_comp_full_v2.pdf  used on input 
-line 534.
+line 538.
 (pdftex.def)             Requested size: 370.0pt x 151.9575pt.
-<figures/VHS_retrieved_comp_5_v2.pdf, id=1471, 867.24pt x 867.24pt>
+<figures/VHS_retrieved_comp_5_v2.pdf, id=1473, 867.24pt x 867.24pt>
 File: figures/VHS_retrieved_comp_5_v2.pdf Graphic file (type pdf)
 <use figures/VHS_retrieved_comp_5_v2.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_comp_5_v2.pdf  used on input lin
-e 535.
+e 539.
 (pdftex.def)             Requested size: 177.59842pt x 177.59814pt.
-<figures/VHS_retrieved_comp_10_v2.pdf, id=1473, 867.24pt x 867.24pt>
+<figures/VHS_retrieved_comp_10_v2.pdf, id=1475, 867.24pt x 867.24pt>
 File: figures/VHS_retrieved_comp_10_v2.pdf Graphic file (type pdf)
 <use figures/VHS_retrieved_comp_10_v2.pdf>
 Package pdftex.def Info: figures/VHS_retrieved_comp_10_v2.pdf  used on input li
-ne 536.
+ne 540.
 (pdftex.def)             Requested size: 177.59842pt x 177.59814pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/vhs_total_emissioncont.pdf, id=1475, 1300.86pt x 578.16pt>
+<figures/vhs_total_emissioncont.pdf, id=1477, 1300.86pt x 578.16pt>
 File: figures/vhs_total_emissioncont.pdf Graphic file (type pdf)
 <use figures/vhs_total_emissioncont.pdf>
 Package pdftex.def Info: figures/vhs_total_emissioncont.pdf  used on input line
- 541.
+ 545.
 (pdftex.def)             Requested size: 370.0pt x 164.44208pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4227,28 +4220,23 @@ PDF inclusion: multiple pdfs with page group included in a single page
 >] [65
 
 ]
-<figures/WISE0855_nofringe_pt_env.pdf, id=1546, 1300.86pt x 867.24pt>
+<figures/WISE0855_nofringe_pt_env.pdf, id=1548, 1300.86pt x 867.24pt>
 File: figures/WISE0855_nofringe_pt_env.pdf Graphic file (type pdf)
 <use figures/WISE0855_nofringe_pt_env.pdf>
 Package pdftex.def Info: figures/WISE0855_nofringe_pt_env.pdf  used on input li
-ne 570.
+ne 574.
 (pdftex.def)             Requested size: 370.0pt x 246.66312pt.
 
-
-LaTeX Warning: Reference `ig:postWISEnuis' on page 66 undefined on input line 5
-81.
-
-
-Overfull \hbox (5.43106pt too wide) in paragraph at lines 574--585
+Overfull \hbox (5.43106pt too wide) in paragraph at lines 578--589
 []\T1/pplj/m/n/10.95 With strong molec-u-lar fea-tures, the re-trieval per-form
 ed bet-ter for WISE0855
  []
 
-<figures/wise_ch1nofringe_nuis.png, id=1548, 1027.84pt x 1041.8925pt>
+<figures/wise_ch1nofringe_nuis.png, id=1551, 1027.84pt x 1041.8925pt>
 File: figures/wise_ch1nofringe_nuis.png Graphic file (type png)
 <use figures/wise_ch1nofringe_nuis.png>
 Package pdftex.def Info: figures/wise_ch1nofringe_nuis.png  used on input line 
-587.
+591.
 (pdftex.def)             Requested size: 370.0pt x 375.06512pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4256,28 +4244,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [66
 
  <./figures/WISE0855_nofringe_pt_env.pdf>]
-<figures/wise_ch1nofringe_abund.png, id=1566, 975.645pt x 986.68625pt>
+<figures/wise_ch1nofringe_abund.png, id=1570, 975.645pt x 986.68625pt>
 File: figures/wise_ch1nofringe_abund.png Graphic file (type png)
 <use figures/wise_ch1nofringe_abund.png>
 Package pdftex.def Info: figures/wise_ch1nofringe_abund.png  used on input line
- 608.
+ 612.
 (pdftex.def)             Requested size: 370.0pt x 374.1919pt.
-<figures/BestfitBrownDwarf_fringe.png, id=1567, 1156.32pt x 578.16pt>
+<figures/BestfitBrownDwarf_fringe.png, id=1571, 1156.32pt x 578.16pt>
 File: figures/BestfitBrownDwarf_fringe.png Graphic file (type png)
 <use figures/BestfitBrownDwarf_fringe.png>
 Package pdftex.def Info: figures/BestfitBrownDwarf_fringe.png  used on input li
-ne 613.
+ne 617.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
-<figures/BestfitWISE0855.png, id=1568, 1156.32pt x 578.16pt>
+<figures/BestfitWISE0855.png, id=1572, 1156.32pt x 578.16pt>
 File: figures/BestfitWISE0855.png Graphic file (type png)
 <use figures/BestfitWISE0855.png>
-Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 614.
+Package pdftex.def Info: figures/BestfitWISE0855.png  used on input line 618.
 (pdftex.def)             Requested size: 370.0pt x 184.99733pt.
-<figures/wise_total_emissioncont.pdf, id=1569, 1300.86pt x 578.16pt>
+<figures/wise_total_emissioncont.pdf, id=1573, 1300.86pt x 578.16pt>
 File: figures/wise_total_emissioncont.pdf Graphic file (type pdf)
 <use figures/wise_total_emissioncont.pdf>
 Package pdftex.def Info: figures/wise_total_emissioncont.pdf  used on input lin
-e 619.
+e 623.
 (pdftex.def)             Requested size: 370.0pt x 164.44208pt.
 
 
@@ -4291,24 +4279,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [67 <./figures/wise_ch1nofringe_nuis.png>] [68 <./figures/wise_ch1nofringe_abun
 d.png>] [69 <./figures/BestfitBrownDwarf_fringe.png> <./figures/BestfitWISE0855
-.png> <./figures/wise_total_emissioncont.pdf>]
+.png> <./figures/wise_total_emissioncont.pdf>] [70
+
+
+]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[70
+[71
 
 ]) (./Chapters/Conclusions.tex
 Chapter 5.
-[71] [72
+[72] [73
 
 
-]
-Underfull \vbox (badness 5862) has occurred while \output is active []
-
- [73]
+] [74]
 
 Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                Please use '\mkyearzeros', '\mkmonthzeros' or
@@ -4321,19 +4309,16 @@ Package biblatex Warning: '\mkdatezeros' is deprecated.
 (biblatex)                '\mkdayzeros' as appropriate. 
 (biblatex)                Falling back to '\mkmonthzeros'.
 
-[74]) (./Chapters/Appendices.tex
+[75]) (./Chapters/Appendices.tex
 Appendix A.
-[75] [76
-
-
-]
-<figures/WISECrossCorTemplate.pdf, id=1637, 1156.32pt x 1445.4pt>
+[76]
+<figures/WISECrossCorTemplate.pdf, id=1640, 1156.32pt x 1445.4pt>
 File: figures/WISECrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/WISECrossCorTemplate.pdf>
 Package pdftex.def Info: figures/WISECrossCorTemplate.pdf  used on input line 5
 .
 (pdftex.def)             Requested size: 370.0pt x 485.17006pt.
-<figures/WISECO.pdf, id=1639, 1156.32pt x 1445.4pt>
+<figures/WISECO.pdf, id=1642, 1156.32pt x 1445.4pt>
 File: figures/WISECO.pdf Graphic file (type pdf)
 <use figures/WISECO.pdf>
 Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
@@ -4342,7 +4327,7 @@ Package pdftex.def Info: figures/WISECO.pdf  used on input line 9.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/2M1207bCrossCorTemplate.pdf, id=1641, 1156.32pt x 1445.4pt>
+<figures/2M1207bCrossCorTemplate.pdf, id=1644, 1156.32pt x 1445.4pt>
 File: figures/2M1207bCrossCorTemplate.pdf Graphic file (type pdf)
 <use figures/2M1207bCrossCorTemplate.pdf>
 Package pdftex.def Info: figures/2M1207bCrossCorTemplate.pdf  used on input lin
@@ -4351,7 +4336,7 @@ e 14.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1643, 1156.32pt x 1445.4pt>
+<figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf, id=1646, 1156.32pt x 1445.4pt>
 File: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf Graphic file (type pdf)
 <use figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf>
 Package pdftex.def Info: figures/VHSCrossCorTemplateUncorrOnAxCH1.pdf  used on 
@@ -4360,9 +4345,12 @@ input line 18.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[77 <./figures/WISECrossCorTemplate.pdf>] [78 <./figures/WISECO.pdf>] [79 <./fi
-gures/2M1207bCrossCorTemplate.pdf>] [80 <./figures/VHSCrossCorTemplateUncorrOnA
-xCH1.pdf>]
+[77
+
+
+ <./figures/WISECrossCorTemplate.pdf>] [78 <./figures/WISECO.pdf>] [79 <./figur
+es/2M1207bCrossCorTemplate.pdf>] [80 <./figures/VHSCrossCorTemplateUncorrOnAxCH
+1.pdf>]
 File: Chapters/requirements.txt  (verbatim)
 ) [81
 
@@ -5565,11 +5553,11 @@ Package logreq Info: Writing requests to 'NasedkinThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
  ) 
 Here is how much of TeX's memory you used:
- 49098 strings out of 492609
- 986901 string characters out of 6131461
- 2266430 words of memory out of 5000000
- 51617 multiletter control sequences out of 15000+600000
- 680974 words of font info for 245 fonts, out of 8000000 for 9000
+ 49106 strings out of 492609
+ 986997 string characters out of 6131461
+ 2266778 words of memory out of 5000000
+ 51620 multiletter control sequences out of 15000+600000
+ 683176 words of font info for 251 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,23n,92p,9112b,3240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -5594,10 +5582,10 @@ onts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on NasedkinThesis.pdf (109 pages, 30486274 bytes).
+Output written on NasedkinThesis.pdf (109 pages, 30491342 bytes).
 PDF statistics:
- 2962 PDF objects out of 2984 (max. 8388607)
- 2564 compressed objects within 26 object streams
- 503 named destinations out of 1000 (max. 500000)
- 37376 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2965 PDF objects out of 2984 (max. 8388607)
+ 2567 compressed objects within 26 object streams
+ 504 named destinations out of 1000 (max. 500000)
+ 38400 words of extra memory for PDF output out of 42996 (max. 10000000)
 

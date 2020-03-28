@@ -4,6 +4,8 @@ With a new era of  infrared observations fast approaching, we set out to examine
 Keeping these goals in mind, we characterized the effects of fringing on spectral extraction in the MIRI MRS.
 We also selected targets from the Early Release Science and Guaranteed Time Observation programs for JWST to perform realistic atmospheric retrievals on emission spectra as observed with the MRS.
 To accomplish this we developed an analysis pipeline to simulate, process and examine synthetic MRS observations, which can easily be used for future observing proposals or data reductions.
+We also adapted the current retrieval method using the petitRADTRANS atmospheric modeling code to use the Nested Sampling method. 
+This provides an improvement in the exploration of multimodal posterior distributions and direct computation of the Bayesian evidence for a model, in contrast to the current MCMC methods used.
 
 \section{Summary of Results}
 \subsection{Fringing in the MIRI MRS}
@@ -12,11 +14,12 @@ The current version of the instrumental simulator, MIRISIM, uses a fringe flat d
 However, the extended source does not provide a realistic model of fringing for point sources. 
 We implemented a routine to substitute a point-source derived fringe flat into MIRISIM, using a large set of fringe flats to cover the detector plane.
 We then corrected this point-source fringing using the extended source fringe flat currently used in the JWST Pipeline, as well as using residual fringe correction to filter out fringing frequencies.
-We found that the current implementation provides near ideal correction, comparing well to the case with no fringing.
+We found that the current implementation between MIRISIM and the pipeline provides an optimistic estimate, essentially identical to the case with no fringing.
 The correction performed less well on point source fringing, decreasing the signal to noise of the cross correlation peak by 10\% if the point source is located in the center of the detector plane, and 20\% if the source is located off-axis.
-The residual fringe correction significantly degraded the spectrum, reducing the SNR by more than 80\%.
+The residual fringe correction results proved inconclusive, though may depend on the input signal strength.
+There is an incompatibility between the RFC and the dark current subtraction step in the JWST Pipeline. 
 
-To emphasize the importance of this effect, we compared the extracted spectrum to molecular templates using the same cross correlation procedure.
+To emphasize the importance of the point-source fringing effect, we compared the extracted spectrum to molecular templates using the same cross correlation procedure.
 As when correlated with the full input template, we showed that the the current instrumental model will overestimate the SNR of a detection as compared to the more realistic point-source fringe model. 
 The reduction in SNR when using the point-source model is substantial enough to move a species from a significant, $>$5$\sigma$ to a marginal detection.
 
@@ -27,6 +30,35 @@ This may require additional calibration or commissioning data with the specific 
 
 \subsection{Effects of fringing on atmospheric retrievals}
 \subsection{Atmospheric retrievals with the MIRI MRS}
+All of the retrieval studies performed demonstrated the opportunities and challenges presented by using the MRS to study atmospheric physics and chemistry.
+Temperatures were systematically underestimated, and radii overestimated across all trials.
+In general abundances could not be constrained to within the retrieved margin of error.
+Retrievals on subsets of the full spectrum data (using Channel 1 only) found different compositions and temperatures than a retrieval over the full wavelength range.
+
+However, while the parameter estimation might not find the correct values to a retrieved margin of error, they do provide insight into the atmospheres under investigation.
+For VHS-1256b internal temperature estimates ranged from 684 K to 833 K, compared to the true value of 900K. 
+The radius was overestimated at between 1.44 and 1.8 R$_{J}$, compared to the 1.29 R$_{J}$ input.
+The inclusion of hydrogen sulfide in the retrieval, but not in the atmosphere demonstrated the importance of validating retrieved atmospheres. 
+It was retrieved at over 10\% of the atmospheric composition in all cases, while not being present in the atmosphere at all.
+However, the estimates for water and methane were consistently within an order of magnitude of the true abundances of 0.1\% by mass fraction.
+The C/O ratio computed from the retrieved species did not reflect the input ratio.
+Using a model parameterization based on the C/O ratio and metallicity may provide a more robust estimate for this quantity.
+
+WISE 0855 proved to be an easier target due to the strong ammonia absorption features in the simulated atmosphere.
+The temperature estimates ranged from 235 K to FIXME XXX, while the radius varied from 1.24 R$_{J}$ to YYYY FIXME.
+The true values of these parameters were 250 K and 1.17 R$_{J}$ respectively.
+The ammonia abundance was one of the few species retrieved to within the computed margin of error, at 0.26$\pm0.01$\% by mass fraction.
+Water and methane were within 20\% of their input values.
+Carbon monoxide was overestimated, but due to a relatively featureless spectrum did not significantly impact the best fit model.
+Unlike VHS1256b, we were able to correctly compute the C/O ratio of $0.554\pm0.03$.
+The comparison between the two objects demonstrates the necessity of having strong absorption features for the retrieval to produce accurate results.
+
+A key finding of this work is the importance of validating the physicality of a retrieved atmosphere.
+Using self consistent equilibrium or disequilibrium models, the atmospheres must be checked in order to prevent false positive detections such as H$_{2}$S in VHS-1256b or CO in WISE 0855.
+In the case of VHS 1256b, we found that using a cross correlation would rule out the presence of H$_{2}$S, though this method did not prove useful for CO in WISE 0855 due to the lack of significant lines.
+
+The variation in the retrieval results across different cases, and the systematic biases in temperature and radius emphasizes the necessity of using multiple tools in order to avoid model dependent effects.
+While this would not provide a guarantee that the correct parameter estimation will be correct in any individual retrieval, it would provide a more robust case for any repeatable parameter measurement. 
 \section{Discussion}
 \subsection{Implications for GTO Observations}
 \subsection{Caveats and Limitations}

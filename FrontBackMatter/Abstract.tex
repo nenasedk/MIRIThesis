@@ -11,9 +11,12 @@ With that in mind, the MIRISIM instrumental simulator was developed to provide o
 This thesis improves the implementation of a thin-film fringing model for point sources to MIRISIM, considering how the fringing effect from the detector layers varies with position. 
 Fringing is a periodic, wavelength dependent effect, and thus has a strong impact on any spectroscopic observations.
 A comparison to the existing model was made, demonstrating the necessity of considering this effect when analyzing data. 
-We will improve the fringing removal by identifying the point source location from the constructed data cube, and select the correct fringe flat for removal.
+A new point-source based model was implemented in MIRISIM, and the current state-of-the-art corrections compared using the cross correlation technique.
+We also explore using this technique to identify the presence of individual species, or to infer the presence of an object in an IFU data cube.
 
 Understanding the instrumental effects is key to quantifying the ability of MIRI to derive atmospheric properties.
 Existing literature has considered the NIRCAM instrument and the MIRI Low-Resolution Spectrometer, but to date no retrieval studies have been performed using MIRISIM, or for the MIRI MRS, though it is critical to extend wavelength coverage to improve the results of an atmospheric retrieval.
-Model atmospheres will be generated using PetitRadTrans, and processed using MIRISIM and the JWST pipeline to produce a mock observation.
-An atmospheric retrieval will be performed, demonstrating to what extent MIRI will be able to retrieve atmospheric parameters such as temperature, pressure and composition. The posterior distributions of these parameters are compared with and without the fringing removal, again demonstrating the importance of correcting for this effect.
+Model emission spectra for three JWST GTO and ERS targets, VHS-1256b, WISE 0855 and 2M1207b, were be generated using petitRADTRANS.
+These were processed using MIRISIM using the proposed observing parameters and reduced with the JWST pipeline to produce a mock observation.
+We found temperature, radii and atmospheric parameters for each of the targets, as well as the abundances for individual species.
+This was done using two subsets of the MRS wavelength range, as well as comparing a realistic fringing case to an optimistic correction.

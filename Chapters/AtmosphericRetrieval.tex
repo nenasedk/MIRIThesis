@@ -473,8 +473,12 @@ These cover the primary components of the input atmosphere, while H$_{2}$S was i
 Figures \ref{fig:postVHS_abundances}, \ref{fig:postVHS_abundances_fringe} and \ref{fig:postVHS_abundances_full} show the posterior distributions for the Channel 1 without fringing, Channel 1 with fringing and full spectrum cases respectively. 
 The Channel 1 case without fringing was the only retrieval to identify species at the correct abundance to within the computed margin of error.
 This is due both to bias in the retrieved posteriors and the narrow width of the distributions.
-However, although outside of the computed error bars, the retrievals produced relatively accurate abundances for several species. 
+However, although outside of the computed error bars, the retrievals produced order of magnitude estimates for water and methane. 
+CO$_{2}$ was found to be the most abundant component of the atmosphere, making up 74\% of the overall composition in the Channel 1, no fringing case.
+Only the Channel 1 case with fringing found the CO$_{2}$ to within margin of error, though the retrieved value is three orders of magnitude lower than the true value.
+As it is only a trace gas, a such wide posterior distribution is expected.
 The results for all of the retrievals are tabulated in table \ref{tab:retspecies}. 
+
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\linewidth]{vhs_nofringe_ch1_nuisance.png}
@@ -578,7 +582,7 @@ A modified Guillot profile was used for the Channel 1 retrieval.
 From 0.01 bar to 10 bar the true P-T profile falls within the 15\%$-$85\% confidence interval.
 As the pressure decreases, the profiles diverge, and the retrieval did not identify the isothermal temperature structure.
 We note that the input profile is not a realistic model of a brown dwarf atmosphere, and the retrieved profile likely presents a better model of a self-luminous object.
-The parameters retrieved in order to compute this profile, shown in Fig. \ref{ig:postWISEnuis}, match with expectations.
+The parameters retrieved in order to compute this profile, shown in Fig. \ref{fig:postWISEnuis}, match with expectations.
 The $\alpha$ parameter is centered at 0, thus reducing the modified Guillot profile to a standard profile.
 This also makes P$_{trans}$ uninformative with no impact on the profile, and this is reflected in the uniform posterior distribution.
 While the remaining parameters, including the temperature and radius, exclude the true values to within 2\% due to narrow posterior distributions, they fall within 10\% of the expected value.
@@ -622,7 +626,36 @@ The large scale features centered around 7 and 14 micron trace the continuum of 
 \end{figure}
 \clearpage
 
-
+\begin{landscape}
+	\begin{table}[h]
+		\centering
+		\begin{footnotesize}
+		\begin{tabular}{l|lccccccc}
+			\toprule
+			\textbf{Name} & \textbf{Wlen [$\mu m$]} & \textbf{Fringing} & \textbf{H$_{2}$O} & \textbf{CH$_{4}$} & \textbf{NH$_{3}$} &\textbf{CO} & \textbf{CO$_{2}$} & \textbf{H$_{2}$S}\\
+			\midrule
+			\multirow{4}{*}{VHS-1256b}&  Truth &     & $1\times10^{-3}$ &$3\times10^{-3}$&$1\times10^{-5}$&$1\times10^{-7}$&$1\times10^{-5}$& 0.0\\
+									  & 5--7.5 & No  &$1.02\pm0.001\times10^{-2}$& $1.86\pm0.0002\times10^{-2}$&$1.9\pm0.2\times10^{-8}$&$8\pm2\times10^{-11}$&$7.4\pm0.01\times10^{-1}$&$1.9\pm0.01\times10^{-1}$\\
+									  
+			 						  & 5--7.5 & Yes &$3.6\pm0.3\times10^{-3}$& $1.3\pm0.1\times10^{-2}$&$1.0\pm0.3\times10^{-5}$&$0.3\pm1.5\times10^{-8}$&$0.08\pm1\times10^{-6}$&$7.4\pm0.7\times10^{-1}$\\
+			 						  
+			 						  & 5--18  & No  &$9.1\pm0.6\times10^{-4}$& $7.2\pm0.2\times10^{-3}$&$0.2\pm1\times10^{-9}$&$0.4\pm1.0\times10^{-10}$&$1.9\pm0.1\times10^{-1}$&$7.9\pm0.2\times10^{-1}$\\
+			\midrule
+			\multirow{4}{*}{WISE0855} &  Truth &     &$4.6\times10^{-4}$&$2.6\times10^{-4}$&$2.6\times10^{-3}$&$1\times10^{-15}$&$1\times10^{-14}$& 0.0 \\
+									  & 5--7.5 & No  &$5.6\pm0.1\times10^{-4}$&$3.0\pm0.1\times10^{-4}$&$2.6\pm0.1\times10^{-3}$&$2.1\pm0.1\times10^{-5}$&$0.5\pm5\times10^{-9}$&$0.7\pm7\times10^{-8}$\\
+			 						  & 5--7.5 & Yes &&&&&&\\
+								      & 5--18  & No  &&&&&&\\
+			\midrule
+			\multirow{3}{*}{2M-1207b} &  Truth &     &&&&&&\\
+									  & 5--7.5 & No  &&&&&&\\
+									  & 5--18  & No  &&&&&&\\
+			\bottomrule
+		\end{tabular}
+	\caption{Retrieved mass fraction abundances for a selection of retrieved species. The log of these values is the retrieved parameter, where applicable the stated error is the 1$\sigma$ error in log space. This error can result in abundances below zero. For the lower bound the log error in the posterior plots should be used.}
+	\label{tab:retspecies}
+	\end{footnotesize}
+	\end{table}
+\end{landscape}
 \subsection{Fringing Comparison}
 We begin by comparing the results of different fringing cases, using VHS-1256b as a template.
 The first set of retrievals use only Channel 1 data from 4.9-7.5 $\mu$m, as point source fringe flats have only been generated for this wavelength range.
