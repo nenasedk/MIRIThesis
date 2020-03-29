@@ -115,7 +115,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{Atmospheric Modeling}}{45}{subsubsection*.52}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}{petitRADTRANS}}{46}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}{petitRADTRANS}}{45}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}{Radiative Transfer}}{46}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
@@ -133,13 +133,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{Method}}{50}{subsubsection*.57}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}{Multinest}}{51}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.2}{Multinest}}{50}{subsection.4.2.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}{Observations}}{51}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{VHS-1256B}}{51}{subsubsection*.58}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{2M1207b}}{52}{subsubsection*.59}% 
+\contentsline {subsubsection}{{2M1207b}}{51}{subsubsection*.59}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{WISE 0855-0714}}{52}{subsubsection*.61}% 
 \defcounter {refsection}{0}\relax 
@@ -149,9 +149,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.1}{Spectra Generation}}{54}{subsection.4.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}{Atmospheric Retrieval Setup}}{56}{subsection.4.4.2}% 
+\contentsline {subsection}{\numberline {4.4.2}{Atmospheric Retrieval Setup}}{55}{subsection.4.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{{Prior choice}}{56}{subsubsection*.67}% 
+\contentsline {subsubsection}{{Prior choice}}{55}{subsubsection*.67}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{Validation}}{56}{subsubsection*.68}% 
 \defcounter {refsection}{0}\relax 

@@ -1,5 +1,5 @@
 \chapter{Atmospheric Retrievals}
-Everything photon of light that we receive from an exoplanet will interact with its atmosphere, and will therefore provide us with a hint of what that atmosphere may look like.
+Every photon of light that we receive from an exoplanet will interact with its atmosphere, and will therefore provide us with a hint of what that atmosphere may look like.
 An atmospheric retrieval is the process of reconstructing the atmosphere of an object based on an observed spectrum.
 This process relies heavily on having accurate models which can be parameterized by the physical quantities we are interested in: generally the temperature, pressure and composition \parencite{Madhusudhan2018}.
 As these models cover a very large parameter space (>10 parameters, each covering several orders of magnitude), it is necessary to have an efficient method for sampling this space, computing a model and comparing this model to the data 
@@ -42,7 +42,7 @@ Considering the potentially millions of possible atmospheres that must be examin
 
 %\cite{Zhang2019} %PLATON Transmission spectra generation
 \section{petitRADTRANS}
-For this work we chose to use the petitRADTRANS package due to its user-friendly python implementation, high speed computation for retrieval use and extensive high resolution, line-by-line spectral library for generating planetary spectra \parencite{Molliere2019}. 
+For this work we chose to use the petitRADTRANS package due to its user-friendly python implementation, high speed computation for retrieval use and extensive high-resolution, line-by-line spectral library for generating planetary spectra \parencite{Molliere2019}. 
 It is a 1D, radiative transfer package with many parameters options, described in table \ref{tab:petitradparams}
 PetitRADTRANS can compute both emission and transmission spectra, with an output spectral resolution of R=1000 in correlated k mode, or R=1 000 000 in line-by-line mode. 
 
@@ -67,7 +67,7 @@ PetitRADTRANS can compute both emission and transmission spectra, with an output
 	\label{tab:petitradparams}
 \end{table}
 
-Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modelling programs such as ATMO \parencite{Goyal2019}, Planetary Spectrum Generator \parencite{Villanueva2018}, HELIOS \parencite{Malik2017,Malik2019} and others.
+Note that much of the following sections applies to many other similar 1D radiative transfer atmospheric modeling programs such as ATMO \parencite{Goyal2019}, Planetary Spectrum Generator \parencite{Villanueva2018}, HELIOS \parencite{Malik2017,Malik2019} and others.
 Many (or even most) of these programs rely on the same set of high-resolution molecular line lists, including HITRAN/HITEMP \parencite{Rothman1981,Rothman2010,Gordon2017}, ExoMol/ExoCross \parencite{Tennyson2016,Tennyson2017,Yurchenko2018} and others. 
 %\cite{Behmard2019}%Cool star spectroscopy, hires
 
@@ -79,7 +79,7 @@ I_{top} = B(T_{int})\mathcal{T}^{atmo} + \frac{1}{2}\sum_{i=0}^{N_{L}-1}\left[B(
 \end{equation}
 $N_{L}$ is the number of layers in the atmosphere, and $\mathcal{T}$ is the transmission from a given layer to the top of the atmosphere. All quantities are averaged per wavelength bin in c-k mode, while they are evaluated at each wavelength point in line-by-line mode.
 
-In order to compute the temperature structure of the atmosphere, a modified Guillot model \parencite{Guillot2010} was used, as used in \parencite{Molliere2017,Molliere2019}.
+In order to compute the temperature structure of the atmosphere, a modified Guillot model \parencite{Guillot2010} was used, as in \parencite{Molliere2017,Molliere2019}.
 The temperature structure is defined as 
 \begin{equation}
 T(P) = \left<T_{Guillot}(P)\left(1-\frac{\alpha}{1+P/P_{trans}}\right)\right>_{P}.
@@ -101,7 +101,7 @@ The remaining free parameters $\alpha$, $P_{trans}$ simply modify the shape of t
 To compute the emission spectra of an atmosphere, petitRADTRANS accounts for various opacity contributions including absorption and emission lines, collisionally induced absorption, cloud opacity and scattering and Rayleigh scattering cross sections. These sources are described in detail in \parencite{Molliere2019}, summarized in tables 2 and 3. For this work we consider only the case of a cloud-free atmosphere due to the complexity of realistic cloud modeling.
 \subsubsection{Line-by-line}
 In its high resolution line-by-line mode, petitRADTRANS computes emission spectra with R=10$^{6}$. 
-These spectra are computed using opacity sources for molecular and atomic lines from ExoMol/ExoCross library \parencite{Yurchenko2018}. Pressure broadening is taken into account using the coefficients from HITRAN/HITEMP \parencite{Rothman2010,Rothman2013} or from \parencite{Sharp2007} (Eqn. 15). The line opacities are computed from 80-3000K, and from 0.3-28$\mu$m in high resolution mode.
+These spectra are computed using opacity sources for molecular and atomic lines from ExoMol/ExoCross library \parencite{Yurchenko2018}. Pressure broadening is taken into account using the coefficients from HITRAN/HITEMP \parencite{Rothman2010,Rothman2013} or from \parencite{Sharp2007} (Eqn. 15). The line opacities are computed from 80-3000 K, and from 0.3-28 $\mu$m in high resolution mode.
 \subsubsection{Correlated K}
 The low resolution mode of petitRADTRANS uses the correlated-k (c-k) method of computing line opacities \parencite{Goody1989,Lacis1991,Fu1992}. 
 This method for calculating emission and absorption features assumes that the opacity distribution functions between differing species are uncorrelated, which permits simple computation of overlapping features. 
@@ -258,7 +258,7 @@ The host star of 2M1207b is faint, allowing for good enough contrast for a strai
 Although it is a Y-type brown dwarf, WISE 0855 is the most similar known object to Jupiter outside our solar system that has been directly observed \parencite{Luhman2014}. 
 At 250K, WISE 0855 is very faint, with an H-band magnitude of 25, but its proximity at 2pc makes it an ideal target for characterization.
 The JWST GTO Program 1230 will observe WISE 0855 using NIRCam, NIRSpec and the MIRI MRS \parencite{Oliveira2019}.
-It will use a FAST readout, with 180 groups per integration, and one integration per exposure for a total of 999s of integration time for each sub-band. No dithering will be used.
+It will use a FAST readout, with 180 groups per integration, and one integration per exposure for a total of 999 s of integration time for each sub-band. No dithering will be used.
 
 As a cold object, WISE 0855 provides the best known extra-solar template for older planetary mass objects.
 With the improved sensitivity and long wavelength coverage of JWST, it is hoped that more low mass and colder exoplanets may be directly imaged.
@@ -336,12 +336,12 @@ Channel 4 is ignored due to photometric calibration issues and lack of sensitivi
 	\caption{The extracted 1D spectrum for VHS1256b with no noise and no fringing applied compared to the input template and the best fit model from a Channel 1 atmospheric retrieval. This spectrum demonstrates the ability of the retrieval to accurately fit the data. It also shows several significant systematic effects at 5.7 and 6.4 micron, which are present at some level in all of the extracted spectra.}
 	\label{fig:vhsnofringeextractedbestfit}
 \end{figure}
-The spectra generated by petitRADTRANS are in terms of the emitted flux and are in units of erg cm$^{-2}$ m$^{-2}$ s$^{-1}$ $Hz^{-1}$. 
+The spectra generated by petitRADTRANS are in terms of the emitted flux and are in units of erg cm$^{-2}$ m$^{-2}$ s$^{-1}$ Hz$^{-1}$. 
 MIRISIM requires the flux incident on the detector in units of $\mu$Jy, so we convert the as 
 \begin{equation}
 F_{inc} [\mu\textrm{Jy}] = 10^{29}\times F_{em} \times \left(\frac{R_{pl}}{d_{pl}}\right)^{2}.
 \end{equation}
-The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=12000 at 4.0$\mu$m. 
+The wavelength grid produced by petitRADTRANS is log-spaced, and we use the \verb|spectres| python package \parencite{Carnall2017} in order to convert to a linear spaced grid with R=12000 at 4.0 $\mu$m. 
 This ensures the input spectrum will oversample the instrumental spectral resolution by a factor of at least 4 across the whole wavelength range.
 
 While it is possible to add a background term to a spectrum using MIRISIM, we chose not to use any background in order to improve our spectral extraction after processing with the JWST pipeline, with the understanding that errors from background subtraction will be negligible in actual data.
@@ -374,7 +374,7 @@ The alternative is to use physically motivated priors, at the risk of missing un
 
 We based our prior selection on the choices made in \parencite{Molliere2019}.
 We use an uninformative uniform distribution on the temperature parameters, as well as on the log of abundance, gravity and pressure parameters.
-Uniformly drawing from the log of the parameters allows for better coverage of the very large parameter space (from 10$^{-15}$ to $10^{0}$ in each of the fractional abundances).
+Uniformly drawing from the log of the parameters allows for better coverage of the very large parameter space (from $10^{-15}$ to $10^{0}$ in each of the fractional abundances).
 For the opacity parameters $\gamma,\delta$ and $\alpha$ we use a normal distribution centered around the expected value. 
 
 Trial runs showed that the posterior distributions for these parameters are not driven by the priors.
@@ -469,7 +469,7 @@ Note that this may not be the Guillot profile and that other parameterizations s
 	\label{fig:presVHS}
 \end{figure}
 
-To retrieve the atmospheric composition we retrieved abundances for 8 species for VHS-1256b: CO, H$_{2}$O, CH$_{4}$, NH$_{3}$, CO$_{2}$, H$_{2}S$ C$_{2}$H$_{2}$ and TiO.
+To retrieve the atmospheric composition we retrieved abundances for 8 species for VHS-1256b: CO, H$_{2}$O, CH$_{4}$, NH$_{3}$, CO$_{2}$, H$_{2}$S C$_{2}$H$_{2}$ and TiO.
 These cover the primary components of the input atmosphere, while H$_{2}$S was included to examine how the retrieval would treat a species that isn't present.
 Figures \ref{fig:postVHS_abundances}, \ref{fig:postVHS_abundances_fringe} and \ref{fig:postVHS_abundances_full} show the posterior distributions for the Channel 1 without fringing, Channel 1 with fringing and full spectrum cases respectively. 
 The Channel 1 case without fringing was the only retrieval to identify species at the correct abundance to within the computed margin of error.
@@ -502,7 +502,7 @@ Although not explored in this work, it is possible to parameterize petitRADTRANS
 
 With the structure and composition identified we can now compare the best fit retrieved models, as well as the emission contribution function to identify which atmospheric layers we are examining.
 The log-evidences for each model presented in Fig. \ref{fig:bestfitVHS} are similar: $-8.78\times10^{4}$,$-9.96\times10^{4}$ and  $-1.09\times10^{5}$ for the no fringing, Channel 1 fringing and full spectrum retrievals respectively.
-While the it is difficult to compare the evidence for different data sets, we do note that the no fringing case resulted in a better fit to the data than in the fringing case. 
+While it is difficult to compare the evidence for different data sets, we do note that the no fringing case resulted in a better fit to the data than in the fringing case. 
 At short wavelengths, we find that the Channel 1 fringe-free case fits the data very well, particularly compared to the point source case.
 However, both of the other retrievals attempt to fit a systematic-induced feature at 6.5 $\mu$m.
 At longer wavelengths we find that this model deviates from the input spectrum, and that the full spectrum model provides a better fit beyond 10 $\mu$m.
@@ -573,7 +573,7 @@ The third case is the non-fringing, full spectrum retrieval.
 
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{WISE0855_nofringe_pt_env}
-	\caption{Pressure Temperature profile for WISE 0855.}
+	\caption{Pressure-temperature profile for WISE 0855.}
 	\label{fig:presWISE}
 \end{figure}
 With strong molecular features, the retrieval performed better for WISE0855 than for the other two targets.
@@ -584,7 +584,7 @@ From 0.01 bar to 10 bar the true P-T profile falls within the 15\%$-$85\% confid
 As the pressure decreases, the profiles diverge, and the retrieval did not identify the isothermal temperature structure.
 We note that the input profile is not a realistic model of a brown dwarf atmosphere, and the retrieved profile likely presents a better model of a self-luminous object.
 The parameters retrieved in order to compute this profile, shown in Fig. \ref{fig:postWISEnuis}, match with expectations.
-The $\alpha$ parameter is centered at 0, thus reducing the modified Guillot profile to a standard profile.
+The $\alpha$ parameter is centered at $0$, thus reducing the modified Guillot profile to a standard profile.
 This also makes P$_{trans}$ uninformative with no impact on the profile, and this is reflected in the uniform posterior distribution.
 While the remaining parameters, including the temperature and radius, exclude the true values to within 2\% due to narrow posterior distributions, they fall within 10\% of the expected value.
 
@@ -596,7 +596,7 @@ While the remaining parameters, including the temperature and radius, exclude th
 
 The composition of the atmosphere is also well retrieved.
 Ammonia creates the strongest absorption features, and is retrieved to within the margin of error at a mass fraction of 0.0026$\pm0.0001$.
-Other strongly present species including water and methane are found t be the next most abundant molecules.
+Other strongly present species including water and methane are found to be the next most abundant molecules.
 Carbon monoxide presents a false positive detection though, as it is present only at the 10$^{-15}$ level in the atmosphere, but is measured at 10$^{-4.67}$.
 A similar false positive was found using the cross correlation technique in Chapter 3.
 In a cold atmosphere the CO spectrum is largely featureless, and it is not expected to present in large quantities in such an atmosphere in equilibrium.
