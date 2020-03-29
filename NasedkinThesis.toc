@@ -95,7 +95,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{{Aperture Photometry}}{32}{subsubsection*.40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}{Cross-Correlation}}{34}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}{Cross Correlation}}{34}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}{Residual Statistics}}{35}{subsection.3.4.1}% 
 \defcounter {refsection}{0}\relax 
@@ -189,6 +189,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.1}{Cross Correlations}}{77}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}{Package Requirements}}{81}{section.A.2}% 
+\contentsline {section}{\numberline {A.2}{Full Posterior Distributions}}{81}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Works Cited}}{83}{section*.91}% 
+\contentsline {section}{\numberline {A.3}{Package Requirements}}{85}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Works Cited}}{87}{section*.95}% 

@@ -396,6 +396,7 @@ This allows us to be reasonably confident that the retrieval is being performed 
 \section{Results}
 Numerous atmospheric retrievals were run in order to examine the effects of fringing on parameter retrieval, as well as to better understand how to use the MRS to study atmospheres.
 We will discuss the findings for each of the three targets of interest individually before discussing the effects of fringing on the outcome of the study.
+The full posterior distributions are included in appendix \ref{app:post}.
 %\subsection{Model Selection}
 %\begin{figure}[h]
 %	%\includegraphics[content...]{imagefile}
@@ -452,7 +453,7 @@ Note that this may not be the Guillot profile and that other parameterizations s
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.321\linewidth]{vhs_ch1_nofringe_tr.png}
-	\includegraphics[width=0.28\linewidth]{VHS1256bCH1_nofringe_tempradius_corner.png}
+	\includegraphics[width=0.28\linewidth]{vhs_ptsrc_nocorr_ch1_tr.png}
 	\includegraphics[width=0.28\linewidth,trim = 0cm 0.5cm 0cm 0cm,clip]{vhsfull10000temprad.png}
 	\caption{Interior temperature and planet radius posteriors for VHS-1256b.
 		As expected, these parameters are highly anti-correlated: a higher temperatures and larger radii both result in increases in the overall luminosity of the planet. The true value of both parameters (900 K, 1.29 R$_{J}$) falls outside the displayed distributions.
@@ -522,7 +523,7 @@ Even in a clear atmosphere there is no emission from below 1 bar.
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{VHS1256bCH1_nofringe_abundances_corner.png}
+	\includegraphics[width=\linewidth]{vhs_ptsrc_nocorr_ch1_abund.png}
 	\caption{Posterior distributions for species abundances in VHS1256b, in the uncorrected point-source fringing case using CH1 data.}
 	\label{fig:postVHS_abundances_fringe}
 \end{figure}
