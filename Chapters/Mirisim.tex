@@ -178,7 +178,7 @@ However, for point source observations this produces results very different than
 Thus we attempt to improve the fringing model by using a set of fringe flats derived from point source FM data. 
 In principle, a complete set of fringe flats that cover point sources located at each position in the detector plane would reproduce an extended source fringe flat.
 Indeed, at the center of the PSF, the extended source fringe flat models the point source fairly well, with discrepancies increasing towards the PSF wings \parencite{Argyriou2020}.
-Due to this variation of the fringe pattern, there is a spatial variation in the similarity of the point source fringe flat as compared to the extended source, which we demonstrate in Fig. \ref{fig:fringecor}, where the correlation coefficients between each point source spectrum and the extended source spectrum are plotted
+Due to this variation of the fringe pattern, there is a spatial variation in the similarity of the point source fringe flat as compared to the extended source, which we demonstrate in Fig. \ref{fig:fringecor}, where the correlation coefficients between each point source spectrum and the extended source spectrum are plotted.
 In order to fairly compare our improvements, we will also compare to an older version of the fringe CDPs (v07.02.00) which is based on FM extended source data.
 
 \begin{figure}[t]
@@ -253,7 +253,7 @@ This is a substantial limitation for spectral extraction, and must be rectified 
 
 
 \subsubsection{Fringing correction}
-Fringing correction within the JWST pipeline is accomplished by dividing a known fringe flat into the photometrically calibrated detector image. 
+Fringing correction within the JWST pipeline is accomplished by dividing a known fringe flat into the detector image. 
 This fringe flat is based of extended source CV data, and a unique flat is used for each detector/sub-band configuration.
 
 \subsubsection{Residual Fringe Correction}
@@ -308,7 +308,7 @@ This ensures that poor fits do not significantly alter the spectral shape.
 Thus this procedure corrects the slope and median flux value, but does not affect high frequency noise or signals.
 In practice, both curve fitting and median subtraction produce similar results, but it is important to note that this procedure cannot be applied to real data where the ground truth is not known, but is only a method used to correct for current issues with the simulation and data reduction software.
 Fig. \ref{fig:cal} shows an example of the results of this procedure. 
-We believe that this is a justified measure, as the errors with photometric calibration in the pipeline should be resolved before first light of the telescope.
+We believe that this is a justified measure, as the errors with photometric calibration in the pipeline should be resolved after commissioning of the telescope.
 
 \section{Cross Correlation}\label{sec:cc}
 To quantify the similarity of the spectrum output by the JWST pipeline to the input into MIRISIM, we rely on the technique of cross correlation.
@@ -463,7 +463,7 @@ CO is present only at the 10$^{-15}$ level within the WISE0855 atmosphere, but a
 Examination of the spectral template in Fig. \ref{fig:wiseco} (included in the appendix) shows that the CO template lacks significant spectral coverage, and the cross correlation does not result in a significant peak amidst the noise.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{CrossCorVHSSpecies}
-	\caption{Channel 1 Cross correlations for each molecular species against the extracted spectra for VHS1256b. The input abundances of each species are given in table \ref{tab:inputparams}. }
+	\caption{Channel 1 Cross correlations for each molecular species against the extracted spectra for VHS1256b. The input abundances of each species are given in table \ref{tab:inputparams}. Solid lines indicate the full wavelength range was used, while dashed lines are for channel 1 only.}
 	\label{fig:ccspecvhs}
 \end{figure}
 \begin{figure}[h]

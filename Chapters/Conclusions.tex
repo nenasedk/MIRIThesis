@@ -29,6 +29,13 @@ A more robust fringe correction must be developed in order to analyze MRS data.
 This may require additional calibration or commissioning data with the specific goal of characterizing this feature, but current corrections are inadequate for the science cases presented for JWST.
 
 \subsection{Effects of fringing on atmospheric retrievals}
+Fringing was found to not be a limiting factor for the accuracy of atmospheric retrievals.
+Systematic effects and hyper-parameter variation led to much larger disparity in the results.
+In the case of VHS-1256b, the retrieval using only Channel 1 data within uncorrected fringing led to the best retrieved parameters.
+We cannot conclude that atmospheric retrievals provide a useful measure of the impact of fringing in the MRS.
+Based on the cross correlation results, we recommend that any retrievals run on MRS data either do not attempt to correct for fringing, or use residual fringe correction.
+Poor fringing correction using an extended source fringe flat results in the largest deviation of the extracted spectrum from the known input.
+
 \subsection{Atmospheric retrievals with the MIRI MRS}
 All of the retrieval studies performed demonstrated the opportunities and challenges presented by using the MRS to study atmospheric physics and chemistry.
 Temperatures were systematically underestimated, and radii overestimated across all trials.
@@ -45,7 +52,7 @@ The C/O ratio computed from the retrieved species did not reflect the input rati
 Using a model parameterization based on the C/O ratio and metallicity may provide a more robust estimate for this quantity.
 
 WISE 0855 proved to be an easier target due to the strong ammonia absorption features in the simulated atmosphere.
-The temperature estimates ranged from 235 K to FIXME XXX, while the radius varied from 1.24 R$_{J}$ to YYYY FIXME.
+The temperature was consistently estimated at 235 K, while the radius varied from 1.05 to 1.24 R$_{J}$.
 The true values of these parameters were 250 K and 1.17 R$_{J}$ respectively.
 The ammonia abundance was one of the few species retrieved to within the computed margin of error, at 0.26$\pm0.01$\% by mass fraction.
 Water and methane were within 20\% of their input values.
@@ -61,6 +68,12 @@ The variation in the retrieval results across different cases, and the systemati
 While this would not provide a guarantee that the correct parameter estimation will be correct in any individual retrieval, it would provide a more robust case for any repeatable parameter measurement. 
 \section{Discussion}
 \subsection{Implications for GTO Observations}
+All of the targets will be observed to sufficient SNR given the proposed observing parameters.
+The wide spectral coverage of the MRS - particularly when combined with NIRSpec observations - will prove invaluable for constraining atmospheric parameters.
+However, we found that using the full spectrum did not necessarily improve the accuracy of the retrieval.
+We propose that retrievals should be performed on subsections of the data, particularly in regions where strong absorption features from a particular species are expected to be present.
+These should be compared to the retrieval using the full spectrum data.
+The current limitations of this work will likely be addressed by dedicated calibration, and hopefully will not present systematic issues for the on sky targets.
 \subsection{Caveats and Limitations}
 The conclusions and recommendations given here must come with certain caveats.
 All of the software used within this work are at varying stages of development, and are explicitly stated as being unready for public use.

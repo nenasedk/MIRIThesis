@@ -159,9 +159,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.1}{VHS-1256b}}{57}{subsection.4.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}{2M1207b}}{65}{subsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.5.2}{WISE 0855}}{65}{subsection.4.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}{WISE 0855}}{66}{subsection.4.5.3}% 
+\contentsline {subsection}{\numberline {4.5.3}{2M1207b}}{69}{subsection.4.5.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.4}{Fringing Comparison}}{71}{subsection.4.5.4}% 
 \defcounter {refsection}{0}\relax 
@@ -181,16 +181,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}{Implications for GTO Observations}}{75}{subsection.5.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}{Caveats and Limitations}}{75}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.2}{Caveats and Limitations}}{76}{subsection.5.2.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}{Future work}}{76}{subsection.5.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}{Appendix}}{77}{appendix.A}% 
+\contentsline {chapter}{\numberline {A}{Appendix}}{79}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}{Cross Correlations}}{77}{section.A.1}% 
+\contentsline {section}{\numberline {A.1}{Cross Correlations}}{79}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}{Full Posterior Distributions}}{81}{section.A.2}% 
+\contentsline {section}{\numberline {A.2}{Full Posterior Distributions}}{83}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}{Package Requirements}}{85}{section.A.3}% 
+\contentsline {section}{\numberline {A.3}{Package Requirements}}{88}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Works Cited}}{87}{section*.95}% 
+\contentsline {chapter}{\numberline {}{Works Cited}}{89}{section*.94}% 

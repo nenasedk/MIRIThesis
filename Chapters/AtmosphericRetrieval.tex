@@ -412,16 +412,15 @@ The full posterior distributions are included in appendix \ref{app:post}.
 		\toprule
 		\textbf{Name} & \textbf{Live} & \textbf{Wlen [$\mu m$]} & \textbf{Fringing} & \textbf{T$_{int}$ [K]} & \textbf{R$_{pl}$ [R$_{j}$]} & \textbf{C/O in} & \textbf{C/O ret}\\
 		\midrule
-		\multirow{3}{*}{VHS-1256b} & 1500 & 5--7.5  & No  & $684\pm0.1$ & $1.80\pm0.0004$ & 2.95 &\\
-		                           & 10000 & 5--7.5 & Yes & $833\pm1$   & $1.44\pm0.004$ & 2.95 &$0.565\pm0.003$\\
-		                           & 10000 & 5--18  & No  & $734\pm0.3$ & $1.65\pm0.001$ & 2.95 & $0.55\pm0.03$\\
+		\multirow{3}{*}{VHS-1256b} & 1500 & 5--7.5  & No  & $684\pm0.1$ & $1.80\pm0.0004$ & $2.95$ & $0.565\pm0.003$\\
+		                           & 1500 & 5--7.5 & Yes & $833\pm1$   & $1.44\pm0.004$ & $2.95$ & $3.17\pm0.18$\\
+		                           & 10000 & 5--18  & No  & $734\pm0.3$ & $1.65\pm0.001$ & $2.95$ & $0.55\pm0.03$\\
 		                           \midrule
-		\multirow{3}{*}{WISE0855}  & 1500 & 5--7.5  & No  & $235\pm1$ & $1.24\pm0.004$ &0.565& $0.554\pm0.03$\\
-								   & 1500 & 5--7.5  & Yes &  &  & 0.565 &\\
-							       & 6000 & 5--18   & No  &  &  & 0.565 &\\
+		\multirow{3}{*}{WISE0855}  & 1500 & 5--7.5  & No  & $235\pm1$ & $1.24\pm0.004$ &$0.565$& $0.554\pm0.03$\\
+								   & 1500 & 5--7.5  & Yes &  &  & $0.565$ &\\
+							       & 400 & 5--18   & No  & $234\pm1.15$ & $1.05\pm0.02$ & $0.565$ & $0.20\pm0.37$\\
 							       \midrule
-		\multirow{2}{*}{2M-1207b}  & 800 & 5--7.5   & No  &  &  &  &\\
-								   & 800 & 5--18    & No  &  &  &  &\\
+		2M1207b  & 800 & 5--7.5   & No  & $1186.9\pm0.3$ & $ 0.083\pm0.0002$ & $0.647$ & $0.87\pm0.7$\\
 		\bottomrule
 	\end{tabular}
 	\caption{Summary of atmospheric retrievals.}
@@ -548,28 +547,14 @@ Even in a clear atmosphere there is no emission from below 1 bar.
 	\label{fig:VHSemcont}
 \end{figure}
 \clearpage
-\subsection{2M1207b}
-\begin{figure}[h]
-	%\includegraphics[width=\linewidth]{2M1207B_v2_fringing_corner}
-	\caption{Posterior Distributions for 2M1207b.}
-	\label{fig:post2M}
-\end{figure}
-\begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Pressure Temperature profile for}
-	\label{fig:pres2M}
-\end{figure}
-\begin{figure}[h]
-	%\includegraphics[content...]{imagefile}
-	\caption{Best fit model for}
-	\label{fig:bestfit2M}
-\end{figure}
-\clearpage
 \subsection{WISE 0855}
 The cold temperatures and prominent molecular features make WISE0855 an excellent candidate for a retrieval study in the mid infrared.
 We performed a series of three retrievals on WISE0855, following a similar setup as for VHS1256b.
 We again consider two retrievals for Channel 1, both the fringing and non-fringing case.
 The third case is the non-fringing, full spectrum retrieval.
+We will focus our discussion on the Channel 1, no fringing case.
+The full spectrum retrieval was performed with only 400 live points, leading to less accurate parameter retrieval and highly correlated abundances.
+The posteriors for the full spectrum retrieval are included in appendix \ref{app:post}.
 
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{WISE0855_nofringe_pt_env}
@@ -626,7 +611,19 @@ The large scale features centered around 7 and 14 micron trace the continuum of 
 	\label{fig:WISEemcont}
 \end{figure}
 \clearpage
-
+\subsection{2M1207b}
+The retrievals for 2M1207b performed the worst out of all trials.
+We ran the retrieval on Channel one data without fringing.
+Systematics in the spectrum led to difficulties in fitting models, while the lack of significant absorption features makes identifying species difficult.
+Many of the retrieved species were very strongly correlated to each other, as well as to the infrared opacity $\kappa_{IR}$.
+The temperature was underestimated at 1186 K, but the radius was even more discrepant at 0.08 R$_{J}$.
+We present the posterior distribution in Fig. \ref{fig:post2M} for reference, but cannot make further conclusions from these results.
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{2M1207b_CH1_nofringe_corner}
+	\caption{Posterior Distributions for 2M1207b.}
+	\label{fig:post2M}
+\end{figure}
+\clearpage
 \begin{landscape}
 	\begin{table}[h]
 		\centering
@@ -635,21 +632,20 @@ The large scale features centered around 7 and 14 micron trace the continuum of 
 			\toprule
 			\textbf{Name} & \textbf{Wlen [$\mu m$]} & \textbf{Fringing} & \textbf{H$_{2}$O} & \textbf{CH$_{4}$} & \textbf{NH$_{3}$} &\textbf{CO} & \textbf{CO$_{2}$} & \textbf{H$_{2}$S}\\
 			\midrule
-			\multirow{4}{*}{VHS-1256b}&  Truth &     & $1\times10^{-3}$ &$3\times10^{-3}$&$1\times10^{-5}$&$1\times10^{-7}$&$1\times10^{-5}$& 0.0\\
+			\multirow{4}{*}{VHS-1256b}&  Truth &     & $1\times10^{-3}$ &$3\times10^{-3}$&$1\times10^{-5}$&$1\times10^{-7}$&$1\times10^{-5}$& $0.0$\\
 									  & 5--7.5 & No  &$1.02\pm0.001\times10^{-2}$& $1.86\pm0.0002\times10^{-2}$&$1.9\pm0.2\times10^{-8}$&$8\pm2\times10^{-11}$&$7.4\pm0.01\times10^{-1}$&$1.9\pm0.01\times10^{-1}$\\
 									  
 			 						  & 5--7.5 & Yes &$3.6\pm0.3\times10^{-3}$& $1.3\pm0.1\times10^{-2}$&$1.0\pm0.3\times10^{-5}$&$0.3\pm1.5\times10^{-8}$&$0.08\pm1\times10^{-6}$&$7.4\pm0.7\times10^{-1}$\\
 			 						  
 			 						  & 5--18  & No  &$9.1\pm0.6\times10^{-4}$& $7.2\pm0.2\times10^{-3}$&$0.2\pm1\times10^{-9}$&$0.4\pm1.0\times10^{-10}$&$1.9\pm0.1\times10^{-1}$&$7.9\pm0.2\times10^{-1}$\\
 			\midrule
-			\multirow{4}{*}{WISE0855} &  Truth &     &$4.6\times10^{-4}$&$2.6\times10^{-4}$&$2.6\times10^{-3}$&$1\times10^{-15}$&$1\times10^{-14}$& 0.0 \\
+			\multirow{4}{*}{WISE0855} &  Truth &     &$4.6\times10^{-4}$&$2.6\times10^{-4}$&$2.6\times10^{-3}$&$1\times10^{-15}$&$1\times10^{-14}$& $0.0$ \\
 									  & 5--7.5 & No  &$5.6\pm0.1\times10^{-4}$&$3.0\pm0.1\times10^{-4}$&$2.6\pm0.1\times10^{-3}$&$2.1\pm0.1\times10^{-5}$&$0.5\pm5\times10^{-9}$&$0.7\pm7\times10^{-8}$\\
 			 						  & 5--7.5 & Yes &&&&&&\\
-								      & 5--18  & No  &&&&&&\\
+								      & 5--18  & No  &$2.5\pm2\times10^{-1}$&$4.6\pm0.9\times10^{-2}$&$3.7\pm4\times10^{-1}$&$0.02\pm3\times10^{-7}$&$0.01\pm5\times10^{-6}$&\ldots \\
 			\midrule
-			\multirow{3}{*}{2M-1207b} &  Truth &     &&&&&&\\
-									  & 5--7.5 & No  &&&&&&\\
-									  & 5--18  & No  &&&&&&\\
+			\multirow{3}{*}{2M-1207b} &  Truth &     &$5\times10^{-3}$&$1\times10^{-6}$&$1\times10^{-7}$&$1\times10^{-2}$&$1\times10^{-3}$&$0.0$\\
+									  & 5--7.5 & No  &$7\pm2\times10^{-2}$&$1.6\pm0.5\times10^{-4}$&$9\pm4\times10^{-4}$&$4.5\pm3\times10^{-1}$&$0.05\pm3\times10^{-8}$&\ldots\\
 			\bottomrule
 		\end{tabular}
 	\caption{Retrieved mass fraction abundances for a selection of retrieved species. The log of these values is the retrieved parameter, where applicable the stated error is the 1$\sigma$ error in log space. This error can result in abundances below zero. For the lower bound the log error in the posterior plots should be used.}
@@ -662,21 +658,19 @@ We begin by comparing the results of different fringing cases, using VHS-1256b a
 The first set of retrievals use only Channel 1 data from 4.9-7.5 $\mu$m, as point source fringe flats have only been generated for this wavelength range.
 We compare the case of a retrieval with no fringing added to the spectrum to having an on-axis point-source derived fringe flat applied and an extended-source fringe flat used for correction.
 The case of an extended source fringe flat was not used, as the correction is near ideal, and it is well represented by the no-fringing case.
-Residual fringe correction was not used, as the extent to which it degrades the spectrum makes it clear it cannot currently be used for atmospheric retrieval studies.
-This was repeated for each of the targets described above.
-Typical $\log\mathcal{Z}$ evidences ranged from the order of $-10^{3}$ to $-10^{-5}$.
-While low evidences for a single model, the size of the parameter space and the number of data points ensures that the likelihood of any given model being true is low, and therefore the low absolute value of the evidence is expected. 
-We also consider the use of the full spectral coverage, and examine the impact this has on parameter estimation.
+The effects of residual fringe correction on the retrieval was not examined.
 
-We find that fringing has a significant impact on atmospheric retrievals.
-For the point source fringing, leaving the spectrum uncorrected led to better results by reducing the additional fringing induced by the interference between the point-source and extended-source fringe flats.
+We found that point source fringing did not result in a significant reduction in precision or accuracy of the retrieval results.
+While it may have an impact, other sources of error led to far greater variation in retrieval results.
+Parameters were not retrieved to within the computed margin of error.
+For the abundance measurements for VHS-1256b, the point source fringing case provided more accurate estimates than in the no fringing case, as shown in table \ref{tab:retspecies}.
+The retrieved temperature and radius of VHS-1256b were also less discrepant in the fringing case than in the non fringing case.
+However, we cannot attribute the improved accuracy of the retrieval to the addition of fringing.
+These results were inconsistent across multiple trials, and the posteriors presented in Fig. \ref{fig:postVHS_abundances_fringe} represent the best retrieved parameters. 
 
-We found that the wavelength coverage was critical to accurately retrieving parameters. Figures \ref{fig:postVHS_tr} through \ref{fig:bestfitVHS} demonstrate the results for using a single channel, while Figures XX through YY show the full wavelength coverage.
-
-Of key interest is the variation in retrieved abundances.
-We used H$_{2}$S to examine how the retrieval would behave when searching for a species not present in the atmosphere. 
-With most of its absorption lines located in Channel 2, the Channel 1 only retrieval dramatically overestimated the presence of the molecule, while the full spectrum retrieval correctly identified it as not present.
-Not only does this impact the abundance of H$_{2}$S itself, but correlations with other species such as water and methane contributed to incorrect abundance measurements.
+Differences in processing, noise, and choices of retrieval hyperparameters will all significantly impact the results.
+We cannot conclude that atmospheric retrievals provide a good metric by which to measure the effects of fringing in the MIRI MRS.
+At the present, fringing is also not the limiting factor in improving the precision of atmospheric retrievals.
 
 \subsection{Discussion}
 The three targets chosen represent a relatively diverse selection of sub-stellar objects, yet there are similarities across all of the retrievals.
