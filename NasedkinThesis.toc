@@ -187,10 +187,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}{Appendix}}{79}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}{Cross Correlations}}{79}{section.A.1}% 
+\contentsline {section}{\numberline {A.1}{Extracted Spectra}}{79}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}{Full Posterior Distributions}}{83}{section.A.2}% 
+\contentsline {section}{\numberline {A.2}{Cross Correlations}}{80}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}{Package Requirements}}{88}{section.A.3}% 
+\contentsline {section}{\numberline {A.3}{Full Posterior Distributions}}{84}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Works Cited}}{89}{section*.94}% 
+\contentsline {section}{\numberline {A.4}{Package Requirements}}{90}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Works Cited}}{91}{section*.96}% 

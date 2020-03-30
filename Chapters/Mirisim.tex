@@ -278,7 +278,6 @@ Instead, the flux-conserving Shepards method is used, setting the weighting para
 It should be noted that this procedure introduces correlations between the spaxels, which is not accounted in the error on each spaxel.
 
 \subsubsection{Aperture Photometry}
-
 Once the data from the pipeline has been transformed into a spectral cube, we can perform aperture photometry using the \verb|photutils| package to extract a 1D spectrum of the source.
 For each frame in each sub-band the coordinates of the spaxel at with the peak flux is detected using \verb|photutils| \verb|find_peaks|, which provides the location for the center of a circular aperture.
 A radius of 5 spaxels is used to encompass the entire PSF for a point source.
@@ -309,6 +308,7 @@ Thus this procedure corrects the slope and median flux value, but does not affec
 In practice, both curve fitting and median subtraction produce similar results, but it is important to note that this procedure cannot be applied to real data where the ground truth is not known, but is only a method used to correct for current issues with the simulation and data reduction software.
 Fig. \ref{fig:cal} shows an example of the results of this procedure. 
 We believe that this is a justified measure, as the errors with photometric calibration in the pipeline should be resolved after commissioning of the telescope.
+Examples of the extracted spectrum for each target are included in appendix \ref{app:spec}
 
 \section{Cross Correlation}\label{sec:cc}
 To quantify the similarity of the spectrum output by the JWST pipeline to the input into MIRISIM, we rely on the technique of cross correlation.

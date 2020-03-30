@@ -417,7 +417,7 @@ The full posterior distributions are included in appendix \ref{app:post}.
 		                           & 10000 & 5--18  & No  & $734\pm0.3$ & $1.65\pm0.001$ & $2.95$ & $0.55\pm0.03$\\
 		                           \midrule
 		\multirow{3}{*}{WISE0855}  & 1500 & 5--7.5  & No  & $235\pm1$ & $1.24\pm0.004$ &$0.565$& $0.554\pm0.03$\\
-								   & 1500 & 5--7.5  & Yes &  &  & $0.565$ &\\
+								   & 400 & 5--7.5  & Yes & $218.4\pm0.02$ & $2.5\pm0.0003$ & $0.565$ & $0.40\pm0.04$\\
 							       & 400 & 5--18   & No  & $234\pm1.15$ & $1.05\pm0.02$ & $0.565$ & $0.20\pm0.37$\\
 							       \midrule
 		2M1207b  & 800 & 5--7.5   & No  & $1186.9\pm0.3$ & $ 0.083\pm0.0002$ & $0.647$ & $0.87\pm0.7$\\
@@ -553,8 +553,9 @@ We performed a series of three retrievals on WISE0855, following a similar setup
 We again consider two retrievals for Channel 1, both the fringing and non-fringing case.
 The third case is the non-fringing, full spectrum retrieval.
 We will focus our discussion on the Channel 1, no fringing case.
-The full spectrum retrieval was performed with only 400 live points, leading to less accurate parameter retrieval and highly correlated abundances.
-The posteriors for the full spectrum retrieval are included in appendix \ref{app:post}.
+The full spectrum and fringing retrievals were performed with only 400 live points, leading to less accurate parameter retrieval and highly correlated abundances.
+In the fringing case several of the posteriors were limited by the priors, and do not well reflect the true parameters.
+The posteriors for the full spectrum retrieval and the retrieval including fringing are included in appendix \ref{app:post}.
 
 \begin{figure}[t]
 	\includegraphics[width=\linewidth]{WISE0855_nofringe_pt_env}
@@ -641,10 +642,10 @@ We present the posterior distribution in Fig. \ref{fig:post2M} for reference, bu
 			\midrule
 			\multirow{4}{*}{WISE0855} &  Truth &     &$4.6\times10^{-4}$&$2.6\times10^{-4}$&$2.6\times10^{-3}$&$1\times10^{-15}$&$1\times10^{-14}$& $0.0$ \\
 									  & 5--7.5 & No  &$5.6\pm0.1\times10^{-4}$&$3.0\pm0.1\times10^{-4}$&$2.6\pm0.1\times10^{-3}$&$2.1\pm0.1\times10^{-5}$&$0.5\pm5\times10^{-9}$&$0.7\pm7\times10^{-8}$\\
-			 						  & 5--7.5 & Yes &&&&&&\\
+			 						  & 5--7.5 & Yes & $2.1\pm0.1\times10^{-2}$&$4.7\pm0.1\times10^{-3}$&$2.07\pm0.05\times10^{-2}$&$0.25\pm1\times10^{-8}$&$0.04\pm1\times10^{-6}$&\ldots\\
 								      & 5--18  & No  &$2.5\pm2\times10^{-1}$&$4.6\pm0.9\times10^{-2}$&$3.7\pm4\times10^{-1}$&$0.02\pm3\times10^{-7}$&$0.01\pm5\times10^{-6}$&\ldots \\
 			\midrule
-			\multirow{3}{*}{2M-1207b} &  Truth &     &$5\times10^{-3}$&$1\times10^{-6}$&$1\times10^{-7}$&$1\times10^{-2}$&$1\times10^{-3}$&$0.0$\\
+			\multirow{2}{*}{2M-1207b} &  Truth &     &$5\times10^{-3}$&$1\times10^{-6}$&$1\times10^{-7}$&$1\times10^{-2}$&$1\times10^{-3}$&$0.0$\\
 									  & 5--7.5 & No  &$7\pm2\times10^{-2}$&$1.6\pm0.5\times10^{-4}$&$9\pm4\times10^{-4}$&$4.5\pm3\times10^{-1}$&$0.05\pm3\times10^{-8}$&\ldots\\
 			\bottomrule
 		\end{tabular}
@@ -663,6 +664,7 @@ The effects of residual fringe correction on the retrieval was not examined.
 We found that point source fringing did not result in a significant reduction in precision or accuracy of the retrieval results.
 While it may have an impact, other sources of error led to far greater variation in retrieval results.
 Parameters were not retrieved to within the computed margin of error.
+With WISE 0855, the fringing case resulted in a failure of the retrieval, pushing the posteriors to the edges of the priors.
 For the abundance measurements for VHS-1256b, the point source fringing case provided more accurate estimates than in the no fringing case, as shown in table \ref{tab:retspecies}.
 The retrieved temperature and radius of VHS-1256b were also less discrepant in the fringing case than in the non fringing case.
 However, we cannot attribute the improved accuracy of the retrieval to the addition of fringing.
